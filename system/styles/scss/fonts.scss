@@ -1,58 +1,37 @@
 /** Fonts **/
 
-// Font Logotype L5R
-@font-face {
-    font-family: "LogotypeL5r";
-    src: url("../fonts/LogotypeL5r.ttf") format("truetype");
-}
-
-// Font BrushtipTexe
-@font-face {
-    font-family: "BrushtipTexe";
-    src: url("../fonts/BrushtipTexe.ttf") format("truetype");
-}
-
-// Font PatrickHand
-@font-face {
-    font-family: "PatrickHand";
-    src: url("../fonts/PatrickHand.ttf") format("truetype");
-}
-
-// Font Caballar
-@font-face {
-    font-family: "Caballar";
-    src: url("../fonts/Caballar.ttf") format("truetype");
-}
-
-// Font ArchitectsDaughter
-@font-face {
-    font-family: "ArchitectsDaughter";
-    src: url("../fonts/ArchitectsDaughter.ttf") format("truetype");
-}
-
-$font-primary: "PatrickHand", sans-serif;
-$font-secondary: "BrushtipTexe", sans-serif;
-$font-tertiary: "Caballar", sans-serif;
-$font-quaternary: "ArchitectsDaughter", sans-serif;
-$font-logoType: "LogotypeL5r", sans-serif;
+// Modern Sci-Fi Fonts
+$font-primary: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+$font-secondary: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+$font-tertiary: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+$font-quaternary: 'Courier New', 'Monaco', monospace;
+$font-logoType: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 
 body {
     font: 16px $font-primary;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.025rem;
+    color: $white-light;
+    background-color: $black-light;
 }
 
 h1,
 h4 {
     font-family: $font-secondary;
+    color: $orange;
+    text-shadow: 0 0 10px rgba(255, 102, 0, 0.5);
 }
 h1 {
     font-size: 2rem;
+    font-weight: 300;
 }
 h2 {
     font-size: 1.5rem;
+    color: $blue;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
 h3 {
     font-size: 1.25rem;
+    color: $white-light;
 }
 h4 {
     font-size: 1.25rem;

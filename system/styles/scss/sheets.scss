@@ -1,10 +1,18 @@
 /** Sheets **/
 &.sheet {
     min-width: 37rem;
+    background: rgba(10, 10, 20, 0.95);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
 
     label {
+        color: $white-light;
         &:hover {
-            text-shadow: 0 0 2px $red;
+            text-shadow: 0 0 5px $orange;
+            color: $orange;
         }
     }
 
@@ -15,12 +23,24 @@
         padding: 0 8px;
         line-height: 1.9rem;
         justify-content: flex-end;
-        background: rgba(186, 187, 177, 0.5);
+        background: rgba(0, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border-bottom: 1px solid rgba(0, 255, 255, 0.3);
         height: 2rem;
 
         a.l5r-header-button {
             flex: none;
             margin: 0 0 0 8px;
+            color: $white-light;
+            background: rgba(255, 102, 0, 0.2);
+            border: 1px solid rgba(255, 102, 0, 0.4);
+            border-radius: 4px;
+            padding: 0.25rem 0.5rem;
+            &:hover {
+                background: rgba(255, 102, 0, 0.4);
+                box-shadow: 0 0 10px rgba(255, 102, 0, 0.5);
+            }
         }
     }
 

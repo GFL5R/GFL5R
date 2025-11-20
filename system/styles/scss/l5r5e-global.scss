@@ -31,15 +31,23 @@ input[type="password"],
 input[type="date"],
 input[type="time"],
 textarea {
-    padding: 0.25rem;
-    background: $l5r5e-white;
-    border: 1px solid $l5r5e-title;
-    color: $l5r5e-black;
+    padding: 0.5rem;
+    background: rgba(20, 20, 30, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 255, 255, 0.4);
+    color: $white-light;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.2);
     resize: vertical;
-    border-radius: 0;
-    box-shadow: none;
+    &:focus {
+        border-color: $orange;
+        box-shadow: 0 0 10px rgba(255, 102, 0, 0.5);
+        outline: none;
+    }
     &[disabled] {
-        background: $l5r5e-white-light;
+        background: rgba(10, 10, 15, 0.9);
+        color: rgba(150, 150, 150, 0.7);
     }
 }
 input[type="number"] {
