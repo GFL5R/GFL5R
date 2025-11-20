@@ -76,7 +76,8 @@
             "signature_scroll": "Signature Scroll",
             "item_pattern": "Item Pattern",
             "army_fortification": "Fortification",
-            "army_cohort": "Cohort"
+            "army_cohort": "Cohort",
+            "discipline": "Discipline"
         },
         "Journal": {
             "journal": "Journal"
@@ -215,6 +216,19 @@
             "equipment": "Equipment",
             "rank": "Rank",
             "name": "Name"
+        },
+        "disciplines": {
+            "title": "Disciplines",
+            "description": "Disciplines represent specialized training paths that characters can pursue. Each discipline provides unique abilities and unlocks techniques at higher ranks.",
+            "xp": "XP",
+            "rank": "Rank",
+            "associated_skills": "Associated Skills",
+            "abilities": "Abilities",
+            "unlocked_techniques": "Unlocked Techniques",
+            "add_discipline": "Add Discipline",
+            "remove": "Remove",
+            "drop_ability": "Drop ability items here",
+            "category": "Category"
         },
         "dice": {
             "chat": {

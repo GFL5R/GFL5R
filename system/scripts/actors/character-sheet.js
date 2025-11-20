@@ -13,6 +13,11 @@ export class CharacterSheetL5r5e extends BaseCharacterSheetL5r5e {
                 { navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "skills" },
                 { navSelector: ".advancements-tabs", contentSelector: ".advancements-body", initial: "last" },
             ],
+            dragDrop: [
+                { dragSelector: ".item-list .item", dropSelector: null },
+                { dragSelector: ".discipline-item", dropSelector: ".discipline-drop-zone" },
+                { dragSelector: ".ability-item", dropSelector: ".discipline-ability-drop-zone" }
+            ],
         });
     }
 
@@ -44,14 +49,11 @@ export class CharacterSheetL5r5e extends BaseCharacterSheetL5r5e {
     async getData(options = {}) {
         const sheetData = await super.getData(options);
 
-        // Min rank = 1
-        this.actor.system.identity.school_rank = Math.max(1, this.actor.system.identity.school_rank);
-
         // Split Money
         sheetData.data.system.money = this._zeniToMoney(this.actor.system.zeni);
 
-        // Split school advancements by rank, and calculate xp spent and add it to total
-        this._prepareSchoolAdvancement(sheetData);
+        // Prepare discipline data
+        this._prepareDisciplines(sheetData);
 
         // Split Others advancements, and calculate xp spent and add it to total
         this._prepareOthersAdvancement(sheetData);
@@ -93,63 +95,205 @@ export class CharacterSheetL5r5e extends BaseCharacterSheetL5r5e {
         );
         game.l5r5e.HelpersL5r5e.autocomplete(
             html,
-            "system.identity.school",
-            game.l5r5e.HelpersL5r5e.getSchoolsList(),
-            ","
-        );
-        game.l5r5e.HelpersL5r5e.autocomplete(
-            html,
             "system.identity.roles",
             game.l5r5e.HelpersL5r5e.getLocalizedRolesList(),
             ","
         );
 
-        // Open linked school curriculum journal
-        html.find(".school-journal-link").on("click", this._openLinkedJournal.bind(this));
-
-        // Curriculum management
-        html.find(".item-curriculum").on("click", this._switchSubItemCurriculum.bind(this));
-        html.find("button[name=validate-curriculum]").on("click", this._actorAddOneToRank.bind(this));
-
         // Money +/-
         html.find(".money-control").on("click", this._modifyMoney.bind(this));
 
-        // Advancements Tab to current rank onload
-        // TODO class "Active" Bug on load, dunno why :/
-        this._tabs
-            .find((e) => e._navSelector === ".advancements-tabs")
-            .activate("advancement_rank_" + (this.actor.system.identity.school_rank || 0));
+        // Discipline management
+        html.find(".discipline-edit").on("click", this._editDiscipline.bind(this));
+        html.find(".discipline-remove").on("click", this._removeDiscipline.bind(this));
+        html.find(".discipline-ability-remove").on("click", this._removeDisciplineAbility.bind(this));
     }
 
     /**
-     * Split the school advancement, calculate the total xp spent and the current total xp spent by rank
+     * Handle dropping items onto the character sheet
+     * @param {Event} event
+     * @param {Object} data
      */
-    _prepareSchoolAdvancement(sheetData) {
-        const adv = [];
-        sheetData.data.system.xp_spent = 0;
-        sheetData.items
-            .filter((item) => ["peculiarity", "technique", "advancement"].includes(item.type))
-            .forEach((item) => {
-                const { xp_used_total, xp_used } = game.l5r5e.HelpersL5r5e.getItemsXpCost(item);
-                sheetData.data.system.xp_spent += xp_used_total;
+    async _onDrop(event) {
+        event.preventDefault();
+        event.stopPropagation();
 
-                const rank = Math.max(0, item.system.bought_at_rank);
-                if (!adv[rank]) {
-                    adv[rank] = {
-                        rank: rank,
-                        spent: {
-                            total: 0,
-                            curriculum: 0,
-                        },
-                        goal: CONFIG.l5r5e.xp.costPerRank[rank] || null,
-                        list: [],
-                    };
-                }
-                adv[rank].list.push(item);
-                adv[rank].spent.total += xp_used_total;
-                adv[rank].spent.curriculum += xp_used;
-            });
-        sheetData.data.advancementsListByRank = adv;
+        const data = JSON.parse(event.dataTransfer.getData('text/plain'));
+        const target = event.target.closest('[data-drop-target]');
+
+        if (!target) return;
+
+        const dropTarget = target.dataset.dropTarget;
+        const slotKey = target.dataset.slotKey;
+
+        if (dropTarget === 'discipline') {
+            await this._onDropDiscipline(data, slotKey);
+        } else if (dropTarget === 'discipline-ability') {
+            await this._onDropDisciplineAbility(data, slotKey);
+        } else {
+            // Handle other drops with parent method
+            return super._onDrop(event);
+        }
+    }
+
+    /**
+     * Handle dropping a discipline item
+     */
+    async _onDropDiscipline(data, slotKey) {
+        if (data.type !== 'Item' || !data.uuid) return;
+
+        const item = await fromUuid(data.uuid);
+        if (!item || item.type !== 'discipline') return;
+
+        // Check if discipline already exists
+        const existingDiscipline = this.actor.items.find(i => i.type === 'discipline' && i.name === item.name);
+        if (existingDiscipline) {
+            ui.notifications.warn("Discipline already assigned to this character.");
+            return;
+        }
+
+        // Create a copy of the discipline for this character
+        const disciplineData = item.toObject();
+        disciplineData.system.xp = 0;
+        disciplineData.system.rank = 1;
+
+        await this.actor.createEmbeddedDocuments('Item', [disciplineData]);
+        ui.notifications.info(`Added discipline: ${item.name}`);
+    }
+
+    /**
+     * Handle dropping an ability item onto a discipline
+     */
+    async _onDropDisciplineAbility(data, slotKey) {
+        if (data.type !== 'Item' || !data.uuid) return;
+
+        const item = await fromUuid(data.uuid);
+        if (!item || item.type !== 'technique') return;
+
+        // Find the discipline for this slot
+        const disciplineItems = this.actor.items.filter(i => i.type === 'discipline');
+        const slotIndex = parseInt(slotKey.replace('slot', '')) - 1;
+        const discipline = disciplineItems[slotIndex];
+
+        if (!discipline) return;
+
+        // Create a copy of the ability linked to this discipline
+        const abilityData = item.toObject();
+        abilityData.system.discipline_id = discipline.id;
+
+        await this.actor.createEmbeddedDocuments('Item', [abilityData]);
+        ui.notifications.info(`Added ability to ${discipline.name}: ${item.name}`);
+    }
+
+    /**
+     * Edit a discipline
+     */
+    _editDiscipline(event) {
+        event.preventDefault();
+        const itemId = event.currentTarget.dataset.itemId;
+        const item = this.actor.items.get(itemId);
+        if (item) item.sheet.render(true);
+    }
+
+    /**
+     * Remove a discipline
+     */
+    async _removeDiscipline(event) {
+        event.preventDefault();
+        const slotKey = event.currentTarget.dataset.slotKey;
+        const disciplineItems = this.actor.items.filter(i => i.type === 'discipline');
+        const slotIndex = parseInt(slotKey.replace('slot', '')) - 1;
+        const discipline = disciplineItems[slotIndex];
+
+        if (discipline) {
+            await this.actor.deleteEmbeddedDocuments('Item', [discipline.id]);
+            ui.notifications.info(`Removed discipline: ${discipline.name}`);
+        }
+    }
+
+    /**
+     * Remove an ability from a discipline
+     */
+    async _removeDisciplineAbility(event) {
+        event.preventDefault();
+        const abilityId = event.currentTarget.dataset.abilityId;
+        await this.actor.deleteEmbeddedDocuments('Item', [abilityId]);
+    }
+    }
+
+    /**
+     * Prepare discipline data for the sheet
+     */
+    _prepareDisciplines(sheetData) {
+        const disciplines = [];
+        let totalDisciplineXp = 0;
+
+        // Get discipline items from actor
+        const disciplineItems = sheetData.items.filter(item => item.type === 'discipline');
+
+        // Create slots for up to 5 disciplines
+        for (let i = 0; i < 5; i++) {
+            const slotKey = `slot${i + 1}`;
+            const discipline = disciplineItems[i];
+
+            if (discipline) {
+                const rank = discipline.system.rank || 1;
+                const xp = discipline.system.xp || 0;
+                const xpCostForNextRank = CONFIG.l5r5e.xp.disciplineCostPerRank[rank] || 0;
+                const xpToNext = Math.max(0, xpCostForNextRank - xp);
+                const xpProgress = xpCostForNextRank > 0 ? (xp / xpCostForNextRank) * 100 : 100;
+
+                // Get abilities associated with this discipline
+                const abilities = sheetData.items.filter(item =>
+                    item.type === 'technique' &&
+                    item.system.discipline_id === discipline.id
+                );
+
+                // Get unlocked techniques based on rank
+                const unlockedTechniques = this._getUnlockedTechniquesForDiscipline(discipline, rank);
+
+                disciplines.push({
+                    slotKey,
+                    slotNumber: i + 1,
+                    discipline,
+                    rank,
+                    xp,
+                    xpToNext: xpToNext > 0 ? xpToNext : null,
+                    xpProgress,
+                    abilities,
+                    unlockedTechniques
+                });
+
+                totalDisciplineXp += xp;
+            } else {
+                disciplines.push({
+                    slotKey,
+                    slotNumber: i + 1,
+                    discipline: null,
+                    rank: 1,
+                    xp: 0,
+                    xpToNext: null,
+                    xpProgress: 0,
+                    abilities: [],
+                    unlockedTechniques: []
+                });
+            }
+        }
+
+        sheetData.disciplineSlots = disciplines;
+        sheetData.disciplines = disciplineItems;
+
+        // Add discipline XP to total spent
+        sheetData.data.system.xp_spent = (sheetData.data.system.xp_spent || 0) + totalDisciplineXp;
+    }
+
+    /**
+     * Get unlocked techniques for a discipline at a given rank
+     */
+    _getUnlockedTechniquesForDiscipline(discipline, rank) {
+        // TODO: Implement technique unlocking based on discipline rank
+        // For now, return techniques that have required_rank <= current rank
+        return (discipline.system.unlocked_techniques || []).filter(tech => tech.requiredRank <= rank);
     }
 
     /**
@@ -180,19 +324,6 @@ export class CharacterSheetL5r5e extends BaseCharacterSheetL5r5e {
      * @param formData
      */
     _updateObject(event, formData) {
-        // Clan tag trim if autocomplete in school name
-        if (
-            formData["autoCompleteListName"] === "system.identity.school" &&
-            formData["autoCompleteListSelectedIndex"] >= 0 &&
-            !!formData["system.identity.clan"] &&
-            formData["system.identity.school"].indexOf(` [${formData["system.identity.clan"]}]`) !== -1
-        ) {
-            formData["system.identity.school"] = formData["system.identity.school"].replace(
-                ` [${formData["system.identity.clan"]}]`,
-                ""
-            );
-        }
-
         // Store money in Zeni
         if (formData["system.money.koku"] || formData["system.money.bu"] || formData["system.money.zeni"]) {
             formData["system.zeni"] = this._moneyToZeni(
@@ -283,49 +414,5 @@ export class CharacterSheetL5r5e extends BaseCharacterSheetL5r5e {
             },
         });
         this.render(false);
-    }
-
-    /**
-     * Add +1 to actor school rank
-     * @param {Event} event
-     * @private
-     */
-    async _actorAddOneToRank(event) {
-        event.preventDefault();
-        event.stopPropagation();
-
-        this.actor.system.identity.school_rank = this.actor.system.identity.school_rank + 1;
-        await this.actor.update({
-            system: {
-                identity: {
-                    school_rank: this.actor.system.identity.school_rank,
-                },
-            },
-        });
-        this.render(false);
-    }
-
-    /**
-     * Open the linked school curriculum journal
-     * @param {Event} event
-     * @private
-     */
-    async _openLinkedJournal(event) {
-        event.preventDefault();
-        event.stopPropagation();
-
-        const actorJournal = this.actor.system.identity.school_curriculum_journal;
-        if (!actorJournal.id) {
-            return;
-        }
-
-        const journal = await game.l5r5e.HelpersL5r5e.getObjectGameOrPack({
-            id: actorJournal.id,
-            pack: actorJournal.pack,
-            type: "JournalEntry",
-        });
-        if (journal) {
-            journal.sheet.render(true);
-        }
     }
 }

@@ -21,14 +21,8 @@
     </li>
     <li>
         <label class="attribute-label">
-            {{localize 'l5r5e.sheets.rank'}}
-            <input type="number" name="system.identity.school_rank" value="{{data.system.identity.school_rank}}" class="select-on-focus" data-dtype="Number" min="0" placeholder="1" {{^if data.editable_not_soft_locked}}disabled{{/if}}/>
-        </label>
-    </li>
-    <li>
-        <label class="attribute-label">
-            {{localize 'l5r5e.sheets.school'}}
-            <input type="text" name="system.identity.school" value="{{data.system.identity.school}}" {{^if data.editable_not_soft_locked}}disabled{{/if}}/>
+            {{localize 'l5r5e.disciplines.title'}}
+            <span class="disciplines-count">{{disciplines.length}}/5</span>
         </label>
     </li>
     <li>

@@ -37,6 +37,7 @@
         {{!-- Sheet Tab Navigation --}}
         <nav class="sheet-tabs tabs" data-group="primary">
             <a class="item" data-tab="skills">{{localize 'l5r5e.skills.title'}}</a>
+            <a class="item" data-tab="disciplines">{{localize 'l5r5e.disciplines.title'}}</a>
             <a class="item" data-tab="narrative">{{localize 'l5r5e.sheets.narrative'}}</a>
             <a class="item" data-tab="conflict">{{localize 'l5r5e.conflict.title'}}</a>
             <a class="item" data-tab="inventory">{{localize 'l5r5e.sheets.inventory'}}</a>
@@ -51,6 +52,11 @@
                 {{/each}}
             </ul>
             {{> 'systems/l5r5e/templates/actors/character/techniques.html'}}
+        </article>
+
+        {{!-- Disciplines Tab --}}
+        <article class="tab disciplines" data-group="primary" data-tab="disciplines">
+            {{> 'systems/l5r5e/templates/actors/character/disciplines.html'}}
         </article>
 
         {{!-- Narrative Tab --}}

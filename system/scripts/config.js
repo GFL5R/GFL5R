@@ -9,6 +9,7 @@ export const L5R5E = {
     roles: ["artisan", "bushi", "courtier", "monk", "sage", "shinobi", "shugenja"],
     xp: {
         costPerRank: [0, 20, 24, 32, 44, 60],
+        disciplineCostPerRank: [0, 10, 12, 16, 22],
         bondCostPerRank: [0, 3, 4, 6, 8, 10],
         ringCostMultiplier: 3,
         skillCostMultiplier: 2,

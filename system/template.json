@@ -13,9 +13,8 @@
                     "female": null,
                     "marital_status": "",
                     "roles": "",
-                    "school": "",
-                    "school_rank": 1,
-                    "school_curriculum_journal": {}
+                    "disciplines": [],
+                    "discipline_xp": {}
                 }
             },
             "approaches": {
@@ -194,7 +193,8 @@
             "signature_scroll",
             "item_pattern",
             "army_cohort",
-            "army_fortification"
+            "army_fortification",
+            "discipline"
         ],
         "templates": {
             "basics": {
@@ -303,6 +303,16 @@
             "difficulty": 0,
             "attrition_reduction": 0,
             "notes": ""
+        },
+        "discipline": {
+            "templates": ["basics"],
+            "category": "",
+            "associated_skills": [],
+            "xp": 0,
+            "rank": 1,
+            "max_rank": 4,
+            "abilities": [],
+            "unlocked_techniques": []
         }
     }
 }

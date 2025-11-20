@@ -1,0 +1,117 @@
+<div class="disciplines-wrapper">
+    <div class="disciplines-header">
+        <h2>{{localize 'l5r5e.disciplines.title'}}</h2>
+        <p>{{localize 'l5r5e.disciplines.description'}}</p>
+    </div>
+
+    <div class="disciplines-slots">
+        {{#each disciplineSlots as |slot|}}
+            {{#if slot.discipline}}
+                <div class="discipline-slot card" data-slot-key="{{slot.slotKey}}">
+                    <div class="discipline-header flexrow">
+                        <img src="{{slot.discipline.img}}" alt="{{slot.discipline.name}}" class="discipline-icon" />
+                        <div class="discipline-info">
+                            <h3>{{slot.discipline.name}}</h3>
+                            <div class="discipline-category">{{slot.discipline.system.category}}</div>
+                        </div>
+                        <div class="discipline-controls">
+                            <a class="discipline-edit" data-item-id="{{slot.discipline.id}}" title="{{localize 'l5r5e.global.edit'}}">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <a class="discipline-remove" data-slot-key="{{slot.slotKey}}" title="{{localize 'l5r5e.disciplines.remove'}}">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="discipline-progress">
+                        <div class="xp-rank-row flexrow">
+                            <div class="form-group">
+                                <label>{{localize 'l5r5e.disciplines.xp'}}</label>
+                                <input type="number" name="disciplines.{{slot.slotKey}}.xp" value="{{slot.xp}}" min="0" />
+                            </div>
+                            <div class="form-group">
+                                <label>{{localize 'l5r5e.disciplines.rank'}}</label>
+                                <input type="number" name="disciplines.{{slot.slotKey}}.rank" value="{{slot.rank}}" min="1" max="4" />
+                            </div>
+                        </div>
+                        {{#if slot.xpToNext}}
+                            <div class="xp-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: {{slot.xpProgress}}%"></div>
+                                </div>
+                                <span>{{slot.xpToNext}} XP to Rank {{add slot.rank 1}}</span>
+                            </div>
+                        {{/if}}
+                    </div>
+
+                    {{#if slot.discipline.system.description}}
+                        <div class="discipline-description">
+                            {{{slot.discipline.system.description}}}
+                        </div>
+                    {{/if}}
+
+                    <div class="discipline-skills">
+                        <h4>{{localize 'l5r5e.disciplines.associated_skills'}}</h4>
+                        <div class="skill-tags">
+                            {{#each slot.discipline.system.associated_skills as |skill|}}
+                                <span class="skill-tag">{{skill}}</span>
+                            {{/each}}
+                        </div>
+                    </div>
+
+                    <div class="discipline-abilities">
+                        <h4>{{localize 'l5r5e.disciplines.abilities'}}</h4>
+                        <div class="abilities-list">
+                            {{#each slot.abilities as |ability|}}
+                                <div class="ability-item" data-item-id="{{ability.id}}">
+                                    <img src="{{ability.img}}" alt="{{ability.name}}" />
+                                    <div class="ability-details">
+                                        <div class="ability-name">{{ability.name}}</div>
+                                        <div class="ability-meta">
+                                            {{#if ability.system.activation}}{{ability.system.activation}}{{/if}}
+                                            {{#if ability.system.xpCost}} • XP: {{ability.system.xpCost}}{{/if}}
+                                        </div>
+                                    </div>
+                                    <a class="ability-edit" data-item-id="{{ability.id}}" title="{{localize 'l5r5e.global.edit'}}">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a class="ability-remove" data-slot-key="{{../slot.slotKey}}" data-ability-id="{{ability.id}}" title="{{localize 'l5r5e.global.remove'}}">
+                                        <i class="fas fa-trash"></i>
+                                    </a>
+                                </div>
+                            {{/each}}
+                        </div>
+                        <div class="drop-zone" data-drop-target="discipline-ability" data-slot-key="{{slot.slotKey}}">
+                            {{localize 'l5r5e.disciplines.drop_ability'}}
+                        </div>
+                    </div>
+
+                    <div class="discipline-techniques">
+                        <h4>{{localize 'l5r5e.disciplines.unlocked_techniques'}}</h4>
+                        <div class="techniques-list">
+                            {{#each slot.unlockedTechniques as |technique|}}
+                                <div class="technique-item">
+                                    <div class="technique-name">{{technique.name}}</div>
+                                    <div class="technique-rank">Rank {{technique.requiredRank}}</div>
+                                </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+            {{/if}}
+        {{/each}}
+
+        {{#if (lt disciplineSlots.length 5)}}
+            <div class="empty-discipline-slot card">
+                <div class="drop-zone" data-drop-target="discipline" data-slot-key="slot{{add disciplineSlots.length 1}}">
+                    <div class="drop-zone-content">
+                        <i class="fas fa-plus-circle"></i>
+                        <div>{{localize 'l5r5e.disciplines.add_discipline'}}</div>
+                        <div class="slot-count">{{disciplineSlots.length}}/5</div>
+                    </div>
+                </div>
+            </div>
+        {{/if}}
+    </div>
+</div>
