@@ -1,0 +1,40 @@
+{
+    "label": "Tables de Noms",
+    "entries": [
+        {
+            "id": "Ivory Kingdoms names",
+            "name": "Noms des Royaumes d’Ivoire",
+            "description": "La Voie des Vagues p.223-224"
+        },
+        {
+            "id": "Japanese names (Female)",
+            "name": "Noms Japonais (Féminin)",
+            "description": "Liste non officielle"
+        },
+        {
+            "id": "Japanese names (Male)",
+            "name": "Noms Japonais (Masculin)",
+            "description": "Liste non officielle"
+        },
+        {
+            "id": "Japanese names (Village)",
+            "name": "Noms Japonais (Village)",
+            "description": "Liste non officielle"
+        },
+        {
+            "id": "Qamarist names",
+            "name": "Noms Qamaristes",
+            "description": "La Voie des Vagues p.226"
+        },
+        {
+            "id": "Rokugani names",
+            "name": "Noms Rokugani",
+            "description": "La Voie des Vagues p.222"
+        },
+        {
+            "id": "Ujik names",
+            "name": "Noms Ujik",
+            "description": "La Voie des Vagues p.225"
+        }
+    ]
+}

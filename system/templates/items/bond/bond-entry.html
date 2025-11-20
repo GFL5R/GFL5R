@@ -1,0 +1,15 @@
+<li class="item bond flexcol" data-item-id="{{bond.id}}">
+    <ul class="item-header bond-controls">
+        <li class="item-img"><img src="{{bond.img}}" title="{{bond.name}}" width="32px" height="32px"/></li>
+        <li class="item-name l5r5e-tooltip" data-item-id="{{bond.id}}">{{bond.name}}</li>
+        {{#if editable}}
+            <li data-item-id="{{bond.id}}" class="item-control item-edit" title="{{localize 'l5r5e.global.edit'}}"><i class="fas fa-edit"></i></li>
+            <li data-item-id="{{bond.id}}" class="item-control item-delete" title="{{localize 'Delete'}}"><i class="fas fa-trash"></i></li>
+        {{/if}}
+    </ul>
+    {{#if bond.system.bond_type}}
+        <ul class="item-properties">
+            <li>{{bond.system.bond_type}} {{bond.system.rank}}</li>
+        </ul>
+    {{/if}}
+</li>

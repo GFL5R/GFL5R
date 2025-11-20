@@ -1,0 +1,584 @@
+{
+    "label": "Svantaggi (WIP)",
+    "mapping": {
+        "types": "system.types",
+        "description": "system.description",
+        "book_reference": "system.book_reference"
+    },
+    "entries": [
+        {
+            "id": "Benten’s Curse",
+            "name": "Maledizione di Benten",
+            "types": "Interpersonale, Spirituale",
+            "description": "",
+            "book_reference": "Manuale Base p.123"
+        },
+        {
+            "id": "Bishamon’s Curse",
+            "name": "Maledizione di Bishamon",
+            "types": "Fisica, Spirituale",
+            "description": "",
+            "book_reference": "Manuale Base p.123"
+        },
+        {
+            "id": "Bitter Betrothal",
+            "name": "Fidanzamento Infelice",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Manuale Base p.120"
+        },
+        {
+            "id": "Blackmailed by [Character’s Name]",
+            "name": "Ricattato da [Nome personaggio]",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Manuale Base p.126"
+        },
+        {
+            "id": "Blindness",
+            "name": "Cecità",
+            "types": "Fisica, Cicatrice",
+            "description": "",
+            "book_reference": "Manuale Base p.117"
+        },
+        {
+            "id": "Bluntness",
+            "name": "Schiettezza",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Manuale Base p.127"
+        },
+        {
+            "id": "Clumsiness",
+            "name": "Goffaggine",
+            "types": "Fisica",
+            "description": "",
+            "book_reference": "Manuale Base p.121"
+        },
+        {
+            "id": "Cognitive Lapses",
+            "name": "Vuoto Cognitivo",
+            "types": "Mentale, Cicatrice",
+            "description": "",
+            "book_reference": "Manuale Base p.130"
+        },
+        {
+            "id": "Daikoku’s Curse",
+            "name": "Maledizione di Daikoku",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Manuale Base p.123"
+        },
+        {
+            "id": "Damaged Heart or Organ",
+            "name": "Cuore o Altro Organo Danneggiato",
+            "types": "Fisica, Cicatrice",
+            "description": "",
+            "book_reference": "Manuale Base p.119"
+        },
+        {
+            "id": "Deafness",
+            "name": "Sordità",
+            "types": "Fisica, Cicatrice",
+            "description": "",
+            "book_reference": "Manuale Base p.128"
+        },
+        {
+            "id": "Discomfiting Countenance",
+            "name": "Aspetto Ripugnante",
+            "types": "Interpersonale, Fisica",
+            "description": "",
+            "book_reference": "Manuale Base p.117"
+        },
+        {
+            "id": "Disdain for Compassion",
+            "name": "Disdegno per la Compassione",
+            "types": "Difetto, Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.120"
+        },
+        {
+            "id": "Disdain for Courage",
+            "name": "Disdegno per il Coraggio",
+            "types": "Difetto, Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.120"
+        },
+        {
+            "id": "Disdain for Courtesy",
+            "name": "Disdegno per la Cortesia",
+            "types": "Difetto, Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.120"
+        },
+        {
+            "id": "Disdain for Duty and Loyalty",
+            "name": "Disdegno per il Dovere e la Lealtà",
+            "types": "Difetto, Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.120"
+        },
+        {
+            "id": "Disdain for Honor",
+            "name": "Disdegno per l'Onore",
+            "types": "Difetto, Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.120"
+        },
+        {
+            "id": "Disdain for Righteousness",
+            "name": "Disdegno per la Rettitudine",
+            "types": "Difetto, Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.120"
+        },
+        {
+            "id": "Disdain for Sincerity",
+            "name": "Disdegno per la Sincerità",
+            "types": "Difetto, Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.120"
+        },
+        {
+            "id": "Ebisu’s Curse",
+            "name": "Maledizione di Ebisu",
+            "types": "Fisica, Spirituale",
+            "description": "",
+            "book_reference": "Manuale Base p.124"
+        },
+        {
+            "id": "Fractured Spine",
+            "name": "Spina Dorsale Fratturata",
+            "types": "Fisica, Cicatrice",
+            "description": "",
+            "book_reference": "Manuale Base p.129"
+        },
+        {
+            "id": "Fukurokujin’s Curse",
+            "name": "Maledizione di Fukurokujin",
+            "types": "Mentale, Spirituale",
+            "description": "",
+            "book_reference": "Manuale Base p.124"
+        },
+        {
+            "id": "Gaijin Name, Culture, or Appearance",
+            "name": "Nome, Cultura, o Aspetto Gaijin",
+            "types": "Interpersonale (Nome), Mentale e Interpersonale (Cultura) o Fisica (Aspetto)",
+            "description": "",
+            "book_reference": "Manuale Base p.126"
+        },
+        {
+            "id": "Haunting",
+            "name": "Infestazione",
+            "types": "Interpersonale, Spirituale",
+            "description": "",
+            "book_reference": "Manuale Base p.121"
+        },
+        {
+            "id": "Incurable Illness",
+            "name": "Malattia Incurabile",
+            "types": "Fisica",
+            "description": "",
+            "book_reference": "Manuale Base p.122"
+        },
+        {
+            "id": "Jurōjin’s Curse",
+            "name": "Maledizione di Jurōjin",
+            "types": "Fisica, Spirituale",
+            "description": "",
+            "book_reference": "Manuale Base p.124"
+        },
+        {
+            "id": "Kisshōten’s Curse",
+            "name": "Maledizione di Kisshōten",
+            "types": "Fisica, Spirituale",
+            "description": "",
+            "book_reference": "Manuale Base p.124"
+        },
+        {
+            "id": "Lost Arm or Lost Hand",
+            "name": "Monco",
+            "types": "Fisica, Cicatrice",
+            "description": "",
+            "book_reference": "Manuale Base p.125"
+        },
+        {
+            "id": "Lost Eye",
+            "name": "Guercio",
+            "types": "Fisica, Cicatrice",
+            "description": "",
+            "book_reference": "Manuale Base p.121"
+        },
+        {
+            "id": "Lost Fingers",
+            "name": "Dita Mancanti",
+            "types": "Fisica, Cicatrice",
+            "description": "",
+            "book_reference": "Manuale Base p.120"
+        },
+        {
+            "id": "Lost Leg",
+            "name": "Senza Gamba",
+            "types": "Fisica, Cicatrice",
+            "description": "",
+            "book_reference": "Manuale Base p.130"
+        },
+        {
+            "id": "Lost Memories",
+            "name": "Ricordi Perduti",
+            "types": "Mentale, Cicatrice",
+            "description": "",
+            "book_reference": "Manuale Base p.127"
+        },
+        {
+            "id": "Maimed Arm",
+            "name": "Braccio Danneggiato",
+            "types": "Fisica, Cicatrice",
+            "description": "",
+            "book_reference": "Manuale Base p.117"
+        },
+        {
+            "id": "Maimed Visage",
+            "name": "Sfigurato",
+            "types": "Interpersonale, Fisica, Cicatrice",
+            "description": "",
+            "book_reference": "Manuale Base p.128"
+        },
+        {
+            "id": "Momoku",
+            "name": "Momoku",
+            "types": "Spirituale",
+            "description": "",
+            "book_reference": "Manuale Base p.125"
+        },
+        {
+            "id": "Muteness",
+            "name": "Mutismo",
+            "types": "Interpersonale, Fisica o Mentale, Cicatrice",
+            "description": "",
+            "book_reference": "Manuale Base p.125"
+        },
+        {
+            "id": "Nerve Damage",
+            "name": "Nervo Danneggiato",
+            "types": "Fisica, Cicatrice",
+            "description": "",
+            "book_reference": "Manuale Base p.126"
+        },
+        {
+            "id": "Scorn of [One Group]",
+            "name": "Disprezzato da [un gruppo]",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Manuale Base p.120"
+        },
+        {
+            "id": "Shadowlands Taint (Air)",
+            "name": "Contaminazione delle Terre dell'Ombra (Aria)",
+            "types": "Maledizione, Interpersonale, Spirituale",
+            "description": "",
+            "book_reference": "Manuale Base p.118"
+        },
+        {
+            "id": "Shadowlands Taint (Earth)",
+            "name": "Contaminazione delle Terre dell'Ombra (Terra)",
+            "types": "Maledizione, Fisica, Spirituale",
+            "description": "",
+            "book_reference": "Manuale Base p.119"
+        },
+        {
+            "id": "Shadowlands Taint (Fire)",
+            "name": "Contaminazione delle Terre dell'Ombra (Fuoco)",
+            "types": "Maledizione, Mentale, Spirituale",
+            "description": "",
+            "book_reference": "Manuale Base p.118"
+        },
+        {
+            "id": "Shadowlands Taint (Void)",
+            "name": "Contaminazione delle Terre dell'Ombra (Vuoto)",
+            "types": "Maledizione, Spirituale",
+            "description": "",
+            "book_reference": "Manuale Base p.119"
+        },
+        {
+            "id": "Shadowlands Taint (Water)",
+            "name": "Contaminazione delle Terre dell'Ombra (Acqua)",
+            "types": "Maledizione, Fisica, Spirituale",
+            "description": "",
+            "book_reference": "Manuale Base p.117"
+        },
+        {
+            "id": "Sworn Enemy",
+            "name": "Nemico Giurato",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Manuale Base p.126"
+        },
+        {
+            "id": "Whispers of Cruelty",
+            "name": "Sussurri di Crudeltà",
+            "types": "Infamia, Interpersonale",
+            "description": "",
+            "book_reference": "Manuale Base p.129"
+        },
+        {
+            "id": "Whispers of Doom",
+            "name": "Sussurri di Rovina",
+            "types": "Infamia, Interpersonale",
+            "description": "",
+            "book_reference": "Manuale Base p.130"
+        },
+        {
+            "id": "Whispers of Failure",
+            "name": "Sussurri di Fallimento",
+            "types": "Infamia, Interpersonale",
+            "description": "",
+            "book_reference": "Manuale Base p.129"
+        },
+        {
+            "id": "Whispers of Poverty",
+            "name": "Sussurri di Povertà",
+            "types": "Infamia, Interpersonale",
+            "description": "",
+            "book_reference": "Manuale Base p.130"
+        },
+        {
+            "id": "Whispers of Treachery",
+            "name": "Sussurri di Tradimento",
+            "types": "Infamia, Interpersonale",
+            "description": "",
+            "book_reference": "Manuale Base p.130"
+        },
+        {
+            "id": "Elemental Deficiency (Air)",
+            "name": "Elemental Deficiency (Air)",
+            "types": "Mentale, Fisica, Spirituale",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Elemental Deficiency (Earth)",
+            "name": "Elemental Deficiency (Earth)",
+            "types": "Mentale, Fisica, Spirituale",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Elemental Deficiency (Fire)",
+            "name": "Elemental Deficiency (Fire)",
+            "types": "Mentale, Fisica, Spirituale",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Elemental Deficiency (Water)",
+            "name": "Elemental Deficiency (Water)",
+            "types": "Mentale, Fisica, Spirituale",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Lackluster",
+            "name": "Lackluster",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Corti di Pietra p.102"
+        },
+        {
+            "id": "Overconfidence in Creativity",
+            "name": "Overconfidence in Creativity",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Corti di Pietra p.101"
+        },
+        {
+            "id": "Overconfidence in Spiritual Sensitivity",
+            "name": "Overconfidence in Spiritual Sensitivity",
+            "types": "Spirituale",
+            "description": "",
+            "book_reference": "Corti di Pietra p.101"
+        },
+        {
+            "id": "Overconfidence in Charm",
+            "name": "Overconfidence in Charm",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Corti di Pietra p.101"
+        },
+        {
+            "id": "Overconfidence in Subtlety",
+            "name": "Overconfidence in Subtlety",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Corti di Pietra p.101"
+        },
+        {
+            "id": "Overconfidence in Toughness",
+            "name": "Overconfidence in Toughness",
+            "types": "Fisica",
+            "description": "",
+            "book_reference": "Corti di Pietra p.101"
+        },
+        {
+            "id": "Unsavory Past",
+            "name": "Unsavory Past",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Corti di Pietra p.101"
+        },
+        {
+            "id": "Allergy",
+            "name": "Allergy",
+            "types": "Fisica",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.246"
+        },
+        {
+            "id": "Cursed Lineage",
+            "name": "Cursed Lineage",
+            "types": "Interpersonale, Spirituale",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.246"
+        },
+        {
+            "id": "Adopted Peasant",
+            "name": "Adopted Peasant",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.246"
+        },
+        {
+            "id": "Despise in [City]",
+            "name": "Despise in [City]",
+            "types": "Renommée, Interpersonale",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.247"
+        },
+        {
+            "id": "Hunted by Chikusho-Do",
+            "name": "Hunted by Chikusho-Do",
+            "types": "Spirituale",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.247"
+        },
+        {
+            "id": "Skepticism",
+            "name": "Skepticism",
+            "types": "Mentale, Spirituale",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.247"
+        },
+        {
+            "id": "Debt to [Person or Organization]",
+            "name": "Debt to [Person or Organization]",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.71"
+        },
+        {
+            "id": "Bullheaded",
+            "name": "Bullheaded",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.72"
+        },
+        {
+            "id": "Many Mouths",
+            "name": "Many Mouths",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.71"
+        },
+        {
+            "id": "Horrible Scar",
+            "name": "Horrible Scar",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.72"
+        },
+        {
+            "id": "Pursued by [Individual or Group]",
+            "name": "Pursued by [Individual or Group]",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.73"
+        },
+        {
+            "id": "Encompassing Duty",
+            "name": "Encompassing Duty",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.72"
+        },
+        {
+            "id": "Stained Lineage",
+            "name": "Stained Lineage",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.72"
+        },
+        {
+            "id": "Shadowlands Taint [One with the Darkness]",
+            "name": "Shadowlands Taint [One with the Darkness]",
+            "types": "Maledizione, Fisica, Spirituale",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.100"
+        },
+        {
+            "id": "Shadowlands Taint [Unnatural Skin]",
+            "name": "Shadowlands Taint [Unnatural Skin]",
+            "types": "Maledizione, Fisica",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.100"
+        },
+        {
+            "id": "Shadowlands Taint [Blasphemous Appetites]",
+            "name": "Shadowlands Taint [Blasphemous Appetites]",
+            "types": "Maledizione, Mentale, Spirituale",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.100"
+        },
+        {
+            "id": "Lost Name",
+            "name": "Lost Name",
+            "types": "Spirituale",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.97"
+        },
+        {
+            "id": "Demon Wound",
+            "name": "Demon Wound",
+            "types": "Cicatrice, Spirituale",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.97"
+        },
+        {
+            "id": "Shadowlands Taint [Kansen Whispers]",
+            "name": "Shadowlands Taint [Kansen Whispers]",
+            "types": "Maledizione, Mentale",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.99"
+        },
+        {
+            "id": "Shadowlands Taint [Distorted Limbs]",
+            "name": "Shadowlands Taint [Distorted Limbs]",
+            "types": "Maledizione, Fisica",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.99"
+        },
+        {
+            "id": "Sailor’s Tongue",
+            "name": "Lingua da Marinaio",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Il Clan della Mantide p.7"
+        },
+        {
+            "id": "Blood Feud",
+            "name": "Blood Feud (WIP)",
+            "types": "Interpersonale, Social",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        }
+    ]
+}

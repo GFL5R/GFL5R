@@ -1,0 +1,18 @@
+<ul class="identity-list">
+    {{!-- Npc Type (minion / adversary) --}}
+    <li>
+        <select class="attribute-dtype" name="system.type" {{^if data.editable_not_soft_locked}}disabled{{/if}}>
+            {{selectOptions data.types selected=data.system.type valueAttr='id' labelAttr='label'}}
+        </select>
+    </li>
+    {{!-- Martial --}}
+    <li>
+        <i class="i_bushi" title="{{localize 'l5r5e.social.npc.combat'}}"></i>
+        <input class="centered-input select-on-focus" type="number" name="system.conflict_rank.martial" value="{{data.system.conflict_rank.martial}}" data-dtype="Number" min="0" placeholder="0" {{^if data.editable_not_soft_locked}}disabled{{/if}}/>
+    </li>
+    {{!-- Social --}}
+    <li>
+        <i class="i_courtier" title="{{localize 'l5r5e.social.npc.intrigue'}}"></i>
+        <input class="centered-input select-on-focus" type="number" name="system.conflict_rank.social" value="{{data.system.conflict_rank.social}}" data-dtype="Number" min="0" placeholder="0" {{^if data.editable_not_soft_locked}}disabled{{/if}}/>
+    </li>
+</ul>

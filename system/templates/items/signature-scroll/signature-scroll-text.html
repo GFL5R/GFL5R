@@ -1,0 +1,23 @@
+<div class="{{cssClass}}" data-actor-id="{{actor._id}}" data-item-id="{{data._id}}">
+    <header class="card-header">
+        <h2 class="item-name"><img src="{{data.img}}" title="{{data.name}}" /> {{data.name}}</h2>
+    </header>
+    <section class="sheet-body">
+        <ul>
+            <li>
+                <strong>{{localize 'l5r5e.advancements.cost'}}</strong> : {{data.system.xp_cost}}
+            </li>
+            <li>
+                <strong>{{localize 'l5r5e.advancements.spent'}}</strong> : {{data.system.xp_used}}
+            </li>
+            <li>
+                <strong>{{localize 'l5r5e.sheets.rank'}}</strong> : {{data.system.rank}}
+            </li>
+            <li>
+                <strong>{{localize 'l5r5e.sheets.bought_at_rank'}}</strong> : {{data.system.bought_at_rank}}
+            </li>
+        </ul>
+        
+        {{> 'systems/l5r5e/templates/items/item/item-text-partial-reference.html'}}
+    </section>
+</div>

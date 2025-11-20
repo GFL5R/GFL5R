@@ -1,0 +1,66 @@
+<div class="header-fields warlord">
+    <fieldset>
+        <legend>{{#if data.editable_not_soft_locked}}{{^if data.system.warlord_actor_id}}<i class="fa fa-sign-in-alt" aria-hidden="true"></i> {{/if}}{{/if}}{{localize 'l5r5e.army.warlord'}}</legend>
+        <p class="warlord-name">
+            {{#if data.system.warlord_actor_id}}
+                <label>
+                    <a data-actor-id="{{data.system.warlord_actor_id}}" class="open-sheet-from-uuid">{{data.system.warlord}}</a>
+                    {{#if data.editable_not_soft_locked}}
+                    <span data-actor-id="{{actor.id}}" data-type="warlord" class="actor-remove-control pointer" title="{{localize 'Delete'}}"><i class="fas fa-trash"></i></span>
+                    {{/if}}
+                </label>
+            {{else}}
+                <input name="system.warlord" type="text" value="{{data.system.warlord}}" {{^if data.editable_not_soft_locked}}disabled{{/if}}/>
+            {{/if}}
+        </p>
+        <p>
+            <strong>{{localize 'l5r5e.army.allies_backers'}}</strong>
+            <textarea type="text" name="system.allies_backers" {{^if data.editable_not_soft_locked}}disabled{{/if}}>{{data.system.allies_backers}}</textarea>
+        </p>
+        <p>
+            <strong>{{localize 'l5r5e.army.purpose_mustering'}}</strong>
+            <textarea type="text" name="system.purpose_mustering" {{^if data.editable_not_soft_locked}}disabled{{/if}}>{{data.system.purpose_mustering}}</textarea>
+        </p>
+    </fieldset>
+</div>
+<div class="header-fields commander">
+    <fieldset>
+        <legend>{{#if data.editable_not_soft_locked}}{{^if data.system.commander_actor_id}}<i class="fa fa-sign-in-alt" aria-hidden="true"></i> {{/if}}{{/if}}{{localize 'l5r5e.army.commander'}}</legend>
+        <div class="warlord-name">
+            {{#if data.system.commander_actor_id}}
+                <label>
+                    <a data-actor-id="{{data.system.commander_actor_id}}" class="open-sheet-from-uuid">{{data.system.commander}}</a>
+                    {{#if data.editable_not_soft_locked}}
+                    <span data-actor-id="{{actor.id}}" data-type="commander" class="actor-remove-control pointer" title="{{localize 'Delete'}}"><i class="fas fa-trash"></i></span>
+                    {{/if}}
+                </label>
+            {{else}}
+                <input name="system.commander" type="text" value="{{data.system.commander}}" {{^if data.editable_not_soft_locked}}disabled{{/if}}/>
+            {{/if}}
+        </div>
+        <div class="standing">
+            <ul>
+                <li>
+                    <strong>{{localize 'l5r5e.social.honor'}}</strong>
+                    <input name="system.commander_standing.honor" type="number" value="{{data.system.commander_standing.honor}}" {{^if data.editable_not_soft_locked}}disabled{{/if}}/>
+                </li>
+                <li>
+                    <strong>{{localize 'l5r5e.social.glory'}}</strong>
+                    <input name="system.commander_standing.glory" type="number" value="{{data.system.commander_standing.glory}}" {{^if data.editable_not_soft_locked}}disabled{{/if}}/>
+                </li>
+                <li>
+                    <strong>{{localize 'l5r5e.social.status'}}</strong>
+                    <input name="system.commander_standing.status" type="number" value="{{data.system.commander_standing.status}}" {{^if data.editable_not_soft_locked}}disabled{{/if}}/>
+                </li>
+            </ul>
+        </div>
+        <label>
+            <strong>{{localize 'l5r5e.army.commander_abilities'}}</strong>
+            <textarea type="text" name="system.commander_abilities" {{^if data.editable_not_soft_locked}}disabled{{/if}}>{{data.system.commander_abilities}}</textarea>
+        </label>
+    </fieldset>
+    <fieldset class="army-abilities">
+        <legend>{{localize 'l5r5e.army.army_abilities'}}</legend>
+        {{editor data.enrichedHtml.army_abilities target="system.army_abilities" button=true editable=options.editable engine="prosemirror" collaborate=false}}
+    </fieldset>
+</div>

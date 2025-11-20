@@ -1,0 +1,6 @@
+<div class="flexrow l5r5e {{type}}-filter number-filter">
+    <label>{{localize (localize 'l5r5e.compendium.filter.{type}' type=type)}}:</label>
+{{#each number}}
+<a data-{{../type}}="{{.}}" data-tooltip="{{localize (localize 'l5r5e.compendium.filter.{type}' type=../type)}} {{.}}">{{.}}</a>
+{{/each}}
+</div>

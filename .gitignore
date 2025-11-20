@@ -1,0 +1,15 @@
+# Node
+node_modules
+
+# IDE
+.idea
+.vscode
+
+# lint
+.eslintcache
+
+# Foundry Lock files
+system/l5r5e.lock
+
+# v11 db files (will be added later)
+system/packs/*/**

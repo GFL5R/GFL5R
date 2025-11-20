@@ -1,0 +1,297 @@
+{
+    "label": "Passioni (WIP)",
+    "mapping": {
+        "types": "system.types",
+        "description": "system.description",
+        "book_reference": "system.book_reference"
+    },
+    "entries": [
+        {
+            "id": "Animal Bond",
+            "name": "Legame con gli Animali",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.113"
+        },
+        {
+            "id": "Armament",
+            "name": "Armamenti",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.111"
+        },
+        {
+            "id": "Brushwork",
+            "name": "Arte del Pennello",
+            "types": "Mentale, Fisica",
+            "description": "",
+            "book_reference": "Manuale Base p.111"
+        },
+        {
+            "id": "Curiosity",
+            "name": "Curiosità",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.111"
+        },
+        {
+            "id": "Daredevil",
+            "name": "Spericolato",
+            "types": "Mentale, Fisica",
+            "description": "",
+            "book_reference": "Manuale Base p.115"
+        },
+        {
+            "id": "Enlightenment",
+            "name": "Illuminazione",
+            "types": "Spirituale",
+            "description": "",
+            "book_reference": "Manuale Base p.113"
+        },
+        {
+            "id": "Fashion",
+            "name": "Tendenza",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.116"
+        },
+        {
+            "id": "Fortune-Telling",
+            "name": "Predire il Futuro",
+            "types": "Mentale, Spirituale",
+            "description": "",
+            "book_reference": "Manuale Base p.114"
+        },
+        {
+            "id": "Generosity",
+            "name": "Generosità",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Manuale Base p.112"
+        },
+        {
+            "id": "Gossip",
+            "name": "Pettegolezzi",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Manuale Base p.113"
+        },
+        {
+            "id": "History",
+            "name": "Storia",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.115"
+        },
+        {
+            "id": "Ikebana",
+            "name": "Ikebana",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.112"
+        },
+        {
+            "id": "Playfulness",
+            "name": "Giocosità",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Manuale Base p.112"
+        },
+        {
+            "id": "Provocation",
+            "name": "Provocazione",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Manuale Base p.114"
+        },
+        {
+            "id": "Sake",
+            "name": "Sake",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.115"
+        },
+        {
+            "id": "Secrets",
+            "name": "Segreti",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.115"
+        },
+        {
+            "id": "Stories",
+            "name": "Racconti",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.114"
+        },
+        {
+            "id": "Tea",
+            "name": "Tè",
+            "types": "Fisica, Spirituale",
+            "description": "",
+            "book_reference": "Manuale Base p.115"
+        },
+        {
+            "id": "Travel",
+            "name": "Viaggio",
+            "types": "Mentale, Fisica",
+            "description": "",
+            "book_reference": "Manuale Base p.116"
+        },
+        {
+            "id": "Wordplay",
+            "name": "Giochi di Parole",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.112"
+        },
+        {
+            "id": "Bathing",
+            "name": "Bathing",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Kyudo",
+            "name": "Kyudo",
+            "types": "Mentale, Fisica",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Kabuki",
+            "name": "Kabuki",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Festivals",
+            "name": "Festivals",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Religious Study",
+            "name": "Religious Study",
+            "types": "Mentale, Spirituale",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Local Flare for {Region}",
+            "name": "Local Flare for {Region}",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Corti di Pietra p.100"
+        },
+        {
+            "id": "Decorum",
+            "name": "Decorum",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Corti di Pietra p.100"
+        },
+        {
+            "id": "Pot Stirrer",
+            "name": "Pot Stirrer",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Corti di Pietra p.101"
+        },
+        {
+            "id": "City [Choose One]",
+            "name": "City [Choose One]",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.244"
+        },
+        {
+            "id": "Bonsai",
+            "name": "Bonsai",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.244"
+        },
+        {
+            "id": "Gourmet",
+            "name": "Gourmet",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.244"
+        },
+        {
+            "id": "Rock Gardening",
+            "name": "Rock Gardening",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.245"
+        },
+        {
+            "id": "Military History",
+            "name": "Military History",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.245"
+        },
+        {
+            "id": "Navigator",
+            "name": "Navigator",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.245"
+        },
+        {
+            "id": "Researcher",
+            "name": "Researcher",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.245"
+        },
+        {
+            "id": "Honest Work",
+            "name": "Honest Work",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.71"
+        },
+        {
+            "id": "Attention",
+            "name": "Attention",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.70"
+        },
+        {
+            "id": "Creatures",
+            "name": "Creatures",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.97"
+        },
+        {
+            "id": "KnotWork",
+            "name": "Arte del Nodo",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Il Clan della Mantide p.7"
+        },
+        {
+            "id": "Ancestry",
+            "name": "Ancestry",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Glorious Deeds",
+            "name": "Glorious Deeds",
+            "types": "Martial, Social",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        }
+    ]
+}

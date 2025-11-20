@@ -1,0 +1,424 @@
+{
+    "label": "Passions",
+    "mapping": {
+        "types": "system.types",
+        "description": "system.description",
+        "source_reference": "system.source_reference"
+    },
+    "entries": [
+        {
+            "id": "Animal Bond",
+            "name": "Animaux",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "111"
+            }
+        },
+        {
+            "id": "Armament",
+            "name": "Armement",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "111"
+            }
+        },
+        {
+            "id": "Brushwork",
+            "name": "Pinceau",
+            "types": "Mental, Physique",
+            "description": "",
+            "source_reference": {
+                "page": "114"
+            }
+        },
+        {
+            "id": "Curiosity",
+            "name": "Curiosité",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "112"
+            }
+        },
+        {
+            "id": "Daredevil",
+            "name": "Casse-cou",
+            "types": "Mental, Physique",
+            "description": "",
+            "source_reference": {
+                "page": "111"
+            }
+        },
+        {
+            "id": "Enlightenment",
+            "name": "Illumination",
+            "types": "Spirituel",
+            "description": "",
+            "source_reference": {
+                "page": "113"
+            }
+        },
+        {
+            "id": "Fashion",
+            "name": "Mode",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "113"
+            }
+        },
+        {
+            "id": "Fortune-Telling",
+            "name": "Voyance",
+            "types": "Mental, Spirituel",
+            "description": "",
+            "source_reference": {
+                "page": "116"
+            }
+        },
+        {
+            "id": "Generosity",
+            "name": "Générosité",
+            "types": "Relations",
+            "description": "",
+            "source_reference": {
+                "page": "112"
+            }
+        },
+        {
+            "id": "Gossip",
+            "name": "Commérages",
+            "types": "Relations",
+            "description": "",
+            "source_reference": {
+                "page": "111"
+            }
+        },
+        {
+            "id": "History",
+            "name": "Histoire",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "112"
+            }
+        },
+        {
+            "id": "Ikebana",
+            "name": "Ikebana",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "113"
+            }
+        },
+        {
+            "id": "Playfulness",
+            "name": "Plaisanteries",
+            "types": "Relations",
+            "description": "",
+            "source_reference": {
+                "page": "114"
+            }
+        },
+        {
+            "id": "Provocation",
+            "name": "Provocation",
+            "types": "Relations",
+            "description": "",
+            "source_reference": {
+                "page": "114"
+            }
+        },
+        {
+            "id": "Sake",
+            "name": "Saké",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "115"
+            }
+        },
+        {
+            "id": "Secrets",
+            "name": "Secrets",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "115"
+            }
+        },
+        {
+            "id": "Stories",
+            "name": "Contes",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "112"
+            }
+        },
+        {
+            "id": "Tea",
+            "name": "Thé",
+            "types": "Physique, Spirituel",
+            "description": "",
+            "source_reference": {
+                "page": "115"
+            }
+        },
+        {
+            "id": "Travel",
+            "name": "Voyages",
+            "types": "Mental, Physique",
+            "description": "",
+            "source_reference": {
+                "page": "115"
+            }
+        },
+        {
+            "id": "Wordplay",
+            "name": "Jeux de mots",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "113"
+            }
+        },
+        {
+            "id": "Bathing",
+            "name": "Bains",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "90"
+            }
+        },
+        {
+            "id": "Kyudo",
+            "name": "Kyūdo",
+            "types": "Mental, Physique",
+            "description": "",
+            "source_reference": {
+                "page": "91"
+            }
+        },
+        {
+            "id": "Kabuki",
+            "name": "Kabuki",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "90"
+            }
+        },
+        {
+            "id": "Festivals",
+            "name": "Festivals",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "90"
+            }
+        },
+        {
+            "id": "Religious Study",
+            "name": "Culture religieuse",
+            "types": "Mental, Spirituel",
+            "description": "",
+            "source_reference": {
+                "page": "90"
+            }
+        },
+        {
+            "id": "Local Flare for {Region}",
+            "name": "Engouement pour [une région]",
+            "types": "Relations",
+            "description": "",
+            "source_reference": {
+                "page": "100"
+            }
+        },
+        {
+            "id": "Decorum",
+            "name": "Décorum",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "100"
+            }
+        },
+        {
+            "id": "Pot Stirrer",
+            "name": "Fauteur de trouble",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "101"
+            }
+        },
+        {
+            "id": "City [Choose One]",
+            "name": "Cité [au choix]",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "244"
+            }
+        },
+        {
+            "id": "Bonsai",
+            "name": "Bonsai",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "244"
+            }
+        },
+        {
+            "id": "Gourmet",
+            "name": "Gourmet",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "244"
+            }
+        },
+        {
+            "id": "Rock Gardening",
+            "name": "Jardins de rocaille",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "245"
+            }
+        },
+        {
+            "id": "Military History",
+            "name": "Histoire militaire",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "245"
+            }
+        },
+        {
+            "id": "Navigator",
+            "name": "Navigateur",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "245"
+            }
+        },
+        {
+            "id": "Researcher",
+            "name": "Chercheur",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "245"
+            }
+        },
+        {
+            "id": "Honest Work",
+            "name": "Travail honnête",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "71"
+            }
+        },
+        {
+            "id": "Attention",
+            "name": "Centre de l’attention",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "70"
+            }
+        },
+        {
+            "id": "Creatures",
+            "name": "Créatures",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "97"
+            }
+        },
+        {
+            "id": "KnotWork",
+            "name": "Noeuds",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "7"
+            }
+        },
+        {
+            "id": "Ancestry",
+            "name": "Généalogie",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "83"
+            }
+        },
+        {
+            "id": "Glorious Deeds",
+            "name": "Exploits",
+            "types": "Martial, Social",
+            "description": "",
+            "source_reference": {
+                "page": "83"
+            }
+        },
+        {
+            "id": "Charity",
+            "name": "Charité",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "103"
+            }
+        },
+        {
+            "id": "Kintsugi",
+            "name": "Kintsugi",
+            "types": "Mental, Physique",
+            "description": "",
+            "source_reference": {
+                "page": "104"
+            }
+        },
+        {
+            "id": "Horse Racing",
+            "name": "Horse Racing (WIP)",
+            "types": "Physique",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Hot Pot",
+            "name": "Hot Pot (WIP)",
+            "types": "Relations, Physique",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Stargazing",
+            "name": "Stargazing (WIP)",
+            "types": "Mental, Spirituel",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+<tr class="flexrow row advancement">
+    <td class="name l5r5e-tooltip" data-item-id="{{advancement._id}}" {{#if parent_id}}data-item-parent-id="{{parent_id}}"{{/if}} name="advancement.name"><img src="{{advancement.img}}" title="{{advancement.name}}"> {{advancement.name}}{{#if advancement.system.bond_type}} ({{advancement.system.bond_type}}){{/if}}</td>
+    {{#if show_curriculum_toggle}}<td class="curriculum" name="curriculum">{{#if advancement.system.in_curriculum}}<i class="fas fa-graduation-cap"></i> {{/if}}</td>{{/if}}
+    <td class="xp" name="advancement.xp">{{#if advancement.system.xp_used_total}}{{advancement.system.xp_used_total}}{{else}}{{advancement.system.xp_used}}{{/if}}</td>
+    <td class="rank" name="advancement.rank">{{advancement.system.rank}}</td>
+    {{#if editable}}
+    <td class="actions">
+        <ul>
+            {{#if show_curriculum_toggle}}<li data-item-id="{{advancement._id}}" class="item-control item-curriculum" title="{{localize 'l5r5e.advancements.curriculum'}}"><i class="fas fa-graduation-cap"></i></li>{{/if}}
+            <li data-item-id="{{advancement._id}}" class="item-control item-edit" title="{{localize 'l5r5e.global.edit'}}"><i class="fas fa-edit"></i></li>
+            <li data-item-id="{{advancement._id}}" class="item-control item-delete" title="{{localize 'Delete'}}"><i class="fas fa-trash"></i></li>
+        </ul>
+    </td>
+    {{/if}}
+</tr>

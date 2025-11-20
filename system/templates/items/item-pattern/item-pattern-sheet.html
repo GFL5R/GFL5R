@@ -1,0 +1,48 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img class="profile-img" src="{{data.img}}" data-edit="img" title="{{data.name}}"/>
+        <h1 class="charname"><input name="name" type="text" value="{{data.name}}" placeholder="Name"/></h1>
+    </header>
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        {{!-- Attributes Tab --}}
+        <article class="attributes item-list" data-group="primary" data-tab="attributes">
+            <label class="attribute">
+                {{localize 'l5r5e.advancements.rarity_modifier'}}
+                <input class="select-on-focus" type="number" name="system.rarity_modifier" value="{{data.system.rarity_modifier}}" data-dtype="Number" min="0" placeholder="0"/>
+            </label>
+            <label class="attribute">
+                {{localize 'l5r5e.advancements.cost'}}
+                <input class="select-on-focus" type="number" name="system.xp_cost" value="{{data.system.xp_cost}}" data-dtype="Number" min="0" placeholder="0"/>
+            </label>
+            <label class="attribute">
+                {{localize 'l5r5e.advancements.spent'}}
+                <input class="select-on-focus" type="number" name="system.xp_used" value="{{data.system.xp_used}}" data-dtype="Number" min="0" placeholder="0"/>
+            </label>
+            <label class="attribute">
+                {{localize 'l5r5e.sheets.rank'}}
+                <input class="select-on-focus" type="number" name="system.rank" value="{{data.system.rank}}" data-dtype="Number" min="0" placeholder="0"/>
+            </label>
+            <label class="attribute">
+                {{localize 'l5r5e.sheets.bought_at_rank'}}
+                <input class="select-on-focus" type="number" name="system.bought_at_rank" value="{{data.system.bought_at_rank}}" data-dtype="Number" min="0" placeholder="0"/>
+            </label>
+            <label class="attribute item">
+                {{localize 'l5r5e.sheets.linked_property'}}
+                {{#if data.linkedProperty}}
+                <ul class="item-properties">
+                    <li>
+                        {{{data.linkedProperty.name}}}
+                        {{#if options.editable}}
+                            <span data-item-id="{{data.linkedProperty.id}}" class="item-control linked-property-delete" title="{{localize 'Delete'}}"> <i class="fas fa-trash"></i></span>
+                        {{/if}}
+                    </li>
+                </ul>
+                {{else}}
+                    -
+                {{/if}}
+            </label>
+        </article>
+        {{> 'systems/l5r5e/templates/items/item/item-infos.html'}}
+    </section>
+</form>

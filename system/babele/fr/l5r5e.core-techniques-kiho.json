@@ -1,0 +1,313 @@
+{
+    "label": "Techniques Kihõ",
+    "mapping": {
+        "description": "system.description",
+        "source_reference": "system.source_reference"
+    },
+    "entries": [
+        {
+            "id": "Cleansing Spirit",
+            "name": "Esprit purificateur",
+            "description": "",
+            "source_reference": {
+                "page": "182"
+            }
+        },
+        {
+            "id": "Grasp the Earth Dragon",
+            "name": "Etreindre le Dragon de la Terre",
+            "description": "",
+            "source_reference": {
+                "page": "182"
+            }
+        },
+        {
+            "id": "Earth Needs No Eyes",
+            "name": "La Terre voit sans yeux",
+            "description": "",
+            "source_reference": {
+                "page": "183"
+            }
+        },
+        {
+            "id": "Way of the Earthquake",
+            "name": "La voie du séisme",
+            "description": "",
+            "source_reference": {
+                "page": "183"
+            }
+        },
+        {
+            "id": "Earthen Fist",
+            "name": "Poing de terre",
+            "description": "",
+            "source_reference": {
+                "page": "183"
+            }
+        },
+        {
+            "id": "Riding the Clouds",
+            "name": "Chevaucher les nuages",
+            "description": "",
+            "source_reference": {
+                "page": "183"
+            }
+        },
+        {
+            "id": "Way of the Willow",
+            "name": "La voie du saule",
+            "description": "",
+            "source_reference": {
+                "page": "184"
+            }
+        },
+        {
+            "id": "Air Fist",
+            "name": "Poing de vent",
+            "description": "",
+            "source_reference": {
+                "page": "184"
+            }
+        },
+        {
+            "id": "The Great Silence",
+            "name": "Silence absolu",
+            "description": "",
+            "source_reference": {
+                "page": "184"
+            }
+        },
+        {
+            "id": "Channel the Fire Dragon",
+            "name": "Dompter le Dragon du Feu",
+            "description": "",
+            "source_reference": {
+                "page": "184"
+            }
+        },
+        {
+            "id": "Breaking Blow",
+            "name": "Ki destructeur",
+            "description": "",
+            "source_reference": {
+                "page": "184"
+            }
+        },
+        {
+            "id": "Way of the Falling Star",
+            "name": "La voie de l’étoile filante",
+            "description": "",
+            "source_reference": {
+                "page": "185"
+            }
+        },
+        {
+            "id": "The Body Is an Anvil",
+            "name": "Le corps est une enclume",
+            "description": "",
+            "source_reference": {
+                "page": "186"
+            }
+        },
+        {
+            "id": "Flame Fist",
+            "name": "Poing de flamme",
+            "description": "",
+            "source_reference": {
+                "page": "186"
+            }
+        },
+        {
+            "id": "Ride the Water Dragon",
+            "name": "Chevaucher le Dragon de l’Eau",
+            "description": "",
+            "source_reference": {
+                "page": "186"
+            }
+        },
+        {
+            "id": "Freezing the Lifeblood",
+            "name": "Gel de l’énergie vitale",
+            "description": "",
+            "source_reference": {
+                "page": "186"
+            }
+        },
+        {
+            "id": "Ki Protection",
+            "name": "Ki protecteur",
+            "description": "",
+            "source_reference": {
+                "page": "187"
+            }
+        },
+        {
+            "id": "Way of the Seafoam",
+            "name": "La voie de l’écume",
+            "description": "",
+            "source_reference": {
+                "page": "187"
+            }
+        },
+        {
+            "id": "Water Fist",
+            "name": "Poing d’eau",
+            "description": "",
+            "source_reference": {
+                "page": "187"
+            }
+        },
+        {
+            "id": "Death Touch",
+            "name": "Caresse de la mort",
+            "description": "",
+            "source_reference": {
+                "page": "188"
+            }
+        },
+        {
+            "id": "Touch the Void Dragon",
+            "name": "Effleurer le Dragon du Vide",
+            "description": "",
+            "source_reference": {
+                "page": "188"
+            }
+        },
+        {
+            "id": "Still the Elements",
+            "name": "Figer les éléments",
+            "description": "",
+            "source_reference": {
+                "page": "188"
+            }
+        },
+        {
+            "id": "Way of the Edgeless Sword",
+            "name": "La voie du sabre sans tranchant",
+            "description": "",
+            "source_reference": {
+                "page": "188"
+            }
+        },
+        {
+            "id": "Mercy of the Stone Fortune",
+            "name": "Pitié de la fortune de la pierre",
+            "description": "",
+            "source_reference": {
+                "page": "109"
+            }
+        },
+        {
+            "id": "Rejuvenating Breath",
+            "name": "Souffle revigorant",
+            "description": "",
+            "source_reference": {
+                "page": "109"
+            }
+        },
+        {
+            "id": "Shadow of Ancient Peaks",
+            "name": "A l’ombre des pics antiques",
+            "description": "",
+            "source_reference": {
+                "page": "109"
+            }
+        },
+        {
+            "id": "Cutting Wind Talons",
+            "name": "Serres du vent tranchant",
+            "description": "",
+            "source_reference": {
+                "page": "110"
+            }
+        },
+        {
+            "id": "Grace of the Gentle Breeze",
+            "name": "Grâce de la douce brise",
+            "description": "",
+            "source_reference": {
+                "page": "109"
+            }
+        },
+        {
+            "id": "Step of the Storm",
+            "name": "Bond de la tempête",
+            "description": "",
+            "source_reference": {
+                "page": "110"
+            }
+        },
+        {
+            "id": "Blistering Retribution",
+            "name": "Rétribution foudroyante",
+            "description": "",
+            "source_reference": {
+                "page": "111"
+            }
+        },
+        {
+            "id": "Dance of Fire",
+            "name": "Danse du Feu",
+            "description": "",
+            "source_reference": {
+                "page": "110"
+            }
+        },
+        {
+            "id": "Volcanic Fist",
+            "name": "Poing volcanique",
+            "description": "",
+            "source_reference": {
+                "page": "110"
+            }
+        },
+        {
+            "id": "Fist of Spreading Venom",
+            "name": "Poing propagateur de poison",
+            "description": "",
+            "source_reference": {
+                "page": "112"
+            }
+        },
+        {
+            "id": "River’s Flowing Stride",
+            "name": "Allure du cours d’eau",
+            "description": "",
+            "source_reference": {
+                "page": "112"
+            }
+        },
+        {
+            "id": "Seeping Ki",
+            "name": "Ruissellement de ki",
+            "description": "",
+            "source_reference": {
+                "page": "112"
+            }
+        },
+        {
+            "id": "Aura Awareness",
+            "name": "Perception des auras",
+            "description": "",
+            "source_reference": {
+                "page": "113"
+            }
+        },
+        {
+            "id": "Essence of Stillness",
+            "name": "Essence de l’immobilité",
+            "description": "",
+            "source_reference": {
+                "page": "113"
+            }
+        },
+        {
+            "id": "Eternal Mind’s Gate",
+            "name": "Portail de l’esprit éternel",
+            "description": "",
+            "source_reference": {
+                "page": "113"
+            }
+        }
+    ]
+}

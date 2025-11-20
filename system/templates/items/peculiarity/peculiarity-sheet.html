@@ -1,0 +1,39 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img class="profile-img" src="{{data.img}}" data-edit="img" title="{{data.name}}" />
+        <h1 class="charname"><input name="name" type="text" value="{{data.name}}" placeholder="Name" /></h1>
+    </header>
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        {{!-- Attributes Tab --}}
+        <article class="attributes" data-group="primary" data-tab="attributes">
+            <select name="system.ring">
+                {{selectOptions data.ringsList selected=data.system.ring valueAttr='id' labelAttr='label'}}
+            </select>
+            <select class="attribute" name="system.peculiarity_type">
+                {{selectOptions data.subTypesList selected=data.system.peculiarity_type valueAttr='id' labelAttr='label'}}
+            </select>
+            <label class="cursus attribute-value checkbox">
+                <input type="checkbox" name="system.in_curriculum" {{checked data.system.in_curriculum}} />
+                {{localize 'l5r5e.advancements.curriculum'}}
+            </label>
+            <label class="attribute">
+                {{localize 'l5r5e.advancements.spent'}}
+                <input class="select-on-focus" type="number" name="system.xp_used" value="{{data.system.xp_used}}" data-dtype="Number" min="0" placeholder="0" />
+            </label>
+            <label class="attribute">
+                {{localize 'l5r5e.sheets.rank' }}
+                <input class="select-on-focus" type="number" name="system.rank" value="{{data.system.rank}}" data-dtype="Number" min="0" placeholder="0" />
+            </label>
+            <label class="attribute">
+                {{localize 'l5r5e.sheets.bought_at_rank'}}
+                <input class="select-on-focus" type="number" name="system.bought_at_rank" value="{{data.system.bought_at_rank}}" data-dtype="Number" min="0" placeholder="0" />
+            </label>
+            <label class="attribute full">
+                {{localize 'l5r5e.sheets.types' }}
+                <input type="text" name="system.types" value="{{data.system.types}}" />
+            </label>
+        </article>
+        {{> 'systems/l5r5e/templates/items/item/item-infos.html'}}
+    </section>
+</form>

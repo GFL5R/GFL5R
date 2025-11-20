@@ -1,0 +1,48 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img class="profile-img" src="{{data.img}}" data-edit="img" title="{{data.name}}"/>
+        <h1 class="charname"><input name="name" type="text" value="{{data.name}}" placeholder="Name"/></h1>
+    </header>
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        {{!-- Attributes Tab --}}
+        <article class="attributes" data-group="primary" data-tab="attributes">
+            <select name="system.ring">
+                {{selectOptions data.ringsList selected=data.system.ring valueAttr='id' labelAttr='label'}}
+            </select>
+            <select name="system.technique_type">
+                {{selectOptions data.techniquesList selected=data.system.technique_type valueAttr='id' labelAttr='label'}}
+            </select>
+            <label class="cursus attribute-value checkbox">
+                <input type="checkbox" name="system.in_curriculum" {{checked data.system.in_curriculum}} />
+                {{localize 'l5r5e.advancements.curriculum'}}
+            </label>
+            <label class="attribute">
+                {{localize 'l5r5e.advancements.cost'}}
+                <input class="select-on-focus" type="number" name="system.xp_cost" value="{{data.system.xp_cost}}" data-dtype="Number" min="0" placeholder="0"/>
+            </label>
+            <label class="attribute">
+                {{localize 'l5r5e.advancements.spent'}}
+                <input class="select-on-focus" type="number" name="system.xp_used" value="{{data.system.xp_used}}" data-dtype="Number" min="0" placeholder="0"/>
+            </label>
+            <label class="attribute">
+                {{localize 'l5r5e.sheets.rank'}}
+                <input class="select-on-focus" type="number" name="system.rank" value="{{data.system.rank}}" data-dtype="Number" min="0" placeholder="0"/>
+            </label>
+            <label class="attribute">
+                {{localize 'l5r5e.sheets.bought_at_rank'}}
+                <input class="select-on-focus" type="number" name="system.bought_at_rank" value="{{data.system.bought_at_rank}}" data-dtype="Number" min="0" placeholder="0"/>
+            </label>
+
+            <label class="attribute">
+                {{localize 'l5r5e.skills.title'}}
+                <input class="select-on-focus" type="text" name="system.skill" value="{{data.system.skill}}" data-dtype="String"/>
+            </label>
+            <label class="attribute">
+                {{localize 'l5r5e.dice.dicepicker.difficulty_title'}}
+                <input class="select-on-focus" type="text" name="system.difficulty" value="{{data.system.difficulty}}" data-dtype="String"/>
+            </label>
+        </article>
+        {{> 'systems/l5r5e/templates/items/item/item-infos.html'}}
+    </section>
+</form>

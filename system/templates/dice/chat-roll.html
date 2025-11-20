@@ -1,0 +1,144 @@
+<div class="l5r5e chat dice-roll">
+    {{#if isPublicRoll}}
+
+    {{#if l5r5e.stance}}
+    <div class="l5r5e profil">
+        <header class="part-header flexrow chat-profil">
+            <span class="chat-profil-element">
+                <img class="profile-img" src="{{profileImg}}" data-edit="img" alt="{{#if l5r5e.actor.name}}{{l5r5e.actor.name}}{{else}}mystery-man{{/if}}" />
+            </span>
+
+            <span class="chat-profil-element">
+                <i class="chat-profil-stance {{l5r5e.stance}} i_{{l5r5e.stance}}" title="{{localizeRing l5r5e.stance}}"></i>
+            </span>
+
+            <span class="chat-profil-element-skill">
+                {{#if l5r5e.skillId}}
+                    {{localizeSkillId l5r5e.skillId}}
+                {{else}}
+                    {{#if l5r5e.skillCatId}}{{localizeSkill l5r5e.skillCatId 'title'}}{{/if}}
+                {{/if}}
+            </span>
+
+            <span class="chat-profil-element">
+                {{#if l5r5e.difficultyHidden}}
+                    <span class="player-only" title="{{localize 'l5r5e.dice.dicepicker.difficulty_hidden_label'}}">{{localize 'l5r5e.dice.chat.difficulty'}} {{localize 'l5r5e.dice.chat.difficulty_hidden'}}</span>
+                {{/if}}
+                <span class="{{#if l5r5e.difficultyHidden}}gm-only{{/if}}">{{localize 'l5r5e.dice.chat.difficulty'}} {{l5r5e.difficulty}} {{#if l5r5e.difficultyHidden}}<i class="fas fa-eye-slash" title="{{localize 'l5r5e.dice.dicepicker.difficulty_hidden_label'}}"></i>{{/if}}</span>
+                <br>
+                {{#if l5r5e.voidPointUsed}}
+                    <i class="i_void" title="{{localize 'l5r5e.dice.chat.void_point_used'}}"></i>
+                {{/if}}
+                {{#if l5r5e.skillAssistance}}
+                    <i class="i_skill" title="{{l5r5e.skillAssistance}}x {{localize 'l5r5e.dice.chat.assistance_used'}}"></i>
+                {{/if}}
+            </span>
+        </header>
+    </div>
+    {{/if}}
+
+    {{#if l5r5e.target.uuid}}
+    <div class="l5r5e target {{#if noTargetDisclosure}}gm-only{{/if}}">
+        <div class="profile"><img class="profile-img" src="{{l5r5e.target.texture.src}}" alt="{{l5r5e.target.name}}" /></div>
+        <div class="name"> &nbsp; @UUID[{{l5r5e.target.actor.uuid}}]&#123;{{l5r5e.target.name}}&#125;</div>
+    </div>
+    {{#if noTargetDisclosure}}
+        <div class="l5r5e target player-only">
+            <div class="profile"><img class="profile-img" src="icons/svg/mystery-man.svg" alt="{{localize 'l5r5e.dice.chat.unknown_target'}}" /></div>
+            <div class="name"> &nbsp; {{localize 'l5r5e.dice.chat.unknown_target'}}</div>
+        </div>
+    {{/if}}
+    {{/if}}
+
+    {{#if l5r5e.item.uuid}}
+    <div class="l5r5e item-infos">
+        <div class="profile"><img class="profile-img" src="{{l5r5e.item.img}}" alt="{{l5r5e.item.name}}" /></div>
+        <div class="name">
+         @UUID[{{l5r5e.item.uuid}}]
+         {{#ifCond l5r5e.item.type '==' 'weapon'}}
+            <p>
+            <i class="fas fa-arrows-alt-h" title="{{localize 'l5r5e.weapons.range'}}"> {{l5r5e.item.system.range}}</i>
+            / <i class="fas fa-tint" title="{{localize 'l5r5e.weapons.damage'}}"> {{l5r5e.item.system.damage}}</i>
+            / <i class="fas fa-skull" title="{{localize 'l5r5e.weapons.deadliness'}}"> {{l5r5e.item.system.deadliness}}</i>
+            </p>
+         {{/ifCond}}
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="l5r5e dice-formula">{{#if l5r5e.initialFormula}}{{l5r5e.initialFormula}}{{else}}{{formula}}{{/if}}</div>
+
+    <div class="l5r5e dice-result">
+        {{#if l5r5e.dicesTypes.l5r}}
+        <div class="l5r5e item-display dices-l5r">
+            <div class="l5r5e dice-container">
+            {{!-- Dices list --}}
+            {{#each l5r5e.dices}}
+                {{#if this.diceTypeL5r}}
+                    {{#each this.rolls}}
+                        <span class="l5r5e fas chat-dice {{this.classes}}">{{{this.result}}}</span>
+                    {{/each}}
+                {{/if}}
+            {{/each}}
+            </div>
+
+            {{!-- Roll & Keep Button --}}
+            {{^if l5r5e.dicesTypes.std}}
+                <button class="l5r5e chat-dice-rnk {{#if this.l5r5e.rnkEnded}}chat-dice-rnk-ended{{/if}}">{{localize "l5r5e.dice.chat.roll_n_keep"}}</button>
+            {{/if}}
+
+            {{#l5r5e.summary}}
+            {{!-- summary symbols --}}
+            <div class="l5r5e dice-total dice-total-rnk">
+                {{#if success}}
+                    <i class="i_success" title="{{localize 'l5r5e.dice.chat.successes'}}"></i>x{{success}}
+                {{/if}}
+
+                {{#if explosive}}
+                    <i class="i_explosive" title="{{localize 'l5r5e.dice.chat.explosives'}}"></i>x{{explosive}}
+                {{/if}}
+
+                {{#if opportunity}}
+                    <i class="i_opportunity" title="{{localize 'l5r5e.dice.chat.opportunities'}}"></i>x{{opportunity}}
+                {{/if}}
+
+                {{#if strife}}
+                    <i class="i_strife" title="{{localize 'l5r5e.dice.chat.strife'}}"></i>x{{strife}} {{#if ../l5r5e.strifeApplied}}<sup>{{../l5r5e.strifeApplied}}</sup>{{/if}}
+                {{/if}}
+            </div>
+
+            {{!-- Result text --}}
+            {{#if ../l5r5e.difficultyHidden}}
+                <div class="l5r5e dice-result-rnk unknown player-only">
+                    {{totalSuccess}} {{localize 'l5r5e.dice.chat.successes'}}
+                </div>
+            {{/if}}
+            <div class="l5r5e dice-result-rnk {{#ifCond totalSuccess '>=' ../l5r5e.difficulty}}success{{else}}fail{{/ifCond}} {{#if ../l5r5e.difficultyHidden}}gm-only{{/if}}">
+                {{#ifCond totalSuccess '>=' ../l5r5e.difficulty}}
+                    {{localize "l5r5e.dice.chat.success_text"}} <i title="{{totalBonus}} {{localize 'l5r5e.dice.chat.successes'}}">({{totalBonus}} {{localize "l5r5e.dice.chat.bonus_text"}})</i>
+                {{else}}
+                    {{localize "l5r5e.dice.chat.fail_text"}}
+                {{/ifCond}}
+            </div>
+            {{/l5r5e.summary}}
+        </div>
+        {{/if}}
+
+        {{!-- Regular dices --}}
+        {{#if l5r5e.dicesTypes.std}}
+        <div class="l5r5e dices-std">
+            {{#each results}}
+            {{#each this.rolls}}
+            <span class="l5r5e chat-dice">{{{this.result}}}</span>
+            {{/each}}
+            {{/each}}
+        </div>
+
+        {{{tooltip}}}
+        <h4 class="l5r5e dice-total dice-total-std">{{{total}}}</h4>
+        {{/if}}
+    </div>
+
+    {{/if}}
+</div>
+

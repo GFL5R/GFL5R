@@ -1,0 +1,573 @@
+{
+    "label": "Capacità da Maestro (WIP)",
+    "mapping": {
+        "description": "system.description",
+        "book_reference": "system.book_reference"
+    },
+    "entries": [
+        {
+            "id": "The Mountain Does Not Fall",
+            "name": "La Montagna Incrollabile",
+            "description": "",
+            "book_reference": "Manuale Base p.57"
+        },
+        {
+            "id": "Slayer’s Slash",
+            "name": "Fendente Assassino",
+            "description": "",
+            "book_reference": "Manuale Base p.58"
+        },
+        {
+            "id": "Ingenious Design",
+            "name": "Progetto Ingegnoso",
+            "description": "",
+            "book_reference": "Manuale Base p.59"
+        },
+        {
+            "id": "Purge the Wicked",
+            "name": "Purificare i Malvagi",
+            "description": "",
+            "book_reference": "Manuale Base p.60"
+        },
+        {
+            "id": "Treasures of the Carp",
+            "name": "Tesoro della Carpa",
+            "description": "",
+            "book_reference": "Manuale Base p.61"
+        },
+        {
+            "id": "Stir the Slumbering Spirit",
+            "name": "Ridestare lo Spirito Sopito",
+            "description": "",
+            "book_reference": "Manuale Base p.62"
+        },
+        {
+            "id": "To Tread the Sword",
+            "name": "Calpestare la Spada",
+            "description": "",
+            "book_reference": "Manuale Base p.63"
+        },
+        {
+            "id": "The Lady’s Grace",
+            "name": "Grazia della Dama",
+            "description": "",
+            "book_reference": "Manuale Base p.64"
+        },
+        {
+            "id": "Strike with No Thought",
+            "name": "Colpire Senza Pensiero",
+            "description": "",
+            "book_reference": "Manuale Base p.65"
+        },
+        {
+            "id": "Experiment and Adapt",
+            "name": "Sperimentare e Adattarsi",
+            "description": "",
+            "book_reference": "Manuale Base p.66"
+        },
+        {
+            "id": "The Eyes Betray the Heart",
+            "name": "Gli Occhi Tradiscono il Cuore",
+            "description": "",
+            "book_reference": "Manuale Base p.67"
+        },
+        {
+            "id": "Heart of the Dragon",
+            "name": "Cuore del Drago",
+            "description": "",
+            "book_reference": "Manuale Base p.68"
+        },
+        {
+            "id": "Blood of the Dragon",
+            "name": "Sangue del Drago",
+            "description": "",
+            "book_reference": "Manuale Base p.69"
+        },
+        {
+            "id": "Akodo’s Final Lesson",
+            "name": "Lezione Finale di Akodo",
+            "description": "",
+            "book_reference": "Manuale Base p.70"
+        },
+        {
+            "id": "Lion’s Pride",
+            "name": "Orgoglio del Leone",
+            "description": "",
+            "book_reference": "Manuale Base p.71"
+        },
+        {
+            "id": "Strength of a Thousand Ancestors",
+            "name": "Forza di Mille Antenati",
+            "description": "",
+            "book_reference": "Manuale Base p.72"
+        },
+        {
+            "id": "Rending Jaws of the Lion",
+            "name": "Fauci Laceranti del Leone",
+            "description": "",
+            "book_reference": "Manuale Base p.73"
+        },
+        {
+            "id": "Insufferable Genius",
+            "name": "Genio Insopportabile",
+            "description": "",
+            "book_reference": "Manuale Base p.74"
+        },
+        {
+            "id": "Master of Elements",
+            "name": "Maestro degli Elementi",
+            "description": "",
+            "book_reference": "Manuale Base p.75"
+        },
+        {
+            "id": "Stand of Honor",
+            "name": "Resistenza d’Onore",
+            "description": "",
+            "book_reference": "Manuale Base p.76"
+        },
+        {
+            "id": "Demon, Begone!",
+            "name": "Vattene, Demone!",
+            "description": "",
+            "book_reference": "Manuale Base p.77"
+        },
+        {
+            "id": "Little Truths",
+            "name": "Piccole Verità",
+            "description": "",
+            "book_reference": "Manuale Base p.78"
+        },
+        {
+            "id": "The Final Silence",
+            "name": "Silenzio Finale",
+            "description": "",
+            "book_reference": "Manuale Base p.79"
+        },
+        {
+            "id": "World of Shadows",
+            "name": "Mondo di Ombre",
+            "description": "",
+            "book_reference": "Manuale Base p.80"
+        },
+        {
+            "id": "Bound in Ink",
+            "name": "Confinato nell’Inchiostro",
+            "description": "",
+            "book_reference": "Manuale Base p.81"
+        },
+        {
+            "id": "A Friend in Every City",
+            "name": "Un Amico in Ogni Città",
+            "description": "",
+            "book_reference": "Manuale Base p.82"
+        },
+        {
+            "id": "The Spirits Unbound",
+            "name": "Liberare gli Spiriti",
+            "description": "",
+            "book_reference": "Manuale Base p.83"
+        },
+        {
+            "id": "Scouring Sirocco",
+            "name": "Scirocco Flagellante",
+            "description": "",
+            "book_reference": "Manuale Base p.84"
+        },
+        {
+            "id": "I Will Always Return",
+            "name": "Tornerò Sempre",
+            "description": "",
+            "book_reference": "Manuale Base p.85"
+        },
+        {
+            "id": "Sensing the Breeze",
+            "name": "Percepire la Brezza",
+            "description": "",
+            "book_reference": "Manuale Base p.86"
+        },
+        {
+            "id": "A Bottomless Ocean",
+            "name": "Oceano Senza Fondo",
+            "description": "",
+            "book_reference": "Manuale Base p.87"
+        },
+        {
+            "id": "Experimental Concotion",
+            "name": "Experimental Concotion",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Favored Counselor",
+            "name": "Favored Counselor",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Essence of Emptiness",
+            "name": "Essence of Emptiness",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Temple of the Heart",
+            "name": "Temple of the Heart",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "The Flower Binds the Room",
+            "name": "The Flower Binds the Room",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Walk the Hidden Ways",
+            "name": "Walk the Hidden Ways",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Rippling Flame",
+            "name": "Rippling Flame",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Shadow Assassin",
+            "name": "Shadow Assassin",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Master of Beasts",
+            "name": "Master of Beasts",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Strike First, Strike Last",
+            "name": "Strike First, Strike Last",
+            "description": "",
+            "book_reference": "Corti di Pietra p.89"
+        },
+        {
+            "id": "Spy Network",
+            "name": "Spy Network",
+            "description": "",
+            "book_reference": "Corti di Pietra p.90"
+        },
+        {
+            "id": "Post Facto",
+            "name": "Post Facto",
+            "description": "",
+            "book_reference": "Corti di Pietra p.91"
+        },
+        {
+            "id": "Victory is the Greatest Honor",
+            "name": "Victory is the Greatest Honor",
+            "description": "",
+            "book_reference": "Corti di Pietra p.92"
+        },
+        {
+            "id": "One With the Shadows",
+            "name": "One With the Shadows",
+            "description": "",
+            "book_reference": "Corti di Pietra p.93"
+        },
+        {
+            "id": "Sudden Clarity",
+            "name": "Sudden Clarity",
+            "description": "",
+            "book_reference": "Corti di Pietra p.94"
+        },
+        {
+            "id": "Curse of Musubi-no-Kami",
+            "name": "Curse of Musubi-no-Kami",
+            "description": "",
+            "book_reference": "Corti di Pietra p.95"
+        },
+        {
+            "id": "The Lowest Bow",
+            "name": "The Lowest Bow",
+            "description": "",
+            "book_reference": "Corti di Pietra p.96"
+        },
+        {
+            "id": "Echoes of Ancient Days",
+            "name": "Echoes of Ancient Days",
+            "description": "",
+            "book_reference": "Corti di Pietra p.97"
+        },
+        {
+            "id": "The Standing Death",
+            "name": "The Standing Death",
+            "description": "",
+            "book_reference": "Corti di Pietra p.98"
+        },
+        {
+            "id": "Emerald Explorer",
+            "name": "Emerald Explorer",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.232"
+        },
+        {
+            "id": "Blessings of the Emperor",
+            "name": "Blessings of the Emperor",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.233"
+        },
+        {
+            "id": "Majesty of the Throne",
+            "name": "Majesty of the Throne",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.235"
+        },
+        {
+            "id": "Foreseen in the Stars",
+            "name": "Foreseen in the Stars",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.236"
+        },
+        {
+            "id": "The Clouds Part",
+            "name": "The Clouds Part",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.237"
+        },
+        {
+            "id": "Favor of the Fortunes",
+            "name": "Favor of the Fortunes",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.238"
+        },
+        {
+            "id": "One with the Void",
+            "name": "One with the Void",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.239"
+        },
+        {
+            "id": "Ninth Tail Ascension",
+            "name": "Ninth Tail Ascension",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.240"
+        },
+        {
+            "id": "Usher in the New Age",
+            "name": "Usher in the New Age",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.241"
+        },
+        {
+            "id": "Unseen Blade",
+            "name": "Unseen Blade",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.48"
+        },
+        {
+            "id": "Lesson of the Hawk",
+            "name": "Lesson of the Hawk",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.49"
+        },
+        {
+            "id": "All Part of the Plan",
+            "name": "All Part of the Plan",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.50"
+        },
+        {
+            "id": "Crack Not a Single Twig",
+            "name": "Crack Not a Single Twig",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.51"
+        },
+        {
+            "id": "Elemental Charmer",
+            "name": "Elemental Charmer",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.52"
+        },
+        {
+            "id": "Surge of Brilliance",
+            "name": "Surge of Brilliance",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.53"
+        },
+        {
+            "id": "Stories as Tall as the Mountain",
+            "name": "Stories as Tall as the Mountain",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.54"
+        },
+        {
+            "id": "A Gift of Fate",
+            "name": "A Gift of Fate",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.55"
+        },
+        {
+            "id": "Fortitude of the Cradle",
+            "name": "Fortitude of the Cradle",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.56"
+        },
+        {
+            "id": "Swift Creation",
+            "name": "Swift Creation",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.57"
+        },
+        {
+            "id": "Divine Protection",
+            "name": "Divine Protection",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.58"
+        },
+        {
+            "id": "Tower of Ivory",
+            "name": "Tower of Ivory",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.59"
+        },
+        {
+            "id": "Resilient Readiness",
+            "name": "Resilient Readiness",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.88"
+        },
+        {
+            "id": "Ashidaka's Method",
+            "name": "Ashidaka's Method",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.89"
+        },
+        {
+            "id": "Healer's Hands",
+            "name": "Healer's Hands",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.90"
+        },
+        {
+            "id": "Sacred Fist",
+            "name": "Sacred Fist",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.91"
+        },
+        {
+            "id": "The Effortless Path",
+            "name": "The Effortless Path",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.92"
+        },
+        {
+            "id": "Empathic Transfer",
+            "name": "Empathic Transfer",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.93"
+        },
+        {
+            "id": "Yotogi's Piercing Gaze",
+            "name": "Yotogi's Piercing Gaze",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.94"
+        },
+        {
+            "id": "Kingdom of Paper and Ink",
+            "name": "Kingdom of Paper and Ink",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.95"
+        },
+        {
+            "id": "Storm Lord’s Gambit",
+            "name": "Azzardo del Signore delle Tempeste",
+            "description": "",
+            "book_reference": "Il Clan della Mantide p.5"
+        },
+        {
+            "id": "Shell of the Tortoise [Tortoise]",
+            "name": "Shell of the Tortoise [Tortoise]",
+            "description": "",
+            "book_reference": "Kit del Gamemaster p.9"
+        },
+        {
+            "id": "Soul of Deepest Stones",
+            "name": "Soul of Deepest Stones",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Strike Without Shadow",
+            "name": "Strike Without Shadow",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Spreading Chaos",
+            "name": "Spreading Chaos",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Unbreakable Resolve",
+            "name": "Unbreakable Resolve",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Killing Grip",
+            "name": "Killing Grip",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Tenacity of the Forge",
+            "name": "Tenacity of the Forge",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "The Herd Flourishes Together",
+            "name": "The Herd Flourishes Together",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Attuned Invocation",
+            "name": "Attuned Invocation",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "With the Soul of a Lion",
+            "name": "With the Soul of a Lion",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Empty Soul Ki",
+            "name": "Empty Soul Ki",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Storm Surge",
+            "name": "Impeto Tempestoso",
+            "description": "",
+            "book_reference": "Il Clan della Mantide p.6"
+        },
+        {
+            "id": "Hunter of the Supernatural",
+            "name": "Cacciatore del Soprannaturale",
+            "description": "",
+            "book_reference": "Svolte Mortali p.24"
+        },
+        {
+            "id": "An Arrow Loosed",
+            "name": "Una Freccia Scoccata",
+            "description": "",
+            "book_reference": "Svolte Mortali p.25"
+        }
+    ]
+}

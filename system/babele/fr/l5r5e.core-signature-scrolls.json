@@ -1,0 +1,33 @@
+{
+    "label": "Rouleaux de marque",
+    "mapping": {
+        "description": "system.description",
+        "source_reference": "system.source_reference"
+    },
+    "entries": [
+        {
+            "id": "Ichi’s Second Sight",
+            "name": "La seconde vision d’Ichi",
+            "description": "",
+            "source_reference": {
+                "page": "108"
+            }
+        },
+        {
+            "id": "Hasegawa’s Denial",
+            "name": "Le refus d’Hasegawa",
+            "description": "",
+            "source_reference": {
+                "page": "108"
+            }
+        },
+        {
+            "id": "Maikara’s Rebuke",
+            "name": "La mercuriale de Maikara",
+            "description": "",
+            "source_reference": {
+                "page": "108"
+            }
+        }
+    ]
+}

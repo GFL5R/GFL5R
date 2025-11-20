@@ -1,0 +1,20 @@
+<fieldset class="items-wrapper">
+    <legend>{{localize 'l5r5e.sheets.equipment'}}</legend>
+    {{> 'systems/l5r5e/templates/items/item/items.html'}}
+</fieldset>
+{{!-- item patterns list --}}
+<fieldset>
+    <legend class="text-block-header">
+        {{localize 'l5r5e.advancements.item_pattern'}}
+        {{#if data.editable_not_soft_locked}}
+            <a data-item-type="item_pattern" class="item-pattern-control item-add" title="{{localize 'l5r5e.global.add'}}"><i class="fas fa-plus"></i></a>
+        {{/if}}
+    </legend>
+    <ul class="item-list">
+        {{#each actor.items as |pattern id|}}
+            {{#ifCond pattern.type '==' 'item_pattern'}}
+                {{> 'systems/l5r5e/templates/items/item-pattern/item-pattern-entry.html' pattern=pattern id=id editable=../data.editable_not_soft_locked}}
+            {{/ifCond}}
+        {{/each}}
+    </ul>
+</fieldset>

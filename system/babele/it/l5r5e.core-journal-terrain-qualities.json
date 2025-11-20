@@ -1,0 +1,58 @@
+{
+    "label": "Qualità del Terreno (WIP)",
+    "mapping": {
+        "content": "content"
+    },
+    "entries": [
+        {
+            "id": "Dangerous",
+            "name": "Pericoloso",
+            "content": "<blockquote>Manuale Base p.267</blockquote>"
+        },
+        {
+            "id": "Defiled",
+            "name": "Profanato",
+            "content": "<blockquote>Manuale Base p.267</blockquote>"
+        },
+        {
+            "id": "Entangling",
+            "name": "Intralciante",
+            "content": "<blockquote>Manuale Base p.267</blockquote>"
+        },
+        {
+            "id": "Hallowed (One or More Elements)",
+            "name": "Consacrato (Uno o Più Elementi)",
+            "content": "<blockquote>Manuale Base p.267</blockquote>"
+        },
+        {
+            "id": "Imbalanced (One or More Elements)",
+            "name": "Squilibrato (Uno o Più Elementi)",
+            "content": "<blockquote>Manuale Base p.267</blockquote>"
+        },
+        {
+            "id": "Obscuring",
+            "name": "Oscurante",
+            "content": "<blockquote>Manuale Base p.267</blockquote>"
+        },
+        {
+            "id": "Confining",
+            "name": "Confining",
+            "content": "<blockquote>Fields of Victory</blockquote>"
+        },
+        {
+            "id": "Elevated",
+            "name": "Elevated",
+            "content": "<blockquote>Fields of Victory</blockquote>"
+        },
+        {
+            "id": "Open",
+            "name": "Open",
+            "content": "<blockquote>Fields of Victory</blockquote>"
+        },
+        {
+            "id": "Recessed",
+            "name": "Recessed",
+            "content": "<blockquote>Fields of Victory</blockquote>"
+        }
+    ]
+}

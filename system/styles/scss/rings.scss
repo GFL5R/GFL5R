@@ -1,0 +1,156 @@
+/** Rings **/
+
+.rings {
+    display: flex;
+    flex-wrap: wrap;
+    color: $white-light;
+    // All
+    #earth,
+    #air,
+    #water,
+    #fire,
+    #void {
+        position: relative;
+        flex: 1 1 50%;
+        text-align: center;
+
+        i.i_earth,
+        i.i_water,
+        i.i_fire,
+        i.i_air,
+        i.i_void {
+            font-size: 5rem;
+            line-height: 4.75rem;
+        }
+
+        label {
+            position: relative;
+            width: 5rem;
+            line-height: 0;
+            float: right;
+        }
+        label.stance-active strong {
+            text-decoration: underline 2px;
+        }
+        input {
+            position: absolute;
+            height: 2rem;
+            width: 2rem;
+            border-radius: 100%;
+            top: 0;
+            left: 0;
+            text-align: center;
+            font-size: 1rem;
+            border: 2px solid $l5r5e-title;
+            color: $white-light;
+            &:hover {
+                border: 2px solid $red-light;
+                text-shadow: 0 0 3px $red;
+                box-shadow: 0 0 3px inset $red;
+            }
+        }
+    }
+
+    // Earth
+    #earth {
+        float: right;
+        color: $l5r5e-earth;
+        input {
+            top: auto;
+            right: 0;
+            bottom: -0.9rem;
+            left: auto;
+            background: $l5r5e-earth;
+        }
+        label {
+            strong {
+                position: absolute;
+                bottom: 0.75rem;
+                left: -1.75rem;
+            }
+        }
+    }
+
+    // Air
+    #air {
+        color: $l5r5e-air;
+        input {
+            top: auto;
+            right: auto;
+            bottom: -0.9rem;
+            left: 0;
+            background: $l5r5e-air;
+        }
+        label {
+            float: left;
+            strong {
+                position: absolute;
+                bottom: 0.75rem;
+                right: -1rem;
+            }
+        }
+    }
+
+    // Water
+    #water {
+        float: right;
+        color: $l5r5e-water;
+        padding-right: 2rem;
+        input {
+            top: 17%;
+            right: -1.25rem;
+            bottom: auto;
+            left: auto;
+            background: $l5r5e-water;
+        }
+        label {
+            strong {
+                position: absolute;
+                bottom: -0.75rem;
+                right: 2rem;
+            }
+        }
+    }
+
+    // Fire
+    #fire {
+        color: $l5r5e-fire;
+        padding-left: 2rem;
+        input {
+            top: 17%;
+            right: auto;
+            bottom: auto;
+            left: -1.25rem;
+            background: $l5r5e-fire;
+        }
+        label {
+            float: left;
+            strong {
+                position: absolute;
+                bottom: -0.75rem;
+                right: 2rem;
+            }
+        }
+    }
+
+    // Void
+    #void {
+        top: -2rem;
+        margin: 0 calc(50% - 2.5rem);
+        color: $l5r5e-void;
+        input {
+            top: -1rem;
+            right: auto;
+            bottom: auto;
+            left: 30%;
+            background: $l5r5e-void;
+        }
+        label {
+            strong {
+                position: absolute;
+                bottom: -0.75rem;
+                left: 1.75rem;
+            }
+        }
+    }
+}

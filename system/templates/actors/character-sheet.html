@@ -1,0 +1,76 @@
+<form class="{{cssClass}}" data-lang="{{localize 'I18N.Language'}}" autocomplete="off">
+    {{!-- L5R Button bar --}}
+    <div class="l5r-buttons-bar">
+        {{#each l5rHeaderButtons}}
+        <a class="l5r-header-button {{this.class}}"><i class="{{this.icon}}"></i>{{localize this.label}}</a>
+        {{/each}}
+    </div>
+    {{!-- Sheet Header --}}
+    <header class="sheet-header">
+        <img class="profile-img dragndrop-actor-uuid pointer" src="{{data.img}}" {{#if
+        data.editable_not_soft_locked}}data-edit="img" {{/if}} data-actor-uuid="{{actor.uuid}}" draggable="true"
+        title="{{data.name}}" />
+        <div class="header-fields identity-wrapper">
+            <h1 class="charname">
+                <input name="name" type="text" value="{{data.name}}" placeholder="Name" {{^if
+                data.editable_not_soft_locked}}disabled{{/if}} />
+            </h1>
+            {{> 'systems/l5r5e/templates/actors/character/identity.html'}}
+        </div>
+        <div class="header-fields mid-wrapper">
+            <div class="side-col">
+                <h2>{{localize 'l5r5e.social.title'}}</h2>
+                {{> 'systems/l5r5e/templates/actors/character/social.html'}}
+            </div>
+            <div class="central-col">{{> 'systems/l5r5e/templates/actors/character/rings.html'}}</div>
+            <div class="side-col">
+                <h2 class="right">{{localize 'l5r5e.attributes.title'}}</h2>
+                {{> 'systems/l5r5e/templates/actors/character/attributes.html'}}
+            </div>
+        </div>
+    </header>
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        {{!-- Active effects --}}
+        {{> 'systems/l5r5e/templates/actors/character/effects.html'}}
+
+        {{!-- Sheet Tab Navigation --}}
+        <nav class="sheet-tabs tabs" data-group="primary">
+            <a class="item" data-tab="skills">{{localize 'l5r5e.skills.title'}}</a>
+            <a class="item" data-tab="narrative">{{localize 'l5r5e.sheets.narrative'}}</a>
+            <a class="item" data-tab="conflict">{{localize 'l5r5e.conflict.title'}}</a>
+            <a class="item" data-tab="inventory">{{localize 'l5r5e.sheets.inventory'}}</a>
+            <a class="item" data-tab="experience">{{localize 'l5r5e.sheets.experience'}}</a>
+        </nav>
+
+        {{!-- Skills Tab --}}
+        <article class="tab skills" data-group="primary" data-tab="skills">
+            <ul class="skills-wrapper">
+                {{#each data.system.skills as |category id|}} {{>
+                'systems/l5r5e/templates/actors/character/category.html' category=category categoryId=id data=../data}}
+                {{/each}}
+            </ul>
+            {{> 'systems/l5r5e/templates/actors/character/techniques.html'}}
+        </article>
+
+        {{!-- Narrative Tab --}}
+        <article class="tab narrative" data-group="primary" data-tab="narrative">
+            {{> 'systems/l5r5e/templates/actors/character/narrative.html'}}
+        </article>
+
+        {{!-- Conflict Tab --}}
+        <article class="tab conflict" data-group="primary" data-tab="conflict">
+            {{> 'systems/l5r5e/templates/actors/character/conflict.html'}}
+        </article>
+
+        {{!-- Inventory Tab --}}
+        <article class="tab inventory" data-group="primary" data-tab="inventory">
+            {{> 'systems/l5r5e/templates/actors/character/inventory.html'}}
+        </article>
+
+        {{!-- Experience Tab --}}
+        <article class="tab experience" data-group="primary" data-tab="experience">
+            {{> 'systems/l5r5e/templates/actors/character/experience.html'}}
+        </article>
+    </section>
+</form>

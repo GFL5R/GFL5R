@@ -1,0 +1,415 @@
+{
+    "label": "Défaillances",
+    "mapping": {
+        "types": "system.types",
+        "description": "system.description",
+        "source_reference": "system.source_reference"
+    },
+    "entries": [
+        {
+            "id": "Addiction",
+            "name": "Addiction",
+            "types": "Mental, Physique",
+            "description": "",
+            "source_reference": {
+                "page": "130"
+            }
+        },
+        {
+            "id": "Battle Trauma",
+            "name": "Traumatisme de guerre",
+            "types": "Mental, Physique",
+            "description": "",
+            "source_reference": {
+                "page": "136"
+            }
+        },
+        {
+            "id": "Cynicism",
+            "name": "Cynisme",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "131"
+            }
+        },
+        {
+            "id": "Dark Secret",
+            "name": "Sombre secret",
+            "types": "Relations",
+            "description": "",
+            "source_reference": {
+                "page": "135"
+            }
+        },
+        {
+            "id": "Delusions of Grandeur",
+            "name": "Mégalomanie",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "134"
+            }
+        },
+        {
+            "id": "Fear of Death",
+            "name": "Peur de la mort",
+            "types": "Mental, Physique",
+            "description": "",
+            "source_reference": {
+                "page": "135"
+            }
+        },
+        {
+            "id": "Ferocity",
+            "name": "Férocité",
+            "types": "Mental, Physique",
+            "description": "",
+            "source_reference": {
+                "page": "132"
+            }
+        },
+        {
+            "id": "Impatience",
+            "name": "Impatience",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "132"
+            }
+        },
+        {
+            "id": "Intolerance",
+            "name": "Intolérance",
+            "types": "Relations",
+            "description": "",
+            "source_reference": {
+                "page": "132"
+            }
+        },
+        {
+            "id": "Irrepressible Flirtation",
+            "name": "Joli cœur",
+            "types": "Relations",
+            "description": "",
+            "source_reference": {
+                "page": "133"
+            }
+        },
+        {
+            "id": "Jealousy",
+            "name": "Jalousie",
+            "types": "Mental, Physique",
+            "description": "",
+            "source_reference": {
+                "page": "133"
+            }
+        },
+        {
+            "id": "Materialism",
+            "name": "Matérialisme",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "134"
+            }
+        },
+        {
+            "id": "Meekness",
+            "name": "Timidité",
+            "types": "Relations",
+            "description": "",
+            "source_reference": {
+                "page": "136"
+            }
+        },
+        {
+            "id": "Painful Honesty",
+            "name": "Douloureuse honnêteté",
+            "types": "Relations",
+            "description": "",
+            "source_reference": {
+                "page": "132"
+            }
+        },
+        {
+            "id": "Paranoia",
+            "name": "Paranoïa",
+            "types": "Mental, Physique",
+            "description": "",
+            "source_reference": {
+                "page": "134"
+            }
+        },
+        {
+            "id": "Perfectionism",
+            "name": "Perfectionnisme",
+            "types": "Mental, Physique",
+            "description": "",
+            "source_reference": {
+                "page": "134"
+            }
+        },
+        {
+            "id": "Phobia",
+            "name": "Phobie",
+            "types": "Mental, Physique",
+            "description": "",
+            "source_reference": {
+                "page": "135"
+            }
+        },
+        {
+            "id": "Softheartedness",
+            "name": "Cœur tendre",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "131"
+            }
+        },
+        {
+            "id": "Superstition",
+            "name": "Superstition",
+            "types": "Mental, Spirituel",
+            "description": "",
+            "source_reference": {
+                "page": "136"
+            }
+        },
+        {
+            "id": "Conspiracy",
+            "name": "Conspirations",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "91"
+            }
+        },
+        {
+            "id": "Omen of Bad Luck",
+            "name": "Mauvais augure",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "92"
+            }
+        },
+        {
+            "id": "Uncleanliness",
+            "name": "Maniaque",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "92"
+            }
+        },
+        {
+            "id": "Vanity",
+            "name": "Vanité",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "92"
+            }
+        },
+        {
+            "id": "Isolation",
+            "name": "Isolement",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "103"
+            }
+        },
+        {
+            "id": "Web of Lies",
+            "name": "Tissu de mensonges",
+            "types": "Relations",
+            "description": "",
+            "source_reference": {
+                "page": "103"
+            }
+        },
+        {
+            "id": "Accustomed to Luxury",
+            "name": "Habitué au luxe",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "247"
+            }
+        },
+        {
+            "id": "Claustrophobia",
+            "name": "Claustrophobie",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "248"
+            }
+        },
+        {
+            "id": "False Identity",
+            "name": "Fausse identité",
+            "types": "Relations",
+            "description": "",
+            "source_reference": {
+                "page": "248"
+            }
+        },
+        {
+            "id": "Loathing for Peasants",
+            "name": "Aversion pour les paysans",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "248"
+            }
+        },
+        {
+            "id": "Loneliness",
+            "name": "Autophobie",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "249"
+            }
+        },
+        {
+            "id": "Eyes of Many",
+            "name": "Aux yeux de tous",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "73"
+            }
+        },
+        {
+            "id": "Coming Storm",
+            "name": "Désastre à venir",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "74"
+            }
+        },
+        {
+            "id": "Fear of Stagnation",
+            "name": "Peur de stagner",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "74"
+            }
+        },
+        {
+            "id": "Failure",
+            "name": "Déception",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "73"
+            }
+        },
+        {
+            "id": "Fallen Ancestor",
+            "name": "Ancêtre déchu",
+            "types": "Relations, Spirituel",
+            "description": "",
+            "source_reference": {
+                "page": "98"
+            }
+        },
+        {
+            "id": "Obtuse",
+            "name": "Obtus",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "99"
+            }
+        },
+        {
+            "id": "Reformed Maho-Tsukai",
+            "name": "Mahō-tsukai repenti",
+            "types": "Relations",
+            "description": "",
+            "source_reference": {
+                "page": "98"
+            }
+        },
+        {
+            "id": "Belligerent",
+            "name": "Belliqueux",
+            "types": "Relations",
+            "description": "",
+            "source_reference": {
+                "page": "85"
+            }
+        },
+        {
+            "id": "Braggart",
+            "name": "Vantard",
+            "types": "Relations",
+            "description": "",
+            "source_reference": {
+                "page": "85"
+            }
+        },
+        {
+            "id": "Fear of [Common Creature]",
+            "name": "Phobie des [Créature Ordinaire]",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "106"
+            }
+        },
+        {
+            "id": "Fear of Mediocrity",
+            "name": "Crainte de la médiocrité",
+            "types": "Relations, Mental",
+            "description": "",
+            "source_reference": {
+                "page": "105"
+            }
+        },
+        {
+            "id": "Fear of Poison",
+            "name": "Peur du poison",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": "106"
+            }
+        },
+        {
+            "id": "Animal Signs",
+            "name": "Animal Signs (WIP)",
+            "types": "Mental, Spirituel",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Disdain for Urban Sprawl",
+            "name": "Disdain for Urban Sprawl (WIP)",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Tip of the Tongue",
+            "name": "Tip of the Tongue (WIP)",
+            "types": "Mental",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        }
+    ]
+}

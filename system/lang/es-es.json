@@ -1,0 +1,804 @@
+{
+    "I18N": {
+        "Language": "Español",
+        "Maintainers": ["Team L5R"]
+    },
+    "SETTINGS": {
+        "None": "Sin opciones",
+        "ReverseTokenBars": {
+            "Title": "Barra de tokens inversa",
+            "Hint": "Cambia el orden en el que se rellenan las barras debajo de los tokens",
+            "None": "Ninguno",
+            "Fatigue": "Sólo Fatiga",
+            "Strife": "Conflicto",
+            "Both": "Tanto la Fatiga como el Conflicto"
+        },
+        "RollNKeep": {
+            "DeleteOldMessage": "TyG eliminar el mensaje anterior del chat",
+            "DeleteOldMessageHint": "Elige si mantener o borrar el mensaje anterior de la serie TyG"
+        },
+        "Initiative": {
+            "SetTn1OnTypeChange": "Poner el NO a 1 al seleccionar el tipo de encuentro",
+            "SetTn1OnTypeChangeHint": "Poner el NO a 1 cuando se elige el tipo de encuentro (Intriga, Duelo, Escaramuza o Batalla a gran escala)"
+        },
+        "ShowAllStatusEffects": {
+            "Title": "Mostrar todos los efectos de estado",
+            "Hint": "Si se desmarca (por defecto), solo se muestran las condiciones de L5A."
+        },
+        "CustomTechniques": {
+            "Title": "Usar técnicas personalizadas",
+            "Hint": "Añadir el tipo de técnica 'Particularidad' para que sirva como comodín."
+        },
+        "CustomCompendiumName": {
+            "Title": "Nombre de Compendio personalizado",
+            "Hint": "Permite a los usuarios avanzados cambiar el nombre de los compendios personalizados (utilizados para desactivar los compendios integrados).",
+            "Notification": "No se puede configurar el compendio personalizado: '{name}'. ¿Está activado y registrado con Babele?"
+        },
+        "CustomItemsHeight": {
+            "Title": "Altura predeterminada de las ventanas de objetos",
+            "Hint": "Establecer la altura predeterminada para las ventanas de 'objetos' (técnicas, armas...), en píxeles."
+        },
+        "Compendium": {
+            "HideDisabledSources": {
+                "Title": "[Compendio] Ocultar filtro de fuentes sin referencia",
+                "Hint": "Ocultar fuentes vacías sin elementos en el filtro de fuentes."
+            },
+            "HideEmptySourcesFromPlayers": {
+                "Title": "[Compendio] Ocultar elementos con referencias vacías",
+                "Hint": "Requiere que se establezca una referencia para que los jugadores puedan ver el contenido de los compendios."
+            },
+            "AllowedOfficialSources": {
+                "Title": "[Compendio] Recursos oficiales disponibles",
+                "Hint": "Útil si, como DJ, quieres limitar el contenido oficial disponible solo a los libros que tienes."
+            },
+            "AllowedUnofficialSources": {
+                "Title": "[Compendio] Recursos no oficiales disponibles",
+                "Hint": "Útil si tienes compendios con objetos personalizados mezclados con objetos destinados a los jugadores.."
+            }
+        }
+    },
+    "TYPES": {
+        "Actor": {
+            "character": "Personaje jugador",
+            "npc": "Personaje no jugador",
+            "army": "Ejército"
+        },
+        "Item": {
+            "item": "Objeto",
+            "armor": "Armadura",
+            "weapon": "Arma",
+            "technique": "Técnica",
+            "property": "Propiedad",
+            "peculiarity": "Peculiaridad",
+            "advancement": "Mejora",
+            "title": "Título",
+            "bond": "Vínculo",
+            "signature_scroll": "Pergamino especial",
+            "item_pattern": "Patrón de objeto",
+            "army_fortification": "Fortificación",
+            "army_cohort": "Cohorte"
+        },
+        "Journal": {
+            "journal": "Diario"
+        }
+    },
+    "l5r5e": {
+        "title": "La Leyenda de los Cinco Anillos",
+        "conditions": {
+            "afflicted": "Afligido",
+            "bleeding": "Hemorragia",
+            "burning": "Ardiendo",
+            "centered": "Centrado",
+            "compromised": "Comprometido",
+            "dazed": "Atontado",
+            "disoriented": "Desorientado",
+            "dying": "Moribundo",
+            "emboldened": "Alentado",
+            "enraged": "Enfurecido",
+            "exhausted": "Agotado",
+            "immobilized": "Inmovilizado",
+            "illness_coughing_illness": "Enfermedad: tos enfermiza",
+            "illness_fire_rash": "Enfermedad: sarpullido de fuego",
+            "illness_gut_sickness": "Enfermedad: malestar intestinal",
+            "illness_oozing_sore_disease": "Enfermedad: llagas supurantes",
+            "illness_unsteady_illness": "Enfermedad: temblores",
+            "incapacitated": "Incapacitado",
+            "intoxicated": "Intoxicado",
+            "possessed": "Poseído",
+            "prone": "Tumbado",
+            "silenced": "Silenciado",
+            "unconscious": "Inconsciente",
+            "lightly_wounded_fire": "Herida leve (Fuego)",
+            "lightly_wounded_water": "Herida leve (Agua)",
+            "lightly_wounded_air": "Herida leve (Aire)",
+            "lightly_wounded_earth": "Herida leve (Tierra)",
+            "lightly_wounded_void": "Herida leve (Vacío)",
+            "severely_wounded_fire": "Herida grave (Fuego)",
+            "severely_wounded_water": "Herida grave (Agua)",
+            "severely_wounded_air": "Herida grave (Aire)",
+            "severely_wounded_earth": "Herida grave (Tierra)",
+            "severely_wounded_void": "Herida grave (Vacío)"
+        },
+        "global": {
+            "edge_translation_disclaimer": "Edge Studio nos da su permiso para ofrecer este módulo a la comunidad, pero tanto los textos así como los códigos que lo constituyen no tienen su aprobación explícita.",
+            "add": "Añadir",
+            "edit": "Editar",
+            "delete_confirm": "¿Estás seguro de que quieres borrar '{name}'?",
+            "drop_here": "Dejar caer aquí",
+            "send_to_chat": "Al Chat",
+            "locked": "Bloqueado",
+            "unlocked": "Desbloqueado",
+            "random": "Aleatorio"
+        },
+        "multiselect": {
+            "empty_tag": "<blank>",
+            "placeholder": "Filtro de recursos",
+            "player_filter_label": "Filtro de jugador",
+            "player_filter_tooltip": "Aplicar filtro de jugador",
+            "already_in_filter": "Ya en el filtro",
+            "sources_categories": {
+                "rules": "Reglas",
+                "adventures": "Aventuras",
+                "supplements": "Suplementos",
+                "others": "Otros"
+            }
+        },
+        "logo": {
+            "títle": "¿Necesitas ayuda?",
+            "src": "systems/l5r5e/assets/l5r-logo.webp",
+            "alt": "Ayuda en línea",
+            "content": "Sigue la guía :",
+            "edge": {
+                "title": "Ir a la página web de Edge-Studio",
+                "info": "Tu navegador abrirá la página web de EDGE STUDIO",
+                "link": "https://edge-studio.net/"
+            },
+            "drivethrurpg": {
+                "title": "¿Comprar un PDF del juego?",
+                "info": "tu navegador abrirá el sitio DriveThruRpg de Edge Studio",
+                "link": "https://www.drivethrurpg.com/browse/pub/17946/EDGE-Studio"
+            },
+            "discord": {
+                "title": "Discord oficial de FoundryVTT",
+                "info": "Tu navegador abrirá el discord oficial de Foundry",
+                "link": "https://discordapp.com/invite/DDBZUDf"
+            },
+            "notes": {
+                "title": "Registro de cambios",
+                "link": "https://gitlab.com/teaml5r/l5r5e/-/blob/master/CHANGELOG.md"
+            },
+            "issues": {
+                "title": "Problemas",
+                "link": "https://gitlab.com/teaml5r/l5r5e/-/issues"
+            },
+            "custom-compendiums": {
+                "title": "Compendios",
+                "link": "https://gitlab.com/teaml5r/l5r5e/-/wikis/users/custom-compendiums.md"
+            },
+            "wiki": {
+                "title": "Wiki",
+                "link": "https://gitlab.com/teaml5r/l5r5e/-/wikis/home"
+            }
+        },
+        "rings": {
+            "title": "Anillos",
+            "label": "Anillo",
+            "earth": "Tierra",
+            "air": "Aire",
+            "water": "Agua",
+            "fire": "Fuego",
+            "void": "Vacío"
+        },
+        "sheets": {
+            "narrative": "Narrativa",
+            "experience": "Experiencia",
+            "family": "Familia",
+            "region": "Region",
+            "upbringing": "Educación",
+            "school": "Escuela",
+            "description": "Descripción",
+            "bought_at_rank": "Adquirido en rango",
+            "types": "Tipos",
+            "source_reference": {
+                "reference": "Referencia",
+                "page_abbreviation": "p."
+            },
+            "value": "Valor",
+            "rarity": "Rareza",
+            "quantity": "Cantidad",
+            "weight": "Peso",
+            "properties": "Propiedades",
+            "linked_property": "Propiedad vínculada",
+            "removed_properties": "Anula",
+            "notes": "Notas",
+            "inventory": "Inventario",
+            "equipment": "Equipo",
+            "rank": "Rango",
+            "name": "Nombre"
+        },
+        "dice": {
+            "chat": {
+                "successes": "Éxitos",
+                "explosives": "Relanzables",
+                "opportunities": "Oportunidades",
+                "strife": "Conflictos",
+                "difficulty": "NO",
+                "difficulty_hidden": "???",
+                "void_point_used": "Punto de Vacío utilizado",
+                "assistance_used": "Asistencia de habilidad utilizada",
+                "roll_n_keep": "Tirar y guardar",
+                "initiative_roll": "Tirada de Iniciativa",
+                "success_text": "¡Éxito!",
+                "bonus_text": "Éxitos adicionales",
+                "fail_text": "¡Fallo!",
+                "unknown_target": "Objetivo desconocido"
+            },
+            "dicepicker": {
+                "title": "Selector de dados",
+                "difficulty_title": "Dificultad",
+                "difficulty_hidden_label": "Ocultar NO",
+                "use_void_point_label": "Gasta un",
+                "void_point_tooltip": "Punto de vacío",
+                "skill_assistance_label": "Asistencia",
+                "roll_label": "Tirar",
+                "bt_add_macro": "Añadir una macro",
+                "gm_request_dp_to_players": "Solicitud de tirada enviada a los jugadores"
+            },
+            "roll_n_keep": {
+                "title": "Tirar y guardar",
+                "discard_drop_here": "Descartar",
+                "reroll_drop_here": "Relanzar",
+                "swap_drop_here": "Cambiar cara",
+                "keep_drop_here": "Guardar",
+                "max": "Máx",
+                "bt_validate": "Terminar este paso",
+                "bt_strife": "Aplicar Conflicto",
+                "undo": "[GM] Deshacer los últimos cambios"
+            }
+        },
+        "gm": {
+            "toolbox": {
+                "title": "Caja de herramientas del DJ",
+                "difficulty_hidden": "Cambiar la dificultad visible",
+                "difficulty": "Cambiar dificultad (Izquierda: añadir, Derecha: sustraer, central: NO 2)",
+                "sleep": "Descanso confortable para todos los personajes (Eliminar fatiga = Agua x2. (Click Izquierdo: sólo a los personajes seleccionados. Derecho: a todos los actores)",
+                "sleep_info": "Los personajes han dormido bien.",
+                "scene_end": "Final de la escena (El Conflicto y la Fatiga de los personajes se reduce hasta la mitad del máximo del valor (Click Izquierdo: sólo a los personajes seleccionados. Derecho: a todos los actores)",
+                "scene_end_info": "La tensión de la escena por fin disminuye.",
+                "reset_void": "Comienzo de la partida: Resetea los puntos de Vacío de los jugadores (Click Izquierdo: sólo a los personajes seleccionados. Derecho: a todos los actores)",
+                "reset_void_info": "Se han adjudicado los puntos de Vacío."
+            },
+            "monitor": {
+                "title": "Pantalla del DJ",
+                "switch_view": "Cambiar vista",
+                "add_selected_tokens": "Add selected tokens",
+                "honor_glory_status": "H/G/E",
+                "focus_vigilance": "Con./Ale.",
+                "mouse_control": "Click Izquierdo +1, Derecho: -1, medio: poner a 0"
+            }
+        },
+        "weapons": {
+            "title": "Armas",
+            "damage": "Daño",
+            "range": "Alcance",
+            "stats": "Estadísticas",
+            "sheathed": "Equipado / Envainada",
+            "readied": "Preparado",
+            "category": "Categoría",
+            "deadliness": "Letalidad",
+            "grips": "Agarres",
+            "1hand": "1-mano",
+            "2hand": "2-manos"
+        },
+        "armors": {
+            "title": "Armaduras",
+            "type": "Defensa",
+            "physical": "Física",
+            "supernatural": "Sobrenatural",
+            "equipped": "Equipado"
+        },
+        "items": {
+            "title": "Objetos"
+        },
+        "techniques": {
+            "title": "Técnicas",
+            "not_allowed": "Tu personaje no puede utilizar este tipo de técnica.",
+            "only_one": "Tu personaje sólo puede poseer una de estas técnicas.",
+            "type": "Técnicas permitidas",
+            "kata": "Kata",
+            "kiho": "Kihõ",
+            "inversion": "Inversión",
+            "invocation": "Invocación",
+            "ritual": "Ritual",
+            "shuji": "Shuji",
+            "maho": "Mahõ",
+            "ninjutsu": "Ninjutsu",
+            "mantra": "Mantra",
+            "school_ability": "Capacidad de escuela",
+            "mastery_ability": "Habilidad de maestría",
+            "title_ability": "Capacidad de título",
+            "specificity": "Particularidad"
+        },
+        "peculiarities": {
+            "types": {
+                "distinction": "Distinción",
+                "passion": "Pasión",
+                "adversity": "Adversidad",
+                "anxiety": "Ansiedad"
+            }
+        },
+        "money": {
+            "title": "Dinero personal",
+            "koku": "Koku",
+            "bu": "Bu",
+            "zeni": "Zeni"
+        },
+        "social": {
+            "title": "Posición Social",
+            "honor": "Honor",
+            "glory": "Gloria",
+            "status": "Estatus",
+            "ninjo": "Ninjo",
+            "giri": "Giri",
+            "past": "Pasado",
+            "bushido_tenets": {
+                "title": "Preceptos del Bushidō",
+                "paramount": "Más importante",
+                "less_significant": "Menos significativo"
+            },
+            "titles": "Títulos",
+            "attitude": "Actitud:",
+            "advantages": "Distinciones y pasiones",
+            "disadvantages": "Adversidades y ansiedades",
+            "bonds": "Vínculos",
+            "npc": {
+                "advantages": "Ventajas",
+                "disadvantages": "Desventajas",
+                "combat": "Combate",
+                "intrigue": "Intriga"
+            },
+            "age": "Edad",
+            "children": "Vástagos",
+            "marital_status": {
+                "title": "Estado civil",
+                "partner": "Pareja",
+                "married": "Casado",
+                "betrothed": "Prometido",
+                "unmarried": "Soltero",
+                "widowed": "Viudo"
+            },
+            "gender": {
+                "title": "Género",
+                "male": "Masculino",
+                "female": "Femenino"
+            }
+        },
+        "skills": {
+            "title": "Habilidades",
+            "label": "Habilidad",
+            "artisan": {
+                "title": "Artesanales",
+                "aesthetics": "Estética",
+                "composition": "Composición",
+                "design": "Diseño",
+                "smithing": "Herrería",
+                "air": "Refinar",
+                "earth": "Restaurar",
+                "fire": "Inventar",
+                "water": "Adaptar",
+                "void": "Sintonizar"
+            },
+            "martial": {
+                "title": "Marciales",
+                "fitness": "Aptitud Física",
+                "melee": "Cuerpo a Cuerpo",
+                "ranged": "A distancia",
+                "unarmed": "Sin armas",
+                "meditation": "Meditación",
+                "tactics": "Estrategia",
+                "air": "Amagar",
+                "earth": "Resistir",
+                "fire": "Abrumar",
+                "water": "Alterar",
+                "void": "Sacrificarse"
+            },
+            "scholar": {
+                "title": "Académicas",
+                "culture": "Cultura",
+                "government": "Gobierno",
+                "medicine": "Medicina",
+                "sentiment": "Sentimiento",
+                "theology": "Teología",
+                "air": "Analizar",
+                "earth": "Recordar",
+                "fire": "Teorizar",
+                "water": "Examinar",
+                "void": "Percibir"
+            },
+            "social": {
+                "title": "Sociales",
+                "command": "Mando",
+                "courtesy": "Cortesía",
+                "games": "Pasatiempos",
+                "performance": "Interpretación",
+                "air": "Engañar",
+                "earth": "Razonar",
+                "fire": "Incitar",
+                "water": "Encandilar",
+                "void": "Iluminar"
+            },
+            "trade": {
+                "title": "Mercantiles",
+                "commerce": "Comercio",
+                "labor": "Trabajo manual",
+                "seafaring": "Navegación",
+                "skulduggery": "Actividad criminal",
+                "survival": "Supervivencia",
+                "air": "Estafar",
+                "earth": "Producir",
+                "fire": "Idear",
+                "water": "Intercambiar",
+                "void": "Subsistir"
+            }
+        },
+        "attributes": {
+            "title": "Atributos",
+            "endurance": "Aguante",
+            "endurancetip": "(Tierra + Fuego) x2",
+            "composure": "Compostura",
+            "composuretip": "(Tierra + Agua) x2",
+            "focus": "Concentración",
+            "focustip": "Aire + Fuego",
+            "vigilance": "Alerta",
+            "vigilancetip": "(Aire + Agua) /2",
+            "voidpoints": "Puntos de Vacío",
+            "fatigue": "Fatiga",
+            "strife": "Conflicto"
+        },
+        "conflict": {
+            "title": "Enfrentamiento",
+            "stance": "Actitud",
+            "stances": {
+                "airtip": "+1 al NO de las tiradas de ataque y maquinación que te tengan como objetivo (+2 a rango 4+).",
+                "earthtip": "Oponentes no pueden gastar Oportunidad para causarte impactos críticos ni estados.",
+                "firetip": "Si tienes éxito, +1 éxito adicional por cada símbolo de Conflicto.",
+                "watertip": "Efectúa una segunda acción durante tu turno que no requiera tirada ni comparta tipo con tu primera acción.",
+                "voidtip": "No acumulas Conflicto de los símbolos de Conflicto de tus tiradas."
+            },
+            "initiative": {
+                "title": "Iniciativa",
+                "intrigue": "Intriga",
+                "duel": "Duelo",
+                "skirmish": "Escaramuza",
+                "mass_battle": "Batalla a gran escala",
+                "prepared_true": "Preparado",
+                "prepared_false": "Sorprendido",
+                "prepared_actor": "Definido en la hoja de personaje (por defecto)",
+                "already_set": "Tu iniciativa ya ha sido establecida."
+            }
+        },
+        "advancements": {
+            "title": "Avances",
+            "school_rank": "Rango de la escuela",
+            "school_rank_0": "Inicial",
+            "total": "Total",
+            "cost": "Coste",
+            "spent": "Gastado",
+            "saved": "Guardado",
+            "total_xp_spent": "PE gastados",
+            "total_xp_curriculum": "PE gastados en el programa",
+            "curriculum": "En programa de estudio",
+            "curriculum_validate": "Completar este rango",
+            "rarity_modifier": "Modificador de rareza",
+            "item_pattern": "Patrones de objetos",
+            "signature_scroll": "Pergaminos espaciales",
+            "school_curriculum_journal": "Arrastra el diario del programa en la hoja para vincularlo"
+        },
+        "character_types": {
+            "character": "Personaje jugador",
+            "adversary": "Adversario",
+            "minion": "Esbirro"
+        },
+        "army": {
+            "warlord": "Señor de la guerra",
+            "allies_backers": "Aliados y apoyos",
+            "purpose_mustering": "Propósito de la movilización",
+            "battle_readiness": {
+                "title": "Preparación para la batalla",
+                "strength": "Fuerza",
+                "casualties": "Bajas",
+                "discipline": "Disciplina",
+                "panic": "Pánico"
+            },
+            "commander": "Comandante",
+            "commander_abilities": "Habilidades relevantes del comandante",
+            "army_abilities": "Habilidades del ejército",
+            "commander_standing": "Posición del comandante",
+            "supplies_logistics": "Logística y suministros",
+            "past_battles": "Batallas anteriores",
+            "cohort": {
+                "tab": "Cohortes",
+                "title": "Cohorte",
+                "leader": "Líder",
+                "abilities": "Habilidades"
+            },
+            "fortification": {
+                "tab": "Fortificaciones",
+                "title": "Fortificación",
+                "difficulty": "Valor de dificultad",
+                "attrition_reduction": "Reducción del desgaste"
+            }
+        },
+        "twenty_questions": {
+            "title": "Veinte preguntas",
+            "bt_abrev": "20P",
+            "bt_next": "Siguiente",
+            "increase_ring1": "Incremento de anillo (1)",
+            "increase_ring2": "Incremento de anillo (2)",
+            "increase_skill1": "Incremento de habilidad (1)",
+            "increase_skill2": "Incremento de habilidad (2)",
+            "increase_skill3": "Incremento de habilidad (3-5)",
+            "choose_one_ring": "Elige uno",
+            "choose_one_skill": "Elige una",
+            "or": "o",
+            "and": "y",
+            "error": "Uy, parece que hay un error:",
+            "part0": {
+                "intro": "Puedes usar esta hoja para rellenar tus respuestas al Juego de las 20 Preguntas, y para tomar notas para más tarde!",
+                "section": "Leyenda de los Cinco Anillos, capítulo 2: Creación de personajes, pp. 41-95",
+                "section_pow": "Leyenda de los Cinco Anillos Senda de las olas, capítulo 2: Creación de personajes pp. 30–82",
+                "type": "Elige la plantilla de 20P que quieres usar",
+                "type_core": "Samurai (Libro básico)",
+                "type_pow": "Ronin (Senda de las olas)"
+            },
+            "part1": {
+                "title": "Parte I: Identidad básica (Clan y Familia)",
+                "title_pow": "Parte I: Identidad básica (Región y educación)",
+                "q1": "1. ¿A qué clan pertenece tu personaje? (p. 41)",
+                "q1_pow": "1. ¿De que región viene tu personaje? (p. 31)",
+                "status": "Estatus",
+                "q2": "2. ¿A qué familia pertenece tu personaje? (p. 49)",
+                "q2_pow": "2. ¿Cual fue la educación de tu personaje? (p. 43)",
+                "money": "Riqueza inicial en Koku",
+                "glory": "Gloria"
+            },
+            "part2": {
+                "title": "Parte II: Función y escuela",
+                "q3": "3. ¿Cuál es la escuela de tu personaje, y en qué funciones cumple esa escuela? (p. 56)",
+                "q3_pow": "3. ¿Cuál es la escuela de tu personaje y cuáles son sus funciones asociadas? (p. 46)",
+                "school": "Escuela",
+                "role": "Funciones",
+                "honor": "Honor",
+                "access": "Tipos de técnicas disponibles",
+                "school_ability": "Capacidad de escuela",
+                "starting_techniques": "Técnicas iniciales (2-6)",
+                "outfit": "Equipo inicial",
+                "q4": "4. ¿De qué manera destaca tu personaje dentro de su escuela? (p. 88)",
+                "q4_pow": "4. ¿Qué es lo que mete y saca a tu personaje de problemas? (p. 60)"
+            },
+            "part3": {
+                "title": "Parte III: Honor y Gloria",
+                "title_pow": "Parte III: El pasado y el futuro interactúan y se funden.",
+                "q5": "5. ¿Quién es tu señor y cuál es el deber de tu personaje hacia él? (p. 88)",
+                "q5_pow": "5. ¿Cuál es el pasado de tu personaje y cómo le afecta? (p. 60)",
+                "choose_giri": "Elige un giri:",
+                "choose_past": "Elige un pasado:",
+                "q6": "6. ¿Qué es lo que anhela tu personaje, y cómo podría esto interferir con su deber? (p. 90)",
+                "q6_pow": "6. ¿Qué anhela tu personaje y cómo podría afectar su pasado a su ninjō? (p. 62)",
+                "choose_ninjo": "Elige un ninjō:",
+                "q7": "7. ¿Cuál es la relación de tu personaje con tu clan? (p. 91)",
+                "q7_pow": "7. ¿Por qué es conocido tu personaje? (p. 61)",
+                "increase_glory": "Aumento de la gloria",
+                "q8": "8. ¿Qué piensa tu personaje acerca del Bushidō? (p. 91)",
+                "q8_pow": "8. ¿Qué piensa tu personaje acerca del Bushidō? (p. 62)",
+                "increase_honor": "Aumento del honor",
+                "tenets": "Escoge un precepto del Bushidō más importante y un precepto como menos significativo (ver las opiniones de los Clanes respecto del Bushidō, página 301 del libro de reglas básicas):",
+                "object": "Objeto (Rareza 5 o inferior)"
+            },
+            "part4": {
+                "title": "Parte IV: Fortalezas y Debilidades",
+                "q9": "9. ¿Cuál es el mayor logro de tu personaje hasta ahora? (p. 92)",
+                "q9_pow": "9. ¿Cuál es el mayor logro de tu personaje hasta ahora? (p. 64)",
+                "distinction": "Distinción (1)",
+                "q10": "10. ¿Qué es lo que más frena a tu personaje en la vida? (p. 92)",
+                "q10_pow": "10. ¿Qué es lo que más frena a tu personaje en la vida? (p. 64)",
+                "adversity": "Adversidad (1)",
+                "q11": "11. ¿Qué actividad hace que tu personaje se sienta más en paz? (p. 93)",
+                "q11_pow": "11. ¿Qué actividad hace que tu personaje se sienta más en paz? (p. 65)",
+                "passion": "Pasión (1)",
+                "q12": "12. ¿Qué preocupación, miedo o debilidad perturba más a tu personaje? (p. 93)",
+                "q12_pow": "12. ¿Qué preocupación, miedo o debilidad perturba más a tu personaje? (p. 65)",
+                "anxiety": "Ansiedad (1)",
+                "q13": "13. ¿Quién ha sido la persona de la que más ha aprendido tu personaje en el transcurso de su vida? (p. 93)",
+                "q13_pow": "13. ¿Quién ha sido la persona de la que más ha aprendido tu personaje en el transcurso de su vida? (p. 65)",
+                "disadvantage": "Desventaja (1)",
+                "advantage": "Ventaja (1)"
+            },
+            "part5": {
+                "title": "Parte V: Personalidad y Comportamiento",
+                "q14": "14. ¿Qué es lo que advierte primero la gente al encontrarse con tu personaje? (p. 93)",
+                "q14_pow": "14. ¿Cuál es la posesión más preciada de tu personaje? (p. 66)",
+                "accoutrement": "Accesorio estético distintivo",
+                "q15": "15. ¿Cómo reacciona tu personaje ante situaciones de tensión? (p. 94)",
+                "q15_pow": "15. ¿Cómo reacciona tu personaje ante situaciones de tensión? (p. 66)",
+                "q16": "16. ¿Cuáles son las relaciones previas de tu personaje con otros clanes, familias, organizaciones y tradiciones? (p. 94)",
+                "q16_pow": "16. ¿Cómo son tus relaciones con tu familia, los clanes, los campesinos y demás? (p. 66)",
+                "object": "Objeto (Rareza 7 o inferior)"
+            },
+            "part6": {
+                "title": "Parte VI: Ascestros y familia",
+                "title_pow": "Parte VI: Ascestros y vínculos",
+                "q17": "17. ¿Cómo describirían sus padres a tu personaje? (p. 95)",
+                "q17_pow": "17. ¿Qué historia compartes con tu grupo? (p. 66)",
+                "bond": "Determina el vínculo adecuado que debes aplicar a tu relación.",
+                "q18": "18. ¿En honor de quién se eligio el nombre de tu personaje? (p. 95)",
+                "q18_pow": "18. ¿Quién te crió? (p. 67)",
+                "d10r1": "Resultado D10 (1/2)",
+                "d10r1_choice": "Primer efecto de D10",
+                "d10r2": "Resultado D10 (2/2)",
+                "d10r2_choice": "Segundo efecto de D10",
+                "d10r2_drop_items": "O una técnica, una ventaja, un objeto...",
+                "q19": "19. ¿Cuál es el nombre personal de tu personaje? (p. 95)",
+                "q19_pow": "19. ¿Cuál es el nombre personal de tu personaje? (p. 68)"
+            },
+            "part7": {
+                "title": "Parte VII: Muerte",
+                "q20": "20. ¿Cómo debería morir tu personaje? (p. 95)",
+                "q20_pow": "20. ¿Cómo debería morir tu personaje? (p. 68)",
+                "summary": "Resumen",
+                "generchar": "Generar el personaje",
+                "generchar_disclaimer": "Advertencia, ¡esto borrará los datos actuales del personaje!",
+                "generchar_errors": "¡Borrar los errores antes de continuar!"
+            }
+        },
+        "char_generator": {
+            "title": "Generador de personajes",
+            "head_bt_title": "Generador de pj",
+            "generate": "Generar",
+            "average_value": "Valor medio",
+            "identity": "Clan, género, edad, estado civil",
+            "attributes": "Posición social, Anillos, Atributos y Habilidades",
+            "demeanor": "Comportamiento y afinidades con los anillos",
+            "peculiarities": "Ventajas y desventajas",
+            "items": "Armaduras, armas y objetos.",
+            "narrative": "Historia (descripción)"
+        },
+        "roles": {
+            "title": "Funciones",
+            "artisan": "Artesano",
+            "bushi": "Bushi",
+            "courtier": "Cortesano",
+            "monk": "Monje",
+            "sage": "Sabio",
+            "shinobi": "Shinobi",
+            "shugenja": "Shugenja"
+        },
+        "clans": {
+            "title": "Clanes",
+            "label": "Clan",
+            "imperial": "Imperial",
+            "crab": "Cangrejo",
+            "crane": "Grulla",
+            "dragon": "Dragón",
+            "lion": "León",
+            "phoenix": "Fénix",
+            "scorpion": "Escorpión",
+            "unicorn": "Unicornio",
+            "mantis": "Mantis",
+            "ronin": "Ronin",
+            "badger": "Tejón",
+            "bat": "Muerciélago",
+            "boar": "Jabalí",
+            "dragonfly": "Libélula",
+            "firefly": "Luciérnaga",
+            "fox": "Zorro",
+            "hare": "Liebre",
+            "monkey": "Mono",
+            "oriole": "Oropéndula",
+            "ox": "Buey",
+            "sparrow": "Gorrión",
+            "tortoise": "Tortuga",
+            "ivory_kingdoms": "Reinos de Marfil",
+            "qamarist": "Qamarista",
+            "ujik": "Ujik"
+        },
+        "demeanor": {
+            "adaptable": "Adaptable",
+            "aggressive": "Agresivo",
+            "ambitious": "Ambicioso",
+            "amiable": "Amigable",
+            "analytical": "Analítico",
+            "angry": "Enojado",
+            "arrogant": "Arrogante",
+            "assertive": "Firme",
+            "beguiling": "Seductor",
+            "bitter": "Amargado",
+            "bold": "Atrevido",
+            "calculating": "Calculador",
+            "calm": "Calmado",
+            "capricious": "Caprichoso",
+            "cautious": "Cuidadoso",
+            "clever": "Ingenioso",
+            "compassionate": "Compasivo",
+            "confused": "Confuso",
+            "courageous": "Valiente",
+            "cowardly": "Cobarde",
+            "curious": "Curioso",
+            "dependable": "Fiable",
+            "detached": "Desapegado",
+            "disheartened": "Desanimado",
+            "enraged": "Furioso",
+            "feral": "Salvaje",
+            "fickle": "Voluble",
+            "fierce": "Fiero",
+            "flighty": "Veleidoso",
+            "flippant": "Frívolo",
+            "friendly": "Amable",
+            "gruff": "Hosco",
+            "hungry": "Hambriento",
+            "intense": "Intenso",
+            "intimidating": "Intimidante",
+            "irritable": "Irritable",
+            "loyal": "Leal",
+            "mischievous": "Travieso",
+            "morose": "Taciturno",
+            "nurturing": "Animador",
+            "obstinate": "Obstinado",
+            "opportunistic": "Oportunista",
+            "passionate": "Apasionado",
+            "playful": "Juguetón",
+            "power_hungry": "Ávido de poder",
+            "proud": "Orgulloso",
+            "restrained": "Contenido",
+            "scheming": "Taimado",
+            "serene": "Sereno",
+            "serious": "Serio",
+            "shrewd": "Artero",
+            "stubborn": "Testarudo",
+            "suspicious": "Suspicaz",
+            "teasing": "Bromista",
+            "territorial": "Territorial",
+            "uncertain": "Inseguro",
+            "unenthused": "Sin entusiasmo",
+            "vain": "Vanidoso",
+            "wary": "Precavido"
+        },
+        "compendium": {
+            "filter_rank": "Mostrar rango",
+            "not_for_players": "No mostrar a los jugadores",
+            "filter": {
+                "rank": "Rango",
+                "rarity": "Rareza",
+                "ring": "Anillo"
+            }
+        },
+        "source_reference": {
+            "core_rulebook": "Libro básico",
+            "emerald_empire": "La guia del Imperio Esmeralda",
+            "shadowlands": "Las Tierras Sombrías",
+            "court_of_stones": "Cortes de piedra",
+            "path_of_waves": "Path of Waves",
+            "celestial_realms": "Celestial Realms",
+            "fields_of_victory": "Fields of Victory",
+            "writ_of_the_wild": "Writ of the Wild",
+            "gm_kit": "Pantalla del DJ",
+            "beginner_game": "Caja de inicio",
+            "the_mantis_clan": "El Clan de la Mantis",
+            "mask_of_the_oni": "La máscara del oni",
+            "winters_embrace": "El abrazo del invierno",
+            "sins_of_regret": "Sins of Regret",
+            "wheel_of_judgment": "Wheel of Judgment",
+            "blood_of_the_lioness": "Blood of the Lioness",
+            "imperfect_land": "Imperfect Land",
+            "in_the_palace_of_the_emerald_champion": "En el palacio del Campeón Esmeralda",
+            "the_highwayman": "The Highwayman",
+            "wedding_at_kyotei_castle": "Esponsales en el Castillo Kyotei",
+            "the_knotted_tails": "Las Colas Anudadas",
+            "cresting_waves": "Mareas Oscuras",
+            "deathly_turns": "Deathly Turns",
+            "the_scroll_or_the_blade": "El pergamino o la espada",
+            "legacies_of_war": "Legacies of War",
+            "children_of_the_five_winds": "Children of the Five Winds"
+        }
+    }
+}

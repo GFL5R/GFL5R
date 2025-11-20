@@ -1,0 +1,308 @@
+{
+    "Actor": {
+        "types": ["character", "npc", "army"],
+        "templates": {
+            "softlock": {
+                "soft_locked": false
+            },
+            "identity": {
+                "identity": {
+                    "age": "",
+                    "clan": "",
+                    "family": "",
+                    "female": null,
+                    "marital_status": "",
+                    "roles": "",
+                    "school": "",
+                    "school_rank": 1,
+                    "school_curriculum_journal": {}
+                }
+            },
+            "rings": {
+                "rings": {
+                    "earth": 1,
+                    "air": 1,
+                    "water": 1,
+                    "fire": 1,
+                    "void": 1
+                }
+            },
+            "social": {
+                "notes": "",
+                "description": "",
+                "social": {
+                    "honor": 0,
+                    "glory": 0,
+                    "status": 0,
+                    "ninjo": "",
+                    "giri": "",
+                    "bushido_tenets": {
+                        "paramount": "",
+                        "less_significant": ""
+                    }
+                }
+            },
+            "skills": {
+                "skills": {
+                    "artisan": {
+                        "aesthetics": 0,
+                        "composition": 0,
+                        "design": 0,
+                        "smithing": 0
+                    },
+                    "martial": {
+                        "fitness": 0,
+                        "melee": 0,
+                        "ranged": 0,
+                        "unarmed": 0,
+                        "meditation": 0,
+                        "tactics": 0
+                    },
+                    "scholar": {
+                        "culture": 0,
+                        "government": 0,
+                        "medicine": 0,
+                        "sentiment": 0,
+                        "theology": 0
+                    },
+                    "social": {
+                        "command": 0,
+                        "courtesy": 0,
+                        "games": 0,
+                        "performance": 0
+                    },
+                    "trade": {
+                        "commerce": 0,
+                        "labor": 0,
+                        "seafaring": 0,
+                        "skulduggery": 0,
+                        "survival": 0
+                    }
+                }
+            },
+            "conflict": {
+                "endurance": 0,
+                "composure": 0,
+                "focus": 0,
+                "vigilance": 0,
+                "void_points": {
+                    "max": 1,
+                    "value": 0
+                },
+                "fatigue": {
+                    "max": 1,
+                    "value": 0
+                },
+                "strife": {
+                    "max": 1,
+                    "value": 0
+                },
+                "stance": "void",
+                "prepared": true
+            },
+            "advancement": {
+                "xp_total": 0,
+                "xp_spent": 0,
+                "xp_saved": 0
+            },
+            "techniques": {
+                "techniques": {
+                    "kata": false,
+                    "kiho": false,
+                    "inversion": false,
+                    "invocation": false,
+                    "ritual": false,
+                    "shuji": false,
+                    "maho": false,
+                    "ninjutsu": false,
+                    "mantra": false,
+                    "specificity": true
+                }
+            }
+        },
+        "character": {
+            "templates": ["softlock", "identity", "rings", "social", "skills", "techniques", "conflict", "advancement"],
+            "template": "core",
+            "twenty_questions": {},
+            "zeni": 0
+        },
+        "npc": {
+            "templates": ["softlock", "identity", "rings", "social", "techniques", "conflict"],
+            "type": "adversary",
+            "attitude": "",
+            "conflict_rank": {
+                "martial": 0,
+                "social": 0
+            },
+            "rings_affinities": {
+                "earth": 0,
+                "air": 0,
+                "water": 0,
+                "fire": 0,
+                "void": 0
+            },
+            "skills": {
+                "artisan": 0,
+                "martial": 0,
+                "scholar": 0,
+                "social": 0,
+                "trade": 0
+            }
+        },
+        "army": {
+            "templates": ["softlock"],
+            "warlord": "",
+            "warlord_actor_id": null,
+            "allies_backers": "",
+            "purpose_mustering": "",
+            "battle_readiness": {
+                "casualties_strength": {
+                    "max": 0,
+                    "value": 0
+                },
+                "panic_discipline": {
+                    "max": 0,
+                    "value": 0
+                }
+            },
+            "commander": "",
+            "commander_actor_id": null,
+            "commander_abilities": "",
+            "army_abilities": "",
+            "commander_standing": {
+                "honor": 0,
+                "glory": 0,
+                "status": 0
+            },
+            "supplies_logistics": "",
+            "notes": "",
+            "description": "",
+            "past_battles": ""
+        }
+    },
+    "Item": {
+        "types": [
+            "item",
+            "armor",
+            "weapon",
+            "technique",
+            "property",
+            "peculiarity",
+            "advancement",
+            "title",
+            "bond",
+            "signature_scroll",
+            "item_pattern",
+            "army_cohort",
+            "army_fortification"
+        ],
+        "templates": {
+            "basics": {
+                "source_reference": {
+                    "source": "",
+                    "page": 0
+                },
+                "description": "",
+                "parent_id": null,
+                "items": []
+            },
+            "advancement": {
+                "in_curriculum": false,
+                "xp_used": 3,
+                "xp_cost": 3,
+                "rank": 1,
+                "bought_at_rank": 1,
+                "ring": "void"
+            },
+            "item": {
+                "equipped": false,
+                "quantity": 1,
+                "weight": 0,
+                "rarity": "0",
+                "zeni": "0",
+                "properties": []
+            }
+        },
+        "item": {
+            "templates": ["basics", "item"]
+        },
+        "armor": {
+            "templates": ["basics", "item"],
+            "armor": {
+                "physical": 0,
+                "supernatural": 0
+            }
+        },
+        "weapon": {
+            "templates": ["basics", "item"],
+            "category": "",
+            "skill": "melee",
+            "readied": false,
+            "range": "0",
+            "damage": 0,
+            "deadliness": 0,
+            "grip_1": "",
+            "grip_2": ""
+        },
+        "technique": {
+            "templates": ["basics", "advancement"],
+            "skill": "",
+            "difficulty": "",
+            "technique_type": "kata"
+        },
+        "property": {
+            "templates": ["basics"],
+            "properties": []
+        },
+        "peculiarity": {
+            "templates": ["basics", "advancement"],
+            "peculiarity_type": "distinction",
+            "types": ""
+        },
+        "advancement": {
+            "templates": ["basics", "advancement"],
+            "advancement_type": "skill",
+            "skill": ""
+        },
+        "title": {
+            "templates": ["basics", "advancement"],
+            "advancements": [],
+            "xp_used_total": 0
+        },
+        "bond": {
+            "templates": ["basics", "advancement"],
+            "bond_type": ""
+        },
+        "item_pattern": {
+            "templates": ["basics", "advancement"],
+            "linked_property_id": null,
+            "rarity_modifier": ""
+        },
+        "signature_scroll": {
+            "templates": ["basics", "advancement"]
+        },
+        "army_cohort": {
+            "templates": ["basics"],
+            "leader": "",
+            "leader_actor_id": null,
+            "equipment": "",
+            "abilities": "",
+            "battle_readiness": {
+                "casualties_strength": {
+                    "max": 0,
+                    "value": 0
+                },
+                "panic_discipline": {
+                    "max": 0,
+                    "value": 0
+                }
+            }
+        },
+        "army_fortification": {
+            "templates": ["basics"],
+            "difficulty": 0,
+            "attrition_reduction": 0,
+            "notes": ""
+        }
+    }
+}

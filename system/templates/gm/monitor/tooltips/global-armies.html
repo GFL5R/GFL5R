@@ -1,0 +1,45 @@
+<section>
+    <h2>{{localize 'TYPES.Actor.army'}}</h2>
+    <ul>
+        {{!-- warlord --}}
+        <li><b>{{localize 'l5r5e.army.allies_backers'}}</b> : {{actorData.system.allies_backers}}</li>
+        <li><b>{{localize 'l5r5e.army.purpose_mustering'}}</b> : {{actorData.system.purpose_mustering}}</li>
+
+        {{!-- commander --}}
+        <li><b>{{localize 'l5r5e.army.commander_abilities'}}</b> : {{actorData.system.commander_abilities}}</li>
+        <li><b>{{localize 'l5r5e.army.army_abilities'}}</b> : {{{actorData.enrichedHtml.army_abilities}}}</li>
+    </ul>
+    {{!-- description --}}
+    <p>{{{actorData.enrichedHtml.description}}}</p>
+
+    {{!-- Cohorts --}}
+    {{#if actorData.splitItemsList.army_cohort}}
+    <h2>{{localize 'l5r5e.army.cohort.tab'}}</h2>
+    <ul>
+        {{#each actorData.splitItemsList.army_cohort as |cohort|}}
+        <li>
+            <b>{{cohort.name}} {{#if cohort.system.leader}}({{cohort.system.leader}}){{/if}}</b>
+            <br>
+            <i class="fas fa-user-injured" title="{{localize 'l5r5e.army.battle_readiness.casualties'}}"> {{cohort.system.battle_readiness.casualties_strength.value}}</i>
+            <i class="fas fa-fist-raised" title="{{localize 'l5r5e.army.battle_readiness.strength'}}"> {{cohort.system.battle_readiness.casualties_strength.max}}</i>
+            <i class="fas fa-ghost" title="{{localize 'l5r5e.army.battle_readiness.panic'}}"> {{cohort.system.battle_readiness.panic_discipline.value}}</i>
+            <i class="fas fa-user-friends" title="{{localize 'l5r5e.army.battle_readiness.discipline'}}"> {{cohort.system.battle_readiness.panic_discipline.max}}</i>
+        </li>
+        {{/each}}
+    </ul>
+    {{/if}}
+
+    {{!-- Fortifications --}}
+    {{#if actorData.splitItemsList.army_fortification}}
+    <h2>{{localize 'l5r5e.army.fortification.tab'}}</h2>
+    <ul>
+        {{#each actorData.splitItemsList.army_fortification as |fortification|}}
+        <li>
+            <b>{{fortification.name}}</b>
+            <i class="fas fa-skull" title="{{localize 'l5r5e.army.fortification.difficulty'}}"> {{fortification.system.difficulty}}</i>
+            <i class="fas fa-dungeon" title="{{localize 'l5r5e.army.fortification.attrition_reduction'}}"> {{fortification.system.attrition_reduction}}</i>
+        </li>
+        {{/each}}
+    </ul>
+    {{/if}}
+</section>

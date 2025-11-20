@@ -1,0 +1,34 @@
+<ul class="social-content">
+    <li>
+        <label class="attribute-label centered-input">
+            <strong>{{localize 'l5r5e.social.honor'}}</strong>
+            <input class="centered-input select-on-focus" type="number" name="system.social.honor" value="{{data.system.social.honor}}" data-dtype="Number" placeholder="0" {{^if data.editable_not_soft_locked}}disabled{{/if}}/>
+        </label>
+    </li>
+    <li>
+        <label class="attribute-label centered-input">
+            <strong>{{localize 'l5r5e.social.glory'}}</strong>
+            <input class="centered-input select-on-focus" type="number" name="system.social.glory" value="{{data.system.social.glory}}" data-dtype="Number" placeholder="0" {{^if data.editable_not_soft_locked}}disabled{{/if}}/>
+        </label>
+    </li>
+    <li>
+        <label class="attribute-label centered-input">
+            <strong>{{localize 'l5r5e.social.status'}}</strong>
+            <input class="centered-input select-on-focus" type="number" name="system.social.status" value="{{data.system.social.status}}" data-dtype="Number" placeholder="0" {{^if data.editable_not_soft_locked}}disabled{{/if}}/>
+        </label>
+    </li>
+    <li class="affinities">
+        {{!-- Attitude --}}
+        <label class="attitude">
+            <input type="text" name="system.attitude" value="{{data.system.attitude}}" data-dtype="String" placeholder="" {{^if data.editable_not_soft_locked}}disabled{{/if}}/>
+            {{localize 'l5r5e.social.attitude'}}
+        </label>
+        {{!-- Strength & Weakness --}}
+        {{#each data.stances as |stance|}}
+            <label class="ring">
+                <i class="i_{{stance}}" title="{{localizeRing stance}}"></i>
+                <input class="centered-input select-on-focus" type="number" name="system.rings_affinities.{{stance}}" value="{{lookup ../data.system.rings_affinities stance}}" data-dtype="Number" min="-9" max="9" placeholder="0" {{^if ../data.editable_not_soft_locked}}disabled{{/if}}/>
+            </label>
+        {{/each}}
+    </li>
+</ul>

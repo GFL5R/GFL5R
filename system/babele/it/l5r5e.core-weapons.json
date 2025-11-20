@@ -1,0 +1,858 @@
+{
+    "label": "Armi (WIP)",
+    "mapping": {
+        "category": "system.category",
+        "grip_1": "system.grip_1",
+        "grip_2": "system.grip_2",
+        "description": "system.description",
+        "book_reference": "system.book_reference"
+    },
+    "entries": [
+        {
+            "id": "Bokken",
+            "name": "Bokken",
+            "category": "Spade",
+            "grip_1": "",
+            "grip_2": "Danno +2",
+            "description": "",
+            "book_reference": "Manuale Base p.232"
+        },
+        {
+            "id": "Chokutō",
+            "name": "Chokutō",
+            "category": "Spade",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Manuale Base p.232"
+        },
+        {
+            "id": "Scimitar",
+            "name": "Scimitarra",
+            "category": "Spade",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Manuale Base p.232"
+        },
+        {
+            "id": "Dao",
+            "name": "Dao",
+            "category": "Spade",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Manuale Base p.232"
+        },
+        {
+            "id": "Gao",
+            "name": "Gao",
+            "category": "Spade",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Manuale Base p.232"
+        },
+        {
+            "id": "Jian",
+            "name": "Jian",
+            "category": "Spade",
+            "grip_1": "",
+            "grip_2": "Letalità +1",
+            "description": "",
+            "book_reference": "Manuale Base p.232"
+        },
+        {
+            "id": "Katana",
+            "name": "Katana",
+            "category": "Spade",
+            "grip_1": "",
+            "grip_2": "Letalità +2",
+            "description": "",
+            "book_reference": "Manuale Base p.232"
+        },
+        {
+            "id": "Nodachi",
+            "name": "Nodachi",
+            "category": "Spade",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Manuale Base p.233"
+        },
+        {
+            "id": "Wakizashi",
+            "name": "Wakizashi",
+            "category": "Spade",
+            "grip_1": "",
+            "grip_2": "Letalità +2",
+            "description": "",
+            "book_reference": "Manuale Base p.233"
+        },
+        {
+            "id": "Zanbatō",
+            "name": "Zanbatō",
+            "category": "Spade",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Manuale Base p.233"
+        },
+        {
+            "id": "Masakari",
+            "name": "Masakari",
+            "category": "Asce",
+            "grip_1": "",
+            "grip_2": "Letalità +2",
+            "description": "",
+            "book_reference": "Manuale Base p.233"
+        },
+        {
+            "id": "Ono",
+            "name": "Ono",
+            "category": "Asce",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Manuale Base p.233"
+        },
+        {
+            "id": "Club",
+            "name": "Randello",
+            "category": "Armi contundenti",
+            "grip_1": "",
+            "grip_2": "Danno +1",
+            "description": "",
+            "book_reference": "Manuale Base p.234"
+        },
+        {
+            "id": "Kiseru",
+            "name": "Kiseru",
+            "category": "Armi contundenti",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Manuale Base p.234"
+        },
+        {
+            "id": "Hammer",
+            "name": "Martello",
+            "category": "Armi contundenti",
+            "grip_1": "",
+            "grip_2": "Danno +2",
+            "description": "",
+            "book_reference": "Manuale Base p.234"
+        },
+        {
+            "id": "Ōtsuchi",
+            "name": "Ōtsuchi",
+            "category": "Armi contundenti",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Manuale Base p.234"
+        },
+        {
+            "id": "Tetsubō",
+            "name": "Tetsubō",
+            "category": "Armi contundenti",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Manuale Base p.234"
+        },
+        {
+            "id": "Jitte",
+            "name": "Jitte",
+            "category": "Armi da mano",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Manuale Base p.234"
+        },
+        {
+            "id": "Knife",
+            "name": "Coltello",
+            "category": "Armi da mano",
+            "grip_1": "",
+            "grip_2": "Letalità +2",
+            "description": "",
+            "book_reference": "Manuale Base p.234"
+        },
+        {
+            "id": "Nunchaku",
+            "name": "Nunchaku",
+            "category": "Armi da mano",
+            "grip_1": "",
+            "grip_2": "Intrappolante",
+            "description": "",
+            "book_reference": "Manuale Base p.235"
+        },
+        {
+            "id": "Tessen",
+            "name": "Tessen",
+            "category": "Armi da mano",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Manuale Base p.235"
+        },
+        {
+            "id": "Bisentō",
+            "name": "Bisentō",
+            "category": "Armi su asta",
+            "grip_1": "Raggio 1",
+            "grip_2": "Danno +2",
+            "description": "",
+            "book_reference": "Manuale Base p.235"
+        },
+        {
+            "id": "Bō",
+            "name": "Bō",
+            "category": "Armi su asta",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Manuale Base p.235"
+        },
+        {
+            "id": "Ji",
+            "name": "Ji",
+            "category": "Armi su asta",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Manuale Base p.235"
+        },
+        {
+            "id": "Naginata",
+            "name": "Naginata",
+            "category": "Armi su asta",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Manuale Base p.235"
+        },
+        {
+            "id": "Trident",
+            "name": "Tridente",
+            "category": "Armi su asta",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Manuale Base p.235"
+        },
+        {
+            "id": "Yari",
+            "name": "Yari",
+            "category": "Armi su asta",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Manuale Base p.235"
+        },
+        {
+            "id": "Horsebow",
+            "name": "Arco equestre",
+            "category": "Archi",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Manuale Base p.236"
+        },
+        {
+            "id": "Daikyū",
+            "name": "Daikyū",
+            "category": "Archi",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Manuale Base p.236"
+        },
+        {
+            "id": "Yumi",
+            "name": "Yumi",
+            "category": "Archi",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Manuale Base p.236"
+        },
+        {
+            "id": "Oyumi",
+            "name": "Oyumi",
+            "category": "Balestre",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Manuale Base p.236"
+        },
+        {
+            "id": "Kama",
+            "name": "Kama",
+            "category": "Armi da specialisti",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Manuale Base p.237"
+        },
+        {
+            "id": "Kusari-gama",
+            "name": "Kusari-gama",
+            "category": "Armi da specialisti",
+            "grip_1": "",
+            "grip_2": "Raggio 2-3",
+            "description": "",
+            "book_reference": "Manuale Base p.237"
+        },
+        {
+            "id": "Blowgun",
+            "name": "Cerbottana",
+            "category": "Armi da specialisti",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Manuale Base p.237"
+        },
+        {
+            "id": "Shuriken",
+            "name": "Shuriken",
+            "category": "Armi da specialisti",
+            "grip_1": "(di punta o di taglio) -, (lancio) Arti Marziali (Distanza), Raggio 1-3",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Manuale Base p.237"
+        },
+        {
+            "id": "Punch",
+            "name": "Pugno",
+            "category": "Attacchi a mani nude",
+            "grip_1": "N/A",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Manuale Base p.237"
+        },
+        {
+            "id": "Kick",
+            "name": "Calcio",
+            "category": "Attacchi a mani nude",
+            "grip_1": "N/A",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Manuale Base p.237"
+        },
+        {
+            "id": "Bite",
+            "name": "Morso",
+            "category": "Attacchi a mani nude",
+            "grip_1": "N/A",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Manuale Base p.237"
+        },
+        {
+            "id": "Tachi",
+            "name": "Tachi",
+            "category": "Spade",
+            "grip_1": "",
+            "grip_2": "Letalità +1",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Whip",
+            "name": "Whip",
+            "category": "Armi da specialisti",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Moshi Sun Ax",
+            "name": "Moshi Sun Ax",
+            "category": "Asce",
+            "grip_1": "",
+            "grip_2": "Danno +3",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Uchigatana",
+            "name": "Uchigatana",
+            "category": "Spade",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Shakujō",
+            "name": "Shakujō",
+            "category": "Armi su Asta",
+            "grip_1": "",
+            "grip_2": "Danno +1",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Kusarifundo",
+            "name": "Kusarifundo",
+            "category": "Armi da specialisti",
+            "grip_1": "",
+            "grip_2": "Entrave",
+            "description": "",
+            "book_reference": "Corti di Pietra p.111"
+        },
+        {
+            "id": "Shakuhachi",
+            "name": "Shakuhachi",
+            "category": "Armi da specialisti",
+            "grip_1": "",
+            "grip_2": "Danno +1",
+            "description": "",
+            "book_reference": "Corti di Pietra p.111"
+        },
+        {
+            "id": "Kyoketsu Shoge",
+            "name": "Kyoketsu Shoge",
+            "category": "Armi da specialisti",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Corti di Pietra p.111"
+        },
+        {
+            "id": "Shinobigatana",
+            "name": "Shinobigatana",
+            "category": "Spade",
+            "grip_1": "",
+            "grip_2": "Letalità +1",
+            "description": "",
+            "book_reference": "Corti di Pietra p.110"
+        },
+        {
+            "id": "Ninjatō",
+            "name": "Ninjatō",
+            "category": "Spade",
+            "grip_1": "",
+            "grip_2": "Letalità +1",
+            "description": "",
+            "book_reference": "Corti di Pietra p.109"
+        },
+        {
+            "id": "Kamayari",
+            "name": "Kamayari",
+            "category": "Armi da specialisti",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Corti di Pietra p.111"
+        },
+        {
+            "id": "Tekagi",
+            "name": "Tekagi",
+            "category": "Armi da specialisti",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Corti di Pietra p.112"
+        },
+        {
+            "id": "Folding Half-Bow",
+            "name": "Folding Half-Bow",
+            "category": "Archi",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Corti di Pietra p.110"
+        },
+        {
+            "id": "Tekken",
+            "name": "Tekken",
+            "category": "Armi da specialisti",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Corti di Pietra p.112"
+        },
+        {
+            "id": "Sake Bottle & Cups",
+            "name": "Sake Bottle & Cups",
+            "category": "Armi improvvisate",
+            "grip_1": "(manganello) : -, (lanciato) : Letalità +2, Raggio 1-3, Bordo",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.112"
+        },
+        {
+            "id": "Umbrella",
+            "name": "Umbrella",
+            "category": "Armi improvvisate",
+            "grip_1": "(manganello) : -",
+            "grip_2": "(manganello) : Danno +2, (pugnale) : Danno +2, Letalità +2",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.112"
+        },
+        {
+            "id": "Talwar",
+            "name": "Talwar",
+            "category": "Spade",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.112"
+        },
+        {
+            "id": "Scroll Case",
+            "name": "Scroll Case",
+            "category": "Armi improvvisate",
+            "grip_1": "",
+            "grip_2": "Danno +2, Letalità +1",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.112"
+        },
+        {
+            "id": "Urumi",
+            "name": "Urumi",
+            "category": "Spade",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.112"
+        },
+        {
+            "id": "Iron Sheath",
+            "name": "Iron Sheath",
+            "category": "Armi improvvisate",
+            "grip_1": "",
+            "grip_2": "Danno +2",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.112"
+        },
+        {
+            "id": "Buckler",
+            "name": "Buckler",
+            "category": "Scudi",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.112"
+        },
+        {
+            "id": "Lute",
+            "name": "Lute",
+            "category": "Armi improvvisate",
+            "grip_1": "",
+            "grip_2": "Danno +1, Letalità +1",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.112"
+        },
+        {
+            "id": "Sling",
+            "name": "Sling",
+            "category": "Armi da specialisti",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.112"
+        },
+        {
+            "id": "Gada",
+            "name": "Gada",
+            "category": "Armi contundenti",
+            "grip_1": "",
+            "grip_2": "Letalità +3",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.112"
+        },
+        {
+            "id": "Kuwa",
+            "name": "Kuwa",
+            "category": "Asce",
+            "grip_1": "",
+            "grip_2": "Danno +2, Letalità +2, Raggio 1-2",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.112"
+        },
+        {
+            "id": "Qamarist Heavy Shield",
+            "name": "Qamarist Heavy Shield",
+            "category": "Scudi",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.112"
+        },
+        {
+            "id": "Boat Oar",
+            "name": "Boat Oar",
+            "category": "Armi improvvisate",
+            "grip_1": "",
+            "grip_2": "Danno +2, Letalità +3",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.112"
+        },
+        {
+            "id": "Fishing Net",
+            "name": "Fishing Net",
+            "category": "Armi improvvisate",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.112"
+        },
+        {
+            "id": "Chair",
+            "name": "Chair",
+            "category": "Armi improvvisate",
+            "grip_1": "(manganello) : -, (lanciato) : -",
+            "grip_2": "(manganello) : Danno +2, (lanciato) : Letalità +1, Raggio 0-2",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.112"
+        },
+        {
+            "id": "Chain Whip",
+            "name": "Chain Whip",
+            "category": "Armi da specialisti",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.112"
+        },
+        {
+            "id": "Genno",
+            "name": "Genno",
+            "category": "Martelli",
+            "grip_1": "",
+            "grip_2": "Danno +4",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.102"
+        },
+        {
+            "id": "Tekkan",
+            "name": "Tekkan",
+            "category": "Spade",
+            "grip_1": "Ingombrante",
+            "grip_2": "Danno +2",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.102"
+        },
+        {
+            "id": "Small Shield",
+            "name": "Small Shield",
+            "category": "Scudi",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.104"
+        },
+        {
+            "id": "O-Gata Dohou",
+            "name": "O-Gata Dohou",
+            "category": "Macchine d'assedio",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.105"
+        },
+        {
+            "id": "Large Shield",
+            "name": "Large Shield",
+            "category": "Scudi",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.104"
+        },
+        {
+            "id": "Kaiu no Oyumi",
+            "name": "Kaiu no Oyumi",
+            "category": "Balestre",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.103"
+        },
+        {
+            "id": "Tsuruhashi",
+            "name": "Tsuruhashi",
+            "category": "Asce",
+            "grip_1": "Ingombrante",
+            "grip_2": "Letalità +2",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.102"
+        },
+        {
+            "id": "Flyssa",
+            "name": "Flissa",
+            "category": "Spade",
+            "grip_1": "",
+            "grip_2": "Accelerato",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.102"
+        },
+        {
+            "id": "Sode",
+            "name": "Sode",
+            "category": "Scudi",
+            "grip_1": "Spalle",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.103"
+        },
+        {
+            "id": "Ballista",
+            "name": "Ballista",
+            "category": "Macchine d'assedio",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.105"
+        },
+        {
+            "id": "Kabutowari",
+            "name": "Kabutowari",
+            "category": "Spade",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.102"
+        },
+        {
+            "id": "Storm Bow",
+            "name": "Storm Bow",
+            "category": "Archi",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.103"
+        },
+        {
+            "id": "Doom Crossbow",
+            "name": "Doom Crossbow",
+            "category": "Balestre",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.103"
+        },
+        {
+            "id": "Butterfly sword",
+            "name": "Spade a Farfalla",
+            "category": "Spade",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Il Clan della Mantide p.8"
+        },
+        {
+            "id": "Eku",
+            "name": "Eku",
+            "category": "Armi su Asta",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Il Clan della Mantide p.8"
+        },
+        {
+            "id": "Rochin",
+            "name": "Rochin",
+            "category": "Armi su Asta",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Il Clan della Mantide p.8"
+        },
+        {
+            "id": "Sai",
+            "name": "Sai",
+            "category": "Armi da Mano",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Il Clan della Mantide p.8"
+        },
+        {
+            "id": "Tonfa",
+            "name": "Tonfa",
+            "category": "Armi da Mano",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Il Clan della Mantide p.9"
+        },
+        {
+            "id": "Tinbe",
+            "name": "Timbe",
+            "category": "Scudi",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Il Clan della Mantide p.8"
+        },
+        {
+            "id": "Ichirō Sapper Ax",
+            "name": "Ichirō Sapper Ax",
+            "category": "Asce",
+            "grip_1": "-, (smussato): Danno +2, Letalità -3",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Magari Yari",
+            "name": "Magari Yari",
+            "category": "Armi su Asta",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Nagae Yari",
+            "name": "Nagae Yari",
+            "category": "Armi su Asta",
+            "grip_1": "N/A",
+            "grip_2": "",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Nagamaki",
+            "name": "Nagamaki",
+            "category": "Armi su Asta",
+            "grip_1": "Ingombrante",
+            "grip_2": "Danno +2, Letalità +2",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Yoroi-Doshi",
+            "name": "Yoroi-Doshi",
+            "category": "Armi da Mano",
+            "grip_1": "",
+            "grip_2": "Letalità +3",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Gunbai",
+            "name": "Gunbai",
+            "category": "Armi da Mano",
+            "grip_1": "",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Hooves",
+            "name": "Zoccoli",
+            "category": "Attacchi a mani nude",
+            "grip_1": "N/A",
+            "grip_2": "N/A",
+            "description": "",
+            "book_reference": "Manuale Base p.327"
+        }
+    ]
+}

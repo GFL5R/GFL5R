@@ -1,0 +1,22 @@
+<div class="{{cssClass}}" data-actor-id="{{actor._id}}" data-item-id="{{data._id}}">
+    <header class="card-header">
+        <h2 class="item-name"><img src="{{data.img}}" title="{{data.name}}" /> {{data.name}}</h2>
+    </header>
+    <section class="sheet-body">
+        <ul>
+            <li>
+                {{#ifCond data.system.advancement_type '==' 'ring' }}
+                    <strong>{{localize 'l5r5e.rings.label'}}</strong> : {{localizeRing data.system.ring}}
+                {{else}}
+                    <strong>{{localize 'l5r5e.skills.label'}}</strong> : {{localizeSkillId data.system.skill}}
+                {{/ifCond}}
+            </li>
+            <li><strong>{{localize 'l5r5e.advancements.curriculum'}}</strong> : {{localizeYesNo data.system.in_curriculum}}</li>
+            <li><strong>{{localize 'l5r5e.advancements.spent'}}</strong> : {{data.system.xp_used}}</li>
+            <li><strong>{{localize 'l5r5e.sheets.rank'}}</strong> : {{data.system.rank}}</li>
+            <li><strong>{{localize 'l5r5e.sheets.bought_at_rank'}}</strong> : {{data.system.bought_at_rank}}</li>
+        </ul>
+        
+        {{> 'systems/l5r5e/templates/items/item/item-text-partial-reference.html'}}
+    </section>
+</div>

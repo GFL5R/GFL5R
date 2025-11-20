@@ -1,0 +1,189 @@
+{
+    "label": "Tecniche Rituali (WIP)",
+    "mapping": {
+        "description": "system.description",
+        "book_reference": "system.book_reference"
+    },
+    "entries": [
+        {
+            "id": "Tea Ceremony",
+            "name": "Cerimonia del Tè",
+            "description": "",
+            "book_reference": "Manuale Base p.212"
+        },
+        {
+            "id": "Commune with the Spirits",
+            "name": "Comunione con gli Spiriti",
+            "description": "",
+            "book_reference": "Manuale Base p.212"
+        },
+        {
+            "id": "Divination",
+            "name": "Divinazione",
+            "description": "",
+            "book_reference": "Manuale Base p.213"
+        },
+        {
+            "id": "Cleansing Rite",
+            "name": "Rito di Purificazione",
+            "description": "",
+            "book_reference": "Manuale Base p.213"
+        },
+        {
+            "id": "Threshold Barrier",
+            "name": "Barriera sulla Soglia",
+            "description": "",
+            "book_reference": "Manuale Base p.213"
+        },
+        {
+            "id": "Blessed Union",
+            "name": "Blessed Union",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Blessing of the Dance",
+            "name": "Blessing of the Dance",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Prayer of Protection",
+            "name": "Preghiera di Protezione",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Rite of the Wheel",
+            "name": "Rito della Ruota",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Whispers to the Moon (Moon Cultist)",
+            "name": "Whispers to the Moon (Moon Cultist)",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Formal Tea Ceremony",
+            "name": "Formal Tea Ceremony",
+            "description": "",
+            "book_reference": "Corti di Pietra p.116"
+        },
+        {
+            "id": "Treaty Signing",
+            "name": "Treaty Signing",
+            "description": "",
+            "book_reference": "Corti di Pietra p.117"
+        },
+        {
+            "id": "The Ties that Bind",
+            "name": "The Ties that Bind",
+            "description": "",
+            "book_reference": "Corti di Pietra p.116"
+        },
+        {
+            "id": "Balancing Salve (Qamarist Region)",
+            "name": "Balancing Salve (Qamarist Region)",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.96"
+        },
+        {
+            "id": "Elixir of Recovery (Qamarist Region)",
+            "name": "Elixir of Recovery (Qamarist Region)",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.96"
+        },
+        {
+            "id": "Fortitude Draught (Qamarist Region)",
+            "name": "Fortitude Draught (Qamarist Region)",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.96"
+        },
+        {
+            "id": "Restorative Transmutation (Qamarist Region)",
+            "name": "Restorative Transmutation (Qamarist Region)",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.97"
+        },
+        {
+            "id": "Cleansing of Coral and Gold (Ivory Kingdoms Region)",
+            "name": "Cleansing of Coral and Gold (Ivory Kingdoms Region)",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.97"
+        },
+        {
+            "id": "Wayfarer's Path",
+            "name": "Wayfarer's Path",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.97"
+        },
+        {
+            "id": "Blessing of Steel (Artisan)",
+            "name": "Blessing of Steel (Artisan)",
+            "description": "",
+            "book_reference": "Terre delle Ombre p.114"
+        },
+        {
+            "id": "Craft Shikigami (Shugenja)",
+            "name": "Craft Shikigami (Shugenja)",
+            "description": "",
+            "book_reference": "Terre delle Ombre p.114"
+        },
+        {
+            "id": "Blessing of Fertile Fields",
+            "name": "Blessing of Fertile Fields",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Beseech Akodo's Judgment",
+            "name": "Beseech Akodo's Judgment",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Beseech Bayushi's Absolution",
+            "name": "Beseech Bayushi's Absolution",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Beseech Doji's Wisdom",
+            "name": "Beseech Doji's Wisdom",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Beseech Hida's MIght",
+            "name": "Beseech Hida's Might",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Beseech Shiba's Calm",
+            "name": "Beseech Shiba's Calm",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Beseech Shinjo's Empathy",
+            "name": "Beseech Shinjo's Empathy",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Beseech Togashi's Vision",
+            "name": "Beseech Togashi's Vision",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Imbue Thunder",
+            "name": "Imbue Thunder",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        }
+    ]
+}

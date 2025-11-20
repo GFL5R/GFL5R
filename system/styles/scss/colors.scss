@@ -1,0 +1,121 @@
+/** Colors **/
+
+// -- Global
+$white: rgba(255, 255, 255, 1);
+$white-light: rgba(255, 255, 255, 0.65);
+$black: rgba(0, 0, 0, 1);
+$black-light: rgb(0, 0, 0);
+$dark-red: rgba(25, 0, 0, 0.75);
+$red: rgba(255, 0, 0, 1);
+$red-light: rgba(255, 0, 0, 0.75);
+$red-dice: rgb(205, 0, 0);
+$orange: rgba(255, 100, 0, 0.75);
+$blue: rgba(0, 0, 255, 0.75);
+$green: rgba(0, 255, 0, 0.75);
+
+// color title
+$l5r5e-title: rgba(186, 187, 177, 0.5);
+// color bold
+$l5r5e-bold: rgb(118, 79, 64);
+// color label
+$l5r5e-label: rgb(90, 110, 90);
+// color label
+$l5r5e-label-light: rgba(90, 110, 90, 0.25);
+// color red
+$l5r5e-red: rgb(150, 60, 65);
+// color white 0.5
+$l5r5e-white: rgba(255, 255, 255, 0.5);
+// color white 0.2
+$l5r5e-white-light: rgba(255, 255, 255, 0.25);
+// color black 0.5
+$l5r5e-black: rgba(0, 0, 0, 0.5);
+// color black 0.25
+$l5r5e-black-light: rgba(0, 0, 0, 0.25);
+// color border sidebar
+$l5r5e-border-sidebar: rgb(195, 165, 130);
+
+// color list odd
+$l5r5e-odd: rgba(186, 187, 177, 0.2);
+// color list even
+$l5r5e-even: rgba(186, 187, 177, 0.1);
+
+// gradient
+$l5r5e-linear-gradient-first: rgba(65, 20, 15, 0.75);
+$l5r5e-linear-gradient-first-dark: rgba(35, 10, 5, 0.75);
+$l5r5e-linear-gradient-second: rgba(10, 0, 20, 0.75);
+$l5r5e-linear-gradient-second-dark: rgba(0, 0, 10, 0.75);
+$l5r5e-linear-gradient-third: rgba(95, 40, 65, 1);
+$l5r5e-linear-gradient-third-dark: rgba(65, 25, 40, 1);
+
+// Chat color
+$l5r5e-chat-color: rgba(225, 215, 200, 0.25);
+$l5r5e-chat-color-roll: rgba(225, 215, 200, 0.75);
+$l5r5e-chat-color-blind: transparent;
+$l5r5e-chat-color-whisper: rgba(225, 200, 225, 0.75);
+
+// -- Rings
+
+// Earth
+$l5r5e-earth: rgb(105, 150, 120);
+// Air
+$l5r5e-air: rgb(145, 120, 150);
+// Water
+$l5r5e-water: rgb(95, 145, 155);
+// Fire
+$l5r5e-fire: rgb(155, 115, 80);
+// Void
+$l5r5e-void: rgb(75, 70, 65);
+
+// -- Clans
+
+// Crab
+$l5r5e-crab: rgb(130, 130, 140);
+// Crane
+$l5r5e-crane: rgb(120, 145, 145);
+// Dragon
+$l5r5e-dragon: rgb(85, 130, 110);
+// Lion
+$l5r5e-lion: rgb(160, 140, 80);
+// Mantis
+$l5r5e-mantis: rgb(45, 85, 30);
+// Phoenix
+$l5r5e-phoenix: rgb(145, 120, 75);
+// Tortoise
+$l5r5e-tortoise: rgb(180, 200, 45);
+// Scorpion
+$l5r5e-scorpion: rgb(155, 70, 60);
+// Unicorn
+$l5r5e-unicorn: rgb(120, 90, 135);
+// Imperial
+$l5r5e-imperial: rgb(120, 255, 180);
+// Ronin
+$l5r5e-ronin: rgb(97, 32, 1);
+
+// Bushi
+$l5r5e-bushi: rgb(165, 90, 90);
+// Courtier
+$l5r5e-courtier: rgb(105, 130, 165);
+// Shugenja
+$l5r5e-shugenja: rgb(90, 165, 130);
+
+// -- Techs
+// Invocations
+$l5r5e-invocations: rgb(255, 100, 0);
+// Kata
+$l5r5e-kata: rgb(255, 0, 0);
+// Kiho
+$l5r5e-kiho: rgb(0, 150, 50);
+// Maho
+$l5r5e-maho: rgb(200, 50, 0);
+// Ninjitsu
+$l5r5e-ninjitsu: rgb(52, 52, 52);
+// Prerequisite
+$l5r5e-prerequisite: rgb(52, 52, 52);
+// Rituals
+$l5r5e-rituals: rgb(0, 150, 255);
+// Shuji
+$l5r5e-shuji: rgb(0, 255, 150);
+// Inversion
+$l5r5e-inversion: rgb(75, 70, 65);
+//Mantra
+$l5r5e-mantra: rgb(255, 170, 0);

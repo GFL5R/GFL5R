@@ -1,0 +1,29 @@
+<section>
+    <ul>
+        {{!-- Ninjo/Giri --}}
+        <li><b>{{localize 'l5r5e.social.ninjo'}}</b> : {{actorData.system.social.ninjo}}</li>
+        <li><b>{{localize 'l5r5e.social.giri'}}</b> : {{actorData.system.social.giri}}</li>
+
+        {{!-- Bushido Tenet --}}
+        <li><b>{{localize 'l5r5e.social.bushido_tenets.paramount'}}</b> : {{actorData.system.social.bushido_tenets.paramount}}</li>
+        <li><b>{{localize 'l5r5e.social.bushido_tenets.less_significant'}}</b> : {{actorData.system.social.bushido_tenets.less_significant}}</li>
+
+        {{!-- Peculiarities --}}
+        <li><b>{{localize 'l5r5e.social.npc.advantages'}}</b> : {{advantages}}</li>
+        <li><b>{{localize 'l5r5e.social.npc.disadvantages'}}</b> : {{disadvantages}}</li>
+
+        {{!-- Honor/Glory/Status --}}
+        <li><b>{{localize 'l5r5e.social.honor'}}</b> : <span class="{{#ifCond actorData.system.social.honor '>' 64}}goodvalue{{/ifCond}}{{#ifCond actorData.system.social.honor '<' 30}}badvalue{{/ifCond}}">{{actorData.system.social.honor}}</span></li>
+        <li><b>{{localize 'l5r5e.social.glory'}}</b> : <span class="{{#ifCond actorData.system.social.glory '>' 64}}goodvalue{{/ifCond}}{{#ifCond actorData.system.social.glory '<' 20}}badvalue{{/ifCond}}">{{actorData.system.social.glory}}</span></li>
+        <li><b>{{localize 'l5r5e.social.status'}}</b> : {{actorData.system.social.status}}</li>
+    </ul>
+    {{#ifCond actor_type "==" "character"}}
+    {{!-- 20Q --}}
+    <ul>
+        <li><b>{{localize (localize 'l5r5e.twenty_questions.part5.q14{suffix}' suffix=suffix)}}</b> : {{actorData.system.twenty_questions.step14.first_sight}}</li>
+        <li><b>{{localize (localize 'l5r5e.twenty_questions.part5.q15{suffix}' suffix=suffix)}}</b> : {{actorData.system.twenty_questions.step15.stress}}</li>
+        <li><b>{{localize (localize 'l5r5e.twenty_questions.part7.q20{suffix}' suffix=suffix)}}</b> : {{actorData.system.twenty_questions.step20.death}}</li>
+    </ul>
+    {{/ifCond}}
+    <p>{{{actorData.enrichedHtml.description}}}</p>
+</section>

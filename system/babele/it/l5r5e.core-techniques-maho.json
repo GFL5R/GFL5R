@@ -1,0 +1,105 @@
+{
+    "label": "Tecniche Mahō (WIP)",
+    "mapping": {
+        "description": "system.description",
+        "book_reference": "system.book_reference"
+    },
+    "entries": [
+        {
+            "id": "Incite Haunting",
+            "name": "Fomentare Infestazione",
+            "description": "",
+            "book_reference": "Manuale Base p.224"
+        },
+        {
+            "id": "Grip of Anguish",
+            "name": "Morsa dell’Angoscia",
+            "description": "",
+            "book_reference": "Manuale Base p.225"
+        },
+        {
+            "id": "Unholy Fervor",
+            "name": "Empio Fervore",
+            "description": "",
+            "book_reference": "Manuale Base p.224"
+        },
+        {
+            "id": "Mark of Desecration",
+            "name": "Marchio della Profanazione",
+            "description": "",
+            "book_reference": "Manuale Base p.225"
+        },
+        {
+            "id": "Sinful Whispers",
+            "name": "Sussurri Peccaminosi",
+            "description": "",
+            "book_reference": "Manuale Base p.225"
+        },
+        {
+            "id": "Accursed Summoning",
+            "name": "Accursed Summoning",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.118"
+        },
+        {
+            "id": "Bind the Undead",
+            "name": "Bind the Undead",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.119"
+        },
+        {
+            "id": "Commune with Evil",
+            "name": "Commune with Evil",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.118"
+        },
+        {
+            "id": "Dark Reflection",
+            "name": "Dark Reflection",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.121"
+        },
+        {
+            "id": "Entreat the Shadow Steed",
+            "name": "Entreat the Shadow Steed",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.119"
+        },
+        {
+            "id": "Fiend's Retreat",
+            "name": "Fiend's Retreat",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.119"
+        },
+        {
+            "id": "Shape the Flesh",
+            "name": "Shape the Flesh",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.120"
+        },
+        {
+            "id": "Spiritual Shackles",
+            "name": "Spiritual Shackles",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.118"
+        },
+        {
+            "id": "Spread Corruption",
+            "name": "Spread Corruption",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.120"
+        },
+        {
+            "id": "Sword of Blood",
+            "name": "Sword of Blood",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.121"
+        },
+        {
+            "id": "Twisted Summons",
+            "name": "Twisted Summons",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.119"
+        }
+    ]
+}

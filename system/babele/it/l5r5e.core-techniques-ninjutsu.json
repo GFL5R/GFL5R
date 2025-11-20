@@ -1,0 +1,117 @@
+{
+    "label": "Tecniche Ninjutsu (WIP)",
+    "mapping": {
+        "description": "system.description",
+        "book_reference": "system.book_reference"
+    },
+    "entries": [
+        {
+            "id": "Deadly Sting",
+            "name": "Pungiglione Mortale",
+            "description": "",
+            "book_reference": "Manuale Base p.226"
+        },
+        {
+            "id": "Skulk",
+            "name": "Agguato",
+            "description": "",
+            "book_reference": "Manuale Base p.226"
+        },
+        {
+            "id": "Silencing Stroke",
+            "name": "Colpo che Riduce al Silenzio",
+            "description": "",
+            "book_reference": "Manuale Base p.227"
+        },
+        {
+            "id": "Noxious Cloud",
+            "name": "Nube Nauseante",
+            "description": "",
+            "book_reference": "Manuale Base p.227"
+        },
+        {
+            "id": "Artful Alibi",
+            "name": "Artful Alibi",
+            "description": "",
+            "book_reference": "Corti di Pietra p.114"
+        },
+        {
+            "id": "Cunning Distraction",
+            "name": "Cunning Distraction",
+            "description": "",
+            "book_reference": "Corti di Pietra p.115"
+        },
+        {
+            "id": "Deceitful Strike",
+            "name": "Deceitful Strike",
+            "description": "",
+            "book_reference": "Corti di Pietra p.115"
+        },
+        {
+            "id": "Like a Ghost",
+            "name": "Like a Ghost",
+            "description": "",
+            "book_reference": "Corti di Pietra p.116"
+        },
+        {
+            "id": "Silent Elimination",
+            "name": "Silent Elimination",
+            "description": "",
+            "book_reference": "Corti di Pietra p.115"
+        },
+        {
+            "id": "Slicing Wind Kick",
+            "name": "Slicing Wind Kick",
+            "description": "",
+            "book_reference": "Corti di Pietra p.114"
+        },
+        {
+            "id": "Stillness of Death",
+            "name": "Stillness of Death",
+            "description": "",
+            "book_reference": "Corti di Pietra p.116"
+        },
+        {
+            "id": "To Float or Sink",
+            "name": "To Float or Sink",
+            "description": "",
+            "book_reference": "Corti di Pietra p.115"
+        },
+        {
+            "id": "What's Yours is Mine",
+            "name": "What's Yours is Mine",
+            "description": "",
+            "book_reference": "Corti di Pietra p.114"
+        },
+        {
+            "id": "Employ Terrible Thunder",
+            "name": "Employ Terrible Thunder",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Swift Scouting",
+            "name": "Swift Scouting",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "The Patient Viper",
+            "name": "The Patient Viper",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Vanish in the Shadows",
+            "name": "Vanish in the Shadows",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Wreak Havoc",
+            "name": "Wreak Havoc",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        }
+    ]
+}

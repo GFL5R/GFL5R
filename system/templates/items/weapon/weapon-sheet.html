@@ -1,0 +1,61 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img class="profile-img" src="{{data.img}}" data-edit="img" title="{{data.name}}"/>
+        <h1 class="charname"><input name="name" type="text" value="{{data.name}}" placeholder="Name"/></h1>
+    </header>
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        {{!-- attributes--}}
+        <article class="attributes" data-group="primary" data-tab="description">
+            <label class="attribute-value checkbox">
+                <input type="checkbox" name="system.equipped" {{checked data.system.equipped}} />
+                {{localize 'l5r5e.weapons.sheathed'}}
+            </label>
+            <label class="attribute-value checkbox">
+                <input type="checkbox" name="system.readied" {{checked data.system.readied}} />
+                {{localize 'l5r5e.weapons.readied'}}
+            </label>
+            {{> 'systems/l5r5e/templates/items/item/item-value.html'}}
+            <label class="category">
+                {{localize 'l5r5e.weapons.category'}}
+                <input type="text" name="system.category" value="{{data.system.category}}" />
+            </label>
+            <label class="skillType">
+                {{localize 'l5r5e.skills.label'}}
+                <select class="attribute-dtype" name="system.skill">
+                    {{selectOptions data.skills selected=data.system.skill valueAttr='id' labelAttr='label' localize=true}}
+                </select>
+            </label>
+            <fieldset class="stats">
+                <legend class="text-block-header">{{localize  'l5r5e.weapons.stats'}}</legend>
+                <label>
+                    {{localize 'l5r5e.weapons.range'}}
+                    <input class="select-on-focus" type="text" name="system.range" value="{{data.system.range}}" data-dtype="String" placeholder="0"/>
+                </label>
+                <label>
+                    {{localize 'l5r5e.weapons.damage'}}
+                    <input class="select-on-focus" type="number" name="system.damage" value="{{data.system.damage}}" data-dtype="Number" min="0" placeholder="0"/>
+                </label>
+                <label>
+                    {{localize 'l5r5e.weapons.deadliness'}}
+                    <input class="select-on-focus" type="number" name="system.deadliness" value="{{data.system.deadliness}}" data-dtype="Number" min="0" placeholder="0"/>
+                </label>
+            </fieldset>
+            <fieldset class="stats">
+                <legend class="text-block-header">{{localize 'l5r5e.weapons.grips'}}</legend>
+                <label>
+                    {{localize 'l5r5e.weapons.1hand'}}
+                    <input class="grip" type="text" name="system.grip_1" value="{{data.system.grip_1}}" />
+                </label>
+                <label>
+                    {{localize 'l5r5e.weapons.2hand'}}
+                    <input class="grip" type="text" name="system.grip_2" value="{{data.system.grip_2}}" />
+                </label>
+            </fieldset>
+        </article>
+        <article class="properties" data-group="primary" data-tab="properties">
+            {{> 'systems/l5r5e/templates/items/property/properties.html' properties=data.propertiesList}}
+        </article>
+        {{> 'systems/l5r5e/templates/items/item/item-infos.html'}}
+    </section>
+</form>

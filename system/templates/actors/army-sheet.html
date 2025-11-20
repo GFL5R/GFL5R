@@ -1,0 +1,81 @@
+<form class="{{cssClass}}" data-lang="{{localize 'I18N.Language'}}" autocomplete="off">
+    {{!-- L5R Button bar --}}
+    <div class="l5r-buttons-bar">
+    {{#each l5rHeaderButtons}}
+        <a class="l5r-header-button {{this.class}}"><i class="{{this.icon}}"></i>{{localize this.label}}</a>
+    {{/each}}
+    </div>
+    {{!-- Sheet Header --}}
+    <header class="sheet-header">
+        <img class="profile-img dragndrop-actor-uuid pointer" src="{{data.img}}" {{#if data.editable_not_soft_locked}}data-edit="img"{{/if}} data-actor-uuid="{{actor.uuid}}" draggable="true" title="{{data.name}}"/>
+        <div class="header-fields identity-wrapper">
+            <h1 class="charname"><input name="name" type="text" value="{{data.name}}" placeholder="Name" {{^if data.editable_not_soft_locked}}disabled{{/if}}/></h1>
+            <div class="readiness">
+                <ul>
+                    <li>
+                        <label class="attribute-label-casualties">
+                            <input name="system.battle_readiness.casualties_strength.value" type="number" value="{{data.system.battle_readiness.casualties_strength.value}}"  {{^if data.editable_not_soft_locked}}disabled{{/if}}/>
+                            <span class="attributes-buttons">
+                                <i class="addsub-control pointer-choice fa fa-plus-square" data-type="casualties" data-value="1"></i>
+                                <i class="addsub-control pointer-choice fa fa-minus-square" data-type="casualties" data-value="-1"></i>
+                            </span>
+                        </label>
+                        <strong>{{localize 'l5r5e.army.battle_readiness.casualties'}}</strong>
+                    </li>
+                    <li>
+                        <label class="attribute-label-strength">
+                            <input name="system.battle_readiness.casualties_strength.max" type="number" value="{{data.system.battle_readiness.casualties_strength.max}}"  {{^if data.editable_not_soft_locked}}disabled{{/if}}/>
+                        </label>
+                        <strong>{{localize 'l5r5e.army.battle_readiness.strength'}}</strong>
+                    </li>
+                    <li>
+                        <label class="attribute-label-panic">
+                            <input name="system.battle_readiness.panic_discipline.value" type="number" value="{{data.system.battle_readiness.panic_discipline.value}}"  {{^if data.editable_not_soft_locked}}disabled{{/if}}/>
+                            <span class="attributes-buttons">
+                                <i class="addsub-control pointer-choice fa fa-plus-square" data-type="panic" data-value="1"></i>
+                                <i class="addsub-control pointer-choice fa fa-minus-square" data-type="panic" data-value="-1"></i>
+                            </span>
+                        </label>
+                        <strong>{{localize 'l5r5e.army.battle_readiness.panic'}}</strong>
+                    </li>
+                    <li>
+                        <label class="attribute-label-discipline">
+                            <input name="system.battle_readiness.panic_discipline.max" type="number" value="{{data.system.battle_readiness.panic_discipline.max}}"  {{^if data.editable_not_soft_locked}}disabled{{/if}}/>
+                        </label>
+                        <strong>{{localize 'l5r5e.army.battle_readiness.discipline'}}</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        {{!-- Sheet Tab Navigation --}}
+        <nav class="sheet-tabs tabs" data-group="primary">
+            <a class="item" data-tab="army">{{localize 'TYPES.Actor.army'}}</a>
+            <a class="item" data-tab="cohort">{{localize 'l5r5e.army.cohort.tab'}}</a>
+            <a class="item" data-tab="fortification">{{localize 'l5r5e.army.fortification.tab'}}</a>
+            <a class="item" data-tab="others">{{localize 'l5r5e.sheets.notes'}}</a>
+        </nav>
+
+        {{!-- Army Tab --}}
+        <article class="tab army" data-group="primary" data-tab="army">
+            {{> 'systems/l5r5e/templates/actors/army/army.html'}}
+        </article>
+
+        {{!-- Cohort Tab --}}
+        <article class="tab cohort" data-group="primary" data-tab="cohort">
+            {{> 'systems/l5r5e/templates/actors/army/cohort.html'}}
+        </article>
+
+        {{!-- Fortification Tab --}}
+        <article class="tab fortification" data-group="primary" data-tab="fortification">
+            {{> 'systems/l5r5e/templates/actors/army/fortification.html'}}
+        </article>
+
+        {{!-- Others Tab --}}
+        <article class="tab others" data-group="primary" data-tab="others">
+            {{> 'systems/l5r5e/templates/actors/army/others.html'}}
+        </article>
+    </section>
+</form>

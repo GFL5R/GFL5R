@@ -1,0 +1,102 @@
+.application {
+    color: var(--color-text-dark-primary);
+
+    .scrollable {
+        --scroll-margin: 0;
+    }
+
+    .window-header {
+        background: linear-gradient(
+            $l5r5e-linear-gradient-second,
+            $l5r5e-linear-gradient-second-dark,
+            $l5r5e-linear-gradient-second
+        );
+        .window-title {
+            font-family: $font-secondary;
+            font-size: 1.25rem;
+        }
+    }
+
+    .window-content {
+        padding: 0.25rem;
+    }
+}
+
+// More specified stuff down here as to not make it too hard to read the overridden defaults
+.application {
+    .window-content {
+        table {
+            background: transparent;
+            border: 1px solid $l5r5e-title;
+            thead {
+                background: $l5r5e-title;
+                color: $l5r5e-label;
+                text-shadow: none;
+                border-bottom: $l5r5e-title;
+            }
+            tbody {
+            }
+            tr {
+                &:nth-child(odd) {
+                    background: $l5r5e-odd;
+                }
+                &:nth-child(even) {
+                    background: $l5r5e-even;
+                }
+            }
+        }
+    }
+}
+
+#sidebar-tabs > menu {
+    gap: 4px; // halve the distance between menu icons
+}
+
+#sidebar-content.expanded {
+    background: url("../assets/ui/bgSidebar.webp") no-repeat;
+    border-image: url("../assets/ui/macro-button.webp") 10 repeat;
+    border-style: solid;
+    border-image-width: 0.5rem;
+    border-image-outset: 0px;
+    margin-top: 2px;
+    margin-right: 2px;
+    height: calc(100% - 10px); // use height calculation to add margin at bottom
+
+    .sidebar-tab,.tab {
+        margin: 3px; // center content in sidebar
+        border-radius: 5px; // round of the inside content
+    }
+
+    #chat {
+        margin: unset;
+        padding-right: 4px; // scrollbar should be inside the container
+        .chat-scroll {
+          direction: unset;     // Scrollbar on right
+          scrollbar-color:  var(--color-light-4) var(--color-dark-3);
+          scrollbar-width: thin;
+        }
+    }
+}
+
+// hotbar
+#hotbar {
+    //margin: 0;
+    #action-bar {
+        //flex: 0 0 100%;
+        .slot {
+            border-image: url("../assets/ui/macro-button.webp");
+            border-image-slice: 8 fill;
+            border-image-width: 0.25rem;
+        }
+    }
+}
+
+#menu.active {
+    transition: max-height 150ms ease-in;
+}
+
+#menu {
+    // Foundry listens to transitionend and then close the menu so need something here.
+    // otherwise using ESC will result in a long wait and missed trigger events
+    transition: max-height 10ms ease-out;
+}

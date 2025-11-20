@@ -1,0 +1,637 @@
+/* SCSS */
+
+button {
+    font-size: 0.75rem;
+    cursor: url("../assets/cursors/pointer.webp"), pointer;
+}
+
+.pointer {
+    cursor: url("../assets/cursors/pointer.webp"), pointer;
+}
+
+// System title was too long and merge version with module number
+#game-details {
+    .system {
+        overflow: auto;
+        border-bottom: 1px solid var(--color-border-light-highlight);
+
+        .system-title {
+            white-space: break-spaces;
+        }
+    }
+}
+
+.chat-message {
+    ul,li {
+        list-style: none;
+        margin: unset;
+        padding: unset;
+    }
+}
+
+// logo
+#logo {
+    content: url("../assets/l5r-logo.webp");
+    height: 80px;
+    width: 88px;
+    margin-left: 0.5rem;
+    opacity: 0.8;
+}
+
+// navigation
+#navigation {
+    left: 120px;
+    //&:before {
+    //    content: "";
+    //    background: url("../assets/l5r-logo.webp") no-repeat 0 0;
+    //    background-size: cover;
+    //    height: 80px;
+    //    width: 88px;
+    //    opacity: 0.65;
+    //    position: absolute;
+    //    left: -12rem;
+    //    &:hover {
+    //        opacity: 0.75;
+    //    }
+    //}
+    #nav-toggle,
+    #scene-list .scene.nav-item {
+        cursor: default;
+        color: $white;
+        background: linear-gradient(
+            $l5r5e-linear-gradient-second,
+            $l5r5e-linear-gradient-second-dark,
+            $l5r5e-linear-gradient-second
+        );
+        background-origin: padding-box;
+        border-image: url("../assets/ui/macro-button.webp") 10 repeat;
+        border-image-width: 0.25rem;
+        border-image-outset: 0px;
+        &:hover {
+            background: linear-gradient(
+                $l5r5e-linear-gradient-first-dark,
+                $l5r5e-linear-gradient-first,
+                $l5r5e-linear-gradient-first-dark
+            );
+        }
+    }
+    #scene-list {
+        .scene.nav-item.active {
+            background: linear-gradient(
+                $l5r5e-linear-gradient-first,
+                $l5r5e-linear-gradient-first-dark,
+                $l5r5e-linear-gradient-first
+            );
+            &:hover {
+                background: linear-gradient(
+                    $l5r5e-linear-gradient-first-dark,
+                    $l5r5e-linear-gradient-first,
+                    $l5r5e-linear-gradient-first-dark
+                );
+            }
+        }
+        .scene.view,
+        .scene.context {
+            cursor: default;
+            color: #fff;
+            background: linear-gradient(
+                $l5r5e-linear-gradient-first,
+                $l5r5e-linear-gradient-first-dark,
+                $l5r5e-linear-gradient-first
+            );
+            background-origin: padding-box;
+            border-image: url("../assets/ui/macro-button.webp") 10 repeat;
+            border-image-width: 0.25rem;
+            border-image-outset: 0px;
+            box-shadow: 0 0 20px red;
+            &:hover {
+                background: linear-gradient(
+                    $l5r5e-linear-gradient-first-dark,
+                    $l5r5e-linear-gradient-first,
+                    $l5r5e-linear-gradient-first-dark
+                );
+            }
+        }
+    }
+}
+
+// controls
+#controls {
+    top: 100px;
+    ol {
+        .scene-control.active,
+        .control-tool.active,
+        .scene-control:hover,
+        .control-tool:hover {
+            background: linear-gradient(
+                $l5r5e-linear-gradient-first,
+                $l5r5e-linear-gradient-first-dark,
+                $l5r5e-linear-gradient-first
+            );
+            background-origin: padding-box;
+            border-image: url("../assets/ui/macro-button.webp") 10 repeat;
+            border-image-width: 0.25rem;
+            border-image-outset: 0px;
+            box-shadow: 0 0 10px $red;
+            &:hover {
+                background: linear-gradient(
+                    $l5r5e-linear-gradient-first-dark,
+                    $l5r5e-linear-gradient-first,
+                    $l5r5e-linear-gradient-first-dark
+                );
+            }
+        }
+        .scene-control,
+        .control-tool {
+            color: $white;
+            background: linear-gradient(
+                $l5r5e-linear-gradient-second,
+                $l5r5e-linear-gradient-second-dark,
+                $l5r5e-linear-gradient-second
+            );
+            background-origin: padding-box;
+            border-image: url("../assets/ui/macro-button.webp") 10 repeat;
+            border-image-width: 0.25rem;
+            border-image-outset: 0px;
+            &:hover {
+                background: linear-gradient(
+                    $l5r5e-linear-gradient-first-dark,
+                    $l5r5e-linear-gradient-first,
+                    $l5r5e-linear-gradient-first-dark
+                );
+            }
+        }
+    }
+}
+
+// Playlist
+#playlists {
+    .playlist {
+        .playlist-header {
+            h4 {
+                font: 0.75rem $font-primary;
+                text-transform: uppercase;
+                text-align: right;
+            }
+        }
+    }
+}
+
+// Combat
+#combat,
+#combat-popout {
+    .combat-tracker-header {
+        .encounters {
+            h3 {
+                font-size: 0.85rem;
+            }
+            ul {
+                display: flex;
+                color: $l5r5e-white;
+                &.encounter {
+                    border-right: 1px solid $l5r5e-white-light;
+                }
+                li {
+                    cursor: url("../assets/cursors/pointer.webp"), pointer;
+                }
+            }
+            .prepared {
+                justify-content: space-evenly;
+            }
+            .encounter {
+                justify-content: space-between;
+                i {
+                    font-size: 23px;
+                    vertical-align: middle;
+                    &:hover {
+                        text-shadow: 0 0 8px $red;
+                    }
+                }
+
+                .active {
+                    color: $l5r5e-maho;
+                    &:hover {
+                        text-shadow: none;
+                    }
+                }
+
+                &-icon {
+                    font-weight: 900;
+                    -moz-osx-font-smoothing: grayscale;
+                    -webkit-font-smoothing: antialiased;
+                    display: inline-block;
+                    font-style: normal;
+                    font-variant: normal;
+                    text-rendering: auto;
+                    line-height: 1;
+
+                    &-intrigue:before {
+                        content: "\f21b";
+                    }
+
+                    &-duel:before {
+                        content: "\f506";
+                    }
+
+                    &-skirmish:before {
+                        content: "\f505";
+                    }
+
+                    &-mass_battle:before {
+                        content: "\f447";
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Pause
+#pause {
+    img {
+        content: url("../assets/icons/pause.svg");
+    }
+}
+
+// Compendium
+.directory-item {
+    .ring-filter {
+        i.i_earth,
+        i.i_fire,
+        i.i_water,
+        i.i_air,
+        i.i_void {
+            line-height: unset; // do not have it rised up
+        }
+    }
+
+    .ring-rarity-rank {
+        flex: unset
+    }
+}
+
+.not-for-players {
+    filter:brightness(0.5);
+}
+
+.compendium-header {
+    .ring-filter{
+        .selected {
+            filter: drop-shadow(0px 0px 5px yellow);
+        }
+    }
+    .rank-filter {
+        .selected {
+            filter: drop-shadow(0px 0px 5px yellow) drop-shadow(0px 0px 5px yellow) drop-shadow(0px 0px 5px yellow);
+        }
+    }
+
+    l5r5e-multi-select {
+        .input-element-tags {
+            max-height: 100px;
+        }
+    }
+}
+
+// global tooltip
+.l5r5e-tooltip {
+    cursor: url("../assets/cursors/pointer.webp"), pointer;
+
+    .l5r5e-tooltip-ct,
+    &.l5r5e-tooltip-ct {
+        visibility: hidden;
+        min-height: fit-content;
+        width: 600px;
+        height: auto;
+        max-height: 100%;
+        background: #3e3a30 url("../assets/imgs/bg-l5r.webp") no-repeat;
+        color: $black-light;
+        font-size: 0.8rem;
+        text-align: left;
+        border: 0 none;
+        border-radius: 0;
+        padding: 0.5rem 0.75rem;
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        * {
+            color: $black-light;
+        }
+        section > ul {
+            display: flex;
+            flex-flow: row wrap;
+            padding: 0.25rem 0 0.25rem 1rem;
+            li {
+                flex: 50%;
+                padding: 0;
+                padding-right: 1rem;
+                margin: 0;
+                list-style-type: square;
+            }
+        }
+        &:before {
+            z-index: -2;
+            content: "";
+            position: absolute;
+            height: calc(100% + 0.6rem);
+            width: calc(100% - 0.65rem);
+            border: 1px solid #c3a582;
+            border-radius: 0;
+            top: -0.35rem;
+            left: 0.25rem;
+            background: #3e3a30 url("../assets/imgs/bg-l5r.webp") no-repeat;
+        }
+        &:after {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            height: calc(100%);
+            width: calc(100%);
+            border: 1px solid #c3a582;
+            border-radius: 0;
+            top: -1px;
+            left: -1px;
+        }
+        .goodvalue {
+            color: #4e8c69;
+        }
+        .badvalue {
+            color: #ab2a00;
+        }
+        .reference {
+            display: flex;
+            .page {
+                margin-left: 1ch
+            }
+        }
+    }
+    .card-header img {
+        display: inline-block;
+        background: transparent;
+        border: 0 none;
+        width: 20px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+// Send to chat
+.l5r5e-chat-item {
+    color: $black-light;
+    font-size: 0.8rem;
+
+    * {
+        color: $black-light;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+    section > ul {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0.25rem 0 0.25rem 1rem;
+        li {
+            flex: 100%;
+            padding: 1px !important;
+            margin: 0;
+            border: 0 none !important;
+            list-style-type: square;
+        }
+    }
+    .card-header img {
+        display: inline-block;
+        background: transparent;
+        border: 0 none;
+        width: 20px;
+        margin: 0;
+        padding: 0;
+    }
+    .reference {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .page {
+        margin-left: 1ch;
+    }
+}
+
+#l5r5e-gm-monitor {
+    min-height: 170px;
+    min-width: 240px;
+
+    .window-content {
+        [data-application-part="hidden_tabs"] {
+            display: none;
+        }
+        table {
+            margin: 0;
+            overflow: auto;
+        }
+        form {
+            padding: 0 0.5rem;
+        }
+        thead tr > th {
+            background: rgb(0 0 0 / 90%);
+            color: #cfcfcfc7;
+            position: sticky;
+            z-index: 2;
+            top: 0;
+
+            i.i_void:before {
+                color: rgba(207,207,207,.8);
+            }
+        }
+        th,
+        td {
+            border: 1px solid #5a6e5a50;
+            padding: 0.25em;
+        }
+        img {
+            border: none;
+            min-width: 24px;
+            min-height: 24px;
+            max-width: 32px;
+            max-height: 32px;
+        }
+        .goodvalue {
+            color: #4e8c69;
+        }
+        .badvalue {
+            color: #ab2a00;
+        }
+    }
+    // hide "search anywhere" draggable icon
+    .window-draggable-handle {
+        display: none;
+    }
+}
+
+#l5r5e-gm-toolbox {
+    display: flex;
+    background: linear-gradient(
+        $l5r5e-linear-gradient-second,
+        $l5r5e-linear-gradient-second-dark,
+        $l5r5e-linear-gradient-second
+    );
+    border: 1px solid rgb(195, 165, 130);
+    margin: 0.5rem;
+    .window-header {
+        border-bottom: 1px solid rgb(195, 165, 130);
+        background: none; //keep the same background as the toolbox, not the default black opaque
+        .window-title {
+            text-align: center;
+        }
+
+        h1 {
+            letter-spacing: 0.25rem;
+            line-height: 2.25rem;
+            color: $white-light;
+            padding-top: 1ch;
+        }
+    }
+    .window-content {
+        padding: 0;
+        .gm-tools-container {
+            color: var(--color-text-primary);
+            display: flex;
+            font-size: 2rem;
+            line-height: 2rem;
+            min-height: 2rem;
+            margin: 0;
+            padding: 0;
+            li {
+                flex: 1;
+                display: flex;
+                margin: 0;
+                padding: 0;
+                border-right: 1px solid #c3a582;
+                cursor: url("../assets/cursors/pointer.webp"), pointer;
+                &:last-child {
+                    margin: 0;
+                    border: 0 none;
+                }
+                :hover {
+                    text-shadow: 0 0 $red;
+                }
+            }
+            .difficulty_hidden {
+                .fa {
+                    width: 3rem;
+                }
+                .difficulty {
+                    flex: 1rem;
+                    width: 2rem;
+                    font-size: 2rem;
+                    text-align: center;
+                    margin: 0;
+                    padding: 0.5rem;
+                }
+            }
+            .fa {
+                padding: 0.5rem;
+            }
+            .fa-bed,
+            .fa-star-half-alt,
+            .fa-table,
+            .fa-podcast {
+                width: 100%;
+                padding: 0.5rem;
+            }
+        }
+    }
+    // hide "search anywhere" draggable icon
+    .window-draggable-handle {
+        display: none;
+    }
+}
+
+l5r5e-multi-select {
+    display: grid;
+    grid-template-columns: minmax(auto, 1fr);
+    select {
+        justify-self: center;
+        width: 100%;
+        height: 100%;
+        text-align-last: center;
+    }
+    .input-element-tags {
+        grid-column-start: 1;
+        grid-column-end: span 3;
+
+        max-height: fit-content; // use value in px to limit the initial size of the tags list, but expandable when hovering over
+        overflow: hidden;
+
+        &.overflowing {
+            // Apply mask-image with linear gradient fade-out effect
+            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+
+            // Transition for smooth height change and mask removal
+            transition: height 0.3s ease, mask-image 0.3s ease;
+        }
+        &.overflowing:hover {
+            max-height: fit-content;
+            mask-image: none;
+        }
+    }
+    select {
+        grid-row: 1;
+    }
+    button {
+        grid-row: 1;
+        line-height: 1;
+    }
+}
+
+l5r5e-multi-select:has( > button.gm) {
+    .input-element-tags {
+        grid-column-end: span 4;
+    }
+}
+
+form#settings-config {
+
+    div.form-group:has(l5r5e-multi-select) {
+        .form-fields {
+            order: 3; // Move the multiselect to be below the title and description for nicer ui
+        }
+    }
+
+    div.form-group:has(#settings-config-l5r5e\.compendium-unofficial-content-for-players) {
+        // Move the tags and input fields to a similar place as for the multiselect
+        .form-fields {
+            order: 3;
+            .tags {
+                order: 1;
+            }
+        }
+    }
+}
+
+
+.autocomplete-wrapper {
+    position: relative;
+    .autocomplete-list {
+        position: absolute;
+        border: 1px solid #6e7e6b;
+        border-bottom: none;
+        border-top: none;
+        z-index: 99;
+        top: 100%;
+        left: 0;
+        right: 0;
+    }
+    .autocomplete-list div {
+        padding: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        border-bottom: 1px solid #6e7e6b;
+        text-align: left;
+    }
+    .autocomplete-list div:hover {
+        background-color: #e9e9e9;
+    }
+    .autocomplete-active {
+        background-color: DodgerBlue !important;
+        color: #ffffff;
+    }
+}

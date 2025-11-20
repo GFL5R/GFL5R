@@ -1,0 +1,573 @@
+{
+    "label": "Capacità della Scuola (WIP)",
+    "mapping": {
+        "description": "system.description",
+        "book_reference": "system.book_reference"
+    },
+    "entries": [
+        {
+            "id": "Way of the Crab",
+            "name": "Via del Granchio",
+            "description": "",
+            "book_reference": "Manuale Base p.57"
+        },
+        {
+            "id": "Flickering Flame Skirmisher",
+            "name": "Schermagliatore dalla Fiamma Tremula",
+            "description": "",
+            "book_reference": "Manuale Base p.58"
+        },
+        {
+            "id": "Masterful Builder",
+            "name": "Costruttore Magistrale",
+            "description": "",
+            "book_reference": "Manuale Base p.59"
+        },
+        {
+            "id": "Gaze into Shadow",
+            "name": "Sguardo nell’Ombra",
+            "description": "",
+            "book_reference": "Manuale Base p.60"
+        },
+        {
+            "id": "Way of the Carp",
+            "name": "Via della Carpa",
+            "description": "",
+            "book_reference": "Manuale Base p.61"
+        },
+        {
+            "id": "Spiritual Artisan",
+            "name": "Artefice Spirituale",
+            "description": "",
+            "book_reference": "Manuale Base p.62"
+        },
+        {
+            "id": "Vigilance of Mind",
+            "name": "Mente Vigile",
+            "description": "",
+            "book_reference": "Manuale Base p.63"
+        },
+        {
+            "id": "Speaking in Silence",
+            "name": "Parlare in Silenzio",
+            "description": "",
+            "book_reference": "Manuale Base p.64"
+        },
+        {
+            "id": "Way of the Crane",
+            "name": "Via della Gru",
+            "description": "",
+            "book_reference": "Manuale Base p.65"
+        },
+        {
+            "id": "Elemental Transmutation",
+            "name": "Trasmutazione Elementale",
+            "description": "",
+            "book_reference": "Manuale Base p.66"
+        },
+        {
+            "id": "Kitsuki’s Method",
+            "name": "Metodo Kitsuki",
+            "description": "",
+            "book_reference": "Manuale Base p.67"
+        },
+        {
+            "id": "Way of the Dragon",
+            "name": "Via del Drago",
+            "description": "",
+            "book_reference": "Manuale Base p.68"
+        },
+        {
+            "id": "Blood of the Kami",
+            "name": "Sangue del Kami",
+            "description": "",
+            "book_reference": "Manuale Base p.69"
+        },
+        {
+            "id": "Way of the Lion",
+            "name": "Via del Leone",
+            "description": "",
+            "book_reference": "Manuale Base p.70"
+        },
+        {
+            "id": "Heart of the Lion",
+            "name": "Cuore del Leone",
+            "description": "",
+            "book_reference": "Manuale Base p.71"
+        },
+        {
+            "id": "Favor of the Ancestors",
+            "name": "Favore degli Antenati",
+            "description": "",
+            "book_reference": "Manuale Base p.72"
+        },
+        {
+            "id": "Matsu’s Fury",
+            "name": "Furia di Matsu",
+            "description": "",
+            "book_reference": "Manuale Base p.73"
+        },
+        {
+            "id": "Wisdom of the Ages",
+            "name": "Saggezza Secolare",
+            "description": "",
+            "book_reference": "Manuale Base p.74"
+        },
+        {
+            "id": "One with the Elements",
+            "name": "Tutt’uno con gli Elementi",
+            "description": "",
+            "book_reference": "Manuale Base p.75"
+        },
+        {
+            "id": "Way of the Phoenix",
+            "name": "Via della Fenice",
+            "description": "",
+            "book_reference": "Manuale Base p.76"
+        },
+        {
+            "id": "Sacred Arrows",
+            "name": "Frecce Sacre",
+            "description": "",
+            "book_reference": "Manuale Base p.77"
+        },
+        {
+            "id": "Weakness Is My Strength",
+            "name": "La Debolezza è la mia Forza",
+            "description": "",
+            "book_reference": "Manuale Base p.78"
+        },
+        {
+            "id": "The Path of Shadows",
+            "name": "Il Cammino delle Ombre",
+            "description": "",
+            "book_reference": "Manuale Base p.79"
+        },
+        {
+            "id": "The Kami’s Whisper",
+            "name": "Sussurro dei Kami",
+            "description": "",
+            "book_reference": "Manuale Base p.80"
+        },
+        {
+            "id": "Mystical Script",
+            "name": "Calligrafia Mistica",
+            "description": "",
+            "book_reference": "Manuale Base p.81"
+        },
+        {
+            "id": "Vendor of Strange Wares",
+            "name": "Venditore di Strane Merci",
+            "description": "",
+            "book_reference": "Manuale Base p.82"
+        },
+        {
+            "id": "The Way of Names",
+            "name": "La Via dei Nomi",
+            "description": "",
+            "book_reference": "Manuale Base p.83"
+        },
+        {
+            "id": "Swirling Desert Wind",
+            "name": "Vorticoso Vento del Deserto",
+            "description": "",
+            "book_reference": "Manuale Base p.84"
+        },
+        {
+            "id": "Born in the Saddle",
+            "name": "Nato in Sella",
+            "description": "",
+            "book_reference": "Manuale Base p.85"
+        },
+        {
+            "id": "Heroic Charge",
+            "name": "Carica Eroica",
+            "description": "",
+            "book_reference": "Manuale Base p.86"
+        },
+        {
+            "id": "School of Waves",
+            "name": "Scuola delle Onde",
+            "description": "",
+            "book_reference": "Manuale Base p.87"
+        },
+        {
+            "id": "School of Waves",
+            "name": "Cacciatore del Soprannaturale",
+            "description": "",
+            "book_reference": "Reami Celesti - Svolte Mortali p.24"
+        },
+        {
+            "id": "School of Waves",
+            "name": "Una Freccia Scoccata",
+            "description": "",
+            "book_reference": "Reami Celesti - Svolte Mortali p.25"
+        },
+        {
+            "id": "Flesh of the Elements",
+            "name": "Flesh of the Elements",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Soul of Ceremony",
+            "name": "Soul of Ceremony",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Way of the Void",
+            "name": "Way of the Void",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "The Body is a Shrine",
+            "name": "The Body is a Shrine",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Every Stone Serves",
+            "name": "Every Stone Serves",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Celestial Alignment",
+            "name": "Celestial Alignment",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Blazing Tears of Lady Sun",
+            "name": "Blazing Tears of Lady Sun",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Sudden nightfall",
+            "name": "Sudden nightfall",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Steed of the Kami",
+            "name": "Steed of the Kami",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Way of the Scorpion",
+            "name": "Way of the Scorpion",
+            "description": "",
+            "book_reference": "Corti di Pietra p.89"
+        },
+        {
+            "id": "Incisive Insight",
+            "name": "Incisive Insight",
+            "description": "",
+            "book_reference": "Corti di Pietra p.90"
+        },
+        {
+            "id": "Procedure and Protocol",
+            "name": "Procedure and Protocol",
+            "description": "",
+            "book_reference": "Corti di Pietra p.91"
+        },
+        {
+            "id": "Victory before Honor",
+            "name": "Victory before Honor",
+            "description": "",
+            "book_reference": "Corti di Pietra p.92"
+        },
+        {
+            "id": "Disciple of Darkness",
+            "name": "Disciple of Darkness",
+            "description": "",
+            "book_reference": "Corti di Pietra p.93"
+        },
+        {
+            "id": "Architect of Tranquility",
+            "name": "Architect of Tranquility",
+            "description": "",
+            "book_reference": "Corti di Pietra p.94"
+        },
+        {
+            "id": "Gift of Musubi-no-Kami",
+            "name": "Gift of Musubi-no-Kami",
+            "description": "",
+            "book_reference": "Corti di Pietra p.95"
+        },
+        {
+            "id": "Typhoon in the Bamboo Grove",
+            "name": "Typhoon in the Bamboo Grove",
+            "description": "",
+            "book_reference": "Corti di Pietra p.96"
+        },
+        {
+            "id": "A Grain of Truth",
+            "name": "A Grain of Truth",
+            "description": "",
+            "book_reference": "Corti di Pietra p.97"
+        },
+        {
+            "id": "Claws of the Crab",
+            "name": "Claws of the Crab",
+            "description": "",
+            "book_reference": "Corti di Pietra p.98"
+        },
+        {
+            "id": "Well Traveled",
+            "name": "Well Traveled",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.232"
+        },
+        {
+            "id": "Voice of the Emperor",
+            "name": "Voice of the Emperor",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.234"
+        },
+        {
+            "id": "Necessary Actions",
+            "name": "Necessary Actions",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.235"
+        },
+        {
+            "id": "Just as Predicted",
+            "name": "Just as Predicted",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.236"
+        },
+        {
+            "id": "Speed of Heaven",
+            "name": "Speed of Heaven",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.237"
+        },
+        {
+            "id": "Blessing of the Fortunes",
+            "name": "Blessing of the Fortunes",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.238"
+        },
+        {
+            "id": "Embrace the Void",
+            "name": "Embrace the Void",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.239"
+        },
+        {
+            "id": "Fox Spirit",
+            "name": "Fox Spirit",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.240"
+        },
+        {
+            "id": "Professional Saboteur",
+            "name": "Professional Saboteur",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.241"
+        },
+        {
+            "id": "Signiature Weapon",
+            "name": "Signature Weapon",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.48"
+        },
+        {
+            "id": "Piercing Insight",
+            "name": "Piercing Insight",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.49"
+        },
+        {
+            "id": "Risk and Reward",
+            "name": "Risk and Reward",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.50"
+        },
+        {
+            "id": "Tactical Cover",
+            "name": "Tactical Cover",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.51"
+        },
+        {
+            "id": "Naturally Attuned",
+            "name": "Naturally Attuned",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.52"
+        },
+        {
+            "id": "Resourceful Artistry",
+            "name": "Resourceful Artistry",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.53"
+        },
+        {
+            "id": "Unexpected Wisdom",
+            "name": "Unexpected Wisdom",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.54"
+        },
+        {
+            "id": "Seer of the Lords of Death",
+            "name": "Seer of the Lords of Death",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.55"
+        },
+        {
+            "id": "Akilah's Teachings",
+            "name": "Akilah's Teachings",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.56"
+        },
+        {
+            "id": "Creative Execution",
+            "name": "Creative Execution",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.57"
+        },
+        {
+            "id": "Gift of Inner Power",
+            "name": "Gift of Inner Power",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.58"
+        },
+        {
+            "id": "Flurry of Steel",
+            "name": "Flurry of Steel",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.59"
+        },
+        {
+            "id": "Traces of Passage",
+            "name": "Traces of Passage",
+            "description": "",
+            "book_reference": "Terra dell'Ombra p.88"
+        },
+        {
+            "id": "Sacred Art of Steel",
+            "name": "Sacred Art of Steel",
+            "description": "",
+            "book_reference": "Terra dell'Ombra p.89"
+        },
+        {
+            "id": "Field Medicine",
+            "name": "Field Medicine",
+            "description": "",
+            "book_reference": "Terra dell'Ombra p.90"
+        },
+        {
+            "id": "Supressing Blows",
+            "name": "Supressing Blows",
+            "description": "",
+            "book_reference": "Terra dell'Ombra p.91"
+        },
+        {
+            "id": "Sharpened Ki",
+            "name": "Sharpened Ki",
+            "description": "",
+            "book_reference": "Terra dell'Ombra p.92"
+        },
+        {
+            "id": "Hands of Earth and Sky",
+            "name": "Hands of Earth and Sky",
+            "description": "",
+            "book_reference": "Terra dell'Ombra p.93"
+        },
+        {
+            "id": "Eyes of Yotogi",
+            "name": "Eyes of Yotogi",
+            "description": "",
+            "book_reference": "Terra dell'Ombra p.94"
+        },
+        {
+            "id": "Warded Shikigami",
+            "name": "Warded Shikigami",
+            "description": "",
+            "book_reference": "Terra dell'Ombra p.95"
+        },
+        {
+            "id": "Sailor’s Fortune",
+            "name": "Fortuna del Marinaio",
+            "description": "",
+            "book_reference": "Il Clan della Mantide p.5"
+        },
+        {
+            "id": "Way of the Tortoise [Tortoise]",
+            "name": "Way of the Tortoise [Tortoise]",
+            "description": "",
+            "book_reference": "Kit del Gamemaster p.9"
+        },
+        {
+            "id": "Stand as the Mountain",
+            "name": "Stand as the Mountain",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Drilled Precision",
+            "name": "Drilled Precision",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Explosive Arrival",
+            "name": "Explosive Arrival",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Thunderous Courage",
+            "name": "Thunderous Courage",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Badger's Hold",
+            "name": "Badger's Hold",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Hide of Iron",
+            "name": "Hide of Iron",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Sympathetic Bearing",
+            "name": "Sympathetic Bearing",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Elemental Inspiration",
+            "name": "Elemental Inspiration",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "One with the Pride",
+            "name": "One with the Pride",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Oath of Sacrifice",
+            "name": "Oath of Sacrifice",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Eye of the Storm",
+            "name": "Occhio della Tempesta",
+            "description": "",
+            "book_reference": "Il Clan della Mantide p.6"
+        }
+    ]
+}

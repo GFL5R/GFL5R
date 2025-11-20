@@ -1,0 +1,15 @@
+<fieldset class="armors-content">
+    <legend class="section-header">
+        {{localize 'l5r5e.armors.title'}}
+        {{#if data.editable_not_soft_locked}}
+        <a data-item-type="armor" data-item-equipped="true" class="armor-control item-add" title="{{localize 'l5r5e.global.add'}}"><i class="fas fa-plus"></i></a>
+        {{/if}}
+    </legend>
+    <ul class="item-list">
+        {{#each actor.items as |item id|}}
+            {{#ifCond (ifCond item.type '==' 'armor') '&&' (ifCond item.system.equipped '==' true)}}
+                {{> 'systems/l5r5e/templates/items/armor/armor-entry.html' armor=item id=id editable=../data.editable_not_soft_locked }}
+            {{/ifCond}}
+        {{/each}}
+    </ul>
+</fieldset>

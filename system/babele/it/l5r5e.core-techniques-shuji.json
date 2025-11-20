@@ -1,0 +1,537 @@
+{
+    "label": "Tecniche Shuji (WIP)",
+    "mapping": {
+        "description": "system.description",
+        "book_reference": "system.book_reference"
+    },
+    "entries": [
+        {
+            "id": "Rustling of Leaves",
+            "name": "Fruscio di Foglie",
+            "description": "",
+            "book_reference": "Manuale Base p.214"
+        },
+        {
+            "id": "Cadence",
+            "name": "Cadenza",
+            "description": "",
+            "book_reference": "Manuale Base p.214"
+        },
+        {
+            "id": "Artisan’s Appraisal",
+            "name": "Valutazione dell’Artigiano",
+            "description": "",
+            "book_reference": "Manuale Base p.215"
+        },
+        {
+            "id": "Bend with the Storm",
+            "name": "Flettersi con la Tempesta",
+            "description": "",
+            "book_reference": "Manuale Base p.214"
+        },
+        {
+            "id": "The Wind Blows Both Ways",
+            "name": "Il Vento Soffia in Due Versi",
+            "description": "",
+            "book_reference": "Manuale Base p.215"
+        },
+        {
+            "id": "Prey on the Weak",
+            "name": "Predare i Deboli",
+            "description": "",
+            "book_reference": "Manuale Base p.215"
+        },
+        {
+            "id": "Whispers of Court",
+            "name": "Sussurri di Corte",
+            "description": "",
+            "book_reference": "Manuale Base p.215"
+        },
+        {
+            "id": "Feigned Opening",
+            "name": "Falsa Apertura",
+            "description": "",
+            "book_reference": "Manuale Base p.214"
+        },
+        {
+            "id": "Wolf’s Proposal",
+            "name": "Offerta del Lupo",
+            "description": "",
+            "book_reference": "Manuale Base p.215"
+        },
+        {
+            "id": "Ancestry Unearthed",
+            "name": "Discendenza Rivelata",
+            "description": "",
+            "book_reference": "Manuale Base p.216"
+        },
+        {
+            "id": "Touchstone of Courage",
+            "name": "Esempio di Coraggio",
+            "description": "",
+            "book_reference": "Manuale Base p.216"
+        },
+        {
+            "id": "Honest Assessment",
+            "name": "Onesta Valutazione",
+            "description": "",
+            "book_reference": "Manuale Base p.216"
+        },
+        {
+            "id": "The Immovable Hand of Peace",
+            "name": "L’Inamovibile Mano della Pace",
+            "description": "",
+            "book_reference": "Manuale Base p.216"
+        },
+        {
+            "id": "Civility Foremost",
+            "name": "Prima il Decoro",
+            "description": "",
+            "book_reference": "Manuale Base p.217"
+        },
+        {
+            "id": "Weight of Duty",
+            "name": "Peso del Dovere",
+            "description": "",
+            "book_reference": "Manuale Base p.216"
+        },
+        {
+            "id": "Pillar of Calm",
+            "name": "Pilastro della Calma",
+            "description": "",
+            "book_reference": "Manuale Base p.217"
+        },
+        {
+            "id": "Stonewall Tactics",
+            "name": "Tattiche di Ostruzione",
+            "description": "",
+            "book_reference": "Manuale Base p.218"
+        },
+        {
+            "id": "Fanning the Flames",
+            "name": "Alimentare le Fiamme",
+            "description": "",
+            "book_reference": "Manuale Base p.218"
+        },
+        {
+            "id": "Bravado",
+            "name": "Spavalderia",
+            "description": "",
+            "book_reference": "Manuale Base p.219"
+        },
+        {
+            "id": "Rallying Cry",
+            "name": "Urlo di Battaglia",
+            "description": "",
+            "book_reference": "Manuale Base p.219"
+        },
+        {
+            "id": "Sensational Distraction",
+            "name": "Distrazione Sensazionale",
+            "description": "",
+            "book_reference": "Manuale Base p.218"
+        },
+        {
+            "id": "Dazzling Performance",
+            "name": "Esibizione Splendente",
+            "description": "",
+            "book_reference": "Manuale Base p.219"
+        },
+        {
+            "id": "Truth Burns through Lies",
+            "name": "La Verità Corrode la Menzogna",
+            "description": "",
+            "book_reference": "Manuale Base p.219"
+        },
+        {
+            "id": "Sear the Wound",
+            "name": "Rigirare il Coltello nella Piaga",
+            "description": "",
+            "book_reference": "Manuale Base p.219"
+        },
+        {
+            "id": "Lightning Raid",
+            "name": "Assalto Fulmineo",
+            "description": "",
+            "book_reference": "Manuale Base p.218"
+        },
+        {
+            "id": "Stirring the Embers",
+            "name": "Ravvivare le Braci",
+            "description": "",
+            "book_reference": "Manuale Base p.219"
+        },
+        {
+            "id": "Tributaries of Trade",
+            "name": "Tributari del Commercio",
+            "description": "",
+            "book_reference": "Manuale Base p.221"
+        },
+        {
+            "id": "All in Jest",
+            "name": "Tutto in Burla",
+            "description": "",
+            "book_reference": "Manuale Base p.221"
+        },
+        {
+            "id": "Buoyant Arrival",
+            "name": "Approccio Galleggiante",
+            "description": "",
+            "book_reference": "Manuale Base p.220"
+        },
+        {
+            "id": "Ebb and Flow",
+            "name": "Flusso e Riflusso",
+            "description": "",
+            "book_reference": "Manuale Base p.220"
+        },
+        {
+            "id": "Slippery Maneuvers",
+            "name": "Manovra Sfuggente",
+            "description": "",
+            "book_reference": "Manuale Base p.220"
+        },
+        {
+            "id": "Regal Bearing",
+            "name": "Portamento Regale",
+            "description": "",
+            "book_reference": "Manuale Base p.220"
+        },
+        {
+            "id": "Well of Desire",
+            "name": "Pozzo del Desiderio",
+            "description": "",
+            "book_reference": "Manuale Base p.221"
+        },
+        {
+            "id": "Shallow Waters",
+            "name": "Acque Poco Profonde",
+            "description": "",
+            "book_reference": "Manuale Base p.220"
+        },
+        {
+            "id": "Lady Shinjo’s Speed (Unicorn)",
+            "name": "Velocità di Lady Shinjo (Unicorno)",
+            "description": "",
+            "book_reference": "Manuale Base p.223"
+        },
+        {
+            "id": "Lady Doji’s Decree (Crane)",
+            "name": "Decreto di Lady Doji (Gru)",
+            "description": "",
+            "book_reference": "Manuale Base p.222"
+        },
+        {
+            "id": "Courtier’s Resolve",
+            "name": "Risolutezza del Cortigiano",
+            "description": "",
+            "book_reference": "Manuale Base p.222"
+        },
+        {
+            "id": "A Samurai’s Fate",
+            "name": "Il Fato di un Samurai",
+            "description": "",
+            "book_reference": "Manuale Base p.222"
+        },
+        {
+            "id": "Lord Bayushi’s Whispers (Scorpion)",
+            "name": "Sussurri di Lord Bayushi (Scorpione)",
+            "description": "",
+            "book_reference": "Manuale Base p.223"
+        },
+        {
+            "id": "Lord Togashi’s Insight (Dragon)",
+            "name": "Intuito di Lord Togashi (Drago)",
+            "description": "",
+            "book_reference": "Manuale Base p.222"
+        },
+        {
+            "id": "Rouse the Soul",
+            "name": "Esaltare l’Anima",
+            "description": "",
+            "book_reference": "Manuale Base p.222"
+        },
+        {
+            "id": "Lord Akodo’s Roar (Lion)",
+            "name": "Ruggito di Lord Akodo (Leone)",
+            "description": "",
+            "book_reference": "Manuale Base p.223"
+        },
+        {
+            "id": "All Arts Are One",
+            "name": "Tutte le Arti Sono Una",
+            "description": "",
+            "book_reference": "Manuale Base p.223"
+        },
+        {
+            "id": "Hidden in Smoke",
+            "name": "Hidden in Smoke",
+            "description": "",
+            "book_reference": "Corti di Pietra p.117"
+        },
+        {
+            "id": "Assess Strengths",
+            "name": "Assess Strengths",
+            "description": "",
+            "book_reference": "Corti di Pietra p.117"
+        },
+        {
+            "id": "Unyielding Terms",
+            "name": "Unyielding Terms",
+            "description": "",
+            "book_reference": "Corti di Pietra p.117"
+        },
+        {
+            "id": "Offend the Sensibilities",
+            "name": "Offend the Sensibilities",
+            "description": "",
+            "book_reference": "Corti di Pietra p.118"
+        },
+        {
+            "id": "Crackling Laughter",
+            "name": "Crackling Laughter",
+            "description": "",
+            "book_reference": "Corti di Pietra p.118"
+        },
+        {
+            "id": "All Shall Fear Me",
+            "name": "All Shall Fear Me",
+            "description": "",
+            "book_reference": "Corti di Pietra p.118"
+        },
+        {
+            "id": "Spiteful Loss",
+            "name": "Spiteful Loss",
+            "description": "",
+            "book_reference": "Corti di Pietra p.118"
+        },
+        {
+            "id": "Beware The Smallest Mouse",
+            "name": "Beware The Smallest Mouse",
+            "description": "",
+            "book_reference": "Corti di Pietra p.119"
+        },
+        {
+            "id": "Fun and Games",
+            "name": "Fun and Games",
+            "description": "",
+            "book_reference": "Corti di Pietra p.118"
+        },
+        {
+            "id": "Foreseen Need",
+            "name": "Foreseen Need",
+            "description": "",
+            "book_reference": "Corti di Pietra p.119"
+        },
+        {
+            "id": "Spin the Web (Kolat)",
+            "name": "Spin the Web (Kolat)",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.249"
+        },
+        {
+            "id": "Awe of Heaven (Imperial)",
+            "name": "Awe of Heaven (Imperial)",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.249"
+        },
+        {
+            "id": "Look Out",
+            "name": "Look Out",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.92"
+        },
+        {
+            "id": "Bellow of Resolve",
+            "name": "Bellow of Resolve",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.92"
+        },
+        {
+            "id": "Ruse of the Moon's Reflection",
+            "name": "Ruse of the Moon's Reflection",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.93"
+        },
+        {
+            "id": "Eyes Up!",
+            "name": "Eyes Up!",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.94"
+        },
+        {
+            "id": "Pack Gambit",
+            "name": "Pack Gambit",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.93"
+        },
+        {
+            "id": "Mentor's Guidance",
+            "name": "Mentor's Guidance",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.93"
+        },
+        {
+            "id": "Malleable Formation",
+            "name": "Malleable FormationFormation mobile",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.94"
+        },
+        {
+            "id": "Goading Taunt",
+            "name": "Goading Taunt",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.95"
+        },
+        {
+            "id": "Watch My Back",
+            "name": "Watch My Back",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.94"
+        },
+        {
+            "id": "Illuminate the Way",
+            "name": "Illuminate the Way",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.94"
+        },
+        {
+            "id": "Fluent Bargaining",
+            "name": "Fluent Bargaining",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.94"
+        },
+        {
+            "id": "Bond of Heroes",
+            "name": "Bond of Heroes",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.95"
+        },
+        {
+            "id": "Tonight, I Am Your Opponent",
+            "name": "Tonight, I Am Your Opponent",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.95"
+        },
+        {
+            "id": "Wanderer's Resolve",
+            "name": "Wanderer's Resolve",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.95"
+        },
+        {
+            "id": "Roar of Encouragement",
+            "name": "Roar of Encouragement",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.94"
+        },
+        {
+            "id": "Osano-wo’s Boast (Mantis)",
+            "name": "Spacconeria di Osano-wo (Mantide)",
+            "description": "",
+            "book_reference": "Il Clan della Mantide p.7"
+        },
+        {
+            "id": "Borrowed Courage",
+            "name": "Borrowed Courage",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Clouds Parted by Steel",
+            "name": "Clouds Parted by Steel",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Entice with Falsehoods",
+            "name": "Entice with Falsehoods",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Fortress of Necessity",
+            "name": "Fortress of Necessity",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Great Anvil's Measure",
+            "name": "Great Anvil's Measure",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Steady Hammer",
+            "name": "Steady Hammer",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Call the Wild",
+            "name": "Call the Wild",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Righteous Example",
+            "name": "Righteous Example",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Sting of Warrior's Pride",
+            "name": "Sting of Warrior's Pride",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "To Smash the Heart",
+            "name": "To Smash the Heart",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Coursing March Chant",
+            "name": "Coursing March Chant",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Preserve Strength",
+            "name": "Preserve Strength",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Your Enemy's Arrows",
+            "name": "Your Enemy's Arrows",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Battle of No Escape",
+            "name": "Battle of No Escape",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Moment of Glory",
+            "name": "Moment of Glory",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Victory Without a Sword",
+            "name": "Victory Without a Sword",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Flowering Deceptions",
+            "name": "Les fleurs de la supercherie",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.93"
+        }
+    ]
+}

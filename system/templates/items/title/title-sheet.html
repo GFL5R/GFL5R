@@ -1,0 +1,69 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <input type="hidden" name="system.xp_used" value="{{data.system.xp_used}}" data-dtype="Number">
+    <input type="hidden" name="system.xp_used_total" value="{{data.system.xp_used_total}}" data-dtype="Number">
+    <header class="sheet-header">
+        <img class="profile-img" src="{{data.img}}" data-edit="img" title="{{data.name}}"/>
+        <h1 class="charname"><input name="name" type="text" value="{{data.name}}" placeholder="Name"/></h1>
+        {{!-- Attributes Tab --}}
+        <article class="attributes">
+            <label class="attribute">
+                {{localize 'l5r5e.advancements.cost'}}
+                <input class="select-on-focus" type="number" name="system.xp_cost" value="{{data.system.xp_cost}}" data-dtype="Number" min="0" placeholder="0"/>
+            </label>
+            <label class="attribute">
+                {{localize 'l5r5e.sheets.rank'}}
+                <input class="select-on-focus" type="number" name="system.rank" value="{{data.system.rank}}" data-dtype="Number" min="0" placeholder="0"/>
+            </label>
+            <label class="attribute">
+                {{localize 'l5r5e.sheets.bought_at_rank'}}
+                <input class="select-on-focus" type="number" name="system.bought_at_rank" value="{{data.system.bought_at_rank}}" data-dtype="Number" min="0" placeholder="0"/>
+            </label>
+        </article>
+    </header>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        {{!-- Sheet Navigation --}}
+        <nav class="sheet-tabs tabs" data-group="primary">
+            <a class="item" data-tab="infos">{{ localize "l5r5e.sheets.description" }}</a>
+            <a class="item" data-tab="experience">{{ localize "l5r5e.advancements.title" }}</a>
+        </nav>
+
+        {{!-- Descr + Page ref --}}
+        {{> 'systems/l5r5e/templates/items/item/item-infos.html'}}
+
+        {{!-- Embbed advancements --}}
+        <article class="tab experience" data-group="primary" data-tab="experience">
+            {{!-- Others progession (does not count in school xp) --}}
+            <fieldset class="xp-spent xp-spent-body">
+                <legend class="tools">{{localize 'l5r5e.advancements.title'}} {{#if options.editable}}<a data-item-type="advancement-others" class="advancement-others-control item-add" title="{{localize 'l5r5e.global.add'}}"><i class="fas fa-plus"></i></a>{{/if}}</legend>
+                <table>
+                    <thead class="flex">
+                    <tr class="flexrow row">
+                        <th class="name">{{localize 'l5r5e.sheets.name'}}</th>
+                        <th class="curriculum"><i class="fas fa-graduation-cap"></i></th>
+                        <th class="xp">{{localize 'l5r5e.advancements.spent'}}</th>
+                        <th class="rank">{{localize 'l5r5e.sheets.rank'}}</th>
+                        {{#if editable}}
+                            <th class="actions"></th>
+                        {{/if}}
+                    </tr>
+                    </thead>
+                    <tbody class="flex">
+                    {{#each data.embedItemsList as |advancement|}}
+                        {{> 'systems/l5r5e/templates/actors/character/advancement-others.html' advancement=advancement show_curriculum_toggle=true editable=../options.editable parent_id=../data._id}}
+                    {{/each}}
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <th class="" colspan="5">{{localize 'l5r5e.advancements.total_xp_curriculum'}} : {{data.system.xp_used}} / {{data.system.xp_cost}}</th>
+                    </tr>
+                    <tr>
+                        <th class="" colspan="5">{{localize 'l5r5e.advancements.total_xp_spent'}} : {{data.system.xp_used_total}}</th>
+                    </tr>
+                    </tfoot>
+                </table>
+            </fieldset>
+        </article>
+    </section>
+</form>

@@ -1,0 +1,117 @@
+{
+    "label": "Armature (WIP)",
+    "mapping": {
+        "description": "system.description",
+        "book_reference": "system.book_reference"
+    },
+    "entries": [
+        {
+            "id": "Ashigaru Armor",
+            "name": "Armatura Ashigaru",
+            "description": "",
+            "book_reference": "Manuale Base p.239"
+        },
+        {
+            "id": "Plated Armor",
+            "name": "Armatura di Piastre",
+            "description": "",
+            "book_reference": "Manuale Base p.239"
+        },
+        {
+            "id": "Concealed Armor",
+            "name": "Armatura Nascosta",
+            "description": "",
+            "book_reference": "Manuale Base p.239"
+        },
+        {
+            "id": "Lacquered Armor",
+            "name": "Armatura Laccata",
+            "description": "",
+            "book_reference": "Manuale Base p.239"
+        },
+        {
+            "id": "Ceremonial Clothes",
+            "name": "Abito da Cerimonia",
+            "description": "",
+            "book_reference": "Manuale Base p.239"
+        },
+        {
+            "id": "Traveling Clothes",
+            "name": "Abiti da Viaggio",
+            "description": "",
+            "book_reference": "Manuale Base p.239"
+        },
+        {
+            "id": "Sanctified Robes",
+            "name": "Veste Consacrata",
+            "description": "",
+            "book_reference": "Manuale Base p.239"
+        },
+        {
+            "id": "Sleeping Garb",
+            "name": "Indumento da Notte",
+            "description": "",
+            "book_reference": "Manuale Base p.239"
+        },
+        {
+            "id": "Common Clothes",
+            "name": "Abito Comune",
+            "description": "",
+            "book_reference": "Manuale Base p.239"
+        },
+        {
+            "id": "Inconspicuous garb",
+            "name": "Abito non appariscente",
+            "description": "",
+            "book_reference": "Manuale Base"
+        },
+        {
+            "id": "Robes of Judgment",
+            "name": "Robes of Judgment",
+            "description": "",
+            "book_reference": "Reami Celesti p.97"
+        },
+        {
+            "id": "Firefighter's Coat",
+            "name": "Firefighter's Coat",
+            "description": "",
+            "book_reference": "Corti di Pietra p.112"
+        },
+        {
+            "id": "Stealth Clothing",
+            "name": "Stealth Clothing",
+            "description": "",
+            "book_reference": "Corti di Pietra p.112"
+        },
+        {
+            "id": "O-yoroi",
+            "name": "O-yoroi",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.105"
+        },
+        {
+            "id": "Tatami Gusoku",
+            "name": "Tatami Gusoku",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.106"
+        },
+        {
+            "id": "Tosei-Gusoku",
+            "name": "Tosei-Gusoku",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.106"
+        },
+        {
+            "id": "Sailor's garb",
+            "name": "Abbligliamento da marinaio",
+            "description": "",
+            "book_reference": "Il Clan della Mantide p.9"
+        },
+        {
+            "id": "Shark leather armor",
+            "name": "Armatura di Pelle di Squalo",
+            "description": "",
+            "book_reference": "Il Clan della Mantide p.9"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+<div class="{{cssClass}}" data-actor-id="{{actor._id}}" data-item-id="{{data._id}}">
+    <header class="card-header">
+        <h2 class="item-name"><img src="{{data.img}}" title="{{data.name}}" /> {{data.name}}</h2>
+    </header>
+    <section class="sheet-body">
+        <ul>
+            <li>
+                <strong>{{localize 'l5r5e.weapons.sheathed'}}</strong> : {{localizeYesNo data.system.equipped}}
+            </li>
+            <li>
+                <strong>{{localize 'l5r5e.weapons.readied'}}</strong> : {{localizeYesNo data.system.readied}}
+            </li>
+            {{!--item-value--}}
+            <li>
+                <strong>{{localize 'l5r5e.sheets.quantity'}} </strong> : {{data.system.quantity}}
+            </li>
+            <li>
+                <strong>{{localize 'l5r5e.sheets.weight'}}</strong> : {{data.system.weight}}
+            </li>
+            <li>
+                <strong>{{localize 'l5r5e.sheets.rarity'}}</strong> : {{data.system.rarity}}
+            </li>
+            <li>
+                <strong>{{localize 'l5r5e.sheets.value'}}</strong> : {{data.system.zeni}}
+            </li>
+
+            <li>
+                <strong>{{localize 'l5r5e.weapons.category'}}</strong> : {{data.system.category}}
+            </li>
+            <li>
+                <strong>{{localize 'l5r5e.skills.label'}}</strong> : {{localizeSkillId data.system.skill}}
+            </li>
+            <li>
+                <strong>{{localize 'l5r5e.weapons.range'}}</strong> : {{data.system.range}}
+            </li>
+            <li>
+                <strong>{{localize 'l5r5e.weapons.damage'}}</strong> : {{data.system.damage}}
+            </li>
+            <li>
+                <strong>{{localize 'l5r5e.weapons.deadliness'}}</strong> : {{data.system.deadliness}}
+            </li>
+            <li>
+                <strong>{{localize 'l5r5e.weapons.1hand'}}</strong> : {{data.system.grip_1}}
+            </li>
+            <li>
+                <strong>{{localize 'l5r5e.weapons.2hand'}}</strong> : {{data.system.grip_2}}
+            </li>
+        </ul>
+        {{!--properties--}}
+        <p>
+            <strong>{{localize 'l5r5e.sheets.properties'}}</strong> :
+            {{#each data.system.properties as |property idx|}}{{#ifCond idx '>' 0}}, {{/ifCond}}{{property.name}}{{/each}}
+        </p>
+        
+        {{> 'systems/l5r5e/templates/items/item/item-text-partial-reference.html'}}
+    </section>
+</div>

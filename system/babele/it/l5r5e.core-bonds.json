@@ -1,0 +1,73 @@
+{
+    "label": "Legami (WIP)",
+    "mapping": {
+        "description": "system.description",
+        "book_reference": "system.book_reference",
+        "bond_type": "system.bond_type"
+    },
+    "entries": [
+        {
+            "id": "Family",
+            "name": "Family",
+            "description": "",
+            "book_reference": "Corti di Pietra p.136",
+            "bond_type": "Family"
+        },
+        {
+            "id": "Comrade",
+            "name": "Comrade",
+            "description": "",
+            "book_reference": "Corti di Pietra p.137",
+            "bond_type": "Comrade"
+        },
+        {
+            "id": "Lover",
+            "name": "Lover",
+            "description": "",
+            "book_reference": "Corti di Pietra p.137",
+            "bond_type": "Lover"
+        },
+        {
+            "id": "Rival",
+            "name": "Rival",
+            "description": "",
+            "book_reference": "Corti di Pietra p.138",
+            "bond_type": "Rival"
+        },
+        {
+            "id": "Nemesis",
+            "name": "Nemesis",
+            "description": "",
+            "book_reference": "Corti di Pietra p.138",
+            "bond_type": "Nemesis"
+        },
+        {
+            "id": "Old Flame",
+            "name": "Old Flame",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.188",
+            "bond_type": "Old Flame"
+        },
+        {
+            "id": "Partner",
+            "name": "Partner",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.189",
+            "bond_type": "Partner"
+        },
+        {
+            "id": "Protector and Ward",
+            "name": "Protector and Ward",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.189",
+            "bond_type": "Protector and Ward"
+        },
+        {
+            "id": "Wanderers Fellowship",
+            "name": "Wanderers Fellowship",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.191",
+            "bond_type": "Wanderers Fellowship"
+        }
+    ]
+}

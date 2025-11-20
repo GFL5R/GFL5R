@@ -1,0 +1,229 @@
+<div class="{{cssClass}}" data-actor-id="{{data._id}}">
+    <header class="card-header">
+        <h2 class="item-name">
+            {{data.name}}
+        </h2>
+    </header>
+    <section class="sheet-body">
+        {{#if data.img}}<p><img src="{{data.img}}" title="{{data.name}}" /></p>{{/if}}
+
+        {{!-- Sheet Header --}}
+        <ul>
+            {{!-- Identity --}}
+            <li>{{#ifCond data.system.template '==' 'pow'}}{{localize 'l5r5e.sheets.region'}}{{else}}{{localize 'l5r5e.clans.label'}}{{/ifCond}} : {{data.system.identity.clan}}</li>
+            <li>{{#ifCond data.system.template '==' 'pow'}}{{localize 'l5r5e.sheets.upbringing'}}{{else}}{{localize 'l5r5e.sheets.family'}}{{/ifCond}} : {{data.system.identity.family}}</li>
+            <li>{{localize 'l5r5e.sheets.rank'}}  : {{data.system.identity.school_rank}}</li>
+            <li>{{localize 'l5r5e.sheets.school'}} : {{data.system.identity.school}}</li>
+            <li>{{localize 'l5r5e.roles'}} : {{data.system.identity.roles}}</li>
+
+            {{!-- Social --}}
+            <li>{{localize 'l5r5e.social.honor'}} : {{data.system.social.honor}}</li>
+            <li>{{localize 'l5r5e.social.glory'}} : {{data.system.social.glory}}</li>
+            <li>{{localize 'l5r5e.social.status'}} : {{data.system.social.status}}</li>
+
+            {{!-- Rings --}}
+            <li>{{localize 'l5r5e.rings.earth'}} : {{data.system.rings.earth}}</li>
+            <li>{{localize 'l5r5e.rings.air'}} : {{data.system.rings.air}}</li>
+            <li>{{localize 'l5r5e.rings.water'}} : {{data.system.rings.water}}</li>
+            <li>{{localize 'l5r5e.rings.fire'}} : {{data.system.rings.fire}}</li>
+            <li>{{localize 'l5r5e.rings.void'}} : {{data.system.rings.void}}</li>
+
+            {{!-- Attributes --}}
+            <li>{{localize 'l5r5e.attributes.endurance'}} : {{data.system.endurance}}</li>
+            <li>{{localize 'l5r5e.attributes.composure'}} : {{data.system.composure}}</li>
+            <li>{{localize 'l5r5e.attributes.focus'}} : {{data.system.focus}}</li>
+            <li>{{localize 'l5r5e.attributes.vigilance'}} : {{data.system.vigilance}}</li>
+            <li>{{localize 'l5r5e.attributes.voidpoints'}} : {{data.system.void_points.max}}</li>
+
+            {{!-- Narrative : Social --}}
+            <li>{{localize 'l5r5e.social.ninjo'}} : {{data.system.social.ninjo}}</li>
+            <li>{{#ifCond data.system.template '==' 'pow'}}{{localize 'l5r5e.social.past'}}{{else}}{{localize 'l5r5e.social.giri'}}{{/ifCond}} : {{data.system.social.giri}}</li>
+            <li>{{localize 'l5r5e.social.bushido_tenets.paramount'}} : {{data.system.social.bushido_tenets.paramount}}</li>
+            <li>{{localize 'l5r5e.social.bushido_tenets.less_significant'}} : {{data.system.social.bushido_tenets.less_significant}}</li>
+            <li>{{localize 'l5r5e.sheets.description' }} : {{{data.system.description}}}</li>
+            <li>{{localize 'l5r5e.sheets.notes' }} : {{{data.system.notes}}}</li>
+        </ul>
+
+{{!-- a faire : Spé Skill/Ecoles pour les pnj --}}
+        {{!-- Skills Tab : Skills --}}
+        <h2>{{localize 'l5r5e.skills.title'}}</h2>
+        <ul>
+            {{#each data.system.skills as |category categoryId|}}
+                <li>
+                    <strong>{{localizeSkill categoryId 'title'}}</strong>
+                    <ul>
+                    {{#each category as |skillValue skillId|}}
+                        <li>{{localizeSkill categoryId skillId}} : {{skillValue}}</li>
+                    {{/each}}
+                    </ul>
+                </li>
+            {{/each}}
+        </ul>
+
+        {{!-- Skills Tab : Techniques --}}
+        <h2>{{localize 'l5r5e.techniques.title'}}</h2>
+        <ul>
+            {{#each data.splitTechniquesList as |list techName|}}
+                <li>
+                    <strong>{{localize (localize 'l5r5e.techniques.{techName}' techName=techName) }}</strong>
+                    <ul>
+                    {{#each list as |technique|}}
+                        <li>
+                            {{#ifCond techName '==' 'title_ability'}}
+                                {{> 'systems/l5r5e/templates/items/title/title-text.html' data=technique editable=../../options.editable}}
+                            {{else}}
+                                {{> 'systems/l5r5e/templates/items/technique/technique-text.html' data=technique editable=../../options.editable}}
+                            {{/ifCond}}
+                        </li>
+                    {{/each}}
+                    </ul>
+                </li>
+            {{/each}}
+        </ul>
+
+        {{!-- Skills Tab : Signature Scrolls --}}
+        <h2>{{localize 'l5r5e.advancements.signature_scroll' }}</h2>
+        <ul>
+            {{#each actor.items as |scroll|}}
+                {{#ifCond scroll.type '==' 'signature_scroll'}}
+                    <li>{{> 'systems/l5r5e/templates/items/signature-scroll/signature-scroll-text.html' data=scroll editable=../options.editable}}</li>
+                {{/ifCond}}
+            {{/each}}
+        </ul>
+
+
+         {{!-- Narrative : Advantages --}}
+         <h2>{{localize 'l5r5e.social.advantages'}}</h2>
+        <ul>
+        {{#each data.items as |item|}}
+            {{#ifCond '["distinction","passion"]' 'includes' item.system.peculiarity_type}}
+                <li>{{> 'systems/l5r5e/templates/items/peculiarity/peculiarity-text.html' data=item editable=../options.editable}}</li>
+            {{/ifCond}}
+        {{/each}}
+        </ul>
+
+        {{!-- Narrative : Disadvantages --}}
+        <h2>{{localize 'l5r5e.social.disadvantages'}}</h2>
+        <ul>
+        {{#each data.items as |item|}}
+            {{#ifCond '["adversity","anxiety"]' 'includes' item.system.peculiarity_type}}
+                <li>{{> 'systems/l5r5e/templates/items/peculiarity/peculiarity-text.html' data=item editable=../options.editable}}</li>
+            {{/ifCond}}
+        {{/each}}
+        </ul>
+
+        {{!-- Narrative : Bonds --}}
+        <h2>{{localize 'l5r5e.social.bonds'}}</h2>
+        <ul>
+        {{#each data.items as |bond|}}
+            {{#ifCond bond.type '==' 'bond'}}
+                <li>{{> 'systems/l5r5e/templates/items/bond/bond-text.html' data=bond editable=../options.editable}}</li>
+            {{/ifCond}}
+        {{/each}}
+        </ul>
+
+
+        {{!-- Inventory Tab --}}
+        {{!-- items list --}}
+        <h2>{{localize 'l5r5e.sheets.equipment'}}</h2>
+        <ul>
+            <li>{{localize 'l5r5e.money.title'}} : {{data.system.money.koku}} {{localize 'l5r5e.money.koku'}} / {{data.system.money.bu}} {{localize 'l5r5e.money.bu'}} / {{data.system.money.zeni}} {{localize 'l5r5e.money.zeni'}}</li>
+            {{#each data.splitItemsList as |cat type|}}
+                <li>
+                    <strong>{{localize (localize 'l5r5e.{type}s.title' type=type)}} ({{cat.length}})</strong>
+                    <ul>
+                    {{#each cat as |item|}}
+                        <li>{{> 'systems/l5r5e/templates/items/item/item-text.html' data=item editable=../../options.editable}}</li>
+                    {{/each}}
+                    </ul>
+                </li>
+            {{/each}}
+        </ul>
+
+        {{!-- item patterns list --}}
+        <h2>{{localize 'l5r5e.advancements.item_pattern'}}</h2>
+        <ul>
+        {{#each actor.items as |pattern|}}
+            {{#ifCond pattern.type '==' 'item_pattern'}}
+                <li>{{> 'systems/l5r5e/templates/items/item-pattern/item-pattern-text.html' data=pattern editable=../options.editable}}</li>
+            {{/ifCond}}
+        {{/each}}
+        </ul>
+
+
+        {{!-- Experience Tab --}}
+        <h2>{{localize 'l5r5e.sheets.experience'}}</h2>
+        <ul>
+            <li>{{localize 'l5r5e.advancements.total'}} : {{data.system.xp_total}}</li>
+            <li>{{localize 'l5r5e.advancements.spent'}} : {{data.system.xp_spent}}</li>
+            <li>{{localize 'l5r5e.advancements.saved'}} : {{data.system.xp_saved}}</li>
+        </ul>
+
+        {{!-- School progression --}}
+        <h2>{{#if data.system.identity.school_curriculum_journal.name}}{{data.system.identity.school_curriculum_journal.name}}{{else}}{{localize 'l5r5e.sheets.school'}}{{/if}}</h2>
+        <table>
+            <tr>
+                <th>{{localize 'l5r5e.sheets.name'}}</th>
+                <th>{{localize 'l5r5e.sheets.school'}}</th>
+                <th>{{localize 'l5r5e.advancements.spent'}}</th>
+                <th>{{localize 'l5r5e.sheets.rank'}}</th>
+            </tr>
+            {{#each data.advancementsListByRank as |rankObject|}}
+                <tr><th colspan="4">{{localize 'l5r5e.sheets.rank'}} {{rankObject.rank}}</th></tr>
+                {{#each rankObject.list as |advancement|}}
+                <tr>
+                    <td>{{advancement.name}}</td>
+                    <td>{{#if advancement.system.in_curriculum}}✓</i>{{/if}}</td>
+                    <td>{{advancement.system.xp_used}}</td>
+                    <td>{{advancement.system.rank}}</td>
+                </tr>
+                {{/each}}
+            {{/each}}
+        </table>
+
+        {{!-- Others progression (does not count in school xp) --}}
+        {{#if data.advancementsOthers}}
+        <h2>{{localize 'l5r5e.advancements.title'}}</h2>
+        <table>
+            <tr>
+                <th>{{localize 'l5r5e.sheets.name'}}</th>
+                <th>{{localize 'l5r5e.advancements.spent'}}</th>
+                <th>{{localize 'l5r5e.sheets.rank'}}</th>
+            </tr>
+            {{#each data.advancementsOthers as |advancement|}}
+                <tr>
+                    <td>{{advancement.name}}</td>
+                    <td>{{advancement.system.xp_used}}</td>
+                    <td>{{advancement.system.rank}}</td>
+                </tr>
+            {{/each}}
+        </table>
+        {{/if}}
+
+
+        {{!-- 20Q --}}
+        {{#ifCond data.system.twenty_questions.template '==' 'pow'}}
+            {{setVar "suffix" "pow"}}
+        {{else}}
+            {{setVar "suffix" ""}}
+        {{/ifCond}}
+        <h2>{{localize 'l5r5e.twenty_questions.title'}}</h2>
+        <ul>
+            <li>{{localize (localize 'l5r5e.twenty_questions.part2.q4{suffix}' suffix=suffix)}} : {{data.system.twenty_questions.step4.stand_out}}</li>
+            <li>{{localize (localize 'l5r5e.twenty_questions.part3.q7{suffix}' suffix=suffix)}} : {{data.system.twenty_questions.step7.clan_relations}}</li>
+            <li>{{localize (localize 'l5r5e.twenty_questions.part3.q8{suffix}' suffix=suffix)}} : {{data.system.twenty_questions.step8.bushido}}</li>
+            <li>{{localize (localize 'l5r5e.twenty_questions.part4.q9{suffix}' suffix=suffix)}} : {{data.system.twenty_questions.step9.success}}</li>
+            <li>{{localize (localize 'l5r5e.twenty_questions.part4.q10{suffix}' suffix=suffix)}} : {{data.system.twenty_questions.step10.difficulty}}</li>
+            <li>{{localize (localize 'l5r5e.twenty_questions.part4.q11{suffix}' suffix=suffix)}} : {{data.system.twenty_questions.step11.calms}}</li>
+            <li>{{localize (localize 'l5r5e.twenty_questions.part4.q12{suffix}' suffix=suffix)}} : {{data.system.twenty_questions.step12.worries}}</li>
+            <li>{{localize (localize 'l5r5e.twenty_questions.part4.q13{suffix}' suffix=suffix)}} : {{data.system.twenty_questions.step13.most_learn}}</li>
+            <li>{{localize (localize 'l5r5e.twenty_questions.part5.q14{suffix}' suffix=suffix)}} : {{data.system.twenty_questions.step14.first_sight}}</li>
+            <li>{{localize (localize 'l5r5e.twenty_questions.part5.q15{suffix}' suffix=suffix)}} : {{data.system.twenty_questions.step15.stress}}</li>
+            <li>{{localize (localize 'l5r5e.twenty_questions.part5.q16{suffix}' suffix=suffix)}} : {{data.system.twenty_questions.step16.relations}}</li>
+            <li>{{localize (localize 'l5r5e.twenty_questions.part6.q17{suffix}' suffix=suffix)}} : {{data.system.twenty_questions.step17.parents_pov}}</li>
+            <li>{{localize (localize 'l5r5e.twenty_questions.part6.q18{suffix}' suffix=suffix)}} : {{data.system.twenty_questions.step18.heritage_name}}</li>
+            <li>{{localize (localize 'l5r5e.twenty_questions.part7.q20{suffix}' suffix=suffix)}} : {{data.system.twenty_questions.step20.death}}</li>
+        </ul>
+
+    </section>
+</div>

@@ -1,0 +1,459 @@
+{
+    "label": "Tecniche Invocazioni (WIP)",
+    "mapping": {
+        "description": "system.description",
+        "book_reference": "system.book_reference"
+    },
+    "entries": [
+        {
+            "id": "Rise, Air",
+            "name": "Sorgi, Aria",
+            "description": "",
+            "book_reference": "Manuale Base p.195"
+        },
+        {
+            "id": "Nature’s Touch",
+            "name": "Tocco della Natura",
+            "description": "",
+            "book_reference": "Manuale Base p.195"
+        },
+        {
+            "id": "Wrath of Kaze-no-Kami",
+            "name": "Rabbia di Kaze-no-Kami",
+            "description": "",
+            "book_reference": "Manuale Base p.194"
+        },
+        {
+            "id": "Secrets on the Wind",
+            "name": "Segreti nel Vento",
+            "description": "",
+            "book_reference": "Manuale Base p.195"
+        },
+        {
+            "id": "Vapor of Nightmares",
+            "name": "Vapore degli Incubi",
+            "description": "",
+            "book_reference": "Manuale Base p.196"
+        },
+        {
+            "id": "Grasp of the Air Dragon",
+            "name": "Presa del Drago dell'Aria",
+            "description": "",
+            "book_reference": "Manuale Base p.194"
+        },
+        {
+            "id": "Blessed Wind",
+            "name": "Vento Benedetto",
+            "description": "",
+            "book_reference": "Manuale Base p.196"
+        },
+        {
+            "id": "By the Light of the Lord Moon",
+            "name": "Per la Luce del Dio Luna",
+            "description": "",
+            "book_reference": "Manuale Base p.193"
+        },
+        {
+            "id": "Call Upon the Wind",
+            "name": "Appellarsi al Vento",
+            "description": "",
+            "book_reference": "Manuale Base p.192"
+        },
+        {
+            "id": "Cloak of Night",
+            "name": "Mantello Notturno",
+            "description": "",
+            "book_reference": "Manuale Base p.193"
+        },
+        {
+            "id": "False Realm of the Fox Spirits",
+            "name": "Falso Reame degli Spiriti Volpe",
+            "description": "",
+            "book_reference": "Manuale Base p.192"
+        },
+        {
+            "id": "Mask of Wind",
+            "name": "Maschera del Vento",
+            "description": "",
+            "book_reference": "Manuale Base p.193"
+        },
+        {
+            "id": "Summon Fog",
+            "name": "Evoca Nebbia",
+            "description": "",
+            "book_reference": "Manuale Base p.192"
+        },
+        {
+            "id": "Tempest of Air",
+            "name": "Tempesta dell’Aria",
+            "description": "",
+            "book_reference": "Manuale Base p.195"
+        },
+        {
+            "id": "Token of Memory",
+            "name": "Dono della Memoria",
+            "description": "",
+            "book_reference": "Manuale Base p.192"
+        },
+        {
+            "id": "Yari of Air",
+            "name": "Yari dell’Aria",
+            "description": "",
+            "book_reference": "Manuale Base p.196"
+        },
+        {
+            "id": "Armor of Earth",
+            "name": "Armatura della Terra",
+            "description": "",
+            "book_reference": "Manuale Base p.197"
+        },
+        {
+            "id": "Bind the Shadow",
+            "name": "Vincolare l’Ombra",
+            "description": "",
+            "book_reference": "Manuale Base p.201"
+        },
+        {
+            "id": "Caress of Earth",
+            "name": "Carezza della Terra",
+            "description": "",
+            "book_reference": "Manuale Base p.197"
+        },
+        {
+            "id": "Courage of Seven Thunders",
+            "name": "Coraggio dei Sette Tuoni",
+            "description": "",
+            "book_reference": "Manuale Base p.197"
+        },
+        {
+            "id": "Earthquake",
+            "name": "Epicentro",
+            "description": "",
+            "book_reference": "Manuale Base p.198"
+        },
+        {
+            "id": "Earth Becomes Sky",
+            "name": "La Terra Diviene Cielo",
+            "description": "",
+            "book_reference": "Manuale Base p.200"
+        },
+        {
+            "id": "Embrace of Kenro-Ji-Jin",
+            "name": "Abbraccio di Kenro-Ji-Jin",
+            "description": "",
+            "book_reference": "Manuale Base p.196"
+        },
+        {
+            "id": "Grasp of Earth",
+            "name": "Presa della Terra",
+            "description": "",
+            "book_reference": "Manuale Base p.199"
+        },
+        {
+            "id": "Jade Strike",
+            "name": "Saetta di Giada",
+            "description": "",
+            "book_reference": "Manuale Base p.199"
+        },
+        {
+            "id": "Jurōjin’s Balm",
+            "name": "Balsamo di Jurōjin",
+            "description": "",
+            "book_reference": "Manuale Base p.197"
+        },
+        {
+            "id": "Power of the Earth Dragon",
+            "name": "Potere del Drago della Terra",
+            "description": "",
+            "book_reference": "Manuale Base p.199"
+        },
+        {
+            "id": "Rise, Earth",
+            "name": "Sorgi, Terra",
+            "description": "",
+            "book_reference": "Manuale Base p.200"
+        },
+        {
+            "id": "Symbol of Earth",
+            "name": "Simbolo della Terra",
+            "description": "",
+            "book_reference": "Manuale Base p.199"
+        },
+        {
+            "id": "Tetsubō of Earth",
+            "name": "Tetsubō della Terra",
+            "description": "",
+            "book_reference": "Manuale Base p.200"
+        },
+        {
+            "id": "Tomb of Jade",
+            "name": "Tomba di Giada",
+            "description": "",
+            "book_reference": "Manuale Base p.201"
+        },
+        {
+            "id": "Wall of Earth",
+            "name": "Muro di Terra",
+            "description": "",
+            "book_reference": "Manuale Base p.198"
+        },
+        {
+            "id": "Armor of Radiance",
+            "name": "Armatura Radiosa",
+            "description": "",
+            "book_reference": "Manuale Base p.203"
+        },
+        {
+            "id": "Biting Steel",
+            "name": "Acciaio Mordente",
+            "description": "",
+            "book_reference": "Manuale Base p.202"
+        },
+        {
+            "id": "Breath of the Fire Dragon",
+            "name": "Soffio del Drago del Fuoco",
+            "description": "",
+            "book_reference": "Manuale Base p.206"
+        },
+        {
+            "id": "Extinguish",
+            "name": "Estinguere",
+            "description": "",
+            "book_reference": "Manuale Base p.203"
+        },
+        {
+            "id": "Fukurokujin’s Wit",
+            "name": "Saggezza di Fukurokujin",
+            "description": "",
+            "book_reference": "Manuale Base p.205"
+        },
+        {
+            "id": "Fury of Osano-wo",
+            "name": "Furia di Osano-wo",
+            "description": "",
+            "book_reference": "Manuale Base p.204"
+        },
+        {
+            "id": "Katana of Fire",
+            "name": "Katana del Fuoco",
+            "description": "",
+            "book_reference": "Manuale Base p.204"
+        },
+        {
+            "id": "Matsu's Battlecry",
+            "name": "Grido di Battaglia di Matsu",
+            "description": "",
+            "book_reference": "Manuale Base p.204"
+        },
+        {
+            "id": "Ravenous Swarms",
+            "name": "Sciame Famelico",
+            "description": "",
+            "book_reference": "Manuale Base p.206"
+        },
+        {
+            "id": "Rise, Flame",
+            "name": "Sorgi, Fiamma",
+            "description": "",
+            "book_reference": "Manuale Base p.206"
+        },
+        {
+            "id": "The Cleansing Fire",
+            "name": "Il Fuoco Purificatore",
+            "description": "",
+            "book_reference": "Manuale Base p.204"
+        },
+        {
+            "id": "The Fires from Within",
+            "name": "Emanare le Fiamme Interiori",
+            "description": "",
+            "book_reference": "Manuale Base p.203"
+        },
+        {
+            "id": "The Soul’s Blade",
+            "name": "La Lama dell’Anima",
+            "description": "",
+            "book_reference": "Manuale Base p.205"
+        },
+        {
+            "id": "Wall of Fire",
+            "name": "Muro di Fuoco",
+            "description": "",
+            "book_reference": "Manuale Base p.205"
+        },
+        {
+            "id": "Wings of the Phoenix",
+            "name": "Ali della Fenice",
+            "description": "",
+            "book_reference": "Manuale Base p.203"
+        },
+        {
+            "id": "Bō of Water",
+            "name": "Bō dell'Acqua",
+            "description": "",
+            "book_reference": "Manuale Base p.207"
+        },
+        {
+            "id": "Dance of Seasons",
+            "name": "Danza delle Stagioni",
+            "description": "",
+            "book_reference": "Manuale Base p.208"
+        },
+        {
+            "id": "Dominion of Suijin",
+            "name": "Dominio di Suijin",
+            "description": "",
+            "book_reference": "Manuale Base p.208"
+        },
+        {
+            "id": "Ever-Changing Waves",
+            "name": "Onde Mutevoli",
+            "description": "",
+            "book_reference": "Manuale Base p.210"
+        },
+        {
+            "id": "Hands of the Tides",
+            "name": "Mani delle Maree",
+            "description": "",
+            "book_reference": "Manuale Base p.209"
+        },
+        {
+            "id": "Heart of the Water Dragon",
+            "name": "Cuore del Drago dell'Acqua",
+            "description": "",
+            "book_reference": "Manuale Base p.208"
+        },
+        {
+            "id": "Inari’s Blessing",
+            "name": "Benedizione di Inari",
+            "description": "",
+            "book_reference": "Manuale Base p.207"
+        },
+        {
+            "id": "Path to Inner Peace",
+            "name": "Cammino per la Pace Interiore",
+            "description": "",
+            "book_reference": "Manuale Base p.207"
+        },
+        {
+            "id": "Reflections of P’an Ku",
+            "name": "Riflessi di P’an Ku",
+            "description": "",
+            "book_reference": "Manuale Base p.211"
+        },
+        {
+            "id": "Rise, Water",
+            "name": "Sorgi, Acqua",
+            "description": "",
+            "book_reference": "Manuale Base p.211"
+        },
+        {
+            "id": "Stride the Waves",
+            "name": "Andatura delle Onde",
+            "description": "",
+            "book_reference": "Manuale Base p.207"
+        },
+        {
+            "id": "Strike the Tsunami",
+            "name": "Condanna dello Tsunami",
+            "description": "",
+            "book_reference": "Manuale Base p.208"
+        },
+        {
+            "id": "Suijin’s Embrace",
+            "name": "Abbraccio di Suijin",
+            "description": "",
+            "book_reference": "Manuale Base p.206"
+        },
+        {
+            "id": "Sympathetic Energies",
+            "name": "Energie Simpatetiche",
+            "description": "",
+            "book_reference": "Manuale Base p.209"
+        },
+        {
+            "id": "The Rushing Wave",
+            "name": "L’Onda Impetuosa",
+            "description": "",
+            "book_reference": "Manuale Base p.210"
+        },
+        {
+            "id": "Dream Painter",
+            "name": "Dream Painter",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Messenger of Chikusho-do",
+            "name": "Messenger of Chikusho-do",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "The Fading Dream",
+            "name": "The Fading Dream",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Bond of the Realms",
+            "name": "Bond of the Realms",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Guardian of the Secret Gate",
+            "name": "Guardian of the Secret Gate",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Emboldened Steed",
+            "name": "Emboldened Steed",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Fluid Shadows",
+            "name": "Fluid Shadows",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Heart of the Lady Sun",
+            "name": "Heart of the Lady Sun",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Fires of Purity",
+            "name": "Fires of Purity",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Amaterasu's Gaze",
+            "name": "Amaterasu's Gaze",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Rain of Ten Thousand Lotuses",
+            "name": "Rain of Ten Thousand Lotuses",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Path of Beasts",
+            "name": "Path of Beasts",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Essence of Jade",
+            "name": "Essence of Jade",
+            "description": "",
+            "book_reference": "Terre d'Ombra p.114"
+        }
+    ]
+}

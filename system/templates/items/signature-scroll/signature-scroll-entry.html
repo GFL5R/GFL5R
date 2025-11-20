@@ -1,0 +1,10 @@
+<li class="item signature-scroll flexcol" data-item-id="{{scroll.id}}">
+    <ul class="item-header signature-scroll-controls">
+        <li class="item-img"><img src="{{scroll.img}}" title="{{scroll.name}}" width="24px" height="24px"/></li>
+        <li class="item-name l5r5e-tooltip" data-item-id="{{scroll.id}}">{{scroll.name}}</li>
+        {{#if editable}}
+            <li data-item-id="{{scroll.id}}" class="item-control item-edit" title="{{localize 'l5r5e.global.edit'}}"><i class="fas fa-edit"></i></li>
+            <li data-item-id="{{scroll.id}}" class="item-control item-delete" title="{{localize 'Delete'}}"><i class="fas fa-trash"></i></li>
+        {{/if}}
+    </ul>
+</li>

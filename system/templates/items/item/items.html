@@ -1,0 +1,13 @@
+{{#each data.splitItemsList as |cat type|}}
+    <h3 class="toggle-on-click" data-toggle="inventory-item-list-{{type}}">
+        {{localize (localize 'l5r5e.{type}s.title' type=type)}} ({{cat.length}})
+        {{#if ../data.editable_not_soft_locked}}
+            <a data-item-type="{{type}}" class="item-control item-add" title="{{localize 'l5r5e.global.add'}}"><i class="fas fa-plus"></i></a>
+        {{/if}}
+    </h3>
+    <ul class="item-list inventory-item-list-{{type}} {{#ifCond ../data.storeInfos 'includes' (concat 'inventory-item-list-' type)}}toggle-hidden{{/ifCond}}">
+        {{#each cat as |item id|}}
+            {{> 'systems/l5r5e/templates/items/item/item-entry.html' item=item id=id editable=../../options.editable soft_locked=../../data.system.soft_locked}}
+        {{/each}}
+    </ul>
+{{/each}}

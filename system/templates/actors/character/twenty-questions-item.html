@@ -1,0 +1,12 @@
+<fieldset data-step="{{stepName}}" class="tq-drag-n-drop">
+    <ul class="item-list">
+        {{#each itemsList as |item id|}}
+        {{> 'systems/l5r5e/templates/items/property/property-entry.html' property=item id=id editable=../options.editable}}
+        {{/each}}
+    </ul>
+</fieldset>
+{{#ifCond itemsList.length '<' hideDndAt}}
+<fieldset class="{{itemType}} dropbox" data-step="{{stepName}}">
+    <legend class="section-header"><i class="fa fa-arrow-down" aria-hidden="true"></i> {{localize 'l5r5e.global.drop_here'}}</legend>
+</fieldset>
+{{/ifCond}}

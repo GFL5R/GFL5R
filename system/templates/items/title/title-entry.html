@@ -1,0 +1,10 @@
+<li class="item title flexcol" data-item-id="{{title._id}}">
+    <ul class="item-header title-controls">
+        <li class="item-img"><img src="{{title.img}}" title="{{title.name}}" width="24px" height="24px"/></li>
+        <li class="item-name l5r5e-tooltip" data-item-id="{{title._id}}">{{title.name}}</li>
+        {{#if editable}}
+            <li data-item-id="{{title._id}}" class="item-control item-edit" title="{{localize 'l5r5e.global.edit'}}"><i class="fas fa-edit"></i></li>
+            <li data-item-id="{{title._id}}" class="item-control item-delete" title="{{localize 'Delete'}}"><i class="fas fa-trash"></i></li>
+        {{/if}}
+    </ul>
+</li>

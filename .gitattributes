@@ -1,0 +1,6 @@
+# Make .db files keep LF ending as Foundry rewrite in this format
+*.db text eol=lf
+*.json text eol=lf
+
+# Foundry pack v11 as binaries
+system/packs/*/** binary

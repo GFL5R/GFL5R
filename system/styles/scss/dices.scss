@@ -1,0 +1,420 @@
+// -- Dices.scss
+
+// If DicePicker add a pointer
+.dice-picker {
+    cursor: url("../assets/cursors/pointer.webp"), pointer;
+}
+
+// Dice Picker
+.dice-picker-dialog {
+    min-width: 35rem;
+    min-height: auto;
+    // Utility
+    * {
+        transition: none;
+    }
+
+    input[type="text"]:focus,
+    input[type="text"]:hover {
+        box-shadow: none !important;
+        border: none !important;
+        text-shadow: none !important;
+    }
+
+    select {
+        text-align: center;
+        width: 134px;
+        direction: rtl;
+        appearance: none;
+    }
+    option {
+        font-size: 0.8rem;
+    }
+
+    img {
+        border: 0;
+    }
+
+    table {
+        text-align: center;
+        background: none;
+        border: none;
+        border: 0 none;
+        margin: 0;
+        padding: 0;
+        tbody {
+            tr {
+                td {
+                    width: 250px;
+                    padding: 0 0.5rem;
+                    &:first-child,
+                    &:last-child {
+                        width: 150px;
+                    }
+                }
+                &:last-child {
+                    td {
+                        width: 100%;
+                        padding: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .pointer-choice {
+        cursor: url("../assets/cursors/pointer.webp"), pointer;
+    }
+
+    // Approach choice
+    .ring-selection {
+        &.ring-selected {
+            i {
+                text-shadow: 0px 1px 1px $red;
+            }
+            strong {
+                color: $red-light;
+            }
+            input {
+                border: 2px solid $red-light !important;
+            }
+        }
+    }
+
+    .quantity {
+        font-size: xx-large;
+    }
+
+    .third {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .dice-container.assistance {
+        display: flex;
+        align-items: anchor-center;
+    }
+
+    .dice-container {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+
+        & > img {
+            height: 40px;
+            width: 40px;
+        }
+        &.dice-value{
+            &.input-dice {
+                width: 20px;
+                color: #0f0f0e;
+                background: none;
+                border: none;
+                font-size: large;
+                padding: 0;
+            }
+        }
+    }
+
+    .dice-value {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    input[name="ring.value"][type="text"] {
+        color: #f0f0e0;
+        border: unset;
+        background: unset;
+    }
+    input[name="skill.value"][type="text"] {
+        color: #0f0f0e;
+        border: unset;
+        background: unset;
+    }
+    input[name="difficulty.value"][type="text"] {
+        color: #0f0f0e;
+        border: unset;
+        background: unset;
+    }
+    input[name="skill.assistance"][type="text"] {
+        color: #0f0f0e;
+        border: unset;
+        background: unset;
+    }
+}
+
+.roll-n-keep-dialog {
+    min-width: 600px;
+    max-width: 800px;
+    &.finalized {
+        width: auto;
+        min-width: 400px;
+    }
+    img {
+        border: 0;
+    }
+    table {
+        display: table;
+        min-height: 9rem;
+        border: 0 none;
+        margin: 0.25rem 0;
+        padding: 0;
+        tbody {
+            tr {
+                background: transparent;
+                td {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .rnk-ct {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 0.25rem;
+        background: rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        .rnk-center {
+            flex: 350px;
+            flex-wrap: wrap;
+            display: flex;
+        }
+        .form-group {
+            width: 100%;
+            .form-fields {
+                flex: 1;
+                &:nth-child(2) {
+                    flex: 3;
+                    input {
+                        flex: 3;
+                    }
+                    i {
+                        flex: unset;
+                    }
+                }
+            }
+            .range-value {
+                width: 2rem;
+            }
+        }
+    }
+
+    .profil {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .dropbox {
+        position: relative;
+        min-height: 7rem;
+
+        legend {
+            i:last-child {
+                position: absolute;
+                top: 0;
+                right: 0;
+                border-radius: 0.15rem;
+                padding: 0 0.1rem 0 0.15rem;
+                font-size: 0.65rem;
+                line-height: 1rem;
+                width: 1rem;
+                margin: 0.25rem;
+                text-align: center;
+                color: white;
+                background: $l5r5e-label;
+            }
+        }
+
+        &.faces-change {
+            min-height: 40px;
+            margin: 0.5rem auto;
+        }
+        &.discards {
+            border: 1px solid gray;
+        }
+        &.rerolls {
+            border: 1px solid orangered;
+        }
+        &.keeps {
+            flex: 100%;
+            border: 1px solid green;
+        }
+        &.swap {
+            flex: 0 0 calc(100px + 1rem);
+            flex-direction: column;
+            border: 1px solid fuchsia;
+        }
+        &.discards,
+        &.rerolls {
+            flex: 0 0 calc(50% - 0.5rem);
+            margin-bottom: 0.5rem;
+        }
+    }
+    /* Dice Marker */
+    .dice-ct {
+        position: relative;
+        padding: 0.25rem;
+        &:before {
+            content: "";
+            position: absolute;
+            height: 0.5rem;
+            width: 2px;
+            top: -0.3rem;
+            right: calc(50% - 1px);
+            background: $l5r5e-black-light;
+        }
+        &:after {
+            content: "\f128";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border-radius: 0.15rem;
+            padding: 0 0.15rem;
+            font-size: 0.65rem;
+            line-height: 1rem;
+            width: 1rem;
+            text-align: center;
+            color: white;
+            background: gray;
+        }
+        &.discard {
+            filter: opacity(0.5);
+            &:after {
+                content: "\f00d";
+                background: gray;
+            }
+        }
+        &.reroll {
+            filter: opacity(0.5);
+            &:after {
+                content: "\f2f9";
+                background: orangered;
+            }
+        }
+        &.keep {
+            &:after {
+                content: "\f00c";
+                background: green;
+            }
+        }
+        &.swap {
+            &:after {
+                content: "\f337";
+                background: fuchsia;
+            }
+        }
+    }
+
+    tr:first-child .dice-ct {
+        &:before {
+            display: none;
+        }
+    }
+
+    .dice {
+        height: 40px;
+        width: 40px;
+        &.discard {
+            filter: opacity(0.5);
+            border: 0 none;
+        }
+        &.reroll {
+            filter: opacity(0.5);
+            border: 0 none;
+        }
+        &.keep {
+            border: 0 none;
+        }
+        &.swap {
+            border: 0 none;
+        }
+    }
+
+    #finalize {
+        width: 100%;
+        margin: 0.5rem 0.25rem 0.25rem;
+    }
+    .section-header {
+        i {
+            font-size: 0.75rem;
+            margin: 0 0.25rem;
+        }
+    }
+    .fa-sign-in-alt {
+        transform: rotate(90deg);
+    }
+
+    .chat-profil {
+        ul {
+            display: flex;
+            flex-direction: row;
+            li {
+                &:nth-child(1),
+                &:nth-child(2) {
+                    flex: 0 0 4rem;
+                    padding: 0 0.25rem 0.25rem;
+                }
+                &:nth-child(4) {
+                    flex: 0 0 4rem;
+                    padding: 0 0.25rem 0.25rem;
+                }
+            }
+            .profile-img {
+                width: 4rem;
+            }
+            .chat-profil-stance {
+                font-size: 3.5rem;
+                line-height: 3.5rem;
+            }
+        }
+    }
+}
+
+.dice-picker-dialog,
+.roll-n-keep-dialog {
+    button {
+        cursor: default;
+        color: $white;
+        background: linear-gradient(
+            $l5r5e-linear-gradient-third,
+            $l5r5e-linear-gradient-third-dark,
+            $l5r5e-linear-gradient-third
+        );
+        background-origin: padding-box;
+        border-image: url("../assets/ui/macro-button.webp") 10 repeat;
+        border-image-width: 0.5rem;
+        border-image-outset: 0px;
+        margin: 0.5rem 0 0;
+        &:hover {
+            background: linear-gradient(
+                $l5r5e-linear-gradient-first-dark,
+                $l5r5e-linear-gradient-first,
+                $l5r5e-linear-gradient-first-dark
+            );
+        }
+        &[disabled] {
+            opacity: 0.25;
+            &:hover {
+                box-shadow: none;
+            }
+        }
+    }
+    #context-menu {
+        max-width: none;
+    }
+    .symbols-help {
+        font-style: italic;
+        color: #666;
+        font-size: 0.8rem;
+        line-height: 1rem;
+        margin: 0.5rem auto 0;
+        i {
+            font-size: 1rem;
+            line-height: 1rem;
+        }
+    }
+}

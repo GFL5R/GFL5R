@@ -1,0 +1,13 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img class="profile-img" src="{{data.img}}" data-edit="img" title="{{data.name}}"/>
+        <h1 class="charname"><input name="name" type="text" value="{{data.name}}" placeholder="Name"/></h1>
+    </header>
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        <article class="properties" data-group="primary" data-tab="properties">
+            {{> 'systems/l5r5e/templates/items/property/properties.html' properties=data.propertiesList propertyTitle='l5r5e.sheets.removed_properties'}}
+        </article>
+        {{> 'systems/l5r5e/templates/items/item/item-infos.html'}}
+    </section>
+</form>

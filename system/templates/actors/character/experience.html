@@ -1,0 +1,108 @@
+<fieldset class="xp">
+    <legend>{{localize 'l5r5e.sheets.experience'}}</legend>
+    <label class="attribute-label">
+        {{localize 'l5r5e.advancements.total'}}
+        <input class="centered-input select-on-focus" type="number" name="system.xp_total" value="{{data.system.xp_total}}" data-dtype="Number" min="0" placeholder="0" {{^if data.editable_not_soft_locked}}disabled{{/if}}/>
+    </label>
+    <label class="attribute-label">
+        {{localize 'l5r5e.advancements.spent'}}
+        <input class="centered-input select-on-focus" type="number" name="system.xp_spent" value="{{data.system.xp_spent}}" data-dtype="Number" min="0" placeholder="0" disabled/>
+    </label>
+    <label class="attribute-label">
+        {{localize 'l5r5e.advancements.saved'}}
+        <input class="centered-input select-on-focus" type="number" name="system.xp_saved" value="{{data.system.xp_saved}}" data-dtype="Number" min="0" placeholder="0" disabled/>
+    </label>
+</fieldset>
+{{!-- School progession --}}
+<fieldset class="advancement advancements-body">
+    <legend class="tools">
+        {{#if data.system.identity.school_curriculum_journal.id}}
+            <a class="school-journal-link"><i class="fas fa-file-alt"></i></a> {{data.system.identity.school_curriculum_journal.name}}
+        {{else}}
+            <i class="fas fa-question-circle" title="{{localize 'l5r5e.advancements.school_curriculum_journal'}}"></i> {{localize 'l5r5e.sheets.school'}}
+        {{/if}}
+        {{#if data.editable_not_soft_locked}}
+        <a data-item-type="advancement" class="advancement-control item-add" title="{{localize 'l5r5e.global.add'}}"><i class="fas fa-plus"></i></a>
+        {{/if}}
+    </legend>
+    <nav class="advancements-tabs tabs" data-group="advancements">
+        <a class="item advancements-tab" data-tab="advancement_rank_0">{{localize 'l5r5e.advancements.school_rank_0'}}</a>
+        {{#each data.advancementsListByRank as |rankObject|}}
+        {{#ifCond rank '>' 0}}
+        <a class="item advancements-tab" data-tab="advancement_rank_{{rank}}" title="{{localize 'l5r5e.advancements.school_rank'}} {{rankObject.rank}}">{{rankObject.rank}}</a>
+        {{/ifCond}}
+        {{/each}}
+    </nav>
+    <table>
+        <thead class="flex">
+            <tr class="flexrow row">
+                <th class="name">{{localize 'l5r5e.sheets.name'}}</th>
+                <th class="curriculum"><i class="fas fa-graduation-cap"></i></th>
+                <th class="xp">{{localize 'l5r5e.advancements.spent'}}</th>
+                <th class="rank">{{localize 'l5r5e.sheets.rank'}}</th>
+                {{#if data.editable_not_soft_locked}}
+                <th class="actions"></th>
+                {{/if}}
+            </tr>
+        </thead>
+        <tbody class="flex">
+            {{#each data.advancementsListByRank as |rankObject|}}
+                {{#each rankObject.list as |advancement advancementId|}}
+                    {{> 'systems/l5r5e/templates/actors/character/advancement-school.html' advancement=advancement rank=rankObject.rank editable=../../data.editable_not_soft_locked}}
+                {{/each}}
+                {{#ifCond rankObject.rank '>' 0}}
+                    <tr class="tfoot flexrow row tab" data-group="advancements" data-tab="advancement_rank_{{rankObject.rank}}">
+                        <th>{{localize 'l5r5e.advancements.total_xp_curriculum'}} : {{rankObject.spent.curriculum}}{{#if rankObject.goal}} / {{rankObject.goal}}{{/if}}</th>
+                        <th>{{localize 'l5r5e.advancements.total_xp_spent'}} : {{rankObject.spent.total}}</th>
+                    </tr>
+                    {{#if ../data.editable_not_soft_locked}}
+                        {{#ifCond ../data.system.identity.school_rank '<' 6}}
+                            {{#ifCond (ifCond ../data.system.identity.school_rank '==' rankObject.rank) '&&' (ifCond rankObject.spent.curriculum '>=' rankObject.goal)}}
+                                <tr class="tfoot flexrow row tab" data-group="advancements" data-tab="advancement_rank_{{rankObject.rank}}">
+                                    <th>
+                                        <button type="button" name="validate-curriculum">
+                                            <i class='fas fa-check-square'></i> {{ localize 'l5r5e.advancements.curriculum_validate'}}
+                                        </button>
+                                    </th>
+                                </tr>
+                            {{/ifCond}}
+                        {{/ifCond}}
+                    {{/if}}
+                {{/ifCond}}
+            {{/each}}
+        </tbody>
+    </table>
+</fieldset>
+{{!-- Others progression (does not count in school xp) --}}
+<fieldset class="xp-spent xp-spent-body">
+    <legend class="tools">
+        {{localize 'l5r5e.advancements.title'}}
+        {{#if data.editable_not_soft_locked}}
+        <a class="advancement-others-control item-advancement-choose" title="{{localize 'l5r5e.global.add'}}"><i class="fas fa-plus"></i></a>
+        {{/if}}
+    </legend>
+    <table>
+        <thead class="flex">
+        <tr class="flexrow row">
+            <th class="name">{{localize 'l5r5e.sheets.name'}}</th>
+            <th class="xp">{{localize 'l5r5e.advancements.spent'}}</th>
+            <th class="rank">{{localize 'l5r5e.sheets.rank'}}</th>
+            {{#if data.editable_not_soft_locked}}
+                <th class="actions"></th>
+            {{/if}}
+        </tr>
+        </thead>
+        <tbody class="flex">
+        {{#each data.advancementsOthers as |advancement advancementId|}}
+            {{> 'systems/l5r5e/templates/actors/character/advancement-others.html' advancement=advancement show_curriculum_toggle=false editable=../data.editable_not_soft_locked}}
+        {{/each}}
+        </tbody>
+        <tfoot class="flex">
+            <tr class="tfoot flexrow">
+                <th>
+                    {{localize 'l5r5e.advancements.total_xp_spent'}} : {{data.advancementsOthersTotalXp}}
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+</fieldset>

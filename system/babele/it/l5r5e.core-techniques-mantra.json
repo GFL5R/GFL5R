@@ -1,0 +1,21 @@
+{
+    "label": "Tecniche Mantra (WIP)",
+    "mapping": {
+        "description": "system.description",
+        "book_reference": "system.book_reference"
+    },
+    "entries": [
+        {
+            "id": "Summon Mantra : [One Implement]",
+            "name": "Summon Mantra : [One Implement]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.99"
+        },
+        {
+            "id": "Countering Mantra",
+            "name": "Countering Mantra",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.99"
+        }
+    ]
+}

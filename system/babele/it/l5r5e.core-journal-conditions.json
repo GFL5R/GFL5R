@@ -1,0 +1,88 @@
+{
+    "label": "Condizioni",
+    "mapping": {
+        "content": "content"
+    },
+    "entries": [
+        {
+            "id": "Afflicted",
+            "name": "Afflitto",
+            "content": "<blockquote>Manuale Base p.271</blockquote>"
+        },
+        {
+            "id": "Bleeding",
+            "name": "Sanguinante",
+            "content": "<blockquote>Manuale Base p.273</blockquote>"
+        },
+        {
+            "id": "Burning",
+            "name": "In Fiamme",
+            "content": "<blockquote>Manuale Base p.272</blockquote>"
+        },
+        {
+            "id": "Compromised",
+            "name": "Compromesso",
+            "content": "<blockquote>Manuale Base p.271</blockquote>"
+        },
+        {
+            "id": "Dazed",
+            "name": "Frastornato",
+            "content": "<blockquote>Manuale Base p.272</blockquote>"
+        },
+        {
+            "id": "Disoriented",
+            "name": "Disorientato",
+            "content": "<blockquote>Manuale Base p.271</blockquote>"
+        },
+        {
+            "id": "Dying [X Rounds]",
+            "name": "Morente (X round)",
+            "content": "<blockquote>Manuale Base p.273</blockquote>"
+        },
+        {
+            "id": "Enraged",
+            "name": "Infuriato",
+            "content": "<blockquote>Manuale Base p.273</blockquote>"
+        },
+        {
+            "id": "Exhausted",
+            "name": "Esausto",
+            "content": "<blockquote>Manuale Base p.272</blockquote>"
+        },
+        {
+            "id": "Immobilized",
+            "name": "Immobilizzato",
+            "content": "<blockquote>Manuale Base p.272</blockquote>"
+        },
+        {
+            "id": "Incapacitated",
+            "name": "Incapacitato",
+            "content": "<blockquote>Manuale Base p.272</blockquote>"
+        },
+        {
+            "id": "Intoxicated",
+            "name": "Intossicato",
+            "content": "<blockquote>Manuale Base p.273</blockquote>"
+        },
+        {
+            "id": "Prone",
+            "name": "Prono",
+            "content": "<blockquote>Manuale Base p.273</blockquote>"
+        },
+        {
+            "id": "Silenced",
+            "name": "Ammutolito",
+            "content": "<blockquote>Manuale Base p.271</blockquote>"
+        },
+        {
+            "id": "Unconscious",
+            "name": "Svenuto",
+            "content": "<blockquote>Manuale Base p.273</blockquote>"
+        },
+        {
+            "id": "Wounded",
+            "name": "Ferito",
+            "content": "<blockquote>Manuale Base p.271</blockquote>"
+        }
+    ]
+}

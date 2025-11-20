@@ -1,0 +1,390 @@
+{
+    "id": "l5r5e",
+    "title": "Legend of the Five Rings (5th Edition)",
+    "description": "This is an authorised multilingual game system En|Fr|Es, for Legend of the Five Rings (5th Edition) by <a href='https://edge-studio.net/'>Edge Studio</a> <p> - Join the official Discord server: <a href='https://discord.gg/foundryvtt'> Official Discord</a></p><p> - Rejoignez la communauté Francophone: <a href='https://discord.gg/pPSDNJk'>Francophone Discord</a></p>",
+    "url": "https://gitlab.com/teaml5r/l5r5e",
+    "readme": "https://gitlab.com/teaml5r/l5r5e/-/blob/master/README.md",
+    "changelog": "https://gitlab.com/teaml5r/l5r5e/-/blob/master/CHANGELOG.md",
+    "license": "https://gitlab.com/teaml5r/l5r5e/-/blob/master/LICENSE.md",
+    "manifest": "https://gitlab.com/teaml5r/l5r5e/-/raw/master/system/system.json",
+    "download": "https://gitlab.com/teaml5r/l5r5e/-/jobs/artifacts/v1.13.2/raw/l5r5e.zip?job=build",
+    "version": "1.13.2",
+    "compatibility": {
+        "minimum": "13",
+        "verified": "13",
+        "maximum": "13"
+    },
+    "socket": true,
+    "authors": [
+        {
+            "name": "Vlyan",
+            "discord": "Vlyan#6771",
+            "url": "https://ko-fi.com/vlyan"
+        },
+        {
+            "name": "Mandar",
+            "discord": "Mandar#3440"
+        },
+        {
+            "name": "Carter",
+            "discord": "Carter#2703",
+            "url": "https://fr.tipeee.com/carter-foundryvtt"
+        }
+    ],
+    "background": "systems/l5r5e/assets/l5r-header.webp",
+    "scripts": [],
+    "esmodules": [
+        "./scripts/main-l5r5e.js"
+    ],
+    "styles": [
+        "./styles/l5r5e.css"
+    ],
+    "packFolders": [
+        {
+            "name": "L5R5e System",
+            "color": "#9a0909",
+            "sorting": "m",
+            "folders": [
+                {
+                    "name": "Character related",
+                    "color": "#019806",
+                    "sorting": "m",
+                    "packs": [
+                        "core-peculiarities-distinctions",
+                        "core-peculiarities-passions",
+                        "core-peculiarities-adversities",
+                        "core-peculiarities-anxieties",
+                        "core-bonds",
+                        "core-titles",
+                        "core-journal-school-curriculum",
+                        "core-journal-great-clans-presentation"
+                    ]
+                },
+                {
+                    "name": "Techniques",
+                    "color": "#4b1eb3",
+                    "sorting": "m",
+                    "packs": [
+                        "core-techniques-kata",
+                        "core-techniques-kiho",
+                        "core-techniques-inversions",
+                        "core-techniques-invocations",
+                        "core-techniques-rituals",
+                        "core-techniques-shuji",
+                        "core-techniques-maho",
+                        "core-techniques-ninjutsu",
+                        "core-techniques-mantra",
+                        "core-techniques-school",
+                        "core-techniques-mastery"
+                    ]
+                },
+                {
+                    "name": "Objects related",
+                    "color": "#0985ae",
+                    "sorting": "m",
+                    "packs": [
+                        "core-properties",
+                        "core-item-patterns",
+                        "core-items",
+                        "core-armors",
+                        "core-weapons",
+                        "core-signature-scrolls",
+                        "core-celestial-implement-boons"
+                    ]
+                },
+                {
+                    "name": "Helpers",
+                    "color": "#6b3d1f",
+                    "sorting": "m",
+                    "packs": [
+                        "core-journal-conditions",
+                        "core-journal-terrain-qualities",
+                        "core-journal-opportunities"
+                    ]
+                },
+                {
+                    "name": "Tools",
+                    "color": "#834949",
+                    "sorting": "m",
+                    "packs": [
+                        "core-name-tables",
+                        "core-macros"
+                    ]
+                }
+            ]
+        }
+    ],
+    "packs": [
+        {
+            "name": "core-properties",
+            "label": "Properties",
+            "path": "packs/core-properties.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-techniques-kata",
+            "label": "Techniques Kata",
+            "path": "packs/core-techniques-kata.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-techniques-kiho",
+            "label": "Techniques Kihõ",
+            "path": "packs/core-techniques-kiho.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-techniques-inversions",
+            "label": "Techniques Inversions",
+            "path": "packs/core-techniques-inversions.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-techniques-invocations",
+            "label": "Techniques Invocations",
+            "path": "packs/core-techniques-invocations.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-techniques-rituals",
+            "label": "Techniques Rituals",
+            "path": "packs/core-techniques-rituals.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-techniques-shuji",
+            "label": "Techniques Shuji",
+            "path": "packs/core-techniques-shuji.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-techniques-maho",
+            "label": "Techniques Mahõ",
+            "path": "packs/core-techniques-maho.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-techniques-ninjutsu",
+            "label": "Techniques Ninjutsu",
+            "path": "packs/core-techniques-ninjutsu.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-techniques-mantra",
+            "label": "Techniques Mantra",
+            "path": "packs/core-techniques-mantra.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-techniques-school",
+            "label": "School Abilities",
+            "path": "packs/core-techniques-school.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-techniques-mastery",
+            "label": "Mastery Abilities",
+            "path": "packs/core-techniques-mastery.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-items",
+            "label": "Items",
+            "path": "packs/core-items.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-armors",
+            "label": "Armors",
+            "path": "packs/core-armors.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-weapons",
+            "label": "Weapons",
+            "path": "packs/core-weapons.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-peculiarities-distinctions",
+            "label": "Distinctions",
+            "path": "packs/core-peculiarities-distinctions.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-peculiarities-passions",
+            "label": "Passions",
+            "path": "packs/core-peculiarities-passions.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-peculiarities-adversities",
+            "label": "Adversities",
+            "path": "packs/core-peculiarities-adversities.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-peculiarities-anxieties",
+            "label": "Anxieties",
+            "path": "packs/core-peculiarities-anxieties.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-bonds",
+            "label": "Bonds",
+            "path": "packs/core-bonds.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-titles",
+            "label": "Titles",
+            "path": "packs/core-titles.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-item-patterns",
+            "label": "Item Patterns",
+            "path": "packs/core-item-patterns.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-signature-scrolls",
+            "label": "Signature Scrolls",
+            "path": "packs/core-signature-scrolls.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-celestial-implement-boons",
+            "label": "Celestial Implement Boons",
+            "path": "packs/core-celestial-implement-boons.db",
+            "type": "Item",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-journal-school-curriculum",
+            "label": "School Curriculum",
+            "path": "packs/core-journal-school-curriculum.db",
+            "type": "JournalEntry",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-journal-conditions",
+            "label": "Conditions",
+            "path": "packs/core-journal-conditions.db",
+            "type": "JournalEntry",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-journal-terrain-qualities",
+            "label": "Terrain Qualities",
+            "path": "packs/core-journal-terrain-qualities.db",
+            "type": "JournalEntry",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-journal-great-clans-presentation",
+            "label": "Great Clans Presentation",
+            "path": "packs/core-journal-great-clans-presentation.db",
+            "type": "JournalEntry",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-journal-opportunities",
+            "label": "Opportunities",
+            "path": "packs/core-journal-opportunities.db",
+            "type": "JournalEntry",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-name-tables",
+            "label": "Name Tables",
+            "path": "packs/core-name-tables.db",
+            "type": "RollTable",
+            "system": "l5r5e"
+        },
+        {
+            "name": "core-macros",
+            "label": "L5R5E Macros",
+            "path": "packs/core-macros.db",
+            "type": "Macro",
+            "system": "l5r5e"
+        }
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en-en.json"
+        },
+        {
+            "lang": "fr",
+            "name": "French (France)",
+            "path": "lang/fr-fr.json"
+        },
+        {
+            "lang": "es",
+            "name": "Spanish (Spain)",
+            "path": "lang/es-es.json"
+        },
+        {
+            "lang": "it",
+            "name": "Italian (Italy)",
+            "path": "lang/it-it.json"
+        }
+    ],
+    "media": [
+        {
+            "type": "screenshot",
+            "url": "https://gitlab.com/teaml5r/l5r5e/-/raw/master/screenshoots/login.jpg?raw=true",
+            "caption": "Login screen"
+        },
+        {
+            "type": "screenshot",
+            "url": "https://gitlab.com/teaml5r/l5r5e/-/raw/master/screenshoots/roll.jpg?raw=true",
+            "caption": "DicePicker and Roll and Keep"
+        },
+        {
+            "type": "screenshot",
+            "url": "https://gitlab.com/teaml5r/l5r5e/-/raw/master/screenshoots/school.jpg?raw=true",
+            "caption": "Experience and School"
+        },
+        {
+            "type": "screenshot",
+            "url": "https://gitlab.com/teaml5r/l5r5e/-/raw/master/screenshoots/sheet_pc.jpg?raw=true",
+            "caption": "PC sheet"
+        },
+        {
+            "type": "screenshot",
+            "url": "https://gitlab.com/teaml5r/l5r5e/-/raw/master/screenshoots/sheet_npc_army.jpg?raw=true",
+            "caption": "NPC and Army sheets"
+        },
+        {
+            "type": "screenshot",
+            "url": "https://gitlab.com/teaml5r/l5r5e/-/raw/master/screenshoots/compendiums.jpg?raw=true",
+            "caption": "Compendiums"
+        }
+    ]
+}

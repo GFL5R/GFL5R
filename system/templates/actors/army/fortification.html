@@ -1,0 +1,13 @@
+<fieldset class="fortification-content">
+    <legend class="section-header">
+        {{localize 'l5r5e.army.fortification.title'}}
+        {{#if data.editable_not_soft_locked}}
+        <a data-item-type="army_fortification" class="army-fortification-control item-add" title="{{localize 'l5r5e.global.add'}}"><i class="fas fa-plus"></i></a>
+        {{/if}}
+    </legend>
+    <ul class="item-list">
+        {{#each data.splitItemsList.army_fortification as |item|}}
+            {{> 'systems/l5r5e/templates/items/army-fortification/army-fortification-entry.html' fortification=item editable=../data.editable_not_soft_locked}}
+        {{/each}}
+    </ul>
+</fieldset>

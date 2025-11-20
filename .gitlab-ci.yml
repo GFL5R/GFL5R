@@ -1,0 +1,22 @@
+image: python:3-alpine
+
+before_script:
+  - apk update
+  - apk add zip
+
+stages:
+  - build
+
+build:
+  stage: build
+  script:
+    - zip l5r5e.zip -r system -x ".*"
+  artifacts:
+    expire_in: never
+    name: l5r5e
+    when: on_success
+    paths:
+      - l5r5e.zip
+  when: on_success
+  only:
+    - tags

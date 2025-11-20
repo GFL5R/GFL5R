@@ -1,0 +1,13 @@
+<div class="{{cssClass}}" data-actor-id="{{actor._id}}" data-item-id="{{data._id}}">
+    <header class="card-header">
+        <h2 class="item-name"><img src="{{data.img}}" title="{{data.name}}" /> {{data.name}}</h2>
+    </header>
+    <section class="sheet-body">
+        <ul>
+            <li><strong>{{localize 'l5r5e.army.fortification.difficulty'}}</strong> : {{data.system.difficulty}}</li>
+            <li><strong>{{localize 'l5r5e.army.fortification.attrition_reduction'}}</strong> : {{data.system.attrition_reduction}}</li>
+        </ul>
+        
+        {{> 'systems/l5r5e/templates/items/item/item-text-partial-reference.html'}}
+    </section>
+</div>

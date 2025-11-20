@@ -1,0 +1,22 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img class="profile-img" src="{{data.img}}" data-edit="img" title="{{data.name}}"/>
+        <h1 class="charname"><input name="name" type="text" value="{{data.name}}" placeholder="Name"/></h1>
+    </header>
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        {{!-- properties Tab --}}
+        <article class="attributes" data-group="primary" data-tab="description">
+            <label class="attribute army-fortification-types">
+                {{localize 'l5r5e.army.fortification.difficulty'}}
+                <input class="select-on-focus" type="number" name="system.difficulty" value="{{data.system.difficulty}}" data-dtype="Number"/>
+            </label>
+
+            <label class="attribute army-fortification-types">
+                {{localize 'l5r5e.army.fortification.attrition_reduction'}}
+                <input class="select-on-focus" type="number" name="system.attrition_reduction" value="{{data.system.attrition_reduction}}" data-dtype="Number"/>
+            </label>
+        </article>
+        {{> 'systems/l5r5e/templates/items/item/item-infos.html'}}
+    </section>
+</form>

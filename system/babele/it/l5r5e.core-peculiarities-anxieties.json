@@ -1,0 +1,283 @@
+{
+    "label": "Ansietà (WIP)",
+    "mapping": {
+        "types": "system.types",
+        "description": "system.description",
+        "book_reference": "system.book_reference"
+    },
+    "entries": [
+        {
+            "id": "Addiction",
+            "name": "Dipendenza",
+            "types": "Mentale, Fisica",
+            "description": "",
+            "book_reference": "Manuale Base p.131"
+        },
+        {
+            "id": "Battle Trauma",
+            "name": "Trauma da Battaglia",
+            "types": "Mentale, Fisica",
+            "description": "",
+            "book_reference": "Manuale Base p.136"
+        },
+        {
+            "id": "Cynicism",
+            "name": "Scetticismo",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.135"
+        },
+        {
+            "id": "Dark Secret",
+            "name": "Segreto Oscuro",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Manuale Base p.136"
+        },
+        {
+            "id": "Delusions of Grandeur",
+            "name": "Manie di Grandezza",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.134"
+        },
+        {
+            "id": "Fear of Death",
+            "name": "Paura della Morte",
+            "types": "Mentale, Fisica",
+            "description": "",
+            "book_reference": "Manuale Base p.135"
+        },
+        {
+            "id": "Ferocity",
+            "name": "Ferocia",
+            "types": "Mentale, Fisica",
+            "description": "",
+            "book_reference": "Manuale Base p.132"
+        },
+        {
+            "id": "Impatience",
+            "name": "Impazienza",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.133"
+        },
+        {
+            "id": "Intolerance",
+            "name": "Intolleranza",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Manuale Base p.133"
+        },
+        {
+            "id": "Irrepressible Flirtation",
+            "name": "Libertino",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Manuale Base p.133"
+        },
+        {
+            "id": "Jealousy",
+            "name": "Gelosia",
+            "types": "Mentale, Fisica",
+            "description": "",
+            "book_reference": "Manuale Base p.132"
+        },
+        {
+            "id": "Materialism",
+            "name": "Materialismo",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.134"
+        },
+        {
+            "id": "Meekness",
+            "name": "Remissività",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Manuale Base p.135"
+        },
+        {
+            "id": "Painful Honesty",
+            "name": "Onestà Scomoda",
+            "types": "Interpersonale",
+            "description": "",
+            "book_reference": "Manuale Base p.134"
+        },
+        {
+            "id": "Paranoia",
+            "name": "Paranoia",
+            "types": "Mentale, Fisica",
+            "description": "",
+            "book_reference": "Manuale Base p.134"
+        },
+        {
+            "id": "Perfectionism",
+            "name": "Perfezionismo",
+            "types": "Mentale, Fisica",
+            "description": "",
+            "book_reference": "Manuale Base p.135"
+        },
+        {
+            "id": "Phobia",
+            "name": "Fobia",
+            "types": "Mentale, Fisica",
+            "description": "",
+            "book_reference": "Manuale Base p.132"
+        },
+        {
+            "id": "Softheartedness",
+            "name": "Cuore Tenero",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Manuale Base p.131"
+        },
+        {
+            "id": "Superstition",
+            "name": "Superstizione",
+            "types": "Mentale, Spirituale",
+            "description": "",
+            "book_reference": "Manuale Base p.136"
+        },
+        {
+            "id": "Conspiracy",
+            "name": "Conspiracy",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Omen of Bad Luck",
+            "name": "Omen of Bad Luck",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Uncleanliness",
+            "name": "Uncleanliness",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Vanity",
+            "name": "Vanity",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Isolation",
+            "name": "Isolation",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Corti di Pietra p.103"
+        },
+        {
+            "id": "Web of Lies",
+            "name": "Web of Lies",
+            "types": "Interpersonale,",
+            "description": "",
+            "book_reference": "Corti di Pietra p.103"
+        },
+        {
+            "id": "Accustomed to Luxury",
+            "name": "Accustomed to Luxury",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.247"
+        },
+        {
+            "id": "Claustrophobia",
+            "name": "Claustrophobia",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.248"
+        },
+        {
+            "id": "False Identity",
+            "name": "False Identity",
+            "types": "Interpersonale,",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.248"
+        },
+        {
+            "id": "Loathing for Peasants",
+            "name": "Loathing for Peasants",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.248"
+        },
+        {
+            "id": "Loneliness",
+            "name": "Loneliness",
+            "types": "Interpersonale, Mentale",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.249"
+        },
+        {
+            "id": "Eyes of Many",
+            "name": "Eyes of Many",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.73"
+        },
+        {
+            "id": "Coming Storm",
+            "name": "Coming Storm",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.74"
+        },
+        {
+            "id": "Fear of Stagnation",
+            "name": "Fear of Stagnation",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.74"
+        },
+        {
+            "id": "Failure",
+            "name": "Failure",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.73"
+        },
+        {
+            "id": "Fallen Ancestor",
+            "name": "Fallen Ancestor",
+            "types": "Interpersonale, Spirituale",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.98"
+        },
+        {
+            "id": "Obtuse",
+            "name": "Obtuse",
+            "types": "Mentale",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.99"
+        },
+        {
+            "id": "Reformed Maho-Tsukai",
+            "name": "Reformed Maho-Tsukai",
+            "types": "Interpersonale,",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.98"
+        },
+        {
+            "id": "Belligerent",
+            "name": "Belligerent",
+            "types": "Interpersonale,",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Braggart",
+            "name": "Braggart",
+            "types": "Interpersonale,",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        }
+    ]
+}

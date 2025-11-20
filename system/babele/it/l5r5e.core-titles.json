@@ -1,0 +1,255 @@
+{
+    "label": "Titoli (WIP)",
+    "mapping": {
+        "description": "system.description",
+        "book_reference": "system.book_reference"
+    },
+    "entries": [
+        {
+            "id": "Emerald Magistrate",
+            "name": "Magistrato di Smeraldo",
+            "description": "<h2>Corso</h2><table><tr><td>Abilità Mestierali</td><td>Grp. di Abilità</td></tr><tr><td>Allenamento</td><td>Abilità</td></tr><tr><td>Arti Marziali [Sceglierne Una]</td><td>Abilità</td></tr><tr><td>Recitazione</td><td>Abilità</td></tr><tr><td><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Kata di Grado 1–2</a> (prereq)</td><td>Grp. di Tecniche</td></tr><tr><td><a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"l5r5e.core-techniques-kata\" data-id=\"L5RCoreKat000026\">(kata) Stile della Mano Aperta</a> (prereq)</td><td>Tecnica</td></tr><tr><td><a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"l5r5e.core-techniques-shuji\" data-id=\"L5RCoreShu000034\">(shuji) Acque Poco Profonde</a> (prereq)</td><td>Tecnica</td></tr></table>",
+            "book_reference": "Manuale Base p.305"
+        },
+        {
+            "id": "Castellan",
+            "name": "Castellan",
+            "description": "",
+            "book_reference": "Corti di Pietra p.128"
+        },
+        {
+            "id": "Covert Agent",
+            "name": "Covert Agent",
+            "description": "",
+            "book_reference": "Corti di Pietra p.128"
+        },
+        {
+            "id": "Dreaded Enforcer",
+            "name": "Dreaded Enforcer",
+            "description": "",
+            "book_reference": "Corti di Pietra p.129"
+        },
+        {
+            "id": "Esteemed Negotiator",
+            "name": "Esteemed Negotiator",
+            "description": "",
+            "book_reference": "Corti di Pietra p.129"
+        },
+        {
+            "id": "Kenshinzen",
+            "name": "Kenshinzen",
+            "description": "",
+            "book_reference": "Corti di Pietra p.130"
+        },
+        {
+            "id": "Kyuden Asako Shieldbearer",
+            "name": "Kyuden Asako Shieldbearer",
+            "description": "",
+            "book_reference": "Corti di Pietra p.130"
+        },
+        {
+            "id": "Master Artisan",
+            "name": "Master Artisan",
+            "description": "",
+            "book_reference": "Corti di Pietra p.130"
+        },
+        {
+            "id": "Winter Court Champion",
+            "name": "Winter Court Champion",
+            "description": "",
+            "book_reference": "Corti di Pietra p.131"
+        },
+        {
+            "id": "Seven fold Palace Acolyte",
+            "name": "Seven fold Palace Acolyte",
+            "description": "",
+            "book_reference": "Corti di Pietra p.131"
+        },
+        {
+            "id": "The Damned",
+            "name": "The Damned",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.128"
+        },
+        {
+            "id": "Harvester",
+            "name": "Harvester",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.128"
+        },
+        {
+            "id": "Twenty-Goblin Crab",
+            "name": "Twenty-Goblin Crab",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.128"
+        },
+        {
+            "id": "Witch Hunter",
+            "name": "Witch Hunter",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.129"
+        },
+        {
+            "id": "Advisor",
+            "name": "Advisor",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.249"
+        },
+        {
+            "id": "Daimyo",
+            "name": "Daimyo",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.249"
+        },
+        {
+            "id": "Spy",
+            "name": "Spy",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.250"
+        },
+        {
+            "id": "Gunso",
+            "name": "Gunso",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.250"
+        },
+        {
+            "id": "Clan Magistrate",
+            "name": "Clan Magistrate",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.251"
+        },
+        {
+            "id": "Monastic Acolyte",
+            "name": "Monastic Acolyte",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.251"
+        },
+        {
+            "id": "Priest",
+            "name": "Priest",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.251"
+        },
+        {
+            "id": "Yojimbo",
+            "name": "Yojimbo",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.252"
+        },
+        {
+            "id": "Yoriki",
+            "name": "Yoriki",
+            "description": "",
+            "book_reference": "Impero di Smeraldo p.252"
+        },
+        {
+            "id": "Ashigaru",
+            "name": "Ashigaru",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Deathseeker",
+            "name": "Deathseeker",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Elemental Guard",
+            "name": "Elemental Guard",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Elemental Legionnaire",
+            "name": "Elemental Legionnaire",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "General",
+            "name": "General",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Lion's Pride Warrior",
+            "name": "Lion's Pride Warrior",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Master Saboteur",
+            "name": "Master Saboteur",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Poet of War",
+            "name": "Poet of War",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Quartermaster",
+            "name": "Quartermaster",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Renowned Warrior",
+            "name": "Renowned Warrior",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Spirit Caller",
+            "name": "Spirit Caller",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Sumai Master",
+            "name": "Sumai Master",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Sword Saint",
+            "name": "Sword Saint",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "War College Graduate",
+            "name": "War College Graduate",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "In Service to a Lord",
+            "name": "In Service to a Lord",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.185"
+        },
+        {
+            "id": "Perfect Land Sect Member",
+            "name": "Perfect Land Sect Member",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.186"
+        },
+        {
+            "id": "Ghostlands Warrior",
+            "name": "Ghostlands Warrior",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.186"
+        },
+        {
+            "id": "Astradhari",
+            "name": "Astradhari",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.187"
+        }
+    ]
+}

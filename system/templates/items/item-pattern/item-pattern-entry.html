@@ -1,0 +1,10 @@
+<li class="item item-pattern flexcol" data-item-id="{{pattern.id}}">
+    <ul class="item-header pattern-controls">
+        <li class="item-img"><img src="{{pattern.img}}" title="{{pattern.name}}" width="24px" height="24px"/></li>
+        <li class="item-name l5r5e-tooltip" data-item-id="{{pattern.id}}">{{pattern.name}}</li>
+        {{#if editable}}
+            <li data-item-id="{{pattern.id}}" class="item-control item-edit" title="{{localize 'l5r5e.global.edit'}}"><i class="fas fa-edit"></i></li>
+            <li data-item-id="{{pattern.id}}" class="item-control item-delete" title="{{localize 'Delete'}}"><i class="fas fa-trash"></i></li>
+        {{/if}}
+    </ul>
+</li>

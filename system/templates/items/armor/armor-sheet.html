@@ -1,0 +1,32 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img class="profile-img" src="{{data.img}}" data-edit="img" title="{{data.name}}"/>
+        <h1 class="charname"><input name="name" type="text" value="{{data.name}}" placeholder="Name"/></h1>
+    </header>
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        {{!-- attributes --}}
+        <article class="attributes" data-group="primary" data-tab="description">
+            <label class="equipped checkbox">
+                <input type="checkbox" name="system.equipped" {{checked data.system.equipped}} />
+                {{ localize 'l5r5e.armors.equipped' }}
+            </label>
+            {{> 'systems/l5r5e/templates/items/item/item-value.html' }}
+            <fieldset class="attribute type">
+                <legend class="text-header">{{localize 'l5r5e.armors.type'}}</legend>
+                <label>
+                    {{localize 'l5r5e.armors.physical'}}
+                    <input class="select-on-focus" type="number" name="system.armor.physical" value="{{data.system.armor.physical}}" data-dtype="Number" min="0" placeholder="0"/>
+                </label>
+                <label>
+                    {{localize 'l5r5e.armors.supernatural'}}
+                    <input class="select-on-focus" type="number" name="system.armor.supernatural" value="{{data.system.armor.supernatural}}" data-dtype="Number" min="0" placeholder="0"/>
+                </label>
+            </fieldset>
+        </article>
+        <article class="properties" data-group="primary" data-tab="properties">
+            {{> 'systems/l5r5e/templates/items/property/properties.html' properties=data.propertiesList}}
+        </article>
+        {{> 'systems/l5r5e/templates/items/item/item-infos.html'}}
+    </section>
+</form>

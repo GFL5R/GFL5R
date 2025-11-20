@@ -1,0 +1,20 @@
+<div class="{{cssClass}}" data-actor-id="{{actor._id}}" data-item-id="{{data._id}}">
+    <header class="card-header">
+        <h2 class="item-name"><img src="{{data.img}}" title="{{data.name}}" /> {{data.name}}</h2>
+    </header>
+    <section class="sheet-body">
+        <ul>
+            <li><strong>{{localize 'l5r5e.army.cohort.leader'}}</strong> : {{data.system.leader}}</li>
+            <li><strong>{{localize 'l5r5e.sheets.equipment'}}</strong> : {{data.system.equipment}}</li>
+            {{!-- battle readiness --}}
+            <li><strong>{{localize 'l5r5e.army.battle_readiness.casualties'}}</strong> : {{data.system.battle_readiness.casualties_strength.value}}</li>
+            <li><strong>{{localize 'l5r5e.army.battle_readiness.strength'}}</strong> : {{data.system.battle_readiness.casualties_strength.max}}</li>
+            <li><strong>{{localize 'l5r5e.army.battle_readiness.panic'}}</strong> : {{data.system.battle_readiness.panic_discipline.value}}</li>
+            <li><strong>{{localize 'l5r5e.army.battle_readiness.discipline'}}</strong> : {{data.system.battle_readiness.panic_discipline.max}}</li>
+        </ul>
+        {{!-- abilities --}}
+        <p><strong>{{localize 'l5r5e.army.cohort.abilities'}}</strong> : {{{data.enrichedHtml.abilities}}}</p>
+        
+        {{> 'systems/l5r5e/templates/items/item/item-text-partial-reference.html'}}
+    </section>
+</div>

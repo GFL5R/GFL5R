@@ -1,0 +1,147 @@
+{
+    "label": "Tecniche Kihō",
+    "mapping": {
+        "description": "system.description",
+        "book_reference": "system.book_reference"
+    },
+    "entries": [
+        {
+            "id": "Cleansing Spirit",
+            "name": "Spirito Purificatore",
+            "description": "",
+            "book_reference": "Manuale Base p.183"
+        },
+        {
+            "id": "Grasp the Earth Dragon",
+            "name": "Afferrare il Drago della Terra",
+            "description": "",
+            "book_reference": "Manuale Base p.183"
+        },
+        {
+            "id": "Earth Needs No Eyes",
+            "name": "La Terra non ha Occhi",
+            "description": "",
+            "book_reference": "Manuale Base p.184"
+        },
+        {
+            "id": "Way of the Earthquake",
+            "name": "Via del Terremoto",
+            "description": "",
+            "book_reference": "Manuale Base p.184"
+        },
+        {
+            "id": "Earthen Fist",
+            "name": "Pugno della Terra",
+            "description": "",
+            "book_reference": "Manuale Base p.183"
+        },
+        {
+            "id": "Riding the Clouds",
+            "name": "Cavalcare le Nuvole",
+            "description": "",
+            "book_reference": "Manuale Base p.182"
+        },
+        {
+            "id": "Way of the Willow",
+            "name": "Via del Salice",
+            "description": "",
+            "book_reference": "Manuale Base p.183"
+        },
+        {
+            "id": "Air Fist",
+            "name": "Pugno dell’Aria",
+            "description": "",
+            "book_reference": "Manuale Base p.182"
+        },
+        {
+            "id": "The Great Silence",
+            "name": "Il Grande Silenzio",
+            "description": "",
+            "book_reference": "Manuale Base p.182"
+        },
+        {
+            "id": "Channel the Fire Dragon",
+            "name": "Incanalare il Drago del Fuoco",
+            "description": "",
+            "book_reference": "Manuale Base p.185"
+        },
+        {
+            "id": "Breaking Blow",
+            "name": "Colpo Frantumante",
+            "description": "",
+            "book_reference": "Manuale Base p.184"
+        },
+        {
+            "id": "Way of the Falling Star",
+            "name": "Via della Stella Cadente",
+            "description": "",
+            "book_reference": "Manuale Base p.186"
+        },
+        {
+            "id": "The Body Is an Anvil",
+            "name": "Il Corpo è un’Incudine",
+            "description": "",
+            "book_reference": "Manuale Base p.184"
+        },
+        {
+            "id": "Flame Fist",
+            "name": "Pugno della Fiamma",
+            "description": "",
+            "book_reference": "Manuale Base p.185"
+        },
+        {
+            "id": "Ride the Water Dragon",
+            "name": "Cavalcare il Drago dell’Acqua",
+            "description": "",
+            "book_reference": "Manuale Base p.186"
+        },
+        {
+            "id": "Freezing the Lifeblood",
+            "name": "Congelare la Linfa Vitale",
+            "description": "",
+            "book_reference": "Manuale Base p.186"
+        },
+        {
+            "id": "Ki Protection",
+            "name": "Protezione del Ki",
+            "description": "",
+            "book_reference": "Manuale Base p.186"
+        },
+        {
+            "id": "Way of the Seafoam",
+            "name": "Via della Spuma di Mare",
+            "description": "",
+            "book_reference": "Manuale Base p.187"
+        },
+        {
+            "id": "Water Fist",
+            "name": "Pugno dell’Acqua",
+            "description": "",
+            "book_reference": "Manuale Base p.187"
+        },
+        {
+            "id": "Death Touch",
+            "name": "Tocco Mortale",
+            "description": "",
+            "book_reference": "Manuale Base p.188"
+        },
+        {
+            "id": "Touch the Void Dragon",
+            "name": "Sfiorare il Drago del Vuoto",
+            "description": "",
+            "book_reference": "Manuale Base p.188"
+        },
+        {
+            "id": "Still the Elements",
+            "name": "Fermare gli Elementi",
+            "description": "",
+            "book_reference": "Manuale Base p.188"
+        },
+        {
+            "id": "Way of the Edgeless Sword",
+            "name": "Via della Spada Smussata",
+            "description": "",
+            "book_reference": "Manuale Base p.188"
+        }
+    ]
+}

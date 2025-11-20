@@ -1,0 +1,39 @@
+{
+    "name": "l5r5e",
+    "version": "1.0.0",
+    "description": "This is a game system for Legend of the Five Rings (5th edition) by Edge Studio",
+    "main": "index.js",
+    "scripts": {
+        "compile": "gulp css",
+        "watch": "gulp",
+        "prettier": "prettier --quote-props=preserve --print-width=5000 --write"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://gitlab.com/teaml5r/l5r5e.git"
+    },
+    "author": "Team L5r",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://gitlab.com/teaml5r/l5r5e/issues"
+    },
+    "homepage": "https://gitlab.com/teaml5r/l5r5e#readme",
+    "devDependencies": {
+        "babel-eslint": "^10.1.0",
+        "browser-sync": "^2.27.10",
+        "eslint": "^8.27.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
+        "gulp-sass": "^5.1.0",
+        "lint-staged": "^10.5.1",
+        "sass": "^1.56.1",
+        "prettier": "^2.7.1"
+    },
+    "lint-staged": {
+        "*.js": "eslint --cache --fix",
+        "*.json": "prettier --write",
+        "*.scss": "prettier --write"
+    }
+}

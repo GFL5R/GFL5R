@@ -1,0 +1,11 @@
+{"_id":"L5RCoreTer000001","name":"Dangerous","content":"<blockquote>Core Rulebook p.267</blockquote>","img":"icons/svg/trap.svg","folder":null,"sort":100001,"permission":{"default":0},"flags":{}}
+{"_id":"L5RCoreTer000002","name":"Defiled","content":"<blockquote>Core Rulebook p.267</blockquote>","img":"icons/svg/ruins.svg","folder":null,"sort":100001,"permission":{"default":0},"flags":{}}
+{"_id":"L5RCoreTer000003","name":"Entangling","content":"<blockquote>Core Rulebook p.267</blockquote>","img":"icons/svg/lightning.svg","folder":null,"sort":100001,"permission":{"default":0},"flags":{}}
+{"_id":"L5RCoreTer000004","name":"Hallowed (One or More Elements)","content":"<blockquote>Core Rulebook p.267</blockquote>","img":"icons/svg/oak.svg","folder":null,"sort":100001,"permission":{"default":0},"flags":{}}
+{"_id":"L5RCoreTer000005","name":"Imbalanced (One or More Elements)","content":"<blockquote>Core Rulebook p.267</blockquote>","img":"icons/svg/stoned.svg","folder":null,"sort":100001,"permission":{"default":0},"flags":{}}
+{"_id":"L5RCoreTer000006","name":"Obscuring","content":"<blockquote>Core Rulebook p.267</blockquote>","img":"icons/svg/cowled.svg","folder":null,"sort":100001,"permission":{"default":0},"flags":{}}
+{"_id":"L5RCoreTer000007","name":"Confining","content":"<blockquote>Fields of Victory p.122</blockquote>","img":"icons/svg/stone-path.svg","folder":null,"sort":100001,"permission":{"default":0},"flags":{}}
+{"_id":"L5RCoreTer000008","name":"Elevated","content":"<blockquote>Fields of Victory p.122</blockquote>","img":"icons/svg/up.svg","folder":null,"sort":100001,"permission":{"default":0},"flags":{}}
+{"_id":"L5RCoreTer000009","name":"Open","content":"<blockquote>Fields of Victory p.122</blockquote>","img":"icons/svg/mountain.svg","folder":null,"sort":100001,"permission":{"default":0},"flags":{}}
+{"_id":"L5RCoreTer000010","name":"Recessed","content":"<blockquote>Fields of Victory p.122</blockquote>","img":"icons/svg/down.svg","folder":null,"sort":100001,"permission":{"default":0},"flags":{}}
+{"_id":"L5RCoreTer000011","name":"Imbalanced (One or More Elements) Variant","content":"<blockquote>Writ of the Wild p.139</blockquote>","img":"icons/svg/stoned.svg","folder":null,"sort":100001,"permission":{"default":0},"flags":{}}

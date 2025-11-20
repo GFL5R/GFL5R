@@ -1,0 +1,243 @@
+/** Sheets **/
+&.sheet {
+    &.army {
+        .sheet-header {
+            height: 9.5rem;
+
+            h1 {
+                flex: 1;
+            }
+
+            .readiness {
+                flex: 0 0 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                ul {
+                    display: flex;
+                    position: relative;
+                    padding: 0.25rem;
+                    height: 4rem;
+
+                    li {
+                        flex: 25%;
+                        display: inline-grid;
+                        position: relative;
+
+                        .attributes-buttons {
+                            position: relative;
+                            line-height: 13px;
+                            top: 0.3rem;
+                            right: 1.2rem;
+                            width: 12px;
+                        }
+
+                        strong {
+                            color: $l5r5e-label;
+                            text-align: center;
+                            text-transform: uppercase;
+                            font-size: 0.75rem;
+                        }
+
+                        label {
+                            flex: 100%;
+                        }
+
+                        input {
+                            background: transparent;
+                            border: 0 none;
+                            text-align: center;
+                            margin: 0.3rem 1.6rem 0 1.5rem;
+                        }
+
+                        &:after {
+                            content: "";
+                            width: 2rem;
+                            height: 2rem;
+                            position: absolute;
+                            right: calc(50% - 0.9rem);
+                            top: 0.1rem;
+                            background: transparent url("../assets/icons/circle.svg") no-repeat 0 0;
+                            background-size: contain;
+                            opacity: 0.25;
+                            z-index: -1;
+                        }
+
+                        &:nth-child(1) {
+                            input {
+                                margin: 0.3rem 1rem 0 1.5rem;
+                            }
+                            &:after {
+                                transform: rotate(0deg);
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &:after {
+                                transform: rotate(90deg);
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            input {
+                                margin: 0.3rem 1rem 0 1.5rem;
+                            }
+                            &:after {
+                                transform: rotate(180deg);
+                            }
+                        }
+
+                        &:nth-child(4) {
+                            &:after {
+                                transform: rotate(-90deg);
+                            }
+                        }
+                    }
+                }
+
+                align-items: flex-start;
+
+                h2 {
+                    flex: 0 0 100%;
+                }
+            }
+        }
+        .sheet-body {
+            height: calc(100% - 11.5rem);
+            .tab {
+                height: calc(100% - 3.5rem);
+                &.army {
+                    .warlord,
+                    .commander {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        .fa-sign-in-alt {
+                            transform: rotate(90deg);
+                        }
+
+                        fieldset {
+                            margin-top: 0.25rem;
+                            margin-bottom: 0.25rem;
+
+                            strong {
+                                color: $l5r5e-label;
+                            }
+
+                            label {
+                                flex: 100%;
+                            }
+
+                            p {
+                                width: 100%;
+                            }
+
+                            textarea {
+                                height: calc(100% - 22px);
+                            }
+
+                            .actor-remove-control {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    .standing {
+                        flex: 0 0 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        h2 {
+                            flex: 0 0 100%;
+                        }
+
+                        ul {
+                            display: flex;
+                            position: relative;
+
+                            li {
+                                flex: 33%;
+                                display: inline-grid;
+                                position: relative;
+                                padding: 0.25rem;
+                                flex-direction: column-reverse;
+
+                                strong {
+                                    text-align: center;
+                                }
+
+                                input {
+                                    background: transparent;
+                                    border: 0 none;
+                                    text-align: center;
+                                }
+
+                                &:after {
+                                    content: "";
+                                    width: 2rem;
+                                    height: 2rem;
+                                    position: absolute;
+                                    right: calc(50% - 0.95rem);
+                                    top: calc(50% - 0.2rem);
+                                    background: transparent url("../assets/icons/circle.svg") no-repeat 0 0;
+                                    background-size: contain;
+                                    opacity: 0.25;
+                                    z-index: -1;
+                                }
+
+                                &:nth-child(1) {
+                                    &:after {
+                                        transform: rotate(0deg);
+                                    }
+                                }
+
+                                &:nth-child(2) {
+                                    &:after {
+                                        transform: rotate(90deg);
+                                    }
+                                }
+
+                                &:nth-child(3) {
+                                    &:after {
+                                        transform: rotate(180deg);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .warlord-name {
+                        display: flex;
+                        flex: 100%;
+                        flex-wrap: wrap;
+                        margin: 0;
+                        padding: 0.5rem 0.5rem 0;
+                        background: $l5r5e-title;
+                        --notchSize: 0.25rem;
+                        i {
+                            color: $l5r5e-black;
+                            margin-right: 0.5rem;
+                        }
+                        label {
+                            flex: 0 0 auto !important;
+                            height: 1.65rem;
+                            margin: 0;
+                            padding: 0 0.5rem;
+                            color: $l5r5e-label;
+                            background: $l5r5e-white;
+                            border: 1px solid $l5r5e-label;
+                            border-radius: 1rem;
+                        }
+                    }
+                }
+                &.others {
+                    flex-direction: column;
+
+                    .editor-container {
+                        min-height: 8rem;
+                        max-height: 14rem;
+                    }
+                }
+            }
+        }
+    }
+}

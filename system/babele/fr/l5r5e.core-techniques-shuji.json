@@ -1,0 +1,809 @@
+{
+    "label": "Techniques Shuji",
+    "mapping": {
+        "description": "system.description",
+        "source_reference": "system.source_reference"
+    },
+    "entries": [
+        {
+            "id": "Rustling of Leaves",
+            "name": "Bruissement des feuilles",
+            "description": "",
+            "source_reference": {
+                "page": "214"
+            }
+        },
+        {
+            "id": "Cadence",
+            "name": "Cadence",
+            "description": "",
+            "source_reference": {
+                "page": "214"
+            }
+        },
+        {
+            "id": "Artisan’s Appraisal",
+            "name": "Estimation de l’artisan",
+            "description": "",
+            "source_reference": {
+                "page": "214"
+            }
+        },
+        {
+            "id": "Bend with the Storm",
+            "name": "Le roseau plie sous la tempête",
+            "description": "",
+            "source_reference": {
+                "page": "214"
+            }
+        },
+        {
+            "id": "The Wind Blows Both Ways",
+            "name": "Le vent tourne",
+            "description": "",
+            "source_reference": {
+                "page": "215"
+            }
+        },
+        {
+            "id": "Prey on the Weak",
+            "name": "Malheur aux faibles",
+            "description": "",
+            "source_reference": {
+                "page": "215"
+            }
+        },
+        {
+            "id": "Whispers of Court",
+            "name": "Murmures de la cour",
+            "description": "",
+            "source_reference": {
+                "page": "215"
+            }
+        },
+        {
+            "id": "Feigned Opening",
+            "name": "Ouverture feinte",
+            "description": "",
+            "source_reference": {
+                "page": "215"
+            }
+        },
+        {
+            "id": "Wolf’s Proposal",
+            "name": "Proposition du loup",
+            "description": "",
+            "source_reference": {
+                "page": "215"
+            }
+        },
+        {
+            "id": "Ancestry Unearthed",
+            "name": "Ascendance dévoilée",
+            "description": "",
+            "source_reference": {
+                "page": "216"
+            }
+        },
+        {
+            "id": "Touchstone of Courage",
+            "name": "Courage exemplaire",
+            "description": "",
+            "source_reference": {
+                "page": "216"
+            }
+        },
+        {
+            "id": "Honest Assessment",
+            "name": "Evaluation honnête",
+            "description": "",
+            "source_reference": {
+                "page": "216"
+            }
+        },
+        {
+            "id": "The Immovable Hand of Peace",
+            "name": "L’immuable main de la paix",
+            "description": "",
+            "source_reference": {
+                "page": "216"
+            }
+        },
+        {
+            "id": "Civility Foremost",
+            "name": "La courtoisie prime",
+            "description": "",
+            "source_reference": {
+                "page": "217"
+            }
+        },
+        {
+            "id": "Weight of Duty",
+            "name": "Le fardeau du devoir",
+            "description": "",
+            "source_reference": {
+                "page": "217"
+            }
+        },
+        {
+            "id": "Pillar of Calm",
+            "name": "Pilier de sérénité",
+            "description": "",
+            "source_reference": {
+                "page": "217"
+            }
+        },
+        {
+            "id": "Stonewall Tactics",
+            "name": "Tactique d’obstruction",
+            "description": "",
+            "source_reference": {
+                "page": "218"
+            }
+        },
+        {
+            "id": "Fanning the Flames",
+            "name": "Attiser les flammes",
+            "description": "",
+            "source_reference": {
+                "page": "218"
+            }
+        },
+        {
+            "id": "Bravado",
+            "name": "Bravade",
+            "description": "",
+            "source_reference": {
+                "page": "218"
+            }
+        },
+        {
+            "id": "Rallying Cry",
+            "name": "Cri de ralliement",
+            "description": "",
+            "source_reference": {
+                "page": "218"
+            }
+        },
+        {
+            "id": "Sensational Distraction",
+            "name": "Distraction sensationnelle",
+            "description": "",
+            "source_reference": {
+                "page": "219"
+            }
+        },
+        {
+            "id": "Dazzling Performance",
+            "name": "Eclatante démonstration",
+            "description": "",
+            "source_reference": {
+                "page": "219"
+            }
+        },
+        {
+            "id": "Truth Burns through Lies",
+            "name": "La vérité derrière l’écran de fumée",
+            "description": "",
+            "source_reference": {
+                "page": "219"
+            }
+        },
+        {
+            "id": "Sear the Wound",
+            "name": "Le couteau dans la plaie",
+            "description": "",
+            "source_reference": {
+                "page": "219"
+            }
+        },
+        {
+            "id": "Lightning Raid",
+            "name": "Raid éclair",
+            "description": "",
+            "source_reference": {
+                "page": "219"
+            }
+        },
+        {
+            "id": "Stirring the Embers",
+            "name": "Souffler sur les braises",
+            "description": "",
+            "source_reference": {
+                "page": "219"
+            }
+        },
+        {
+            "id": "Tributaries of Trade",
+            "name": "Affluents du négoce",
+            "description": "",
+            "source_reference": {
+                "page": "220"
+            }
+        },
+        {
+            "id": "All in Jest",
+            "name": "Aimable plaisanterie",
+            "description": "",
+            "source_reference": {
+                "page": "220"
+            }
+        },
+        {
+            "id": "Buoyant Arrival",
+            "name": "Entrée en douceur",
+            "description": "",
+            "source_reference": {
+                "page": "220"
+            }
+        },
+        {
+            "id": "Ebb and Flow",
+            "name": "Flux et reflux",
+            "description": "",
+            "source_reference": {
+                "page": "220"
+            }
+        },
+        {
+            "id": "Slippery Maneuvers",
+            "name": "Manœuvres d’esquive",
+            "description": "",
+            "source_reference": {
+                "page": "220"
+            }
+        },
+        {
+            "id": "Regal Bearing",
+            "name": "Port altier",
+            "description": "",
+            "source_reference": {
+                "page": "221"
+            }
+        },
+        {
+            "id": "Well of Desire",
+            "name": "Puits du désir",
+            "description": "",
+            "source_reference": {
+                "page": "221"
+            }
+        },
+        {
+            "id": "Shallow Waters",
+            "name": "Sous la surface",
+            "description": "",
+            "source_reference": {
+                "page": "221"
+            }
+        },
+        {
+            "id": "Lady Shinjo’s Speed (Unicorn)",
+            "name": "Célérité de Dame Shinjo (Licorne)",
+            "description": "",
+            "source_reference": {
+                "page": "222"
+            }
+        },
+        {
+            "id": "Lady Doji’s Decree (Crane)",
+            "name": "Décret de Dame Doji (Grue)",
+            "description": "",
+            "source_reference": {
+                "page": "222"
+            }
+        },
+        {
+            "id": "Courtier’s Resolve",
+            "name": "La détermination du courtisan",
+            "description": "",
+            "source_reference": {
+                "page": "222"
+            }
+        },
+        {
+            "id": "A Samurai’s Fate",
+            "name": "Le destin du samouraï",
+            "description": "",
+            "source_reference": {
+                "page": "222"
+            }
+        },
+        {
+            "id": "Lord Bayushi’s Whispers (Scorpion)",
+            "name": "Murmures de Sire Bayushi (Scorpion)",
+            "description": "",
+            "source_reference": {
+                "page": "222"
+            }
+        },
+        {
+            "id": "Lord Togashi’s Insight (Dragon)",
+            "name": "Perspicacité de Sire Togashi (Dragon)",
+            "description": "",
+            "source_reference": {
+                "page": "223"
+            }
+        },
+        {
+            "id": "Rouse the Soul",
+            "name": "Réveil de l’âme",
+            "description": "",
+            "source_reference": {
+                "page": "223"
+            }
+        },
+        {
+            "id": "Lord Akodo’s Roar (Lion)",
+            "name": "Rugissement de Sire Akodo (Lion)",
+            "description": "",
+            "source_reference": {
+                "page": "223"
+            }
+        },
+        {
+            "id": "All Arts Are One",
+            "name": "Tous les arts ne font qu’un",
+            "description": "",
+            "source_reference": {
+                "page": "223"
+            }
+        },
+        {
+            "id": "Hidden in Smoke",
+            "name": "Masqué par la fumée",
+            "description": "",
+            "source_reference": {
+                "page": "117"
+            }
+        },
+        {
+            "id": "Assess Strengths",
+            "name": "Evaluer les forces",
+            "description": "",
+            "source_reference": {
+                "page": "117"
+            }
+        },
+        {
+            "id": "Unyielding Terms",
+            "name": "Termes immuables",
+            "description": "",
+            "source_reference": {
+                "page": "117"
+            }
+        },
+        {
+            "id": "Offend the Sensibilities",
+            "name": "Froisser les sensibilités",
+            "description": "",
+            "source_reference": {
+                "page": "118"
+            }
+        },
+        {
+            "id": "Crackling Laughter",
+            "name": "Rire moqueur",
+            "description": "",
+            "source_reference": {
+                "page": "118"
+            }
+        },
+        {
+            "id": "All Shall Fear Me",
+            "name": "Tous me craindront",
+            "description": "",
+            "source_reference": {
+                "page": "118"
+            }
+        },
+        {
+            "id": "Spiteful Loss",
+            "name": "Amère défaite",
+            "description": "",
+            "source_reference": {
+                "page": "118"
+            }
+        },
+        {
+            "id": "Beware The Smallest Mouse",
+            "name": "Gare à la plus petite des souris",
+            "description": "",
+            "source_reference": {
+                "page": "119"
+            }
+        },
+        {
+            "id": "Fun and Games",
+            "name": "Agréable participation",
+            "description": "",
+            "source_reference": {
+                "page": "118"
+            }
+        },
+        {
+            "id": "Foreseen Need",
+            "name": "Besoin pressenti",
+            "description": "",
+            "source_reference": {
+                "page": "119"
+            }
+        },
+        {
+            "id": "Spin the Web (Kolat)",
+            "name": "Tisser sa toile (Kolat)",
+            "description": "",
+            "source_reference": {
+                "page": "249"
+            }
+        },
+        {
+            "id": "Awe of Heaven (Imperial)",
+            "name": "Effroi céleste (Impérial)",
+            "description": "",
+            "source_reference": {
+                "page": "249"
+            }
+        },
+        {
+            "id": "Look Out",
+            "name": "Attention !",
+            "description": "",
+            "source_reference": {
+                "page": "92"
+            }
+        },
+        {
+            "id": "Bellow of Resolve",
+            "name": "Hurlement de soutien",
+            "description": "",
+            "source_reference": {
+                "page": "92"
+            }
+        },
+        {
+            "id": "Ruse of the Moon's Reflection",
+            "name": "Ruse du reflet de la Lune",
+            "description": "",
+            "source_reference": {
+                "page": "93"
+            }
+        },
+        {
+            "id": "Eyes Up!",
+            "name": "Là-haut !",
+            "description": "",
+            "source_reference": {
+                "page": "94"
+            }
+        },
+        {
+            "id": "Pack Gambit",
+            "name": "Manoeuvre de meute",
+            "description": "",
+            "source_reference": {
+                "page": "93"
+            }
+        },
+        {
+            "id": "Mentor's Guidance",
+            "name": "Les conseils du mentor",
+            "description": "",
+            "source_reference": {
+                "page": "93"
+            }
+        },
+        {
+            "id": "Malleable Formation",
+            "name": "Formation mobile",
+            "description": "",
+            "source_reference": {
+                "page": "94"
+            }
+        },
+        {
+            "id": "Goading Taunt",
+            "name": "Raillerie provocante",
+            "description": "",
+            "source_reference": {
+                "page": "95"
+            }
+        },
+        {
+            "id": "Watch My Back",
+            "name": "Protège-moi",
+            "description": "",
+            "source_reference": {
+                "page": "94"
+            }
+        },
+        {
+            "id": "Illuminate the Way",
+            "name": "Eclaire mon chemin",
+            "description": "",
+            "source_reference": {
+                "page": "94"
+            }
+        },
+        {
+            "id": "Fluent Bargaining",
+            "name": "Négociations fructueuses",
+            "description": "",
+            "source_reference": {
+                "page": "94"
+            }
+        },
+        {
+            "id": "Bond of Heroes",
+            "name": "Le lien des héros",
+            "description": "",
+            "source_reference": {
+                "page": "95"
+            }
+        },
+        {
+            "id": "Tonight, I Am Your Opponent",
+            "name": "Ce soir, je suis ton adversaire",
+            "description": "",
+            "source_reference": {
+                "page": "95"
+            }
+        },
+        {
+            "id": "Wanderer's Resolve",
+            "name": "La détermination du vagabond",
+            "description": "",
+            "source_reference": {
+                "page": "95"
+            }
+        },
+        {
+            "id": "Roar of Encouragement",
+            "name": "Hurlement d’encouragement",
+            "description": "",
+            "source_reference": {
+                "page": "94"
+            }
+        },
+        {
+            "id": "Osano-wo’s Boast (Mantis)",
+            "name": "Vantardise d'Osano-wo (Mante)",
+            "description": "",
+            "source_reference": {
+                "page": "7"
+            }
+        },
+        {
+            "id": "Borrowed Courage",
+            "name": "Courage emprunté",
+            "description": "",
+            "source_reference": {
+                "page": "99"
+            }
+        },
+        {
+            "id": "Clouds Parted by Steel",
+            "name": "L’acier déchire les nuages",
+            "description": "",
+            "source_reference": {
+                "page": "99"
+            }
+        },
+        {
+            "id": "Entice with Falsehoods",
+            "name": "Inciter par la fausseté",
+            "description": "",
+            "source_reference": {
+                "page": "99"
+            }
+        },
+        {
+            "id": "Fortress of Necessity",
+            "name": "Forteresse du besoin",
+            "description": "",
+            "source_reference": {
+                "page": "100"
+            }
+        },
+        {
+            "id": "Great Anvil's Measure",
+            "name": "Aspect de la grande enclume",
+            "description": "",
+            "source_reference": {
+                "page": "100"
+            }
+        },
+        {
+            "id": "Steady Hammer",
+            "name": "Stabiliser le marteau",
+            "description": "",
+            "source_reference": {
+                "page": "100"
+            }
+        },
+        {
+            "id": "Call the Wild",
+            "name": "Appeler la nature",
+            "description": "",
+            "source_reference": {
+                "page": "101"
+            }
+        },
+        {
+            "id": "Righteous Example",
+            "name": "Exemple vertueux",
+            "description": "",
+            "source_reference": {
+                "page": "101"
+            }
+        },
+        {
+            "id": "Sting of Warrior's Pride",
+            "name": "Piquer la fierté du guerrier",
+            "description": "",
+            "source_reference": {
+                "page": "102"
+            }
+        },
+        {
+            "id": "To Smash the Heart",
+            "name": "Ecraser le coeur",
+            "description": "",
+            "source_reference": {
+                "page": "101"
+            }
+        },
+        {
+            "id": "Coursing March Chant",
+            "name": "Chant du pas de course",
+            "description": "",
+            "source_reference": {
+                "page": "102"
+            }
+        },
+        {
+            "id": "Preserve Strength",
+            "name": "Préserver ses forces",
+            "description": "",
+            "source_reference": {
+                "page": "103"
+            }
+        },
+        {
+            "id": "Your Enemy's Arrows",
+            "name": "Les flèches de ton ennemi",
+            "description": "",
+            "source_reference": {
+                "page": "102"
+            }
+        },
+        {
+            "id": "Battle of No Escape",
+            "name": "Une bataille sans échappatoire",
+            "description": "",
+            "source_reference": {
+                "page": "103"
+            }
+        },
+        {
+            "id": "Moment of Glory",
+            "name": "Un moment de gloire",
+            "description": "",
+            "source_reference": {
+                "page": "104"
+            }
+        },
+        {
+            "id": "Victory Without a Sword",
+            "name": "Vaincre sans dégainer",
+            "description": "",
+            "source_reference": {
+                "page": "104"
+            }
+        },
+        {
+            "id": "Flowering Deceptions",
+            "name": "Les fleurs de la supercherie",
+            "description": "",
+            "source_reference": {
+                "page": "93"
+            }
+        },
+        {
+            "id": "Cunning Omission",
+            "name": "Cunning Omission (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Entice with Offerings",
+            "name": "Entice with Offerings (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Trader's Intuition",
+            "name": "Trader's Intuition (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Cite the Facts",
+            "name": "Cite the Facts (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Solidify Gratitude",
+            "name": "Solidify Gratitude (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Glorious Entrance",
+            "name": "Glorious Entrance (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Incite Wrath",
+            "name": "Incite Wrath (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Call to Ride",
+            "name": "Call to Ride (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Complementary Experience",
+            "name": "Complementary Experience (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Everyone Has a Price",
+            "name": "Everyone Has a Price (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Horse Whisperer",
+            "name": "Horse Whisperer (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Appreciate the Scenery",
+            "name": "Appreciate the Scenery (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        }
+    ]
+}

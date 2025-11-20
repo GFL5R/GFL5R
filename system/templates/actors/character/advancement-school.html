@@ -1,0 +1,15 @@
+<tr data-group="advancements" data-tab="advancement_rank_{{rank}}" class="flexrow row advancement tab">
+    <td class="name l5r5e-tooltip" data-item-id="{{advancement._id}}" name="advancement.name"><img src="{{advancement.img}}" title="{{advancement.name}}"> {{advancement.name}}</td>
+    <td class="curriculum" name="curriculum">{{#if advancement.system.in_curriculum}}<i class="fas fa-graduation-cap"></i> {{/if}}</td>
+    <td class="xp" name="advancement.xp">{{advancement.system.xp_used}}</td>
+    <td class="rank" name="advancement.rank">{{advancement.system.rank}}</td>
+    {{#if editable}}
+    <td class="actions">
+        <ul>
+            <li data-item-id="{{advancement._id}}" class="item-control item-curriculum" title="{{localize 'l5r5e.advancements.curriculum'}}"><i class="fas fa-graduation-cap"></i></li>
+            <li data-item-id="{{advancement._id}}" class="item-control item-edit" title="{{localize 'l5r5e.global.edit'}}"><i class="fas fa-edit"></i></li>
+            <li data-item-id="{{advancement._id}}" class="item-control item-delete" title="{{localize 'Delete'}}"><i class="fas fa-trash"></i></li>
+        </ul>
+    </td>
+    {{/if}}
+</tr>

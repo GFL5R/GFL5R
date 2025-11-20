@@ -1,0 +1,151 @@
+{
+    "label": "Propriétés de terrain",
+    "mapping": {
+        "text": "text"
+    },
+    "entries": {
+        "Dangerous": {
+            "name": "Dangereux",
+            "pages": {
+                "Figure: Dangerous": {
+                    "name": "Dangereux - Image",
+                    "src": "icons/svg/trap.svg"
+                },
+                "Dangerous": {
+                    "name": "Dangereux",
+                    "text": "<blockquote>Livre de Règles p.267</blockquote>"
+                }
+            }
+        },
+        "Defiled": {
+            "name": "Profané",
+            "pages": {
+                "Figure: Defiled": {
+                    "name": "Profané - Image",
+                    "src": "icons/svg/ruins.svg"
+                },
+                "Defiled": {
+                    "name": "Profané",
+                    "text": "<blockquote>Livre de Règles p.267</blockquote>"
+                }
+            }
+        },
+        "Entangling": {
+            "name": "Handicapant",
+            "pages": {
+                "Figure: Entangling": {
+                    "name": "Handicapant - Image",
+                    "src": "icons/svg/lightning.svg"
+                },
+                "Entangling": {
+                    "name": "Handicapant",
+                    "text": "<blockquote>Livre de Règles p.267</blockquote>"
+                }
+            }
+        },
+        "Hallowed (One or More Elements)": {
+            "name": "Sanctifié (un ou plusieurs éléments)",
+            "pages": {
+                "Figure: Hallowed (One or More Elements)": {
+                    "name": "Sanctifié (un ou plusieurs éléments) - Image",
+                    "src": "icons/svg/oak.svg"
+                },
+                "Hallowed (One or More Elements)": {
+                    "name": "Sanctifié (un ou plusieurs éléments)",
+                    "text": "<blockquote>Livre de Règles p.267</blockquote>"
+                }
+            }
+        },
+        "Imbalanced (One or More Elements)": {
+            "name": "Déséquilibré (un ou plusieurs éléments)",
+            "pages": {
+                "Figure: Imbalanced (One or More Elements)": {
+                    "name": "Déséquilibré (un ou plusieurs éléments) - Image",
+                    "src": "icons/svg/stoned.svg"
+                },
+                "Imbalanced (One or More Elements)": {
+                    "name": "Déséquilibré (un ou plusieurs éléments)",
+                    "text": "<blockquote>Livre de Règles p.267</blockquote>"
+                }
+            }
+        },
+        "Obscuring": {
+            "name": "Voilé",
+            "pages": {
+                "Figure: Obscuring": {
+                    "name": "Voilé - Image",
+                    "src": "icons/svg/cowled.svg"
+                },
+                "Obscuring": {
+                    "name": "Voilé",
+                    "text": "<blockquote>Livre de Règles p.267</blockquote>"
+                }
+            }
+        },
+        "Confining": {
+            "name": "Confiné",
+            "pages": {
+                "Figure: Confining": {
+                    "name": "Confiné - Image",
+                    "src": "icons/svg/stone-path.svg"
+                },
+                "Confining": {
+                    "name": "Confiné",
+                    "text": "<blockquote>Les Champs de la Victoire p.122</blockquote>"
+                }
+            }
+        },
+        "Elevated": {
+            "name": "Surélevé",
+            "pages": {
+                "Figure: Elevated": {
+                    "name": "Surélevé - Image",
+                    "src": "icons/svg/up.svg"
+                },
+                "Elevated": {
+                    "name": "Surélevé",
+                    "text": "<blockquote>Les Champs de la Victoire p.122</blockquote>"
+                }
+            }
+        },
+        "Open": {
+            "name": "Ouvert",
+            "pages": {
+                "Figure: Open": {
+                    "name": "Ouvert - Image",
+                    "src": "icons/svg/mountain.svg"
+                },
+                "Open": {
+                    "name": "Ouvert",
+                    "text": "<blockquote>Les Champs de la Victoire p.122</blockquote>"
+                }
+            }
+        },
+        "Recessed": {
+            "name": "Encaissé",
+            "pages": {
+                "Figure: Recessed": {
+                    "name": "Encaissé - Image",
+                    "src": "icons/svg/down.svg"
+                },
+                "Recessed": {
+                    "name": "Encaissé",
+                    "text": "<blockquote>Les Champs de la Victoire p.122</blockquote>"
+                }
+            }
+        },
+        "Imbalanced (One or More Elements) Variant": {
+            "name": "Déséquilibré (un ou plusieurs éléments) – variante",
+            "pages": {
+                "Figure: Imbalanced (One or More Elements) Variant": {
+                    "name": "Déséquilibré (un ou plusieurs éléments) – variante - Image",
+                    "src": "icons/svg/stoned.svg"
+                },
+                "Imbalanced (One or More Elements) Variant": {
+                    "name": "Déséquilibré (un ou plusieurs éléments) – variante",
+                    "text": "<blockquote>Les Édits de la Nature p.139</blockquote>"
+                }
+            }
+        }
+    }
+}

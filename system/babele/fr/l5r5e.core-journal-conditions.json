@@ -1,0 +1,320 @@
+{
+    "label": "États préjudiciables",
+    "mapping": {
+        "text": "text"
+    },
+    "entries": {
+        "Afflicted": {
+            "name": "Tourmenté",
+            "pages": {
+                "Figure: Afflicted": {
+                    "name": "Tourmenté - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/afflicted.webp"
+                },
+                "Afflicted": {
+                    "name": "Tourmenté",
+                    "text": "<blockquote>Livre de Règles p.273</blockquote>"
+                }
+            }
+        },
+        "Bleeding": {
+            "name": "En sang",
+            "pages": {
+                "Figure: Bleeding": {
+                    "name": "En sang - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/bleeding.webp"
+                },
+                "Bleeding": {
+                    "name": "En sang",
+                    "text": "<blockquote>Livre de Règles p.272</blockquote>"
+                }
+            }
+        },
+        "Burning": {
+            "name": "En feu",
+            "pages": {
+                "Figure: Burning": {
+                    "name": "En feu - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/burning.webp"
+                },
+                "Burning": {
+                    "name": "En feu",
+                    "text": "<blockquote>Livre de Règles p.272</blockquote>"
+                }
+            }
+        },
+        "Compromised": {
+            "name": "Compromis",
+            "pages": {
+                "Figure: Compromised": {
+                    "name": "Compromis - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/compromised.webp"
+                },
+                "Compromised": {
+                    "name": "Compromis",
+                    "text": "<blockquote>Livre de Règles p.271</blockquote>"
+                }
+            }
+        },
+        "Dazed": {
+            "name": "Hébété",
+            "pages": {
+                "Figure: Dazed": {
+                    "name": "Hébété - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/dazed.webp"
+                },
+                "Dazed": {
+                    "name": "Hébété",
+                    "text": "<blockquote>Livre de Règles p.272</blockquote>"
+                }
+            }
+        },
+        "Disoriented": {
+            "name": "Désorienté",
+            "pages": {
+                "Figure: Disoriented": {
+                    "name": "Désorienté - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/disoriented.webp"
+                },
+                "Disoriented": {
+                    "name": "Désorienté",
+                    "text": "<blockquote>Livre de Règles p.272</blockquote>"
+                }
+            }
+        },
+        "Dying [X Rounds]": {
+            "name": "Mourant (X rounds)",
+            "pages": {
+                "Figure: Dying [X Rounds]": {
+                    "name": "Mourant (X rounds) - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/dying_1.webp"
+                },
+                "Dying [X Rounds]": {
+                    "name": "Mourant (X rounds)",
+                    "text": "<blockquote>Livre de Règles p.273</blockquote>"
+                }
+            }
+        },
+        "Enraged": {
+            "name": "Enragé",
+            "pages": {
+                "Figure: Enraged": {
+                    "name": "Enragé - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/enraged.webp"
+                },
+                "Enraged": {
+                    "name": "Enragé",
+                    "text": "<blockquote>Livre de Règles p.272</blockquote>"
+                }
+            }
+        },
+        "Exhausted": {
+            "name": "Epuisé",
+            "pages": {
+                "Figure: Exhausted": {
+                    "name": "Epuisé - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/exhausted.webp"
+                },
+                "Exhausted": {
+                    "name": "Epuisé",
+                    "text": "<blockquote>Livre de Règles p.272</blockquote>"
+                }
+            }
+        },
+        "Immobilized": {
+            "name": "Immobilisé",
+            "pages": {
+                "Figure: Immobilized": {
+                    "name": "Immobilisé - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/immobilized.webp"
+                },
+                "Immobilized": {
+                    "name": "Immobilisé",
+                    "text": "<blockquote>Livre de Règles p.272</blockquote>"
+                }
+            }
+        },
+        "Incapacitated": {
+            "name": "Hors de combat",
+            "pages": {
+                "Figure: Incapacitated": {
+                    "name": "Hors de combat - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/incapacitated.webp"
+                },
+                "Incapacitated": {
+                    "name": "Hors de combat",
+                    "text": "<blockquote>Livre de Règles p.272</blockquote>"
+                }
+            }
+        },
+        "Intoxicated": {
+            "name": "Ivre",
+            "pages": {
+                "Figure: Intoxicated": {
+                    "name": "Ivre - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/intoxicated.webp"
+                },
+                "Intoxicated": {
+                    "name": "Ivre",
+                    "text": "<blockquote>Livre de Règles p.273</blockquote>"
+                }
+            }
+        },
+        "Prone": {
+            "name": "A terre",
+            "pages": {
+                "Figure: Prone": {
+                    "name": "A terre - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/prone.webp"
+                },
+                "Prone": {
+                    "name": "A terre",
+                    "text": "<blockquote>Livre de Règles p.271</blockquote>"
+                }
+            }
+        },
+        "Silenced": {
+            "name": "Aphone",
+            "pages": {
+                "Figure: Silenced": {
+                    "name": "Aphone - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/silenced.webp"
+                },
+                "Silenced": {
+                    "name": "Aphone",
+                    "text": "<blockquote>Livre de Règles p.271</blockquote>"
+                }
+            }
+        },
+        "Unconscious": {
+            "name": "Inconscient",
+            "pages": {
+                "Figure: Unconscious": {
+                    "name": "Inconscient - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/unconscious.webp"
+                },
+                "Unconscious": {
+                    "name": "Inconscient",
+                    "text": "<blockquote>Livre de Règles p.273</blockquote>"
+                }
+            }
+        },
+        "Wounded": {
+            "name": "Blessé",
+            "pages": {
+                "Figure: Wounded": {
+                    "name": "Blessé - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/heavily_wounded.webp"
+                },
+                "Wounded": {
+                    "name": "Blessé",
+                    "text": "<blockquote>Livre de Règles p.271</blockquote>"
+                }
+            }
+        },
+        "Illness: Oozing Sore Disease": {
+            "name": "Maladie : Bubons purulents",
+            "pages": {
+                "Figure: Illness: Oozing Sore Disease": {
+                    "name": "Maladie : Bubons purulents - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/illness_oozing_sore_disease.webp"
+                },
+                "Illness: Oozing Sore Disease": {
+                    "name": "Maladie : Bubons purulents",
+                    "text": "<blockquote>Les Édits de la Nature p.140</blockquote>"
+                }
+            }
+        },
+        "Illness: Gut Sickness": {
+            "name": "Maladie : Mal des entrailles",
+            "pages": {
+                "Figure: Illness: Gut Sickness": {
+                    "name": "Maladie : Mal des entrailles - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/illness_gut_sickness.webp"
+                },
+                "Illness: Gut Sickness": {
+                    "name": "Maladie : Mal des entrailles",
+                    "text": "<blockquote>Les Édits de la Nature p.141</blockquote>"
+                }
+            }
+        },
+        "Illness: Coughing Illness": {
+            "name": "Maladie : Mauvaise toux",
+            "pages": {
+                "Figure: Illness: Coughing Illness": {
+                    "name": "Maladie : Mauvaise toux - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/illness_coughing_illness.webp"
+                },
+                "Illness: Coughing Illness": {
+                    "name": "Maladie : Mauvaise toux",
+                    "text": "<blockquote>Les Édits de la Nature p.141</blockquote>"
+                }
+            }
+        },
+        "Illness: Unsteady Illness": {
+            "name": "Maladie : Vertiges",
+            "pages": {
+                "Figure: Illness: Unsteady Illness": {
+                    "name": "Maladie : Vertiges - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/illness_unsteady_illness.webp"
+                },
+                "Illness: Unsteady Illness": {
+                    "name": "Maladie : Vertiges",
+                    "text": "<blockquote>Les Édits de la Nature p.141</blockquote>"
+                }
+            }
+        },
+        "Illness: Fire Rash": {
+            "name": "Maladie : Rougeurs",
+            "pages": {
+                "Figure: Illness: Fire Rash": {
+                    "name": "Maladie : Rougeurs - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/illness_fire_rash.webp"
+                },
+                "Illness: Fire Rash": {
+                    "name": "Maladie : Rougeurs",
+                    "text": "<blockquote>Les Édits de la Nature p.141</blockquote>"
+                }
+            }
+        },
+        "Centered": {
+            "name": "Centered (WIP)",
+            "pages": {
+                "Figure: Centered": {
+                    "name": "Centered (WIP) - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/centered.webp"
+                },
+                "Centered": {
+                    "name": "Centered (WIP)",
+                    "text": "<blockquote>Les Enfants des Cinq Vents</blockquote>"
+                }
+            }
+        },
+        "Emboldened": {
+            "name": "Emboldened (WIP)",
+            "pages": {
+                "Figure: Emboldened": {
+                    "name": "Emboldened (WIP) - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/emboldened.webp"
+                },
+                "Emboldened": {
+                    "name": "Emboldened (WIP)",
+                    "text": "<blockquote>Les Enfants des Cinq Vents</blockquote>"
+                }
+            }
+        },
+        "Possessed": {
+            "name": "Possessed (WIP)",
+            "pages": {
+                "Figure: Possessed": {
+                    "name": "Possessed (WIP) - Image",
+                    "src": "systems/l5r5e/assets/icons/conditions/possesed.webp"
+                },
+                "Possessed": {
+                    "name": "Possessed (WIP)",
+                    "text": "<blockquote>Les Enfants des Cinq Vents</blockquote>"
+                }
+            }
+        }
+    }
+}

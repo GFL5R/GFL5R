@@ -1,0 +1,306 @@
+/** Global **/
+
+body {
+    > * {
+        scrollbar-width: thin;
+    }
+    &:not(.background) {
+        background: url("../assets/imgs/bg-table.webp") no-repeat;
+        background-size: cover;
+    }
+}
+
+.toggle-hidden {
+    display: none !important;
+}
+
+/* Windows */
+.window-app {
+    .window-content {
+        z-index: 1;
+        position: relative;
+        background-size: cover;
+        scrollbar-width: thin;
+        padding: 0;
+        > form,
+        > div {
+            padding: 0.5rem;
+        }
+        .compendium,
+        .help-dialog {
+            background-position: top;
+            background-size: 100%;
+            background: url("../assets/ui/bgSidebar.webp") no-repeat;
+            border: 1px solid rgb(195, 165, 130);
+            border-radius: 0;
+            color: $white;
+            ol {
+                padding-right: 0.25rem;
+                li {
+                    border-bottom: 1px solid $l5r5e-white-light;
+                }
+            }
+            .directory-header {
+                padding: 0.25rem 0;
+            }
+        }
+        .help-dialog {
+            padding: 0.5rem 1.5rem;
+            button {
+                cursor: default;
+                color: $white;
+                background: linear-gradient(
+                    $l5r5e-linear-gradient-third,
+                    $l5r5e-linear-gradient-third-dark,
+                    $l5r5e-linear-gradient-third
+                );
+                background-origin: padding-box;
+                border-image: url("../assets/ui/macro-button.webp") 10 repeat;
+                border-image-width: 0.5rem;
+                border-image-outset: 0px;
+                &:hover {
+                    background: linear-gradient(
+                        $l5r5e-linear-gradient-first-dark,
+                        $l5r5e-linear-gradient-first,
+                        $l5r5e-linear-gradient-first-dark
+                    );
+                }
+            }
+        }
+        // Compendium
+        .compendium {
+            .item {
+                position: relative;
+                i {
+                    float: right;
+                    line-height: 1rem;
+                    text-align: right;
+                    font-size: 0.75rem;
+                    color: rgba(240, 240, 225, 0.75);
+                    font-style: italic;
+                    flex: 0 0 auto;
+                    position: absolute;
+                    right: 0;
+                    text-shadow: 0 0 0 rgba(255, 255, 255, 0.1);
+                    &:before {
+                        margin: 0 0.25rem 0 0;
+                        font-style: normal;
+                    }
+                }
+            }
+        }
+    }
+    &.sheet,
+    &.npc,
+    &.advancement,
+    &.armor,
+    &.item,
+    &.peculiarity,
+    &.property,
+    &.technique,
+    &.weapon,
+    &.twenty-questions-dialog {
+        .window-content {
+            overflow-y: scroll;
+        }
+    }
+    .window-resizable-handle {
+        z-index: 2;
+        background: $black-light;
+    }
+    &.twenty-questions-dialog {
+        .window-content {
+            background: rgb(255, 250, 230) url("../assets/imgs/bg-scroll.webp") no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+#l5r5e-twenty-questions-dialog {
+    min-height: 800px;
+    min-width: 600px;
+}
+
+/* Focus, Active */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus {
+    box-shadow: 0 0 6px $red;
+}
+.tabs .item.active {
+    text-shadow: 0 0 10px $red;
+}
+#controls .scene-control.active,
+#controls .control-tool.active,
+#controls .scene-control:hover,
+#controls .control-tool:hover {
+    box-shadow: 0 0 10px $red;
+}
+
+#sidebar #settings button,
+#sidebar .sidebar-tab .action-buttons button {
+    height: 2rem;
+    line-height: initial;
+}
+
+button:hover {
+    box-shadow: 0 0 10px $red;
+}
+button:focus {
+    box-shadow: 0 0 10px $red;
+}
+
+.item-list {
+    > li {
+        padding: 0.25rem;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        border-bottom: 0 none;
+        &:nth-child(odd) {
+            background: $l5r5e-odd;
+        }
+        &:nth-child(even) {
+            background: $l5r5e-even;
+        }
+        &:last-child {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+    }
+}
+
+// Fieldset
+fieldset {
+    flex: 1;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0 0.25rem;
+    padding: 0.5rem;
+    border: 1px solid $l5r5e-title;
+    legend {
+        color: $l5r5e-label;
+    }
+    .editor {
+        height: 100%;
+    }
+}
+
+// Editors
+.editor,
+.editor-container {
+    flex: 1;
+    height: 100%;
+}
+
+table {
+    background: transparent;
+    border: 1px solid $l5r5e-title;
+    thead {
+        background: $l5r5e-title;
+        color: $l5r5e-label;
+        text-shadow: none;
+        border-bottom: $l5r5e-title;
+    }
+    tbody {
+    }
+    tr {
+        &:nth-child(odd) {
+            background: $l5r5e-odd;
+        }
+        &:nth-child(even) {
+            background: $l5r5e-even;
+        }
+    }
+}
+
+sub,
+sup {
+    color: $l5r5e-black;
+}
+
+.sheet {
+    nav {
+        &.sheet-tabs {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+.editor-container,
+.item-description {
+    ul {
+        margin: 0.5rem 0;
+        li {
+            list-style-type: initial;
+            margin: 0.5rem 0 0.5rem 1.5rem;
+            padding: 0;
+        }
+    }
+}
+
+.prepared {
+    &-character {
+        color: $l5r5e-earth;
+    }
+    &-adversary {
+        color: $l5r5e-fire;
+    }
+    &-minion {
+        color: $l5r5e-water;
+    }
+    &-icon {
+        font-weight: 900;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+        width: 1.5rem;
+        &-true:before {
+            content: "\f06e";
+        }
+        &-false:before {
+            content: "\f070";
+        }
+        &-actor:before {
+            content: "\f2a8";
+        }
+    }
+}
+
+// Entity link style for compendium folder custom link
+a.compendium-link {
+    background: #ddd;
+    padding: 1px 4px;
+    border: 1px solid #4b4a44;
+    border-radius: 2px;
+    white-space: nowrap;
+    word-break: break-all;
+}
+
+// Color for playlist
+#playlists .sound-control {
+    i.fas.fa-random,
+    i.far.fa-arrow-alt-circle-right,
+    i.fas.fa-compress-arrows-alt,
+    i.fas.fa-ban {
+        color: #ff6400;
+    }
+
+    i.fas.fa-square {
+        color: #dd0000;
+    }
+
+    i.fas.fa-play,
+    i.fas.fa-play-circle {
+        color: #00dd00;
+    }
+
+    i.fas.fa-pause,
+    i.fas.fa-backward,
+    i.fas.fa-forward {
+        color: #0096ff;
+    }
+}

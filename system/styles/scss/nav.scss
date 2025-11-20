@@ -1,0 +1,65 @@
+// -- Nav
+nav {
+    &.sheet-tabs {
+        height: 3rem;
+        line-height: 2rem;
+        font-family: $font-tertiary;
+        letter-spacing: -0.05rem;
+        font-size: 1rem;
+        border: 0 none;
+        border-bottom: 1px solid $l5r5e-title;
+        margin-bottom: 0;
+        background: $l5r5e-white;
+        color: $l5r5e-black;
+        display: flex;
+        flex-direction: row;
+        --notchSize: 0.5rem;
+        clip-path: polygon(
+            0% var(--notchSize),
+            var(--notchSize) 0%,
+            calc(100% - var(--notchSize)) 0%,
+            100% var(--notchSize),
+            100% calc(100% - var(--notchSize)),
+            calc(100%) 100%,
+            var(--notchSize) 100%,
+            0% calc(100%)
+        );
+    }
+    .item {
+        flex: 1;
+        &:hover {
+            background-color: $l5r5e-label;
+            color: $white-light;
+            text-shadow: none;
+            clip-path: polygon(
+                0% var(--notchSize),
+                var(--notchSize) 0%,
+                calc(100% - var(--notchSize)) 0%,
+                100% var(--notchSize),
+                100% 100%,
+                0 100%,
+                0% 0%,
+                0% 100%
+            );
+        }
+    }
+    .item.active {
+        background-color: rgba(73, 12, 11, 0.85);
+        color: rgba(255, 255, 255, 1);
+        clip-path: polygon(
+            0% var(--notchSize),
+            var(--notchSize) 0%,
+            calc(100% - var(--notchSize)) 0%,
+            100% var(--notchSize),
+            100% 100%,
+            0 100%,
+            0% 0%,
+            0% 100%
+        );
+
+        &:hover {
+            background-color: rgba(73, 12, 11, 0.85);
+            cursor: default;
+        }
+    }
+}

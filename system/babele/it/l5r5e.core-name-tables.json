@@ -1,0 +1,40 @@
+{
+    "label": "Tabelle dei Nomi",
+    "entries": [
+        {
+            "id": "Ivory Kingdoms names",
+            "name": "Nomi del Regno d'Avorio",
+            "description": "Sentiero delle Onde p.223-224"
+        },
+        {
+            "id": "Japanese names (Female)",
+            "name": "Nomi giapponesi (Femminili)",
+            "description": "Lista non ufficiale"
+        },
+        {
+            "id": "Japanese names (Male)",
+            "name": "Nomi giapponesi (Maschili)",
+            "description": "Lista non ufficiale"
+        },
+        {
+            "id": "Japanese names (Village)",
+            "name": "Nomi giapponesi (Villaggi)",
+            "description": "Lista non ufficiale"
+        },
+        {
+            "id": "Qamarist names",
+            "name": "Nomi Qamaristi",
+            "description": "Sentiero delle Onde p.226"
+        },
+        {
+            "id": "Rokugani names",
+            "name": "Nomi Rokugani",
+            "description": "Sentiero delle Onde p.222"
+        },
+        {
+            "id": "Ujik names",
+            "name": "Nomi Ujik",
+            "description": "Sentiero delle Onde p.225"
+        }
+    ]
+}

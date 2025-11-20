@@ -1,0 +1,313 @@
+{
+    "label": "Propriétés",
+    "mapping": {
+        "description": "system.description",
+        "source_reference": "system.source_reference"
+    },
+    "entries": [
+        {
+            "id": "Razor-Edged",
+            "name": "Acéré",
+            "description": "",
+            "source_reference": {
+                "page": "240"
+            }
+        },
+        {
+            "id": "Ceremonial",
+            "name": "Cérémoniel",
+            "description": "",
+            "source_reference": {
+                "page": "240"
+            }
+        },
+        {
+            "id": "Damaged",
+            "name": "Détérioré",
+            "description": "",
+            "source_reference": {
+                "page": "240"
+            }
+        },
+        {
+            "id": "Destroyed",
+            "name": "Détruit",
+            "description": "",
+            "source_reference": {
+                "page": "240"
+            }
+        },
+        {
+            "id": "Concealable",
+            "name": "Discret",
+            "description": "",
+            "source_reference": {
+                "page": "240"
+            }
+        },
+        {
+            "id": "Cumbersome",
+            "name": "Encombrant",
+            "description": "",
+            "source_reference": {
+                "page": "240"
+            }
+        },
+        {
+            "id": "Snaring",
+            "name": "Entrave",
+            "description": "",
+            "source_reference": {
+                "page": "240"
+            }
+        },
+        {
+            "id": "Unholy",
+            "name": "Impie",
+            "description": "",
+            "source_reference": {
+                "page": "240"
+            }
+        },
+        {
+            "id": "Forbidden",
+            "name": "Interdit",
+            "description": "",
+            "source_reference": {
+                "page": "241"
+            }
+        },
+        {
+            "id": "Resplendent",
+            "name": "Magnifique",
+            "description": "",
+            "source_reference": {
+                "page": "241"
+            }
+        },
+        {
+            "id": "Wargear",
+            "name": "Militaire",
+            "description": "",
+            "source_reference": {
+                "page": "241"
+            }
+        },
+        {
+            "id": "Mundane",
+            "name": "Ordinaire",
+            "description": "",
+            "source_reference": {
+                "page": "241"
+            }
+        },
+        {
+            "id": "Prepare",
+            "name": "Préparation",
+            "description": "",
+            "source_reference": {
+                "page": "241"
+            }
+        },
+        {
+            "id": "Sacred",
+            "name": "Sacré",
+            "description": "",
+            "source_reference": {
+                "page": "241"
+            }
+        },
+        {
+            "id": "Durable",
+            "name": "Solide",
+            "description": "",
+            "source_reference": {
+                "page": "241"
+            }
+        },
+        {
+            "id": "Subtle",
+            "name": "Subtil",
+            "description": "",
+            "source_reference": {
+                "page": "241"
+            }
+        },
+        {
+            "id": "Kakita Pattern",
+            "name": "Procédé Kakita",
+            "description": "",
+            "source_reference": {
+                "page": "109"
+            }
+        },
+        {
+            "id": "Kenzō Blade",
+            "name": "Lame Kenzō",
+            "description": "",
+            "source_reference": {
+                "page": "109"
+            }
+        },
+        {
+            "id": "Shirogane Jade Inlay",
+            "name": "Incrustation de Jade de Shirogane",
+            "description": "",
+            "source_reference": {
+                "page": "109"
+            }
+        },
+        {
+            "id": "Uchema’s Technique",
+            "name": "Technique d’Uchema",
+            "description": "",
+            "source_reference": {
+                "page": "109"
+            }
+        },
+        {
+            "id": "Yasunori Steel",
+            "name": "Acier de Yasunori",
+            "description": "",
+            "source_reference": {
+                "page": "109"
+            }
+        },
+        {
+            "id": "Akodo Pattern",
+            "name": "Procédé Akodo",
+            "description": "",
+            "source_reference": {
+                "page": "93"
+            }
+        },
+        {
+            "id": "Burning Watter Pattern",
+            "name": "Procédé de l’eau ardente",
+            "description": "",
+            "source_reference": {
+                "page": "93"
+            }
+        },
+        {
+            "id": "Concealment Pattern",
+            "name": "Procédé de dissimulation",
+            "description": "",
+            "source_reference": {
+                "page": "93"
+            }
+        },
+        {
+            "id": "Deadly Fangs Pattern",
+            "name": "Procédé des crocs mortels",
+            "description": "",
+            "source_reference": {
+                "page": "94"
+            }
+        },
+        {
+            "id": "Fearsome Snarl Pattern",
+            "name": "Procédé du grognement terrifiant",
+            "description": "",
+            "source_reference": {
+                "page": "94"
+            }
+        },
+        {
+            "id": "Ichirō Pattern",
+            "name": "Procédé Ichirō",
+            "description": "",
+            "source_reference": {
+                "page": "94"
+            }
+        },
+        {
+            "id": "Mountain Silk Pattern",
+            "name": "Procédé de la soie des montagnes",
+            "description": "",
+            "source_reference": {
+                "page": "94"
+            }
+        },
+        {
+            "id": "Screaming Fire Pattern",
+            "name": "Procédé du feu hurlant",
+            "description": "",
+            "source_reference": {
+                "page": "94"
+            }
+        },
+        {
+            "id": "Toriyama's Endurance Pattern",
+            "name": "Procédé de l’endurance de Toriyama",
+            "description": "",
+            "source_reference": {
+                "page": "94"
+            }
+        },
+        {
+            "id": "Spirit of the Qamarist Pattern",
+            "name": "Procédé de l’esprit des Qamaristes",
+            "description": "",
+            "source_reference": {
+                "page": "117"
+            }
+        },
+        {
+            "id": "Ghostlands Yodhaniya Pattern",
+            "name": "Procédé des Yodhaniya des terres Spectrales",
+            "description": "",
+            "source_reference": {
+                "page": "117"
+            }
+        },
+        {
+            "id": "Kökejin’s Heart of the Wind Pattern",
+            "name": "Procédé du Coeur du vent de Kökejin",
+            "description": "",
+            "source_reference": {
+                "page": "117"
+            }
+        },
+        {
+            "id": "Agasha Pattern",
+            "name": "Le procédé Agasha",
+            "description": "",
+            "source_reference": {
+                "page": "105"
+            }
+        },
+        {
+            "id": "Ujik Horsebow Pattern",
+            "name": "Ujik Horsebow Pattern (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Utsuko Pattern",
+            "name": "Utsuko Pattern (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Watered Steel Pattern",
+            "name": "Watered Steel Pattern (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Hewing",
+            "name": "Hewing (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        }
+    ]
+}

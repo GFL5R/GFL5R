@@ -1,0 +1,48 @@
+<fieldset class="money money-wrapper">
+    <legend class="section-header">{{localize 'l5r5e.money.title'}}</legend>
+    <label>
+        {{localize 'l5r5e.money.koku'}}
+        <input name="system.money.koku" type="number" value="{{data.system.money.koku}}" data-dtype="Number" min="0" placeholder="0" {{^if data.editable_not_soft_locked}}disabled{{/if}}/>
+        <span class="money-buttons">
+            <i class="money-control pointer-choice fa fa-plus-square" data-type="koku" data-value="1"></i>
+            <i class="money-control pointer-choice fa fa-minus-square" data-type="koku" data-value="-1"></i>
+        </span>
+    </label>
+    <label>
+        {{localize 'l5r5e.money.bu'}}
+        <input name="system.money.bu" type="number" value="{{data.system.money.bu}}" data-dtype="Number" min="0" placeholder="0" {{^if data.editable_not_soft_locked}}disabled{{/if}}/>
+        <span class="money-buttons">
+            <i class="money-control pointer-choice fa fa-plus-square" data-type="bu" data-value="1"></i>
+            <i class="money-control pointer-choice fa fa-minus-square" data-type="bu" data-value="-1"></i>
+        </span>
+    </label>
+    <label>
+        {{localize 'l5r5e.money.zeni'}}
+        <input name="system.money.zeni" type="number" value="{{data.system.money.zeni}}" data-dtype="Number" min="0" placeholder="0" {{^if data.editable_not_soft_locked}}disabled{{/if}}/>
+        <span class="money-buttons">
+            <i class="money-control pointer-choice fa fa-plus-square" data-type="zeni" data-value="1"></i>
+            <i class="money-control pointer-choice fa fa-minus-square" data-type="zeni" data-value="-1"></i>
+        </span>
+    </label>
+</fieldset>
+{{!-- items list --}}
+<fieldset class="items-wrapper">
+    <legend>{{localize 'l5r5e.sheets.equipment'}}</legend>
+    {{> 'systems/l5r5e/templates/items/item/items.html'}}
+</fieldset>
+{{!-- item patterns list --}}
+<fieldset>
+    <legend class="text-block-header">
+        {{localize 'l5r5e.advancements.item_pattern'}}
+        {{#if data.editable_not_soft_locked}}
+            <a data-item-type="item_pattern" class="item-pattern-control item-add" title="{{localize 'l5r5e.global.add'}}"><i class="fas fa-plus"></i></a>
+        {{/if}}
+    </legend>
+    <ul class="item-list">
+        {{#each actor.items as |pattern id|}}
+            {{#ifCond pattern.type '==' 'item_pattern'}}
+                {{> 'systems/l5r5e/templates/items/item-pattern/item-pattern-entry.html' pattern=pattern id=id editable=../data.editable_not_soft_locked}}
+            {{/ifCond}}
+        {{/each}}
+    </ul>
+</fieldset>

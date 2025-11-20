@@ -1,0 +1,20 @@
+<fieldset class="initiative initiative-wrapper">
+    <legend class="section-header">
+        {{localize 'l5r5e.conflict.initiative.title'}}
+        <a class="encounter prepared-control" data-id="{{data.type}}">
+            <i class="fa fas prepared-icon prepared-icon-{{data.system.prepared}} prepared-{{data.system.type}}" title="{{localize (localize 'l5r5e.conflict.initiative.prepared_{value}' value=data.system.prepared)}}"></i>
+        </a>
+    </legend>
+    <button class="initiative dice-picker" data-initiative="true" data-skill="sentiment">{{localize 'l5r5e.conflict.initiative.intrigue'}}</button>
+    <button class="initiative dice-picker" data-initiative="true" data-skill="meditation">{{localize 'l5r5e.conflict.initiative.duel'}}</button>
+    <button class="initiative dice-picker" data-initiative="true" data-skill="tactics">{{localize 'l5r5e.conflict.initiative.skirmish'}}</button>
+    <button class="initiative dice-picker" data-initiative="true" data-skill="command">{{localize 'l5r5e.conflict.initiative.mass_battle'}}</button>
+</fieldset>
+<fieldset class="stances-content flexrow">
+    <legend class="section-header">{{localize 'l5r5e.conflict.stance'}}</legend>
+    <ul class="item-list">
+        {{#each data.system.rings as |ringValue ringId|}}
+            {{> 'systems/l5r5e/templates/actors/character/stance.html' stance=../data.system.stance ringId=ringId}}
+        {{/each}}
+    </ul>
+</fieldset>

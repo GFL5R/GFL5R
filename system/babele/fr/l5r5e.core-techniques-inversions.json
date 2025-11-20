@@ -1,0 +1,137 @@
+{
+    "label": "Techniques d'Inversions",
+    "mapping": {
+        "description": "system.description",
+        "source_reference": "system.source_reference"
+    },
+    "entries": [
+        {
+            "id": "One Within the Void",
+            "name": "S’unir au Vide",
+            "description": "",
+            "source_reference": {
+                "page": "115"
+            }
+        },
+        {
+            "id": "Sight beyond Existence",
+            "name": "Voir au-delà de l’existence",
+            "description": "",
+            "source_reference": {
+                "page": "116"
+            }
+        },
+        {
+            "id": "Whispered Blade",
+            "name": "Lame murmurée",
+            "description": "",
+            "source_reference": {
+                "page": "115"
+            }
+        },
+        {
+            "id": "Witness the End",
+            "name": "Assister à la fin",
+            "description": "",
+            "source_reference": {
+                "page": "115"
+            }
+        },
+        {
+            "id": "Distance Distorted",
+            "name": "Distance déformée",
+            "description": "",
+            "source_reference": {
+                "page": "116"
+            }
+        },
+        {
+            "id": "Ethereal Flicker",
+            "name": "Lueur éthérée",
+            "description": "",
+            "source_reference": {
+                "page": "117"
+            }
+        },
+        {
+            "id": "The Lotus Bloom",
+            "name": "Le lotus fleurit",
+            "description": "",
+            "source_reference": {
+                "page": "117"
+            }
+        },
+        {
+            "id": "Hurl from the Stream",
+            "name": "Extirper des flots",
+            "description": "",
+            "source_reference": {
+                "page": "118"
+            }
+        },
+        {
+            "id": "Moon on the Shifting Sea",
+            "name": "Reflet de lune sur les vagues",
+            "description": "",
+            "source_reference": {
+                "page": "118"
+            }
+        },
+        {
+            "id": "Shroud in Solitude",
+            "name": "Drapé de solitude",
+            "description": "",
+            "source_reference": {
+                "page": "117"
+            }
+        },
+        {
+            "id": "Reality Stitch",
+            "name": "Réalités entrelacées",
+            "description": "",
+            "source_reference": {
+                "page": "119"
+            }
+        },
+        {
+            "id": "Shattering Caress",
+            "name": "Caresse destructrice",
+            "description": "",
+            "source_reference": {
+                "page": "119"
+            }
+        },
+        {
+            "id": "Three Heartbeats",
+            "name": "Trois battements de coeur",
+            "description": "",
+            "source_reference": {
+                "page": "119"
+            }
+        },
+        {
+            "id": "Essence Eternal",
+            "name": "Essence éternelle",
+            "description": "",
+            "source_reference": {
+                "page": "120"
+            }
+        },
+        {
+            "id": "Slip the Cycle",
+            "name": "Passer un cycle",
+            "description": "",
+            "source_reference": {
+                "page": "120"
+            }
+        },
+        {
+            "id": "Unweave",
+            "name": "Détisser",
+            "description": "",
+            "source_reference": {
+                "page": "119"
+            }
+        }
+    ]
+}

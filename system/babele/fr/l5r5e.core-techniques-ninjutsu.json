@@ -1,0 +1,153 @@
+{
+    "label": "Techniques Ninjutsu",
+    "mapping": {
+        "description": "system.description",
+        "source_reference": "system.source_reference"
+    },
+    "entries": [
+        {
+            "id": "Deadly Sting",
+            "name": "Dard mortel",
+            "description": "",
+            "source_reference": {
+                "page": "226"
+            }
+        },
+        {
+            "id": "Skulk",
+            "name": "Disparition",
+            "description": "",
+            "source_reference": {
+                "page": "226"
+            }
+        },
+        {
+            "id": "Silencing Stroke",
+            "name": "Neutralisation",
+            "description": "",
+            "source_reference": {
+                "page": "227"
+            }
+        },
+        {
+            "id": "Noxious Cloud",
+            "name": "Nuage toxique",
+            "description": "",
+            "source_reference": {
+                "page": "227"
+            }
+        },
+        {
+            "id": "Artful Alibi",
+            "name": "Alibi artistique",
+            "description": "",
+            "source_reference": {
+                "page": "114"
+            }
+        },
+        {
+            "id": "Cunning Distraction",
+            "name": "Distraction fourbe",
+            "description": "",
+            "source_reference": {
+                "page": "115"
+            }
+        },
+        {
+            "id": "Deceitful Strike",
+            "name": "Coup malhonnête",
+            "description": "",
+            "source_reference": {
+                "page": "115"
+            }
+        },
+        {
+            "id": "Like a Ghost",
+            "name": "Tel un fantôme",
+            "description": "",
+            "source_reference": {
+                "page": "116"
+            }
+        },
+        {
+            "id": "Silent Elimination",
+            "name": "Immobilisation silencieuse",
+            "description": "",
+            "source_reference": {
+                "page": "115"
+            }
+        },
+        {
+            "id": "Slicing Wind Kick",
+            "name": "Coup de pied tourbillonnant",
+            "description": "",
+            "source_reference": {
+                "page": "114"
+            }
+        },
+        {
+            "id": "Stillness of Death",
+            "name": "Quiétude de la mort",
+            "description": "",
+            "source_reference": {
+                "page": "116"
+            }
+        },
+        {
+            "id": "To Float or Sink",
+            "name": "Flotter ou sombrer",
+            "description": "",
+            "source_reference": {
+                "page": "115"
+            }
+        },
+        {
+            "id": "What's Yours is Mine",
+            "name": "Ce qui est à toi est à moi",
+            "description": "",
+            "source_reference": {
+                "page": "114"
+            }
+        },
+        {
+            "id": "Employ Terrible Thunder",
+            "name": "Recourir au terrible tonnerre",
+            "description": "",
+            "source_reference": {
+                "page": "106"
+            }
+        },
+        {
+            "id": "Swift Scouting",
+            "name": "Reconnaissance éclair",
+            "description": "",
+            "source_reference": {
+                "page": "106"
+            }
+        },
+        {
+            "id": "The Patient Viper",
+            "name": "La patiente vipère",
+            "description": "",
+            "source_reference": {
+                "page": "105"
+            }
+        },
+        {
+            "id": "Vanish in the Shadows",
+            "name": "Disparaître dans les ombres",
+            "description": "",
+            "source_reference": {
+                "page": "105"
+            }
+        },
+        {
+            "id": "Wreak Havoc",
+            "name": "Semer le chaos",
+            "description": "",
+            "source_reference": {
+                "page": "107"
+            }
+        }
+    ]
+}

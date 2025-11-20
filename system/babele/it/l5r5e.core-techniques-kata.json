@@ -1,0 +1,405 @@
+{
+    "label": "Tecniche Kata (WIP)",
+    "mapping": {
+        "description": "system.description",
+        "book_reference": "system.book_reference"
+    },
+    "entries": [
+        {
+            "id": "Flowing Water Strike",
+            "name": "Colpo dell’Acqua che Scorre",
+            "description": "",
+            "book_reference": "Manuale Base p.175"
+        },
+        {
+            "id": "Crimson Leaves Strike",
+            "name": "Colpo delle Foglie Cremisi",
+            "description": "",
+            "book_reference": "Manuale Base p.176"
+        },
+        {
+            "id": "Heartpiercing Strike",
+            "name": "Colpo Trapassacuore",
+            "description": "",
+            "book_reference": "Manuale Base p.176"
+        },
+        {
+            "id": "Battle in the Mind",
+            "name": "Battaglia nella Mente",
+            "description": "",
+            "book_reference": "Manuale Base p.174"
+        },
+        {
+            "id": "Lord Shiba’s Valor (Phoenix)",
+            "name": "Valore di Lord Shiba (Fenice)",
+            "description": "",
+            "book_reference": "Manuale Base p.178"
+        },
+        {
+            "id": "Soul Sunder",
+            "name": "Scissione dell’Anima",
+            "description": "",
+            "book_reference": "Manuale Base p.177"
+        },
+        {
+            "id": "Warrior’s Resolve",
+            "name": "Risolutezza del Guerriero",
+            "description": "",
+            "book_reference": "Manuale Base p.177"
+        },
+        {
+            "id": "Tactical Assessment",
+            "name": "Valutazione Tattica",
+            "description": "",
+            "book_reference": "Manuale Base p.178"
+        },
+        {
+            "id": "Soaring Slice",
+            "name": "Taglio Volante",
+            "description": "",
+            "book_reference": "Manuale Base p.178"
+        },
+        {
+            "id": "Striking as Air",
+            "name": "Colpire come l’Aria",
+            "description": "",
+            "book_reference": "Manuale Base p.175"
+        },
+        {
+            "id": "Striking as Water",
+            "name": "Colpire come l’Acqua",
+            "description": "",
+            "book_reference": "Manuale Base p.175"
+        },
+        {
+            "id": "Striking as Earth",
+            "name": "Colpire come la Terra",
+            "description": "",
+            "book_reference": "Manuale Base p.175"
+        },
+        {
+            "id": "Striking as Fire",
+            "name": "Colpire come il Fuoco",
+            "description": "",
+            "book_reference": "Manuale Base p.175"
+        },
+        {
+            "id": "Striking as Void",
+            "name": "Colpire come il Vuoto",
+            "description": "",
+            "book_reference": "Manuale Base p.175"
+        },
+        {
+            "id": "Lord Hida’s Grip (Crab)",
+            "name": "Presa di Lord Hida (Granchio)",
+            "description": "",
+            "book_reference": "Manuale Base p.176"
+        },
+        {
+            "id": "Disappearing World Style",
+            "name": "Stile del Mondo che Scompare",
+            "description": "",
+            "book_reference": "Manuale Base p.177"
+        },
+        {
+            "id": "Crashing Wave Style",
+            "name": "Stile dell’Onda che s’Infrange",
+            "description": "",
+            "book_reference": "Manuale Base p.177"
+        },
+        {
+            "id": "Crescent Moon Style",
+            "name": "Stile della Luna Crescente",
+            "description": "",
+            "book_reference": "Manuale Base p.177"
+        },
+        {
+            "id": "Iron in the Mountains Style",
+            "name": "Stile della Montagna di Ferro",
+            "description": "",
+            "book_reference": "Manuale Base p.177"
+        },
+        {
+            "id": "Breath of Wind Style",
+            "name": "Stile del Respiro del Vento",
+            "description": "",
+            "book_reference": "Manuale Base p.178"
+        },
+        {
+            "id": "Thunderclap Strike",
+            "name": "Colpo Tonante",
+            "description": "",
+            "book_reference": "Manuale Base p.179"
+        },
+        {
+            "id": "Iaijutsu Cut: Rising Blade",
+            "name": "Colpo di Iaijutsu: Lama Crescente",
+            "description": "",
+            "book_reference": "Manuale Base p.179"
+        },
+        {
+            "id": "Iaijutsu Cut: Crossing Blade",
+            "name": "Colpo di Iaijutsu: Lama Incrociata",
+            "description": "",
+            "book_reference": "Manuale Base p.179"
+        },
+        {
+            "id": "Rushing Avalanche Style",
+            "name": "Stile della Valanga Travolgente",
+            "description": "",
+            "book_reference": "Manuale Base p.180"
+        },
+        {
+            "id": "Iron Forest Style",
+            "name": "Stile della Foresta di Ferro",
+            "description": "",
+            "book_reference": "Manuale Base p.180"
+        },
+        {
+            "id": "Open-Hand Style",
+            "name": "Stile della Mano Aperta",
+            "description": "",
+            "book_reference": "Manuale Base p.180"
+        },
+        {
+            "id": "Veiled Menace Style",
+            "name": "Stile della Velata Minaccia",
+            "description": "",
+            "book_reference": "Manuale Base p.180"
+        },
+        {
+            "id": "Spinning Blades Style",
+            "name": "Stile delle Lame Turbinanti",
+            "description": "",
+            "book_reference": "Manuale Base p.180"
+        },
+        {
+            "id": "Coiling Serpent Style",
+            "name": "Stile della Spira del Serpente",
+            "description": "",
+            "book_reference": "Manuale Base p.180"
+        },
+        {
+            "id": "Pin the Fan",
+            "name": "Trafiggere il Ventaglio",
+            "description": "",
+            "book_reference": "Manuale Base p.181"
+        },
+        {
+            "id": "Hawk’s Precision",
+            "name": "Precisione del Falco",
+            "description": "",
+            "book_reference": "Manuale Base p.181"
+        },
+        {
+            "id": "Pelting Hail Style",
+            "name": "Stile della Grandine Battente",
+            "description": "",
+            "book_reference": "Manuale Base p.181"
+        },
+        {
+            "id": "Trip the Leg",
+            "name": "Trip the Leg",
+            "description": "",
+            "book_reference": "Corti di Pietra p.113"
+        },
+        {
+            "id": "Pole-Vault",
+            "name": "Pole-Vault",
+            "description": "",
+            "book_reference": "Corti di Pietra p.113"
+        },
+        {
+            "id": "Chaotic Scattering",
+            "name": "Chaotic Scattering",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.86"
+        },
+        {
+            "id": "Mind's Edge",
+            "name": "Mind's Edge",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.86"
+        },
+        {
+            "id": "Iron Shell Style",
+            "name": "Iron Shell Style",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.87"
+        },
+        {
+            "id": "Boar's Wrath Style",
+            "name": "Boar's Wrath Style",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.90"
+        },
+        {
+            "id": "Thunderous Hooves Style",
+            "name": "Thunderous Hooves Style",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.87"
+        },
+        {
+            "id": "Rider's Haste",
+            "name": "Rider's Haste",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.86"
+        },
+        {
+            "id": "Void Embrace Style",
+            "name": "Void Embrace Style",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.87"
+        },
+        {
+            "id": "Improvised Assault",
+            "name": "Improvised Assault",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.88"
+        },
+        {
+            "id": "Bonebreaker Style",
+            "name": "Bonebreaker Style",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.90"
+        },
+        {
+            "id": "Flashing Steel Strike",
+            "name": "Flashing Steel Strike",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.87"
+        },
+        {
+            "id": "Deflective Defense",
+            "name": "Deflective Defense",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.89"
+        },
+        {
+            "id": "Daring Swing",
+            "name": "Daring Swing",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.89"
+        },
+        {
+            "id": "Iaijutsu Cut: Reverse Draw",
+            "name": "Iaijutsu Cut: Reverse Draw",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.88"
+        },
+        {
+            "id": "Landslide Strike",
+            "name": "Landslide Strike",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.88"
+        },
+        {
+            "id": "Laughing Fox Style",
+            "name": "Laughing Fox Style",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.91"
+        },
+        {
+            "id": "Iaijutsu Cut: Sword and Sheath",
+            "name": "Iaijutsu Cut: Sword and Sheath",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.88"
+        },
+        {
+            "id": "Piercing Bolt Style",
+            "name": "Piercing Bolt Style",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.90"
+        },
+        {
+            "id": "Reckless Lunge",
+            "name": "Reckless Lunge",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.89"
+        },
+        {
+            "id": "Swirling Tempest Style",
+            "name": "Swirling Tempest Style",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.90"
+        },
+        {
+            "id": "Snapping Branch Strike",
+            "name": "Snapping Branch Strike",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.87"
+        },
+        {
+            "id": "Thunderous Blows Style",
+            "name": "Thunderous Blows Style",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.91"
+        },
+        {
+            "id": "Rushing Ox Style",
+            "name": "Rushing Ox Style",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.90"
+        },
+        {
+            "id": "Wheeling Sweep",
+            "name": "Wheeling Sweep",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.89"
+        },
+        {
+            "id": "Eyeless Sight Shot",
+            "name": "Eyeless Sight Shot",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.91"
+        },
+        {
+            "id": "Twin Streams Style",
+            "name": "Twin Streams Style",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.91"
+        },
+        {
+            "id": "Staggering Shot",
+            "name": "Staggering Shot",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.92"
+        },
+        {
+            "id": "Falling Heavens Shot",
+            "name": "Falling Heavens Shot",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.92"
+        },
+        {
+            "id": "Swirling Viper Style",
+            "name": "Swirling Viper Style",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.91"
+        },
+        {
+            "id": "Wasp's Spite Style",
+            "name": "Wasp's Spite Style",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.91"
+        },
+        {
+            "id": "Fierce Badger Style",
+            "name": "Fierce Badger Style",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Thicket's Embrace Style",
+            "name": "Thicket's Embrace Style",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Shattering Tide Style",
+            "name": "Shattering Tide Style",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        }
+    ]
+}

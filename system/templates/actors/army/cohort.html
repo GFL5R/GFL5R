@@ -1,0 +1,13 @@
+<fieldset class="cohort-content">
+    <legend class="section-header">
+        {{localize 'l5r5e.army.cohort.title'}}
+        {{#if data.editable_not_soft_locked}}
+        <a data-item-type="army_cohort" class="army-cohort-control item-add" title="{{localize 'l5r5e.global.add'}}"><i class="fas fa-plus"></i></a>
+        {{/if}}
+    </legend>
+    <ul class="item-list">
+        {{#each data.splitItemsList.army_cohort as |item|}}
+            {{> 'systems/l5r5e/templates/items/army-cohort/army-cohort-entry.html' cohort=item editable=../data.editable_not_soft_locked}}
+        {{/each}}
+    </ul>
+</fieldset>

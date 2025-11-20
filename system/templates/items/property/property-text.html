@@ -1,0 +1,16 @@
+<div class="{{cssClass}}" data-actor-id="{{actor._id}}" data-item-id="{{data._id}}">
+    <header class="card-header">
+        <h2 class="item-name"><img src="{{data.img}}" title="{{data.name}}" /> {{data.name}}</h2>
+    </header>
+    <section class="sheet-body">
+        <ul>
+            {{!--cancelled properties--}}
+            <li>
+                <strong>{{localize 'l5r5e.sheets.removed_properties'}}</strong> :
+                {{#each data.system.properties as |property idx|}}{{#ifCond idx '>' 0}}, {{/ifCond}}{{property.name}}{{/each}}
+            </li>
+        </ul>
+
+        {{> 'systems/l5r5e/templates/items/item/item-text-partial-reference.html'}}
+    </section>
+</div>

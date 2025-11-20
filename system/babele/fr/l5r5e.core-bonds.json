@@ -1,0 +1,91 @@
+{
+    "label": "Liens",
+    "mapping": {
+        "description": "system.description",
+        "source_reference": "system.source_reference",
+        "bond_type": "system.bond_type"
+    },
+    "entries": [
+        {
+            "id": "Family",
+            "name": "Familial",
+            "description": "",
+            "source_reference": {
+                "page": "136"
+            },
+            "bond_type": "Familial"
+        },
+        {
+            "id": "Comrade",
+            "name": "Amitié",
+            "description": "",
+            "source_reference": {
+                "page": "137"
+            },
+            "bond_type": "Amitié"
+        },
+        {
+            "id": "Lover",
+            "name": "Amoureux",
+            "description": "",
+            "source_reference": {
+                "page": "137"
+            },
+            "bond_type": "Amoureux"
+        },
+        {
+            "id": "Rival",
+            "name": "Rivalité",
+            "description": "",
+            "source_reference": {
+                "page": "138"
+            },
+            "bond_type": "Rivalité"
+        },
+        {
+            "id": "Nemesis",
+            "name": "Haine",
+            "description": "",
+            "source_reference": {
+                "page": "138"
+            },
+            "bond_type": "Haine"
+        },
+        {
+            "id": "Old Flame",
+            "name": "Ancien amant",
+            "description": "",
+            "source_reference": {
+                "page": "188"
+            },
+            "bond_type": "Ancien amant"
+        },
+        {
+            "id": "Partner",
+            "name": "Partenaire",
+            "description": "",
+            "source_reference": {
+                "page": "189"
+            },
+            "bond_type": "Partenaire"
+        },
+        {
+            "id": "Protector and Ward",
+            "name": "Protecteur et pupille",
+            "description": "",
+            "source_reference": {
+                "page": "189"
+            },
+            "bond_type": "Protecteur et pupille"
+        },
+        {
+            "id": "Wanderers Fellowship",
+            "name": "Frères d’errance",
+            "description": "",
+            "source_reference": {
+                "page": "191"
+            },
+            "bond_type": "Frères d’errance"
+        }
+    ]
+}

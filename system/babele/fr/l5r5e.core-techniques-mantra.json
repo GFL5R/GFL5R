@@ -1,0 +1,25 @@
+{
+    "label": "Techniques Mantra",
+    "mapping": {
+        "description": "system.description",
+        "source_reference": "system.source_reference"
+    },
+    "entries": [
+        {
+            "id": "Summon Mantra : [One Implement]",
+            "name": "Mantra de conjuration : [Nom de l’instrument]",
+            "description": "",
+            "source_reference": {
+                "page": "99"
+            }
+        },
+        {
+            "id": "Countering Mantra",
+            "name": "Mantra de contre",
+            "description": "",
+            "source_reference": {
+                "page": "99"
+            }
+        }
+    ]
+}

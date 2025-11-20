@@ -1,0 +1,249 @@
+{
+    "label": "Benedizioni degli Strumenti Divini (WIP)",
+    "mapping": {
+        "description": "system.description",
+        "book_reference": "system.book_reference"
+    },
+    "entries": [
+        {
+            "id": "Agility of Legend [Armor]",
+            "name": "Agility of Legend [Armor]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Animal Transformation [Projectile]",
+            "name": "Animal Transformation [Projectile]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Aura of Power [General]",
+            "name": "Aura of Power [General]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Beguile the Senses [General]",
+            "name": "Beguile the Senses [General]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Binding [Projectile]",
+            "name": "Binding [Projectile]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Blessed Revitalization [General]",
+            "name": "Blessed Revitalization [General]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Burst of Force [Armor]",
+            "name": "Burst of Force [Armor]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Celestial Step [General]",
+            "name": "Celestial Step [General]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Cosmic Devastation [General]",
+            "name": "Cosmic Devastation [General]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Deadly Venom [Projectile]",
+            "name": "Deadly Venom [Projectile]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Defensive [General]",
+            "name": "Defensive [General]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Detonation [Projectile]",
+            "name": "Detonation [Projectile]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Duplication [Projectile]",
+            "name": "Duplication [Projectile]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Earthshaker [General]",
+            "name": "Earthshaker [General]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Flurry [General]",
+            "name": "Flurry [General]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Fortress Breaker [Projectile]",
+            "name": "Fortress Breaker [Projectile]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Grand Inspiration [Utility Object]",
+            "name": "Grand Inspiration [Utility Object]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Harm Returned [Armor]",
+            "name": "Harm Returned [Armor]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Illusions Shattered [Utility Object]",
+            "name": "Illusions Shattered [Utility Object]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Independence [Melee Weapon]",
+            "name": "Independence [Melee Weapon]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Inexorable [Melee Weapon]",
+            "name": "Inexorable [Melee Weapon]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Inviolable [Armor]",
+            "name": "Inviolable [Armor]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Mark of Doom [Utility Object]",
+            "name": "Mark of Doom [Utility Object]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Obliteration [Projectile]",
+            "name": "Obliteration [Projectile]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Overwhelming Force [General]",
+            "name": "Overwhelming Force [General]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Overwhelming Radiance [Armor]",
+            "name": "Overwhelming Radiance [Armor]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Resounding Arrival [Melee Weapon]",
+            "name": "Resounding Arrival [Melee Weapon]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Resounding Rhetoric [Utility Object]",
+            "name": "Resounding Rhetoric [Utility Object]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Returning [Projectile]",
+            "name": "Returning [Projectile]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Rising Power [Melee Weapon]",
+            "name": "Rising Power [Melee Weapon]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Root of Language [Utility Object]",
+            "name": "Root of Language [Utility Object]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Shifting Shape [General]",
+            "name": "Shifting Shape [General]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Soothing Words [Utility Object]",
+            "name": "Soothing Words [Utility Object]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Subterranean Secrets [Utility Object]",
+            "name": "Subterranean Secrets [Utility Object]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Transfiguration [General]",
+            "name": "Transfiguration [General]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Unassuming [General]",
+            "name": "Unassuming [General]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Unerring [Projectile]",
+            "name": "Unerring [Projectile]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Unleashed Fury [Melee Weapon]",
+            "name": "Unleashed Fury [Melee Weapon]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Unlimited Negation [Utility Object]",
+            "name": "Unlimited Negation [Utility Object]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        },
+        {
+            "id": "Vitality [Utility Object]",
+            "name": "Vitality [Utility Object]",
+            "description": "",
+            "book_reference": "Sentiero delle Onde"
+        }
+    ]
+}

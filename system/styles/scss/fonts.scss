@@ -1,0 +1,309 @@
+/** Fonts **/
+
+// Font Logotype L5R
+@font-face {
+    font-family: "LogotypeL5r";
+    src: url("../fonts/LogotypeL5r.ttf") format("truetype");
+}
+
+// Font BrushtipTexe
+@font-face {
+    font-family: "BrushtipTexe";
+    src: url("../fonts/BrushtipTexe.ttf") format("truetype");
+}
+
+// Font PatrickHand
+@font-face {
+    font-family: "PatrickHand";
+    src: url("../fonts/PatrickHand.ttf") format("truetype");
+}
+
+// Font Caballar
+@font-face {
+    font-family: "Caballar";
+    src: url("../fonts/Caballar.ttf") format("truetype");
+}
+
+// Font ArchitectsDaughter
+@font-face {
+    font-family: "ArchitectsDaughter";
+    src: url("../fonts/ArchitectsDaughter.ttf") format("truetype");
+}
+
+$font-primary: "PatrickHand", sans-serif;
+$font-secondary: "BrushtipTexe", sans-serif;
+$font-tertiary: "Caballar", sans-serif;
+$font-quaternary: "ArchitectsDaughter", sans-serif;
+$font-logoType: "LogotypeL5r", sans-serif;
+
+body {
+    font: 16px $font-primary;
+    letter-spacing: 0.05rem;
+}
+
+h1,
+h4 {
+    font-family: $font-secondary;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+h4 {
+    font-size: 1.25rem;
+}
+
+i.i_strife,
+i.i_success,
+i.i_explosive,
+i.i_opportunity,
+i.i_earth,
+i.i_water,
+i.i_fire,
+i.i_air,
+i.i_void,
+i.i_kiho,
+i.i_maho,
+i.i_ninjitsu,
+i.i_prerequisite_exemption,
+i.i_rituals,
+i.i_shuji,
+i.i_invocations,
+i.i_kata,
+i.i_inversion,
+i.i_mantra,
+i.i_imperial,
+i.i_ronin,
+i.i_crab,
+i.i_crane,
+i.i_dragon,
+i.i_lion,
+i.i_mantis,
+i.i_phoenix,
+i.i_scorpion,
+i.i_tortoise,
+i.i_unicorn,
+i.i_bushi,
+i.i_courtier,
+i.i_shugenja,
+i.i_ring,
+i.i_skill {
+    font-family: $font-logoType;
+    line-height: 1rem;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: normal;
+    vertical-align: middle;
+    text-shadow: 0 0 0 $l5r5e-black;
+}
+
+// -- Dices
+// Strife
+i.i_strife:before {
+    content: "\E91E";
+    color: $red-dice;
+}
+// Success
+i.i_success:before {
+    content: "\E91F";
+    color: $red-dice;
+}
+// Explosive
+i.i_explosive:before {
+    content: "\E920";
+    color: $red-dice;
+}
+// Opportunity
+i.i_opportunity:before {
+    content: "\E91D";
+    color: $red-dice;
+}
+
+// -- Rings
+// Earth
+i.i_earth:before {
+    content: "\E90E";
+    color: $l5r5e-earth;
+}
+// Air
+i.i_air:before {
+    content: "\E90D";
+    color: $l5r5e-air;
+}
+// Water
+i.i_water:before {
+    content: "\E90C";
+    color: $l5r5e-water;
+}
+// Fire
+i.i_fire:before {
+    content: "\E90A";
+    color: $l5r5e-fire;
+}
+// Void
+i.i_void:before {
+    content: "\E90B";
+    color: $l5r5e-void;
+}
+
+// -- Techs
+// Invocations
+i.i_invocations:before {
+    content: "\E906";
+    color: $l5r5e-invocations;
+}
+// Kata
+i.i_kata:before {
+    content: "\E907";
+    color: $l5r5e-kata;
+}
+// Kiho
+i.i_kiho:before {
+    content: "\E900";
+    color: $l5r5e-kiho;
+}
+// Maho
+i.i_maho:before {
+    content: "\E901";
+    color: $l5r5e-maho;
+}
+// Ninjitsu
+i.i_ninjitsu:before {
+    content: "\E902";
+    color: $l5r5e-ninjitsu;
+}
+// Prerequisite
+i.i_prerequisite_exemption:before {
+    content: "\E903";
+    color: $l5r5e-prerequisite;
+}
+// Rituals
+i.i_rituals:before {
+    content: "\E904";
+    color: $l5r5e-rituals;
+}
+// Shuji
+i.i_shuji:before {
+    content: "\E905";
+    color: $l5r5e-shuji;
+}
+// Inversion
+i.i_inversion:before {
+    content: "\E908";
+    color: $l5r5e-inversion;
+}
+// Mantra
+i.i_mantra:before {
+    content: "\E909";
+    color: $l5r5e-mantra;
+}
+
+// -- Clans
+// Crab
+i.i_crab:before {
+    content: "\E916";
+    color: $l5r5e-crab;
+}
+// Crane
+i.i_crane:before {
+    content: "\E917";
+    color: $l5r5e-crane;
+}
+// Dragon
+i.i_dragon:before {
+    content: "\E918";
+    color: $l5r5e-dragon;
+}
+// Lion
+i.i_lion:before {
+    content: "\E910";
+    color: $l5r5e-lion;
+}
+// Mantis
+i.i_mantis:before {
+    content: "\E911";
+    color: $l5r5e-mantis;
+}
+// Phoenix
+i.i_phoenix:before {
+    content: "\E912";
+    color: $l5r5e-phoenix;
+}
+// Scorpion
+i.i_scorpion:before {
+    content: "\E913";
+    color: $l5r5e-scorpion;
+}
+// Tortoise
+i.i_tortoise:before {
+    content: "\E914";
+    color: $l5r5e-tortoise;
+}
+// Unicorn
+i.i_unicorn:before {
+    content: "\E915";
+    color: $l5r5e-unicorn;
+}
+// Imperial
+i.i_imperial:before {
+    content: "\E90F";
+    color: $l5r5e-imperial;
+}
+// Ronin
+i.i_ronin:before {
+    content: "\E919";
+    color: $l5r5e-ronin;
+}
+
+// -- Titles
+// Bushi
+i.i_bushi:before {
+    content: "\E91A";
+    color: $l5r5e-bushi;
+}
+// Courtier
+i.i_courtier:before {
+    content: "\E91B";
+    color: $l5r5e-courtier;
+}
+// Shugenja
+i.i_shugenja:before {
+    content: "\E91C";
+    color: $l5r5e-shugenja;
+}
+
+// Ring
+i.i_ring {
+    content: "";
+    background: transparent url("../assets/dices/default/ring_blank.svg") no-repeat 0 center;
+    background-size: 1rem;
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+}
+// Skill
+i.i_skill {
+    content: "";
+    background: transparent url("../assets/dices/default/skill_blank.svg") no-repeat 0 0;
+    background-size: 1rem;
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+}
+
+// Compendium
+.compendium {
+    .item {
+        i {
+            font-family: $font-primary;
+            &:before {
+                font-family: $font-logoType;
+            }
+        }
+    }
+}

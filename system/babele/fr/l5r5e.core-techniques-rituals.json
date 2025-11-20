@@ -1,0 +1,345 @@
+{
+    "label": "Techniques Rituels",
+    "mapping": {
+        "description": "system.description",
+        "source_reference": "system.source_reference"
+    },
+    "entries": [
+        {
+            "id": "Tea Ceremony",
+            "name": "Cérémonie du thé",
+            "description": "",
+            "source_reference": {
+                "page": "212"
+            }
+        },
+        {
+            "id": "Commune with the Spirits",
+            "name": "Communier avec les esprits",
+            "description": "",
+            "source_reference": {
+                "page": "212"
+            }
+        },
+        {
+            "id": "Divination",
+            "name": "Divination",
+            "description": "",
+            "source_reference": {
+                "page": "213"
+            }
+        },
+        {
+            "id": "Cleansing Rite",
+            "name": "Rite de purification",
+            "description": "",
+            "source_reference": {
+                "page": "213"
+            }
+        },
+        {
+            "id": "Threshold Barrier",
+            "name": "Seuil infranchissable",
+            "description": "",
+            "source_reference": {
+                "page": "213"
+            }
+        },
+        {
+            "id": "Blessed Union",
+            "name": "Union bénite",
+            "description": "",
+            "source_reference": {
+                "page": "111"
+            }
+        },
+        {
+            "id": "Blessing of the Dance",
+            "name": "Bienfaits de la danse",
+            "description": "",
+            "source_reference": {
+                "page": "110"
+            }
+        },
+        {
+            "id": "Prayer of Protection",
+            "name": "Prière protectrice",
+            "description": "",
+            "source_reference": {
+                "page": "110"
+            }
+        },
+        {
+            "id": "Rite of the Wheel",
+            "name": "Rite de la roue",
+            "description": "",
+            "source_reference": {
+                "page": "110"
+            }
+        },
+        {
+            "id": "Whispers to the Moon (Moon Cultist)",
+            "name": "Murmures à la Lune (adepte de Sire Lune)",
+            "description": "",
+            "source_reference": {
+                "page": "110"
+            }
+        },
+        {
+            "id": "Formal Tea Ceremony",
+            "name": "Cérémonie du thé protocolaire",
+            "description": "",
+            "source_reference": {
+                "page": "116"
+            }
+        },
+        {
+            "id": "Treaty Signing",
+            "name": "Signature de traité",
+            "description": "",
+            "source_reference": {
+                "page": "117"
+            }
+        },
+        {
+            "id": "The Ties that Bind",
+            "name": "Les liens qui nous unissent",
+            "description": "",
+            "source_reference": {
+                "page": "116"
+            }
+        },
+        {
+            "id": "Balancing Salve (Qamarist Region)",
+            "name": "Baume d’équilibre (Califat Qamariste)",
+            "description": "",
+            "source_reference": {
+                "page": "96"
+            }
+        },
+        {
+            "id": "Elixir of Recovery (Qamarist Region)",
+            "name": "Elixir de guérison (Califat Qamariste)",
+            "description": "",
+            "source_reference": {
+                "page": "96"
+            }
+        },
+        {
+            "id": "Fortitude Draught (Qamarist Region)",
+            "name": "Décoction de résistance (Califat Qamariste)",
+            "description": "",
+            "source_reference": {
+                "page": "96"
+            }
+        },
+        {
+            "id": "Restorative Transmutation (Qamarist Region)",
+            "name": "Transmutation reconstituante (Califat qamariste)",
+            "description": "",
+            "source_reference": {
+                "page": "97"
+            }
+        },
+        {
+            "id": "Cleansing of Coral and Gold (Ivory Kingdoms Region)",
+            "name": "Purification par le corail et l’or (Royaumes d’Ivoire)",
+            "description": "",
+            "source_reference": {
+                "page": "97"
+            }
+        },
+        {
+            "id": "Wayfarer's Path",
+            "name": "La route du voyageur",
+            "description": "",
+            "source_reference": {
+                "page": "97"
+            }
+        },
+        {
+            "id": "Blessing of Steel (Artisan)",
+            "name": "Bénédiction d’acier (Artisan)",
+            "description": "",
+            "source_reference": {
+                "page": "114"
+            }
+        },
+        {
+            "id": "Craft Shikigami (Shugenja)",
+            "name": "Fabrication des shikigami (Shugenja)",
+            "description": "",
+            "source_reference": {
+                "page": "114"
+            }
+        },
+        {
+            "id": "Blessing of Fertile Fields",
+            "name": "Bénédiction des champs fertiles",
+            "description": "",
+            "source_reference": {
+                "page": "110"
+            }
+        },
+        {
+            "id": "Beseech Akodo's Judgment",
+            "name": "Implorer le jugement d’Akodo",
+            "description": "",
+            "source_reference": {
+                "page": "97"
+            }
+        },
+        {
+            "id": "Beseech Bayushi's Absolution",
+            "name": "Implorer l’absolution de Bayushi",
+            "description": "",
+            "source_reference": {
+                "page": "97"
+            }
+        },
+        {
+            "id": "Beseech Doji's Wisdom",
+            "name": "Implorer la sagesse de Doji",
+            "description": "",
+            "source_reference": {
+                "page": "96"
+            }
+        },
+        {
+            "id": "Beseech Hida's Might",
+            "name": "Implorer la puissance de Hida",
+            "description": "",
+            "source_reference": {
+                "page": "96"
+            }
+        },
+        {
+            "id": "Beseech Shiba's Calm",
+            "name": "Implorer le calme de Shiba",
+            "description": "",
+            "source_reference": {
+                "page": "97"
+            }
+        },
+        {
+            "id": "Beseech Shinjo's Empathy",
+            "name": "Implorer l’empathie de Shinjo",
+            "description": "",
+            "source_reference": {
+                "page": "98"
+            }
+        },
+        {
+            "id": "Beseech Togashi's Vision",
+            "name": "Implorer la vision de Togashi",
+            "description": "",
+            "source_reference": {
+                "page": "97"
+            }
+        },
+        {
+            "id": "Imbue Thunder",
+            "name": "Imprégner de tonnerre",
+            "description": "",
+            "source_reference": {
+                "page": "98"
+            }
+        },
+        {
+            "id": "Chikushō-dō’s Guile",
+            "name": "Duplicité du Chikushō-dō",
+            "description": "",
+            "source_reference": {
+                "page": "118"
+            }
+        },
+        {
+            "id": "Guard Against the Elements",
+            "name": "Protection contre les éléments",
+            "description": "",
+            "source_reference": {
+                "page": "119"
+            }
+        },
+        {
+            "id": "Cunning Snares",
+            "name": "Pièges astucieux",
+            "description": "",
+            "source_reference": {
+                "page": "119"
+            }
+        },
+        {
+            "id": "Hunter’s Expertise",
+            "name": "Expertise du chasseur",
+            "description": "",
+            "source_reference": {
+                "page": "119"
+            }
+        },
+        {
+            "id": "Trance of Lives Past",
+            "name": "Transe des vies antérieures",
+            "description": "",
+            "source_reference": {
+                "page": "120"
+            }
+        },
+        {
+            "id": "Center the World",
+            "name": "Center the World (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Cultural Exchange",
+            "name": "Cultural Exchange (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Protection of the Flock",
+            "name": "Protection of the Flock (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Shadow of Days",
+            "name": "Shadow of Days (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Spiritual Survey",
+            "name": "Spiritual Survey (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Traveler's Experience",
+            "name": "Traveler's Experience (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Wayfinder's Instincts",
+            "name": "Wayfinder's Instincts (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        }
+    ]
+}

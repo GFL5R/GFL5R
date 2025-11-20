@@ -1,0 +1,55 @@
+<section class="tab standard-form scrollable {{tabs.army.cssClass}}"
+         data-tab="army" data-group="{{tabs.army.group}}">
+         <table>
+            <thead>
+                <th class="img"></th>
+                <th class="name">{{localize 'l5r5e.sheets.name'}}</th>
+                <th class="warlord">{{localize 'l5r5e.army.warlord'}}</th>
+                <th class="casualties"><i class="fas fa-user-injured" title="{{localize 'l5r5e.army.battle_readiness.casualties'}}"></i> / <i class="fas fa-fist-raised" title="{{localize 'l5r5e.army.battle_readiness.strength'}}"></i></th>
+                <th class="panic"><i class="fas fa-ghost" title="{{localize 'l5r5e.army.battle_readiness.panic'}}"></i> / <i class="fas fa-user-friends" title="{{localize 'l5r5e.army.battle_readiness.discipline'}}"></i></th>
+                <th class="commander">{{localize 'l5r5e.army.commander'}} {{localize 'l5r5e.gm.monitor.honor_glory_status'}}</th>
+                <th class=""></th>
+                <th class=""></th>
+            </thead>
+            <tbody>
+            {{#each armies as |army|}}
+            <tr>
+                <td><img data-actor-uuid="{{army.uuid}}" draggable="true" class="profile actor-profile dragndrop-actor-uuid pointer" title="{{army.name}}" src="{{army.img}}"></td>
+                <td><a data-uuid="{{army.uuid}}" class="open-sheet-from-uuid">{{army.name}}</a></td>
+                <td>
+                    {{#if army.system.warlord_actor_id}}
+                        <a data-actor-id="{{army.system.warlord_actor_id}}" class="open-sheet-from-uuid">{{army.system.warlord}}</a>
+                    {{else}}
+                        {{army.system.warlord}}
+                    {{/if}}
+                </td>
+                <td>
+                    <a title="{{localize 'l5r5e.gm.monitor.mouse_control'}}" data-actor-uuid="{{army.uuid}}" data-action="modify_casualties" class="actor-modify-control">
+                        <span class="{{#ifCond army.system.battle_readiness.casualties_strength.value '>' army.system.battle_readiness.casualties_strength.max}}badvalue{{/ifCond}}">{{army.system.battle_readiness.casualties_strength.value}}</span>
+                         / {{army.system.battle_readiness.casualties_strength.max}}
+                     </a>
+                 </td>
+                <td>
+                    <a title="{{localize 'l5r5e.gm.monitor.mouse_control'}}" data-actor-uuid="{{army.uuid}}" data-action="modify_panic" class="actor-modify-control">
+                        <span class="{{#ifCond army.system.battle_readiness.panic_discipline.value '>' army.system.battle_readiness.panic_discipline.max}}badvalue{{/ifCond}}">{{army.system.battle_readiness.panic_discipline.value}}</span>
+                        / {{army.system.battle_readiness.panic_discipline.max}}
+                    </a>
+                </td>
+                <td>
+                    {{#if army.system.commander_actor_id}}
+                        <a data-actor-id="{{army.system.commander_actor_id}}" class="open-sheet-from-uuid">{{army.system.commander}}</a>
+                    {{else}}
+                        {{army.system.commander}}
+                    {{/if}}
+                    <br>
+                    <span class="{{#ifCond army.system.commander_standing.honor '>' 64}}goodvalue{{/ifCond}}{{#ifCond army.system.commander_standing.honor '<' 30}}badvalue{{/ifCond}}">{{army.system.commander_standing.honor}}</span>
+                    / <span class="{{#ifCond army.system.commander_standing.glory '>' 64}}goodvalue{{/ifCond}}{{#ifCond army.system.commander_standing.glory '<' 20}}badvalue{{/ifCond}}">{{army.system.commander_standing.glory}}</span>
+                    / {{army.system.commander_standing.status}}
+                </td>
+                <td><i data-actor-uuid="{{army.uuid}}" data-type="global" class="fas fa-question-circle actor-infos-control"></i></td>
+                <td><span data-actor-uuid="{{army.uuid}}" data-action="remove_actor" class="actor-remove-control pointer" title="{{localize 'Delete'}}"><i class="fas fa-trash"></i></span></td>
+            </tr>
+            {{/each}}
+            </tbody>
+        </table>
+</section>

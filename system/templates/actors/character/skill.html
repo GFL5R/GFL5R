@@ -1,0 +1,16 @@
+<li class="skill skill-wrapper">
+    <label class="skill-content">
+        <span class="dice-picker attribute-label rollable" data-skill="{{skillId}}">{{localizeSkill categoryId skillId}}</span>
+        <input
+            class="centered-input select-on-focus"
+            type="number"
+            name="system.skills.{{categoryId}}.{{skillId}}"
+            value="{{skill}}"
+            data-dtype="Number"
+            min="0"
+            max="9"
+            placeholder="0"
+            {{^if data.editable_not_soft_locked}}disabled{{/if}}
+        />
+    </label>
+</li>

@@ -1,0 +1,137 @@
+{
+    "label": "Techniques Mahõ",
+    "mapping": {
+        "description": "system.description",
+        "source_reference": "system.source_reference"
+    },
+    "entries": [
+        {
+            "id": "Incite Haunting",
+            "name": "Emprise maléfique",
+            "description": "",
+            "source_reference": {
+                "page": "224"
+            }
+        },
+        {
+            "id": "Grip of Anguish",
+            "name": "Etreinte de l’angoisse",
+            "description": "",
+            "source_reference": {
+                "page": "224"
+            }
+        },
+        {
+            "id": "Unholy Fervor",
+            "name": "Ferveur impie",
+            "description": "",
+            "source_reference": {
+                "page": "225"
+            }
+        },
+        {
+            "id": "Mark of Desecration",
+            "name": "Marque de profanation",
+            "description": "",
+            "source_reference": {
+                "page": "225"
+            }
+        },
+        {
+            "id": "Sinful Whispers",
+            "name": "Murmures déviants",
+            "description": "",
+            "source_reference": {
+                "page": "225"
+            }
+        },
+        {
+            "id": "Accursed Summoning",
+            "name": "Conjuration maudite",
+            "description": "",
+            "source_reference": {
+                "page": "118"
+            }
+        },
+        {
+            "id": "Bind the Undead",
+            "name": "Lier les non-morts",
+            "description": "",
+            "source_reference": {
+                "page": "119"
+            }
+        },
+        {
+            "id": "Commune with Evil",
+            "name": "Communier avec le mal",
+            "description": "",
+            "source_reference": {
+                "page": "118"
+            }
+        },
+        {
+            "id": "Dark Reflection",
+            "name": "Sombre reflet",
+            "description": "",
+            "source_reference": {
+                "page": "121"
+            }
+        },
+        {
+            "id": "Entreat the Shadow Steed",
+            "name": "Implorer le destrier d’ombres",
+            "description": "",
+            "source_reference": {
+                "page": "119"
+            }
+        },
+        {
+            "id": "Fiend's Retreat",
+            "name": "La retraite du démon",
+            "description": "",
+            "source_reference": {
+                "page": "119"
+            }
+        },
+        {
+            "id": "Shape the Flesh",
+            "name": "Modeler la chair",
+            "description": "",
+            "source_reference": {
+                "page": "120"
+            }
+        },
+        {
+            "id": "Spiritual Shackles",
+            "name": "Chaînes spirituelles",
+            "description": "",
+            "source_reference": {
+                "page": "118"
+            }
+        },
+        {
+            "id": "Spread Corruption",
+            "name": "Répandre la corruption",
+            "description": "",
+            "source_reference": {
+                "page": "120"
+            }
+        },
+        {
+            "id": "Sword of Blood",
+            "name": "Sabre de sang",
+            "description": "",
+            "source_reference": {
+                "page": "121"
+            }
+        },
+        {
+            "id": "Twisted Summons",
+            "name": "Convocation de la difformité",
+            "description": "",
+            "source_reference": {
+                "page": "119"
+            }
+        }
+    ]
+}

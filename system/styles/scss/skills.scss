@@ -1,0 +1,80 @@
+/** Sheets **/
+&.sheet {
+    article {
+        .skills-wrapper,
+        .techniques-wrapper {
+            flex: 50%;
+            > li {
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 0.85rem;
+                margin: 0 0 1rem;
+                border: 1px solid $l5r5e-title;
+                --notchSize: 0.75rem;
+                clip-path: polygon(
+                    0% var(--notchSize),
+                    var(--notchSize) 0%,
+                    100% 0,
+                    100% 0,
+                    100% 100%,
+                    100% 100%,
+                    0 100%,
+                    0 100%
+                );
+                h4 {
+                    flex: 100%;
+                    margin: 0;
+                    padding: 0.5rem 0.5rem 0;
+                    text-align: center;
+                    background: $l5r5e-title;
+                    color: $l5r5e-label;
+                    --notchSize: 0.5rem;
+                    clip-path: polygon(
+                        0% var(--notchSize),
+                        var(--notchSize) 0%,
+                        calc(100%) 0%,
+                        100% var(--notchSize),
+                        100% calc(100% - var(--notchSize)),
+                        calc(100% - var(--notchSize)) 100%,
+                        var(--notchSize) 100%,
+                        0% calc(100%)
+                    );
+                }
+                ul {
+                    flex: 50%;
+                    padding: 0.25rem 0.5rem 0.25rem 0;
+                    li {
+                        text-align: left;
+                        line-height: 2rem;
+                        margin: 0.25rem 0;
+                        &.skill {
+                            text-align: right;
+                            span {
+                                color: $l5r5e-black;
+                                &[data-skill="melee"],
+                                &[data-skill="ranged"],
+                                &[data-skill="unarmed"] {
+                                    float: left;
+                                    line-height: 1rem;
+                                    width: calc(100% - 2rem);
+                                }
+                            }
+                        }
+                    }
+                    &.skill-category-ring-actions {
+                        padding: 0.25rem 0 0.25rem 0.5rem;
+                        border-left: 1px solid $l5r5e-title;
+                    }
+                }
+                input {
+                    width: 1.75rem;
+                    height: 1.75rem;
+                    text-align: center;
+                }
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

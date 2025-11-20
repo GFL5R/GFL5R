@@ -1,0 +1,19 @@
+<li class="item armor flexcol" data-item-id="{{armor.id}}">
+    <ul class="item-header item-control">
+        <li class="item-img"><img src="{{armor.img}}" title="{{armor.name}}" width="32px" height="32px"/></li>
+        <li class="item-name l5r5e-tooltip" data-item-id="{{armor.id}}">{{armor.name}}</li>
+        <li class="icon-stat-container">
+            <i class="fas fa-tint" title="{{localize 'l5r5e.armors.type'}} {{localize 'l5r5e.armors.physical'}}"> {{armor.system.armor.physical}}</i>
+            <i class="fas fa-bolt" title="{{localize 'l5r5e.armors.type'}} {{localize 'l5r5e.armors.supernatural'}}"> {{armor.system.armor.supernatural}}</i>
+        </li>
+        {{#if editable}}
+        <li data-item-id="{{armor.id}}" class="item-edit" title="{{localize 'l5r5e.global.edit'}}"><i class="fas fa-edit"></i></li>
+        <li data-item-id="{{armor.id}}" class="item-delete" title="{{localize 'Delete'}}"><i class="fas fa-trash"></i></li>
+        {{/if}}
+    </ul>
+    <ul class="item-properties">
+        {{#each armor.system.properties as |property id|}}
+            <li class="l5r5e-tooltip" data-property-id="{{property.id}}">{{{property.name}}}</li>
+        {{/each}}
+    </ul>
+</li>

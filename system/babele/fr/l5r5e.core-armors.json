@@ -1,0 +1,185 @@
+{
+    "label": "Armures",
+    "mapping": {
+        "description": "system.description",
+        "source_reference": "system.source_reference"
+    },
+    "entries": [
+        {
+            "id": "Ashigaru Armor",
+            "name": "Armure d'Ashigaru",
+            "description": "",
+            "source_reference": {
+                "page": "239"
+            }
+        },
+        {
+            "id": "Plated Armor",
+            "name": "Armure de plates",
+            "description": "",
+            "source_reference": {
+                "page": "239"
+            }
+        },
+        {
+            "id": "Concealed Armor",
+            "name": "Armure dissimulée",
+            "description": "",
+            "source_reference": {
+                "page": "239"
+            }
+        },
+        {
+            "id": "Lacquered Armor",
+            "name": "Armure laquée",
+            "description": "",
+            "source_reference": {
+                "page": "239"
+            }
+        },
+        {
+            "id": "Ceremonial Clothes",
+            "name": "Tenue de cérémonie",
+            "description": "",
+            "source_reference": {
+                "page": "239"
+            }
+        },
+        {
+            "id": "Traveling Clothes",
+            "name": "Vêtements de voyage",
+            "description": "",
+            "source_reference": {
+                "page": "239"
+            }
+        },
+        {
+            "id": "Sanctified Robes",
+            "name": "Tunique sanctifiée",
+            "description": "",
+            "source_reference": {
+                "page": "239"
+            }
+        },
+        {
+            "id": "Sleeping Garb",
+            "name": "Vêtements de nuit",
+            "description": "",
+            "source_reference": {
+                "page": "239"
+            }
+        },
+        {
+            "id": "Common Clothes",
+            "name": "Vêtements ordinaires",
+            "description": "",
+            "source_reference": {
+                "page": "239"
+            }
+        },
+        {
+            "id": "Inconspicuous garb",
+            "name": "Tenue discrète",
+            "description": "",
+            "source_reference": {
+                "page": "83"
+            }
+        },
+        {
+            "id": "Robes of Judgment",
+            "name": "La tunique du jugement",
+            "description": "",
+            "source_reference": {
+                "page": "97"
+            }
+        },
+        {
+            "id": "Firefighter's Coat",
+            "name": "Manteau de pompier",
+            "description": "",
+            "source_reference": {
+                "page": "112"
+            }
+        },
+        {
+            "id": "Stealth Clothing",
+            "name": "Tenue de camouflage",
+            "description": "",
+            "source_reference": {
+                "page": "112"
+            }
+        },
+        {
+            "id": "O-yoroi",
+            "name": "O-yoroi",
+            "description": "",
+            "source_reference": {
+                "page": "105"
+            }
+        },
+        {
+            "id": "Tatami Gusoku",
+            "name": "Tatami Gusoku",
+            "description": "",
+            "source_reference": {
+                "page": "106"
+            }
+        },
+        {
+            "id": "Tosei-Gusoku",
+            "name": "Tosei-Gusoku",
+            "description": "",
+            "source_reference": {
+                "page": "106"
+            }
+        },
+        {
+            "id": "Sailor's garb",
+            "name": "Vêtements de marin",
+            "description": "",
+            "source_reference": {
+                "page": "9"
+            }
+        },
+        {
+            "id": "Shark leather armor",
+            "name": "Armure en peau de requin",
+            "description": "",
+            "source_reference": {
+                "page": "9"
+            }
+        },
+        {
+            "id": "The Golden Obi of the Sun Goddess [Blessed Treasure]",
+            "name": "L’obi doré de la Déesse Soleil [Trésor Béni]",
+            "description": "",
+            "source_reference": {
+                "page": "97"
+            }
+        },
+        {
+            "id": "Mirror Armor",
+            "name": "Mirror Armor (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Unicorn Barding",
+            "name": "Unicorn Barding (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        },
+        {
+            "id": "Yuki: The Ancestral Armor of the Unicorn Clan [Blessed Treasure]",
+            "name": "Yuki: The Ancestral Armor of the Unicorn Clan [Blessed Treasure] (WIP)",
+            "description": "",
+            "source_reference": {
+                "page": ""
+            }
+        }
+    ]
+}

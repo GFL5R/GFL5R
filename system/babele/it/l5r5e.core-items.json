@@ -1,0 +1,651 @@
+{
+    "label": "Effetti Personali (WIP)",
+    "mapping": {
+        "description": "system.description",
+        "book_reference": "system.book_reference"
+    },
+    "entries": [
+        {
+            "id": "Tattoo Needles",
+            "name": "Aghi per Tatuaggi",
+            "description": "",
+            "book_reference": "Manuale Base p.242"
+        },
+        {
+            "id": "Finger of Jade",
+            "name": "Dito di Giada",
+            "description": "",
+            "book_reference": "Manuale Base p.242"
+        },
+        {
+            "id": "Chopsticks",
+            "name": "Bacchette",
+            "description": "",
+            "book_reference": "Manuale Base p.242"
+        },
+        {
+            "id": "Quiver of Arrow",
+            "name": "Faretra di Frecce",
+            "description": "",
+            "book_reference": "Manuale Base p.242"
+        },
+        {
+            "id": "Rope (By the Foot)",
+            "name": "Corda (in metri)",
+            "description": "",
+            "book_reference": "Manuale Base p.242"
+        },
+        {
+            "id": "Sake Cup",
+            "name": "Coppa di Saké",
+            "description": "",
+            "book_reference": "Manuale Base p.242"
+        },
+        {
+            "id": "Lucky Cricket",
+            "name": "Grillo Portafortuna",
+            "description": "",
+            "book_reference": "Manuale Base p.243"
+        },
+        {
+            "id": "Bottle of Sake",
+            "name": "Bottiglia di Saké",
+            "description": "",
+            "book_reference": "Manuale Base p.242"
+        },
+        {
+            "id": "Dice and Cup",
+            "name": "Dadi e Tazza",
+            "description": "",
+            "book_reference": "Manuale Base p.242"
+        },
+        {
+            "id": "Sweets (Four Servings)",
+            "name": "Dolci (4 porzioni)",
+            "description": "",
+            "book_reference": "Manuale Base p.242"
+        },
+        {
+            "id": "Spices",
+            "name": "Spezie",
+            "description": "",
+            "book_reference": "Manuale Base p.244"
+        },
+        {
+            "id": "Musical Instrument",
+            "name": "Strumento Musicale",
+            "description": "",
+            "book_reference": "Manuale Base p.245"
+        },
+        {
+            "id": "Games",
+            "name": "Giochi",
+            "description": "",
+            "book_reference": "Manuale Base p.243"
+        },
+        {
+            "id": "Kubi Bukuro",
+            "name": "Kubi Bukuro",
+            "description": "",
+            "book_reference": "Manuale Base p.243"
+        },
+        {
+            "id": "Pillow Book",
+            "name": "Note del Guanciale",
+            "description": "",
+            "book_reference": "Manuale Base p.243"
+        },
+        {
+            "id": "Bowyer’s Kit",
+            "name": "Attrezzi da Arco",
+            "description": "",
+            "book_reference": "Manuale Base p.242"
+        },
+        {
+            "id": "Calligraphy Set",
+            "name": "Attrezzi da Calligrafo",
+            "description": "",
+            "book_reference": "Manuale Base p.242"
+        },
+        {
+            "id": "Divination Kit",
+            "name": "Attrezzi da Divinazione",
+            "description": "",
+            "book_reference": "Manuale Base p.242"
+        },
+        {
+            "id": "Medicine Kit",
+            "name": "Borsa dei Medicinali",
+            "description": "",
+            "book_reference": "Manuale Base p.242"
+        },
+        {
+            "id": "Omamori",
+            "name": "Omamori",
+            "description": "",
+            "book_reference": "Manuale Base p.243"
+        },
+        {
+            "id": "Umbrella",
+            "name": "Ombrello",
+            "description": "",
+            "book_reference": "Manuale Base p.244"
+        },
+        {
+            "id": "Whetstone",
+            "name": "Cote",
+            "description": "",
+            "book_reference": "Manuale Base p.242"
+        },
+        {
+            "id": "Poison (One Vial)",
+            "name": "Veleno (una fiala)",
+            "description": "",
+            "book_reference": "Manuale Base p.245"
+        },
+        {
+            "id": "Daishō Stand",
+            "name": "Supporto per Daishō",
+            "description": "",
+            "book_reference": "Manuale Base p.245"
+        },
+        {
+            "id": "Traveling Rations",
+            "name": "Razioni da Viaggio",
+            "description": "",
+            "book_reference": "Manuale Base p.244"
+        },
+        {
+            "id": "Personal Seal or Chop",
+            "name": "Sigillo e Timbro Personale",
+            "description": "",
+            "book_reference": "Manuale Base p.244"
+        },
+        {
+            "id": "Tea Set (Portable)",
+            "name": "Servizio da Tè (portatile)",
+            "description": "",
+            "book_reference": "Manuale Base p.244"
+        },
+        {
+            "id": "Tent (Chomchong)",
+            "name": "Tenda (Chomchong)",
+            "description": "",
+            "book_reference": "Manuale Base p.245"
+        },
+        {
+            "id": "Tent (Small)",
+            "name": "Tenda (Piccola)",
+            "description": "",
+            "book_reference": "Manuale Base p.245"
+        },
+        {
+            "id": "Tent (Yurt)",
+            "name": "Tenda (Yurt)",
+            "description": "",
+            "book_reference": "Manuale Base p.245"
+        },
+        {
+            "id": "Scroll satchel",
+            "name": "Custodia per Pergamene",
+            "description": "",
+            "book_reference": "Manuale Base"
+        },
+        {
+            "id": "Traveling pack",
+            "name": "Sacca da Viaggio",
+            "description": "",
+            "book_reference": "Manuale Base p.244"
+        },
+        {
+            "id": "Journal of observations",
+            "name": "Diario",
+            "description": "",
+            "book_reference": "Manuale Base"
+        },
+        {
+            "id": "Omamori (Boon of Jurojin)",
+            "name": "Omamori (Boon of Jurojin)",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Omamori (Boon of Kisshoten)",
+            "name": "Omamori (Boon of Kisshoten)",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Omamori (Boon of Hotei)",
+            "name": "Omamori (Boon of Hotei)",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Makeup Kit",
+            "name": "Makeup Kit",
+            "description": "",
+            "book_reference": "Corti di Pietra p.105"
+        },
+        {
+            "id": "Ceremonial Tea Set",
+            "name": "Ceremonial Tea Set",
+            "description": "",
+            "book_reference": "Corti di Pietra p.106"
+        },
+        {
+            "id": "Folding Fan",
+            "name": "Folding Fan",
+            "description": "",
+            "book_reference": "Corti di Pietra p.105"
+        },
+        {
+            "id": "Mono Imi Fuda (Taboo Plaque)",
+            "name": "Mono Imi Fuda (Taboo Plaque)",
+            "description": "",
+            "book_reference": "Corti di Pietra p.105"
+        },
+        {
+            "id": "Mari (Ball)",
+            "name": "Mari (Ball)",
+            "description": "",
+            "book_reference": "Corti di Pietra p.105"
+        },
+        {
+            "id": "Amigasa",
+            "name": "Amigasa",
+            "description": "",
+            "book_reference": "Corti di Pietra p.106"
+        },
+        {
+            "id": "Norimono (Planquin)",
+            "name": "Norimono (Planquin)",
+            "description": "",
+            "book_reference": "Corti di Pietra p.106"
+        },
+        {
+            "id": "Performer's Boat",
+            "name": "Performer's Boat",
+            "description": "",
+            "book_reference": "Corti di Pietra p.106"
+        },
+        {
+            "id": "Makibishi",
+            "name": "Makibishi",
+            "description": "",
+            "book_reference": "Corti di Pietra p.107"
+        },
+        {
+            "id": "Metsubushi",
+            "name": "Metsubushi",
+            "description": "",
+            "book_reference": "Corti di Pietra p.107"
+        },
+        {
+            "id": "Invisible Ink",
+            "name": "Invisible Ink",
+            "description": "",
+            "book_reference": "Corti di Pietra p.107"
+        },
+        {
+            "id": "Disguise Kit",
+            "name": "Disguise Kit",
+            "description": "",
+            "book_reference": "Corti di Pietra p.108"
+        },
+        {
+            "id": "Demon Mask",
+            "name": "Demon Mask",
+            "description": "",
+            "book_reference": "Corti di Pietra p.107"
+        },
+        {
+            "id": "Bamboo Cane",
+            "name": "Bamboo Cane",
+            "description": "",
+            "book_reference": "Corti di Pietra p.107"
+        },
+        {
+            "id": "Herbal Medicines",
+            "name": "Herbal Medicines",
+            "description": "",
+            "book_reference": "Corti di Pietra p.109"
+        },
+        {
+            "id": "Modified Scabbard",
+            "name": "Modified Scabbard",
+            "description": "",
+            "book_reference": "Corti di Pietra p.107"
+        },
+        {
+            "id": "Portable Boat",
+            "name": "Portable Boat",
+            "description": "",
+            "book_reference": "Corti di Pietra p.108"
+        },
+        {
+            "id": "Rope Ladder",
+            "name": "Rope Ladder",
+            "description": "",
+            "book_reference": "Corti di Pietra p.107"
+        },
+        {
+            "id": "Opening and Closing Tools",
+            "name": "Opening and Closing Tools",
+            "description": "",
+            "book_reference": "Corti di Pietra p.108"
+        },
+        {
+            "id": "Mizugumo (Water Spider)",
+            "name": "Mizugumo (Water Spider)",
+            "description": "",
+            "book_reference": "Corti di Pietra p.108"
+        },
+        {
+            "id": "Sekihitsu",
+            "name": "Sekihitsu",
+            "description": "",
+            "book_reference": "Corti di Pietra p.109"
+        },
+        {
+            "id": "Tenugui",
+            "name": "Tenugui",
+            "description": "",
+            "book_reference": "Corti di Pietra p.109"
+        },
+        {
+            "id": "Uchitake",
+            "name": "Uchitake",
+            "description": "",
+            "book_reference": "Corti di Pietra p.109"
+        },
+        {
+            "id": "Sokutoki",
+            "name": "Sokutoki",
+            "description": "",
+            "book_reference": "Corti di Pietra p.109"
+        },
+        {
+            "id": "Travel Rations",
+            "name": "Travel Rations",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.114"
+        },
+        {
+            "id": "Cooking Kit",
+            "name": "Cooking Kit",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.114"
+        },
+        {
+            "id": "Dice Kit",
+            "name": "Dice Kit",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.114"
+        },
+        {
+            "id": "Alchemy Kit",
+            "name": "Alchemy Kit",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.114"
+        },
+        {
+            "id": "Fishing kit",
+            "name": "Fishing kit",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.115"
+        },
+        {
+            "id": "Tailor's Kit",
+            "name": "Tailor's Kit",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.114"
+        },
+        {
+            "id": "Weaver's Kit",
+            "name": "Weaver's Kit",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.115"
+        },
+        {
+            "id": "Mason's Kit",
+            "name": "Mason's Kit",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.115"
+        },
+        {
+            "id": "Chandu",
+            "name": "Chandu (Opium)",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.115"
+        },
+        {
+            "id": "Thievery Kit",
+            "name": "Thievery Kit",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.116"
+        },
+        {
+            "id": "Poppy Tea",
+            "name": "Poppy Tea",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.116"
+        },
+        {
+            "id": "Shikomizue",
+            "name": "Shikomizue",
+            "description": "",
+            "book_reference": "Sentiero delle Onde p.116"
+        },
+        {
+            "id": "Climbing Kit",
+            "name": "Climbing Kit",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.106"
+        },
+        {
+            "id": "Spyglass",
+            "name": "Spyglass",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.106"
+        },
+        {
+            "id": "Tate",
+            "name": "Tate",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.106"
+        },
+        {
+            "id": "Taketaba",
+            "name": "Taketaba",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.106"
+        },
+        {
+            "id": "Smithy's Kit",
+            "name": "Smithy's Kit",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.106"
+        },
+        {
+            "id": "Sapper's Kit",
+            "name": "Sapper's Kit",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.106"
+        },
+        {
+            "id": "Engineer's Kit",
+            "name": "Engineer's Kit",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.106"
+        },
+        {
+            "id": "Smoke Arrows",
+            "name": "Smoke Arrows",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.106"
+        },
+        {
+            "id": "Astrolabe",
+            "name": "Astrolabio",
+            "description": "",
+            "book_reference": "Il Clan della Mantide p.9"
+        },
+        {
+            "id": "Fishing Rod and Line",
+            "name": "Canna da Pesca e Lenza",
+            "description": "",
+            "book_reference": "Il Clan della Mantide p.9"
+        },
+        {
+            "id": "TaraiBune",
+            "name": "TaraiBune",
+            "description": "",
+            "book_reference": "Il Clan della Mantide p.9"
+        },
+        {
+            "id": "Animal Helm",
+            "name": "Animal Helm",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Blasting Powder (1 charge)",
+            "name": "Blasting Powder (1 charge)",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Battlefield Heirloom",
+            "name": "Battlefield Heirloom",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Battlefield Medical Pack",
+            "name": "Battlefield Medical Pack",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Brilliant Flare",
+            "name": "Brilliant Flare",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Mempō",
+            "name": "Mempō",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Saihai",
+            "name": "Saihai",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Sashimono",
+            "name": "Sashimono",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Smoking Pipe",
+            "name": "Smoking Pipe",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Tetsubishi",
+            "name": "Tetsubishi",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Uma-Jirushi",
+            "name": "Uma-Jirushi",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Banner of Amaterasu [Blessed Treasure]",
+            "name": "Banner of Amaterasu [Blessed Treasure]",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "The Claws of the Kitsu [Blessed Treasure]",
+            "name": "The Claws of the Kitsu [Blessed Treasure]",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "The Five Akodo Daggers [Blessed Treasure]",
+            "name": "The Five Akodo Daggers [Blessed Treasure]",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "Leadership Scrolls [Blessed Treasure]",
+            "name": "Leadership Scrolls [Blessed Treasure]",
+            "description": "",
+            "book_reference": "Fields of Victory"
+        },
+        {
+            "id": "The Anvil of Despair [Concealed Horror]",
+            "name": "The Anvil of Despair [Concealed Horror]",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.111"
+        },
+        {
+            "id": "The Black Pearls of Fu Leng [Concealed Horror]",
+            "name": "The Black Pearls of Fu Leng [Concealed Horror]",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.111"
+        },
+        {
+            "id": "The Henge-Okurimono [Concealed Horror]",
+            "name": "The Henge-Okurimono [Concealed Horror]",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.111"
+        },
+        {
+            "id": "The Porcelain Mask of Fu Leng [Concealed Horror]",
+            "name": "The Porcelain Mask of Fu Leng [Concealed Horror]",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.111"
+        },
+        {
+            "id": "The Jade Cups of Taira [Blessed Treasure]",
+            "name": "The Jade Cups of Taira [Blessed Treasure]",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.112"
+        },
+        {
+            "id": "Jade Petal Tea [Blessed Treasure]",
+            "name": "Jade Petal Tea [Blessed Treasure]",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.113"
+        },
+        {
+            "id": "Kishu: The Oni-Cutting Sword [Blessed Treasure]",
+            "name": "Kishu: The Oni-Cutting Sword [Blessed Treasure]",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.113"
+        },
+        {
+            "id": "Obsidian Ink [Blessed Treasure]",
+            "name": "Obsidian Ink [Blessed Treasure]",
+            "description": "",
+            "book_reference": "Terre dell'Ombra p.113"
+        },
+        {
+            "id": "Arrows",
+            "name": "Frecce",
+            "description": "",
+            "book_reference": "Manuale Base"
+        }
+    ]
+}

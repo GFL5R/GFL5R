@@ -1,0 +1,329 @@
+{
+    "label": "Bénédictions d'instrument divin",
+    "mapping": {
+        "description": "system.description",
+        "source_reference": "system.source_reference"
+    },
+    "entries": [
+        {
+            "id": "Agility of Legend [Armor]",
+            "name": "Agilité légendaire [Armure]",
+            "description": "",
+            "source_reference": {
+                "page": "104"
+            }
+        },
+        {
+            "id": "Animal Transformation [Projectile]",
+            "name": "Transformation animale [Projectiles]",
+            "description": "",
+            "source_reference": {
+                "page": "103"
+            }
+        },
+        {
+            "id": "Aura of Power [General]",
+            "name": "Aura de puissance [Générique]",
+            "description": "",
+            "source_reference": {
+                "page": "101"
+            }
+        },
+        {
+            "id": "Beguile the Senses [General]",
+            "name": "Envoûtement des sens [Générique]",
+            "description": "",
+            "source_reference": {
+                "page": "102"
+            }
+        },
+        {
+            "id": "Binding [Projectile]",
+            "name": "Liens [Projectiles]",
+            "description": "",
+            "source_reference": {
+                "page": "103"
+            }
+        },
+        {
+            "id": "Blessed Revitalization [General]",
+            "name": "Revitalisation bénie [Générique]",
+            "description": "",
+            "source_reference": {
+                "page": "102"
+            }
+        },
+        {
+            "id": "Burst of Force [Armor]",
+            "name": "Explosion de force [Armure]",
+            "description": "",
+            "source_reference": {
+                "page": "104"
+            }
+        },
+        {
+            "id": "Celestial Step [General]",
+            "name": "Enjambée céleste [Générique]",
+            "description": "",
+            "source_reference": {
+                "page": "102"
+            }
+        },
+        {
+            "id": "Cosmic Devastation [General]",
+            "name": "Dévastation cosmique [Générique]",
+            "description": "",
+            "source_reference": {
+                "page": "102"
+            }
+        },
+        {
+            "id": "Deadly Venom [Projectile]",
+            "name": "Venin mortel [Projectiles]",
+            "description": "",
+            "source_reference": {
+                "page": "103"
+            }
+        },
+        {
+            "id": "Defensive [General]",
+            "name": "Défensif [Générique]",
+            "description": "",
+            "source_reference": {
+                "page": "101"
+            }
+        },
+        {
+            "id": "Detonation [Projectile]",
+            "name": "Déflagration [Projectiles]",
+            "description": "",
+            "source_reference": {
+                "page": "103"
+            }
+        },
+        {
+            "id": "Duplication [Projectile]",
+            "name": "Duplication [Projectiles]",
+            "description": "",
+            "source_reference": {
+                "page": "103"
+            }
+        },
+        {
+            "id": "Earthshaker [General]",
+            "name": "Bouleversement terrestre [Générique]",
+            "description": "",
+            "source_reference": {
+                "page": "101"
+            }
+        },
+        {
+            "id": "Flurry [General]",
+            "name": "Déluge [Générique]",
+            "description": "",
+            "source_reference": {
+                "page": "102"
+            }
+        },
+        {
+            "id": "Fortress Breaker [Projectile]",
+            "name": "Briseur de défenses [Projectiles]",
+            "description": "",
+            "source_reference": {
+                "page": "103"
+            }
+        },
+        {
+            "id": "Grand Inspiration [Utility Object]",
+            "name": "Inspiration grandiose [Utilitaire]",
+            "description": "",
+            "source_reference": {
+                "page": "104"
+            }
+        },
+        {
+            "id": "Harm Returned [Armor]",
+            "name": "Oeil pour oeil [Armure]",
+            "description": "",
+            "source_reference": {
+                "page": "104"
+            }
+        },
+        {
+            "id": "Illusions Shattered [Utility Object]",
+            "name": "Fin des illusions [Utilitaire]",
+            "description": "",
+            "source_reference": {
+                "page": "104"
+            }
+        },
+        {
+            "id": "Independence [Melee Weapon]",
+            "name": "Indépendance [Corps à corps]",
+            "description": "",
+            "source_reference": {
+                "page": "104"
+            }
+        },
+        {
+            "id": "Inexorable [Melee Weapon]",
+            "name": "Inexorable [Corps à corps]",
+            "description": "",
+            "source_reference": {
+                "page": "104"
+            }
+        },
+        {
+            "id": "Inviolable [Armor]",
+            "name": "Impénétrable [Armure]",
+            "description": "",
+            "source_reference": {
+                "page": "104"
+            }
+        },
+        {
+            "id": "Mark of Doom [Utility Object]",
+            "name": "Marque fatale [Utilitaire]",
+            "description": "",
+            "source_reference": {
+                "page": "104"
+            }
+        },
+        {
+            "id": "Obliteration [Projectile]",
+            "name": "Anéantissement [Projectiles]",
+            "description": "",
+            "source_reference": {
+                "page": "102"
+            }
+        },
+        {
+            "id": "Overwhelming Force [General]",
+            "name": "Force irrésistible [Générique]",
+            "description": "",
+            "source_reference": {
+                "page": "102"
+            }
+        },
+        {
+            "id": "Overwhelming Radiance [Armor]",
+            "name": "Eclat irrésistible [Armure]",
+            "description": "",
+            "source_reference": {
+                "page": "104"
+            }
+        },
+        {
+            "id": "Resounding Arrival [Melee Weapon]",
+            "name": "Apparition retentissante [Corps à corps]",
+            "description": "",
+            "source_reference": {
+                "page": "103"
+            }
+        },
+        {
+            "id": "Resounding Rhetoric [Utility Object]",
+            "name": "Rhétorique retentissante [Utilitaire]",
+            "description": "",
+            "source_reference": {
+                "page": "105"
+            }
+        },
+        {
+            "id": "Returning [Projectile]",
+            "name": "Retour au lanceur [Projectiles]",
+            "description": "",
+            "source_reference": {
+                "page": "103"
+            }
+        },
+        {
+            "id": "Rising Power [Melee Weapon]",
+            "name": "Accumulation de puissance [Corps à corps]",
+            "description": "",
+            "source_reference": {
+                "page": "103"
+            }
+        },
+        {
+            "id": "Root of Language [Utility Object]",
+            "name": "Racine du langage [Utilitaire]",
+            "description": "",
+            "source_reference": {
+                "page": "105"
+            }
+        },
+        {
+            "id": "Shifting Shape [General]",
+            "name": "Forme changeante [Générique]",
+            "description": "",
+            "source_reference": {
+                "page": "102"
+            }
+        },
+        {
+            "id": "Soothing Words [Utility Object]",
+            "name": "Mots de réconfort [Utilitaire]",
+            "description": "",
+            "source_reference": {
+                "page": "104"
+            }
+        },
+        {
+            "id": "Subterranean Secrets [Utility Object]",
+            "name": "Secrets souterrains [Utilitaire]",
+            "description": "",
+            "source_reference": {
+                "page": "105"
+            }
+        },
+        {
+            "id": "Transfiguration [General]",
+            "name": "Transfiguration [Générique]",
+            "description": "",
+            "source_reference": {
+                "page": "102"
+            }
+        },
+        {
+            "id": "Unassuming [General]",
+            "name": "Sans prétention [Générique]",
+            "description": "",
+            "source_reference": {
+                "page": "102"
+            }
+        },
+        {
+            "id": "Unerring [Projectile]",
+            "name": "Infaillible [Projectiles]",
+            "description": "",
+            "source_reference": {
+                "page": "103"
+            }
+        },
+        {
+            "id": "Unleashed Fury [Melee Weapon]",
+            "name": "Déchaînement de fureur [Corps à corps]",
+            "description": "",
+            "source_reference": {
+                "page": "103"
+            }
+        },
+        {
+            "id": "Unlimited Negation [Utility Object]",
+            "name": "Négation universelle [Utilitaire]",
+            "description": "",
+            "source_reference": {
+                "page": "105"
+            }
+        },
+        {
+            "id": "Vitality [Utility Object]",
+            "name": "Vitalité [Utilitaire]",
+            "description": "",
+            "source_reference": {
+                "page": "105"
+            }
+        }
+    ]
+}

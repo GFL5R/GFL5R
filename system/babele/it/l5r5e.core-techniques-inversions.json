@@ -1,0 +1,105 @@
+{
+    "label": "Techniques Inversions (WIP)",
+    "mapping": {
+        "description": "system.description",
+        "book_reference": "system.book_reference"
+    },
+    "entries": [
+        {
+            "id": "One Within the Void",
+            "name": "One Within the Void",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Sight beyond Existence",
+            "name": "Sight beyond Existence",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Whispered Blade",
+            "name": "Whispered Blade",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Witness the End",
+            "name": "Witness the End",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Distance Distorted",
+            "name": "Distance Distorted",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Ethereal Flicker",
+            "name": "Ethereal Flicker",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "The Lotus Bloom",
+            "name": "The Lotus Bloom",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Hurl from the Stream",
+            "name": "Hurl from the Stream",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Moon on the Shifting Sea",
+            "name": "Moon on the Shifting Sea",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Shroud in Solitude",
+            "name": "Shroud in Solitude",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Reality Stitch",
+            "name": "Reality Stitch",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Shattering Caress",
+            "name": "Shattering Caress",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Three Heartbeats",
+            "name": "Three Heartbeats",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Essence Eternal",
+            "name": "Essence Eternal",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Slip the Cycle",
+            "name": "Slip the Cycle",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        },
+        {
+            "id": "Unweave",
+            "name": "Unweave",
+            "description": "",
+            "book_reference": "Reami Celesti"
+        }
+    ]
+}

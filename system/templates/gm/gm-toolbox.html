@@ -1,0 +1,20 @@
+<form class="l5r5e gm-toolbox" autocomplete="off">
+    <ul class="gm-tools-container">
+        <li class="faded-ui gm_monitor" data-action="open_gm_monitor" title="{{localize 'l5r5e.gm.monitor.title'}}">
+            <i class="fas fa-table"></i>
+        </li>
+        <li class="difficulty_hidden" data-action="toggle_hide_difficulty" title="{{localize 'l5r5e.gm.toolbox.difficulty_hidden'}}">
+            <i class="faded-ui fa fa-eye{{#if difficultyHidden}}-slash{{/if}}"></i>
+            <strong class="faded-ui difficulty" data-action="change_difficulty" title="{{localize 'l5r5e.gm.toolbox.difficulty'}}">{{difficulty}}</strong>
+        </li>
+        <li class="faded-ui gm_actor_updates reset_void" data-action="reset_void" title="{{localize 'l5r5e.gm.toolbox.reset_void'}}">
+            <i class="fas fa-podcast"></i>
+        </li>
+        <li class="faded-ui gm_actor_updates sleep" data-action="sleep" title="{{localize 'l5r5e.gm.toolbox.sleep'}}">
+            <i class="fa fa-bed"></i>
+        </li>
+        <li class="faded-ui gm_actor_updates scene_end" data-action="scene_end" title="{{localize 'l5r5e.gm.toolbox.scene_end'}}">
+            <i class="fas fa-star-half-alt"></i>
+        </li>
+    </ul>
+</form>

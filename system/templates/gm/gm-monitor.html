@@ -1,0 +1,141 @@
+<form class="l5r5e gm-monitor" autocomplete="off">
+{{#ifCond data.view "==" "characters"}}
+    {{!-- Characters & Npcs --}}
+    <table>
+        <thead>
+            <th class="img"></th>
+            <th class="name">{{localize 'l5r5e.sheets.name'}}</th>
+            <th class="stance"><i class="i_earth"></i></th>
+            <th class="prepared"><i class="fas prepared-icon-true"></i></th>
+            <th class="weapon"><i class="fas fa-fan"></i></th>
+            <th class="armor"><i class="fas fa-user-shield"></i></th>
+            <th class="rank">{{localize 'l5r5e.sheets.rank'}}</th>
+            <th class="fatigue">{{localize 'l5r5e.attributes.fatigue'}}</th>
+            <th class="strife">{{localize 'l5r5e.attributes.strife'}}</th>
+            <th class="vigilance">{{localize 'l5r5e.gm.monitor.focus_vigilance'}}</th>
+            <th class="void"><i class="i_void"></i></th>
+            <th class=""></th>
+            <th class=""></th>
+        </thead>
+        <tbody>
+        {{#each data.actors as |actor|}}
+        <tr>
+            <td><img data-actor-uuid="{{actor.uuid}}" draggable="true" class="profile actor-profile dragndrop-actor-uuid pointer" title="{{actor.name}}" src="{{actor.img}}"></td>
+            <td>
+                <a data-uuid="{{actor.uuid}}" class="open-sheet-from-uuid">{{actor.name}}</a>
+                {{#if actor.system.attitude}}<p>({{actor.system.attitude}})</p>{{/if}}
+            </td>
+            <td>
+                <a data-actor-uuid="{{actor.uuid}}" data-type="stance" class="actor-modify-control">
+                    <i data-type="text" data-text="<h2>{{localize 'l5r5e.conflict.stance'}} ({{localizeRing actor.system.stance}} - {{lookup actor.system.rings actor.system.stance}})</h2>{{localizeStanceTip actor.system.stance}}" class="i_{{actor.system.stance}} actor-infos-control"></i>
+                </a>
+            </td>
+            <td>
+                <a data-actor-uuid="{{actor.uuid}}" data-type="prepared" class="actor-modify-control">
+                    <i data-type="text" data-text="<h2>{{localize 'l5r5e.conflict.initiative.title'}} : {{localize (localize 'l5r5e.conflict.initiative.prepared_{value}' value=actor.isPrepared)}}</h2>" class="fa fas prepared-icon-{{actor.isPrepared}} {{#ifCond actor.isPrepared '==' 'false'}}badvalue{{/ifCond}} actor-infos-control"></i>
+                </a>
+            </td>
+            <td>{{#if actor.haveWeaponEquipped}}<i data-type="weapons" data-actor-uuid="{{actor.uuid}}" class="fas fa-fan actor-infos-control {{#if actor.haveWeaponReadied}}badvalue{{/if}}"></i>{{/if}}</td>
+            <td>{{#if actor.haveArmorEquipped}}<i data-type="armors" data-actor-uuid="{{actor.uuid}}" class="fas fa-user-shield actor-infos-control"></i>{{/if}}</td>
+            <td>
+                <p>
+                    {{#if actor.system.identity.school_rank}}
+                        {{actor.system.identity.school_rank}}
+                    {{else}}
+                        <i class="i_bushi" title="{{localize 'l5r5e.social.npc.combat'}}"></i> {{actor.system.conflict_rank.martial}} <i class="i_courtier" title="{{localize 'l5r5e.social.npc.intrigue'}}"></i> {{actor.system.conflict_rank.social}}
+                    {{/if}}
+                </p>
+                <p>
+                    {{#if actor.system.rings_affinities}}
+                    {{#each actor.system.rings_affinities as |ringValue ringId|}}
+                        {{#if ringValue}}
+                            <i class="i_{{ringId}}" title="{{localizeRing ringId}}"></i> {{ringValue}}
+                        {{/if}}
+                    {{/each}}
+                    {{/if}}
+                </p>
+            </td>
+            <td>
+                <a title="{{localize 'l5r5e.gm.monitor.mouse_control'}}" data-actor-uuid="{{actor.uuid}}" data-type="fatigue" class="actor-modify-control">
+                    <span class="{{#ifCond actor.system.fatigue.value '>' actor.system.fatigue.max}}badvalue{{/ifCond}}">{{actor.system.fatigue.value}}</span>
+                    / {{actor.system.fatigue.max}}
+                </a>
+            </td>
+            <td>
+                <a title="{{localize 'l5r5e.gm.monitor.mouse_control'}}" data-actor-uuid="{{actor.uuid}}" data-type="strife" class="actor-modify-control">
+                    <span class="{{#ifCond actor.system.strife.value '>' actor.system.strife.max}}badvalue{{/ifCond}}">{{actor.system.strife.value}}</span>
+                    / {{actor.system.strife.max}}
+                </a>
+            </td>
+            <td>
+                {{actor.system.focus}}
+                / {{#if actor.system.is_afflicted_or_compromised}}<span class="badvalue">1</span>{{else}}{{actor.system.vigilance}}{{/if}}
+            </td>
+            <td>
+                <a title="{{localize 'l5r5e.gm.monitor.mouse_control'}}" data-actor-uuid="{{actor.uuid}}" data-type="void_points" class="actor-modify-control">
+                    {{actor.system.void_points.value}}
+                    / {{actor.system.void_points.max}}
+                </a>
+            </td>
+            <td><i data-actor-uuid="{{actor.uuid}}" data-type="global" class="fas fa-question-circle actor-infos-control"></i></td>
+            <td><span data-actor-uuid="{{actor.uuid}}" class="actor-remove-control pointer" title="{{localize 'Delete'}}"><i class="fas fa-trash"></i></span></td>
+        </tr>
+        {{/each}}
+        </tbody>
+    </table>
+{{else}}
+    {{!-- Armies --}}
+    <table>
+        <thead>
+            <th class="img"></th>
+            <th class="name">{{localize 'l5r5e.sheets.name'}}</th>
+            <th class="warlord">{{localize 'l5r5e.army.warlord'}}</th>
+            <th class="casualties"><i class="fas fa-user-injured" title="{{localize 'l5r5e.army.battle_readiness.casualties'}}"></i> / <i class="fas fa-fist-raised" title="{{localize 'l5r5e.army.battle_readiness.strength'}}"></i></th>
+            <th class="panic"><i class="fas fa-ghost" title="{{localize 'l5r5e.army.battle_readiness.panic'}}"></i> / <i class="fas fa-user-friends" title="{{localize 'l5r5e.army.battle_readiness.discipline'}}"></i></th>
+            <th class="commander">{{localize 'l5r5e.army.commander'}} {{localize 'l5r5e.gm.monitor.honor_glory_status'}}</th>
+            <th class=""></th>
+            <th class=""></th>
+        </thead>
+        <tbody>
+        {{#each data.actors as |actor|}}
+        <tr>
+            <td><img data-actor-uuid="{{actor.uuid}}" draggable="true" class="profile actor-profile dragndrop-actor-uuid pointer" title="{{actor.name}}" src="{{actor.img}}"></td>
+            <td><a data-uuid="{{actor.uuid}}" class="open-sheet-from-uuid">{{actor.name}}</a></td>
+            <td>
+                {{#if actor.system.warlord_actor_id}}
+                    <a data-actor-id="{{actor.system.warlord_actor_id}}" class="open-sheet-from-uuid">{{actor.system.warlord}}</a>
+                {{else}}
+                    {{actor.system.warlord}}
+                {{/if}}
+            </td>
+            <td>
+                <a title="{{localize 'l5r5e.gm.monitor.mouse_control'}}" data-actor-uuid="{{actor.uuid}}" data-type="casualties" class="actor-modify-control">
+                    <span class="{{#ifCond actor.system.battle_readiness.casualties_strength.value '>' actor.system.battle_readiness.casualties_strength.max}}badvalue{{/ifCond}}">{{actor.system.battle_readiness.casualties_strength.value}}</span>
+                     / {{actor.system.battle_readiness.casualties_strength.max}}
+                 </a>
+             </td>
+            <td>
+                <a title="{{localize 'l5r5e.gm.monitor.mouse_control'}}" data-actor-uuid="{{actor.uuid}}" data-type="panic" class="actor-modify-control">
+                    <span class="{{#ifCond actor.system.battle_readiness.panic_discipline.value '>' actor.system.battle_readiness.panic_discipline.max}}badvalue{{/ifCond}}">{{actor.system.battle_readiness.panic_discipline.value}}</span>
+                    / {{actor.system.battle_readiness.panic_discipline.max}}
+                </a>
+            </td>
+            <td>
+                {{#if actor.system.commander_actor_id}}
+                    <a data-actor-id="{{actor.system.commander_actor_id}}" class="open-sheet-from-uuid">{{actor.system.commander}}</a>
+                {{else}}
+                    {{actor.system.commander}}
+                {{/if}}
+                <br>
+                <span class="{{#ifCond actor.system.commander_standing.honor '>' 64}}goodvalue{{/ifCond}}{{#ifCond actor.system.commander_standing.honor '<' 30}}badvalue{{/ifCond}}">{{actor.system.commander_standing.honor}}</span>
+                / <span class="{{#ifCond actor.system.commander_standing.glory '>' 64}}goodvalue{{/ifCond}}{{#ifCond actor.system.commander_standing.glory '<' 20}}badvalue{{/ifCond}}">{{actor.system.commander_standing.glory}}</span>
+                / {{actor.system.commander_standing.status}}
+            </td>
+            <td><i data-actor-uuid="{{actor.uuid}}" data-type="global" class="fas fa-question-circle actor-infos-control"></i></td>
+            <td><span data-actor-uuid="{{actor.uuid}}" class="actor-remove-control pointer" title="{{localize 'Delete'}}"><i class="fas fa-trash"></i></span></td>
+        </tr>
+        {{/each}}
+        </tbody>
+    </table>
+{{/ifCond}}
+</form>

@@ -1,0 +1,6 @@
+node_modules
+system/lib/
+system/packs/
+.editorconfig
+.idea
+.vscode

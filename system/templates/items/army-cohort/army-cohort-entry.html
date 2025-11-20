@@ -1,0 +1,20 @@
+<li class="item cohort flexcol actor">
+    <ul class="item-header item-control">
+        <li class="item-img"><img src="{{cohort.img}}" title="{{cohort.name}}" width="32px" height="32px" {{#if cohort.system.leader_actor_id}}draggable="true" class="dragndrop-actor-uuid pointer" data-actor-id="{{cohort.system.leader_actor_id}}"{{/if}}/></li>
+        <li class="item-name l5r5e-tooltip" data-item-id="{{cohort._id}}">{{cohort.name}}</li>
+        <li class="icon-stat-container">
+            <i class="fas fa-user-injured" title="{{localize 'l5r5e.army.battle_readiness.casualties'}}"> {{cohort.system.battle_readiness.casualties_strength.value}}</i>
+            <i class="fas fa-fist-raised" title="{{localize 'l5r5e.army.battle_readiness.strength'}}"> {{cohort.system.battle_readiness.casualties_strength.max}}</i>
+            <i class="fas fa-ghost" title="{{localize 'l5r5e.army.battle_readiness.panic'}}"> {{cohort.system.battle_readiness.panic_discipline.value}}</i>
+            <i class="fas fa-user-friends" title="{{localize 'l5r5e.army.battle_readiness.discipline'}}"> {{cohort.system.battle_readiness.panic_discipline.max}}</i>
+        </li>
+        {{#if editable}}
+        <li data-item-id="{{cohort._id}}" class="item-edit" title="{{localize 'l5r5e.global.edit'}}"><i class="fas fa-edit"></i></li>
+        <li data-item-id="{{cohort._id}}" class="item-delete" title="{{localize 'Delete'}}"><i class="fas fa-trash"></i></li>
+        {{/if}}
+    </ul>
+    <ul class="item-properties">
+        {{#if cohort.system.leader}}<li>{{localize 'l5r5e.army.cohort.leader'}} : {{#if cohort.system.leader_actor_id}}<a data-actor-id="{{cohort.system.leader_actor_id}}" class="open-sheet-from-uuid">{{cohort.system.leader}}</a>{{else}}{{cohort.system.leader}}{{/if}}</li>{{/if}}
+        {{#if cohort.system.equipment}}<li>{{localize 'l5r5e.sheets.equipment'}} : {{cohort.system.equipment}}</li>{{/if}}
+    </ul>
+</li>

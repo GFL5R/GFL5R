@@ -1,0 +1,156 @@
+<form class="{{cssClass}}" autocomplete="off">
+    {{!-- Profil --}}
+    <header class="l5r5e profil part-header flexrow chat-profil">
+        <ul>
+            <li class="chat-profil-element">
+                <img class="profile-img" src="{{#if l5r5e.actor.img}}{{l5r5e.actor.img}}{{else}}icons/svg/mystery-man.svg{{/if}}" data-edit="img" alt="{{#if l5r5e.actor.name}}{{l5r5e.actor.name}}{{else}}mystery-man{{/if}}" />
+            </li>
+            <li class="chat-profil-element">
+                <i class="chat-profil-stance {{l5r5e.stance}} i_{{l5r5e.stance}}" title="{{localizeRing l5r5e.stance}}"></i>
+            </li>
+            <li class="chat-profil-element-skill">
+                {{#if l5r5e.skillId}}
+                    {{localizeSkillId l5r5e.skillId}}
+                {{else}}
+                    {{#if l5r5e.skillCatId}}{{localizeSkill l5r5e.skillCatId 'title'}}{{/if}}
+                {{/if}}
+            </li>
+            <li class="chat-profil-element">
+                {{localize 'l5r5e.dice.chat.difficulty'}}
+                {{#if l5r5e.difficultyHidden}}
+                    {{#if isGM}}
+                        {{l5r5e.difficulty}} <i class="fas fa-eye-slash" title="{{localize 'l5r5e.dice.dicepicker.difficulty_hidden_label'}}"></i>
+                    {{else}}
+                        <span title="{{localize 'l5r5e.dice.dicepicker.difficulty_hidden_label'}}">{{localize 'l5r5e.dice.chat.difficulty_hidden'}}</span>
+                    {{/if}}
+                {{else}}
+                    {{l5r5e.difficulty}}
+                {{/if}}
+                <br>
+                {{#if l5r5e.voidPointUsed}}
+                    <i class="i_void" title="{{localize 'l5r5e.dice.chat.void_point_used'}}"></i>
+                {{/if}}
+                {{#if l5r5e.skillAssistance}}
+                    <i class="i_skill" title="{{l5r5e.skillAssistance}}x {{localize 'l5r5e.dice.chat.assistance_used'}}"></i>
+                {{/if}}
+            </li>
+        </ul>
+    </header>
+    <section class="rnk-ct">
+        {{!-- Body --}}
+        {{#if showChoices}}
+            {{!-- Face Rings --}}
+            <fieldset class="dropbox swap">
+                <legend class="section-header">
+                    <i class="fa fa-sign-in-alt" aria-hidden="true"></i> {{localize 'l5r5e.dice.roll_n_keep.swap_drop_here'}} <i class="fa fa-arrows-alt-h"></i>
+                </legend>
+
+                {{#each data.swapDiceFaces.rings}}
+                    <div class="dice dropbox faces-change" data-type="swap" data-face="{{this}}" data-die="RingDie">
+                        <img src="{{getDiceFaceUrl 'RingDie' this}}" alt="{{this}}" />
+                    </div>
+                {{/each}}
+            </fieldset>
+            {{!-- Center --}}
+            <article class="rnk-center">
+                {{!-- Discard & ReRoll --}}
+                <fieldset class="dropbox discards" data-type="discard">
+                    <legend class="section-header">
+                        <i class="fa fa-sign-in-alt" aria-hidden="true"></i> {{localize 'l5r5e.dice.roll_n_keep.discard_drop_here'}} <i class="fa fa-times"></i>
+                    </legend>
+                </fieldset>
+                <fieldset class="dropbox rerolls" data-type="reroll">
+                    <legend class="section-header">
+                        <i class="fa fa-sign-in-alt" aria-hidden="true"></i> {{localize 'l5r5e.dice.roll_n_keep.reroll_drop_here'}} <i class="fa fa-redo-alt"></i>
+                    </legend>
+                </fieldset>
+                {{!-- DiceList history --}}
+                <table>
+                    {{#each data.dicesList as |item idxStep|}}
+                    <tr>
+                        {{#each item as |dice idxDie|}}
+                            <td>
+                                {{#if dice.face}}
+                                    {{#if dice.newFace}}
+                                        <span class="fas dice-ct {{dice.choice}}">
+                                            <img class="dice {{dice.choice}}{{#ifCond ../../data.currentStep '==' idxStep}} draggable{{/ifCond}}" data-step="{{idxStep}}" data-die="{{idxDie}}" src="{{getDiceFaceUrl dice.type dice.newFace}}" alt="{{idxStep}}_{{idxDie}}" />
+                                        </span>
+                                    {{else}}
+                                        <span class="fas dice-ct {{dice.choice}}">
+                                            <img class="dice {{dice.choice}}{{#ifCond ../../data.currentStep '==' idxStep}} draggable{{/ifCond}}" data-step="{{idxStep}}" data-die="{{idxDie}}" src="{{getDiceFaceUrl dice.type dice.face}}" alt="{{idxStep}}_{{idxDie}}" />
+                                        </span>
+                                    {{/if}}
+                                {{/if}}
+                            </td>
+                        {{/each}}
+                    </tr>
+                    {{/each}}
+                </table>
+                {{!-- Keep --}}
+                <fieldset class="dropbox keeps" data-type="keep">
+                    <legend class="section-header">
+                        <i class="fa fa-sign-in-alt" aria-hidden="true"></i> {{localize 'l5r5e.dice.roll_n_keep.keep_drop_here'}} ({{l5r5e.keepLimit}} {{localize 'l5r5e.dice.roll_n_keep.max'}}) <i class="fa fa-check"></i>
+                    </legend>
+                </fieldset>
+            </article>
+            {{!-- Face Skills --}}
+            <fieldset class="dropbox swap">
+                <legend class="section-header">
+                    <i class="fa fa-sign-in-alt" aria-hidden="true"></i> {{localize 'l5r5e.dice.roll_n_keep.swap_drop_here'}} <i class="fa fa-arrows-alt-h"></i>
+                </legend>
+                {{#each data.swapDiceFaces.skills}}
+                    <div class="dice dropbox faces-change" data-type="swap" data-face="{{this}}" data-die="AbilityDie">
+                        <img src="{{getDiceFaceUrl 'AbilityDie' this}}" alt="{{this}}" />
+                    </div>
+                {{/each}}
+            </fieldset>
+            {{!-- Symbols Helpers --}}
+            <p class="symbols-help">
+                <i class="i_success"></i> {{localize 'l5r5e.dice.chat.successes'}}
+                | <i class="i_explosive"></i> {{localize 'l5r5e.dice.chat.explosives'}}
+                | <i class="i_opportunity"></i> {{localize 'l5r5e.dice.chat.opportunities'}}
+                | <i class="i_strife"></i> {{localize 'l5r5e.dice.chat.strife'}}
+            </p>
+            <button id="finalize" name="finalize" type="button" {{#if data.submitDisabled}}disabled{{/if}}>
+                {{ localize 'l5r5e.dice.roll_n_keep.bt_validate' }} <i class="fas fa-arrow-circle-right"></i>
+            </button>
+        {{else}}
+            <table>
+                {{!-- Non editable DiceList history --}}
+                {{#each data.dicesList as |item idxStep|}}
+                    <tr>
+                        {{#each item as |dice idxDie|}}
+                            <td>
+                                {{#if dice.face}}
+                                    {{#if dice.newFace}}
+                                        <span class="fas dice-ct {{dice.choice}}">
+                                            <img class="dice {{dice.choice}}" src="{{getDiceFaceUrl dice.type dice.newFace}}" alt="{{idxStep}}_{{idxDie}}" />
+                                        </span>
+                                    {{else}}
+                                        <span class="fas dice-ct {{dice.choice}}">
+                                            <img class="dice {{dice.choice}}" src="{{getDiceFaceUrl dice.type dice.face}}" alt="{{idxStep}}_{{idxDie}}" />
+                                        </span>
+                                    {{/if}}
+                                {{/if}}
+                            </td>
+                        {{/each}}
+                    </tr>
+                {{/each}}
+            </table>
+            {{!-- Strife selection --}}
+            {{#if showStrifeBt}}
+            <div class="form-group" style="width: 100%;">
+                <div class="form-fields"></div>
+                <div class="form-fields">
+                    <input type="range" name="strifeApplied" data-dtype="Number" value="{{l5r5e.strifeApplied}}" min="0" max="{{l5r5e.summary.strife}}" step="1">
+                    <span class="range-value">{{l5r5e.strifeApplied}}</span> <i class="i_strife"></i>
+                </div>
+                <div class="form-fields"></div>
+            </div>
+            <button id="finalize" name="finalize" type="button" {{#if data.submitDisabled}}disabled{{/if}}>
+                {{ localize 'l5r5e.dice.roll_n_keep.bt_strife' }} <i class="fas fa-arrow-circle-right"></i>
+            </button>
+            {{/if}}
+        {{/if}}
+    </section>
+</form>
