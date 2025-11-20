@@ -2,13 +2,13 @@
     "id": "l5r5e",
     "title": "Legend of the Five Rings (5th Edition)",
     "description": "This is an authorised multilingual game system En|Fr|Es, for Legend of the Five Rings (5th Edition) by <a href='https://edge-studio.net/'>Edge Studio</a> <p> - Join the official Discord server: <a href='https://discord.gg/foundryvtt'> Official Discord</a></p><p> - Rejoignez la communauté Francophone: <a href='https://discord.gg/pPSDNJk'>Francophone Discord</a></p>",
-    "url": "https://gitlab.com/teaml5r/l5r5e",
-    "readme": "https://gitlab.com/teaml5r/l5r5e/-/blob/master/README.md",
-    "changelog": "https://gitlab.com/teaml5r/l5r5e/-/blob/master/CHANGELOG.md",
-    "license": "https://gitlab.com/teaml5r/l5r5e/-/blob/master/LICENSE.md",
-    "manifest": "https://gitlab.com/teaml5r/l5r5e/-/raw/master/system/system.json",
-    "download": "https://gitlab.com/teaml5r/l5r5e/-/jobs/artifacts/v1.13.2/raw/l5r5e.zip?job=build",
-    "version": "1.13.2",
+    "url": "https://github.com/GFL5R/GFL5R",
+    "readme": "https://github.com/GFL5R/GFL5R/-/blob/master/README.md",
+    "changelog": "https://github.com/GFL5R/GFL5R/-/blob/master/CHANGELOG.md",
+    "license": "https://github.com/GFL5R/GFL5R/-/blob/master/LICENSE.md",
+    "manifest": "https://github.com/GFL5R/GFL5R/-/raw/master/system/system.json",
+    "download": "https://github.com/GFL5R/GFL5R/archive/refs/heads/main.zip",
+    "version": "0.1.0",
     "compatibility": {
         "minimum": "13",
         "verified": "13",
@@ -17,19 +17,8 @@
     "socket": true,
     "authors": [
         {
-            "name": "Vlyan",
-            "discord": "Vlyan#6771",
-            "url": "https://ko-fi.com/vlyan"
+            "name": "GFL5R Team",
         },
-        {
-            "name": "Mandar",
-            "discord": "Mandar#3440"
-        },
-        {
-            "name": "Carter",
-            "discord": "Carter#2703",
-            "url": "https://fr.tipeee.com/carter-foundryvtt"
-        }
     ],
     "background": "systems/l5r5e/assets/l5r-header.webp",
     "scripts": [],
@@ -358,32 +347,32 @@
     "media": [
         {
             "type": "screenshot",
-            "url": "https://gitlab.com/teaml5r/l5r5e/-/raw/master/screenshoots/login.jpg?raw=true",
+            "url": "https://github.com/GFL5R/GFL5R/-/raw/master/screenshoots/login.jpg?raw=true",
             "caption": "Login screen"
         },
         {
             "type": "screenshot",
-            "url": "https://gitlab.com/teaml5r/l5r5e/-/raw/master/screenshoots/roll.jpg?raw=true",
+            "url": "https://github.com/GFL5R/GFL5R/-/raw/master/screenshoots/roll.jpg?raw=true",
             "caption": "DicePicker and Roll and Keep"
         },
         {
             "type": "screenshot",
-            "url": "https://gitlab.com/teaml5r/l5r5e/-/raw/master/screenshoots/school.jpg?raw=true",
+            "url": "https://github.com/GFL5R/GFL5R/-/raw/master/screenshoots/school.jpg?raw=true",
             "caption": "Experience and School"
         },
         {
             "type": "screenshot",
-            "url": "https://gitlab.com/teaml5r/l5r5e/-/raw/master/screenshoots/sheet_pc.jpg?raw=true",
+            "url": "https://github.com/GFL5R/GFL5R/-/raw/master/screenshoots/sheet_pc.jpg?raw=true",
             "caption": "PC sheet"
         },
         {
             "type": "screenshot",
-            "url": "https://gitlab.com/teaml5r/l5r5e/-/raw/master/screenshoots/sheet_npc_army.jpg?raw=true",
+            "url": "https://github.com/GFL5R/GFL5R/-/raw/master/screenshoots/sheet_npc_army.jpg?raw=true",
             "caption": "NPC and Army sheets"
         },
         {
             "type": "screenshot",
-            "url": "https://gitlab.com/teaml5r/l5r5e/-/raw/master/screenshoots/compendiums.jpg?raw=true",
+            "url": "https://github.com/GFL5R/GFL5R/-/raw/master/screenshoots/compendiums.jpg?raw=true",
             "caption": "Compendiums"
         }
     ]
