@@ -71,7 +71,7 @@ export class DicePickerDialog extends FormApplication {
             template: CONFIG.l5r5e.paths.templates + "dice/dice-picker-dialog.html",
             title: game.i18n.localize("l5r5e.dice.dicepicker.title"),
             actor: null,
-            ringId: null,
+            approachId: null,
             skillId: "",
             difficulty: 2,
             difficultyHidden: false,
@@ -107,7 +107,7 @@ export class DicePickerDialog extends FormApplication {
     /**
      * Create dialog
      *
-     * ex: new game.l5r5e.DicePickerDialog({skillId: 'aesthetics', ringId: 'water', actor: game.user.character}).render(true);
+     * ex: new game.l5r5e.DicePickerDialog({skillId: 'aesthetics', approachId: 'swiftness', actor: game.user.character}).render(true);
      *
      * Options :
      *   actor             {Actor}         Any `Actor` object instance. Ex : `game.user.character`, `canvas.tokens.controlled[0].actor`
@@ -118,13 +118,13 @@ export class DicePickerDialog extends FormApplication {
      *   isInitiativeRoll  {boolean}       `true` if this is an initiative roll
      *   item              {Item}          The object of technique or weapon used for this roll.
      *   itemUuid          {string}        The `uuid` of technique or weapon used for this roll. Can be anything retrieved by `fromUuid()` or `fromUuidSync()`
-     *   ringId            {string}        If not provided, take the current stance of the actor if any. Ex : "fire", "water"
+     *   approachId        {string}        If not provided, take the current stance of the actor if any. Ex : "power", "swiftness"
      *   skillId           {string}        Skill `id`. Ex : "design", "aesthetics", "courtesy"
      *   skillCatId        {string}        Skill category `id`. Ex : "artisan", "scholar"
      *   skillsList        {string[]}      `skillId`/`skillCatId` list coma separated. Allow the player to select the skill used in a select. Ex : "artisan,design"
      *   target            {TokenDocument} The targeted Token
      *
-     * @param options actor, actorId, actorName, difficulty, difficultyHidden, isInitiativeRoll, item, itemUuid, ringId, skillId, skillCatId, skillsList, target
+     * @param options actor, actorId, actorName, difficulty, difficultyHidden, isInitiativeRoll, item, itemUuid, approachId, skillId, skillCatId, skillsList, target
      */
     constructor(options = {}) {
         super({}, options);
@@ -142,9 +142,9 @@ export class DicePickerDialog extends FormApplication {
             }
         });
 
-        // Ring
-        if (options.ringId) {
-            this.ringId = options.ringId;
+        // Approach
+        if (options.approachId) {
+            this.approachId = options.approachId;
         }
 
         // SkillList
@@ -220,7 +220,7 @@ export class DicePickerDialog extends FormApplication {
             return;
         }
         this._actor = actor;
-        this.ringId = this._actor.system.stance;
+        this.approachId = this._actor.system.stance;
     }
 
     /**
@@ -254,12 +254,12 @@ export class DicePickerDialog extends FormApplication {
     }
 
     /**
-     * Set ring preset
-     * @param ringId
+     * Set approach preset
+     * @param approachId
      */
-    set ringId(ringId) {
-        this.object.ring.id = CONFIG.l5r5e.stances.includes(ringId) ? ringId : "void";
-        this.object.ring.value = this._actor.system.rings?.[this.object.ring.id] || 1;
+    set approachId(approachId) {
+        this.object.approach.id = CONFIG.l5r5e.stances.includes(approachId) ? approachId : "fortune";
+        this.object.approach.value = this._actor.system.approaches?.[this.object.approach.id] || 1;
     }
 
     /**
@@ -393,7 +393,7 @@ export class DicePickerDialog extends FormApplication {
     async getData(options = null) {
         return {
             ...(await super.getData(options)),
-            ringsList: game.l5r5e.HelpersL5r5e.getRingsList(this._actor),
+            approachesList: game.l5r5e.HelpersL5r5e.getApproachesList(this._actor),
             data: this.object,
             actor: this._actor,
             useCategory: this.useCategory,
@@ -401,7 +401,7 @@ export class DicePickerDialog extends FormApplication {
                 this.object.difficulty.addVoidPoint ||
                 !this._actor ||
                 (this._actor.isCharacterType && this._actor.system.void_points.value > 0),
-            disableSubmit: this.object.skill.value < 1 && this.object.ring.value < 1,
+            disableSubmit: this.object.skill.value < 1 && this.object.approach.value < 1,
             difficultyHiddenIsLock: this._difficultyHiddenIsLock.gm || this._difficultyHiddenIsLock.option,
         };
     }
@@ -444,12 +444,12 @@ export class DicePickerDialog extends FormApplication {
             this.render(false);
         });
 
-        // Select Ring
+        // Select Approach
         html.find('input[name="approach"]').on("click", async (event) => {
             event.preventDefault();
             event.stopPropagation();
-            this.ringId = event.target.dataset.ringid;
-            this.object.ring.value = parseInt(event.target.value) + (this.object.useVoidPoint ? 1 : 0);
+            this.approachId = event.target.dataset.approachid;
+            this.object.approach.value = parseInt(event.target.value) + (this.object.useVoidPoint ? 1 : 0);
             this.render(false);
         });
 
@@ -523,7 +523,7 @@ export class DicePickerDialog extends FormApplication {
      * @override
      */
     async _updateObject(event, formData) {
-        if (this.object.skill.value < 1 && this.object.ring.value < 1) {
+        if (this.object.skill.value < 1 && this.object.approach.value < 1) {
             return false;
         }
 
@@ -548,7 +548,7 @@ export class DicePickerDialog extends FormApplication {
 
             // Update the actor stance on initiative only
             if (this.object.isInitiativeRoll) {
-                actorData.stance = this.object.ring.id;
+                actorData.stance = this.object.approach.id;
             }
 
             // If hidden add 1 void pt
@@ -572,8 +572,8 @@ export class DicePickerDialog extends FormApplication {
 
         // Build the formula
         let formula = [];
-        if (this.object.ring.value > 0) {
-            formula.push(`${this.object.ring.value}dr`);
+        if (this.object.approach.value > 0) {
+            formula.push(`${this.object.approach.value}dr`);
         }
         if (this.object.skill.value > 0) {
             formula.push(`${this.object.skill.value}ds`);
@@ -610,7 +610,7 @@ export class DicePickerDialog extends FormApplication {
             roll.actor = this._actor;
             roll.l5r5e.item = this._item;
             roll.l5r5e.target = this._target;
-            roll.l5r5e.stance = this.object.ring.id;
+            roll.l5r5e.stance = this.object.approach.id;
             roll.l5r5e.skillId = this.object.skill.id;
             roll.l5r5e.skillCatId = this.object.skill.cat;
             roll.l5r5e.difficulty = this.object.difficulty.value;

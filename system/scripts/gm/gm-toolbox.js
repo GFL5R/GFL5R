@@ -200,7 +200,7 @@ export class GmToolbox extends HandlebarsApplicationMixin(ApplicationV2) {
                 system: {
                     fatigue: {
                         value: Math.max(0,
-                            actor.system.fatigue.value - Math.ceil(actor.system.rings.water * 2)
+                            actor.system.fatigue.value - Math.ceil(actor.system.approaches.swiftness * 2)
                         ),
                     }
                 },

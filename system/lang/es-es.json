@@ -180,14 +180,14 @@
                 "link": "https://gitlab.com/teaml5r/l5r5e/-/wikis/home"
             }
         },
-        "rings": {
-            "title": "Anillos",
-            "label": "Anillo",
-            "earth": "Tierra",
-            "air": "Aire",
-            "water": "Agua",
-            "fire": "Fuego",
-            "void": "Vacío"
+        "approaches": {
+            "title": "Enfoques",
+            "label": "Enfoque",
+            "resilience": "Resiliencia",
+            "precision": "Precisión",
+            "swiftness": "Rapidez",
+            "power": "Poder",
+            "fortune": "Fortuna"
         },
         "sheets": {
             "narrative": "Narrativa",
@@ -376,81 +376,51 @@
         "skills": {
             "title": "Habilidades",
             "label": "Habilidad",
-            "artisan": {
-                "title": "Artesanales",
-                "aesthetics": "Estética",
-                "composition": "Composición",
-                "design": "Diseño",
-                "smithing": "Herrería",
-                "air": "Refinar",
-                "earth": "Restaurar",
-                "fire": "Inventar",
-                "water": "Adaptar",
-                "void": "Sintonizar"
+            "combat": {
+                "title": "Habilidades de Combate",
+                "blades": "Armas Blancas",
+                "firearms": "Armas de Fuego",
+                "hand_to_hand": "Cuerpo a Cuerpo",
+                "explosives": "Explosivos",
+                "tactics": "Estrategia"
             },
-            "martial": {
-                "title": "Marciales",
-                "fitness": "Aptitud Física",
-                "melee": "Cuerpo a Cuerpo",
-                "ranged": "A distancia",
-                "unarmed": "Sin armas",
-                "meditation": "Meditación",
-                "tactics": "Estrategia",
-                "air": "Amagar",
-                "earth": "Resistir",
-                "fire": "Abrumar",
-                "water": "Alterar",
-                "void": "Sacrificarse"
+            "fieldcraft": {
+                "title": "Habilidades de Campo",
+                "athletics": "Atletismo",
+                "centering": "Centrado",
+                "insight": "Intuición",
+                "stealth": "Sigilo",
+                "survival": "Supervivencia"
             },
-            "scholar": {
-                "title": "Académicas",
-                "culture": "Cultura",
-                "government": "Gobierno",
+            "technical": {
+                "title": "Habilidades Técnicas",
+                "computers": "Informática",
+                "engineering": "Ingeniería",
                 "medicine": "Medicina",
-                "sentiment": "Sentimiento",
-                "theology": "Teología",
-                "air": "Analizar",
-                "earth": "Recordar",
-                "fire": "Teorizar",
-                "water": "Examinar",
-                "void": "Percibir"
+                "piloting": "Pilotaje",
+                "science": "Ciencia",
+                "subterfuge": "Subterfugio"
             },
             "social": {
-                "title": "Sociales",
+                "title": "Habilidades Sociales y Culturales",
+                "arts": "Artes",
                 "command": "Mando",
-                "courtesy": "Cortesía",
-                "games": "Pasatiempos",
-                "performance": "Interpretación",
-                "air": "Engañar",
-                "earth": "Razonar",
-                "fire": "Incitar",
-                "water": "Encandilar",
-                "void": "Iluminar"
-            },
-            "trade": {
-                "title": "Mercantiles",
-                "commerce": "Comercio",
-                "labor": "Trabajo manual",
-                "seafaring": "Navegación",
-                "skulduggery": "Actividad criminal",
-                "survival": "Supervivencia",
-                "air": "Estafar",
-                "earth": "Producir",
-                "fire": "Idear",
-                "water": "Intercambiar",
-                "void": "Subsistir"
+                "culture": "Cultura",
+                "deception": "Engaño",
+                "negotiation": "Negociación",
+                "performance": "Interpretación"
             }
         },
         "attributes": {
             "title": "Atributos",
             "endurance": "Aguante",
-            "endurancetip": "(Tierra + Fuego) x2",
+            "endurancetip": "(Resiliencia + Poder) x2",
             "composure": "Compostura",
-            "composuretip": "(Tierra + Agua) x2",
+            "composuretip": "(Resiliencia + Rapidez) x2",
             "focus": "Concentración",
-            "focustip": "Aire + Fuego",
+            "focustip": "Precisión + Poder",
             "vigilance": "Alerta",
-            "vigilancetip": "(Aire + Agua) /2",
+            "vigilancetip": "(Precisión + Rapidez) /2",
             "voidpoints": "Puntos de Vacío",
             "fatigue": "Fatiga",
             "strife": "Conflicto"

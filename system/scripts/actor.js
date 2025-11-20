@@ -159,7 +159,7 @@ export class ActorL5r5e extends Actor {
             // Attributes bars
             system.fatigue.max = system.endurance;
             system.strife.max = system.composure;
-            system.void_points.max = system.rings.void;
+            system.void_points.max = system.approaches.fortune;
 
             // if compromised or afflicted, vigilance = 1
             system.is_afflicted_or_compromised = isAfflicted || isCompromised;
@@ -172,14 +172,14 @@ export class ActorL5r5e extends Actor {
     }
 
     /**
-     * Set derived attributes (endurance, composure, focus, vigilance) from rings values
+     * Set derived attributes (endurance, composure, focus, vigilance) from approaches values
      * @param {Object} system
      */
     static computeDerivedAttributes(system) {
-        system.endurance = (Number(system.rings.earth) + Number(system.rings.fire)) * 2;
-        system.composure = (Number(system.rings.earth) + Number(system.rings.water)) * 2;
-        system.focus = Number(system.rings.air) + Number(system.rings.fire);
-        system.vigilance = Math.ceil((Number(system.rings.air) + Number(system.rings.water)) / 2);
+        system.endurance = (Number(system.approaches.resilience) + Number(system.approaches.power)) * 2;
+        system.composure = (Number(system.approaches.resilience) + Number(system.approaches.swiftness)) * 2;
+        system.focus = Number(system.approaches.precision) + Number(system.approaches.power);
+        system.vigilance = Math.ceil((Number(system.approaches.precision) + Number(system.approaches.swiftness)) / 2);
 
         // Modifiers from conditions
         const modifiers = system.modifiers?.character;
@@ -233,12 +233,12 @@ export class ActorL5r5e extends Actor {
         if (item && item.type === "advancement") {
             const actor = foundry.utils.duplicate(this.system);
             const itemData = item.system;
-            if (itemData.advancement_type === "ring") {
-                // Ring
+            if (itemData.advancement_type === "approach") {
+                // Approach
                 if (isAdd) {
-                    actor.rings[itemData.ring] = Math.min(9, actor.rings[itemData.ring] + 1);
+                    actor.approaches[itemData.approach] = Math.min(9, actor.approaches[itemData.approach] + 1);
                 } else {
-                    actor.rings[itemData.ring] = Math.max(1, actor.rings[itemData.ring] - 1);
+                    actor.approaches[itemData.approach] = Math.max(1, actor.approaches[itemData.approach] - 1);
                 }
             } else {
                 // Skill

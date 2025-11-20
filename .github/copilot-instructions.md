@@ -6,7 +6,7 @@ This is a Foundry Virtual Tabletop (FVTT) system module for Legend of the Five R
 
 **Core Structure:**
 - `system/scripts/main-l5r5e.js` - Main entry point importing all modules
-- `system/scripts/config.js` - Game configuration (stances, XP costs, conditions)
+- `system/scripts/config.js` - Game configuration (approaches, XP costs, conditions)
 - `system/scripts/hooks.js` - System initialization and event handling
 - `system/templates/` - Handlebars templates for UI components
 - `system/styles/` - SCSS styles compiled to `l5r5e.css`
@@ -59,7 +59,7 @@ Create symlink: `system/` → Foundry data directory (`%localappdata%/FoundryVTT
 ### Configuration Access
 ```javascript
 // Global config
-CONFIG.l5r5e.stances  // ["earth", "air", "water", "fire", "void"]
+CONFIG.l5r5e.approaches  // ["resilience", "precision", "swiftness", "power", "fortune"]
 CONFIG.l5r5e.roles   // ["artisan", "bushi", "courtier", ...]
 
 // Runtime access
@@ -133,13 +133,13 @@ system/templates/
 
 ### Status Effects
 - Custom conditions in `CONFIG.l5r5e.conditions`
-- Ring-aligned wound conditions (fire, water, air, earth, void)
+- Approach-aligned wound conditions (power, swiftness, precision, resilience, fortune)
 - Toggle via `show-all-status-effects` setting
 
 ### XP System
 - Rank-based costs in `CONFIG.l5r5e.xp`
 - Bond costs separate from character XP
-- Ring/skill multipliers applied
+- Approach/skill multipliers applied
 
 ### Migration System
 - `MigrationL5r5e` handles data updates

@@ -6,13 +6,13 @@
                 <img class="profile-img" src="{{#if actor.img}}{{actor.img}}{{else}}icons/svg/mystery-man.svg{{/if}}" data-edit="img" alt="{{#if actor.name}}{{actor.name}}{{else}}mystery-man{{/if}}" />
             </td>
             <td class="center">
-                <ul class="rings">
-                    {{#each ringsList}}
+                <ul class="approaches">
+                    {{#each approachesList}}
                     <li id="{{this.id}}">
-                        <label class="attribute-label {{this.id}} centered-input ring-selection pointer-choice {{#ifCond ../data.ring.id '==' this.id}}ring-selected{{/ifCond}}">
+                        <label class="attribute-label {{this.id}} centered-input approach-selection pointer-choice {{#ifCond ../data.approach.id '==' this.id}}approach-selected{{/ifCond}}">
                             <i class="i_{{this.id}}"></i>
                             <strong>{{this.label}}</strong>
-                            <input class="centered-input approach_{{this.id}}" type="text" name="approach" data-ringid="{{this.id}}" value="{{this.value}}" readonly="readonly" />
+                            <input class="centered-input approach_{{this.id}}" type="text" name="approach" data-approachid="{{this.id}}" value="{{this.value}}" readonly="readonly" />
                         </label>
                     </li>
                     {{/each}}
@@ -62,7 +62,7 @@
                 {{localize "l5r5e.dice.dicepicker.difficulty_title"}}
             </td>
             <td>
-                {{localize "l5r5e.rings.title"}}
+                {{localize "l5r5e.approaches.title"}}
             </td>
             <td>
                 {{localize "l5r5e.skills.title"}}

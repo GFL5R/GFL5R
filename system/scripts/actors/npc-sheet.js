@@ -72,7 +72,7 @@ export class NpcSheetL5r5e extends BaseCharacterSheetL5r5e {
             CONFIG.l5r5e.demeanors.map((e) => {
                 const modifiers = [];
                 Object.entries(e.mod).forEach(([k, v]) => {
-                    modifiers.push(`${game.i18n.localize(`l5r5e.rings.${k}`)} ${v}`);
+                    modifiers.push(`${game.i18n.localize(`l5r5e.approaches.${k}`)} ${v}`);
                 });
                 return game.i18n.localize(`l5r5e.demeanor.${e.id}`) + ` (${modifiers.join(", ")})`;
             })
@@ -85,16 +85,16 @@ export class NpcSheetL5r5e extends BaseCharacterSheetL5r5e {
      * @param formData
      */
     _updateObject(event, formData) {
-        // Redo the demeanor to set the rings data
+        // Redo the demeanor to set the approaches data
         if (formData["autoCompleteListName"] === "system.attitude" && formData["autoCompleteListSelectedIndex"] >= 0) {
             const demeanor = CONFIG.l5r5e.demeanors[formData["autoCompleteListSelectedIndex"]] || null;
             if (demeanor) {
                 formData["system.attitude"] = game.i18n.localize(`l5r5e.demeanor.${demeanor.id}`);
-                CONFIG.l5r5e.stances.forEach((ring) => {
-                    formData[`system.rings_affinities.${ring}`] = 0;
+                CONFIG.l5r5e.stances.forEach((approach) => {
+                    formData[`system.approaches_affinities.${approach}`] = 0;
                 });
                 Object.entries(demeanor.mod).forEach(([k, v]) => {
-                    formData[`system.rings_affinities.${k}`] = v;
+                    formData[`system.approaches_affinities.${k}`] = v;
                 });
             }
         }

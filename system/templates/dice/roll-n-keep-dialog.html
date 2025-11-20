@@ -39,13 +39,13 @@
     <section class="rnk-ct">
         {{!-- Body --}}
         {{#if showChoices}}
-            {{!-- Face Rings --}}
+            {{!-- Face Approaches --}}
             <fieldset class="dropbox swap">
                 <legend class="section-header">
                     <i class="fa fa-sign-in-alt" aria-hidden="true"></i> {{localize 'l5r5e.dice.roll_n_keep.swap_drop_here'}} <i class="fa fa-arrows-alt-h"></i>
                 </legend>
 
-                {{#each data.swapDiceFaces.rings}}
+                {{#each data.swapDiceFaces.approaches}}
                     <div class="dice dropbox faces-change" data-type="swap" data-face="{{this}}" data-die="RingDie">
                         <img src="{{getDiceFaceUrl 'RingDie' this}}" alt="{{this}}" />
                     </div>

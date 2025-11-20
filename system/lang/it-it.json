@@ -180,14 +180,14 @@
                 "link": "https://gitlab.com/teaml5r/l5r5e/-/wikis/home"
             }
         },
-        "rings": {
-            "title": "Anelli",
-            "label": "Anello",
-            "earth": "Terra",
-            "air": "Aria",
-            "water": "Acqua",
-            "fire": "Fuoco",
-            "void": "Vuoto"
+        "approaches": {
+            "title": "Approcci",
+            "label": "Approccio",
+            "resilience": "Resilienza",
+            "precision": "Precisione",
+            "swiftness": "Velocità",
+            "power": "Potenza",
+            "fortune": "Fortuna"
         },
         "sheets": {
             "narrative": "Narrativa",
@@ -376,81 +376,51 @@
         "skills": {
             "title": "Abilità",
             "label": "Abilità",
-            "artisan": {
-                "title": "Artigiane",
-                "aesthetics": "Estetica",
-                "composition": "Composizione",
-                "design": "Moda",
-                "smithing": "Forgia",
-                "air": "Affinare",
-                "earth": "Ripristinare",
-                "fire": "Inventare",
-                "water": "Adattare",
-                "void": "Armonizzare"
+            "combat": {
+                "title": "Abilità di Combattimento",
+                "blades": "Lame",
+                "firearms": "Armi da Fuoco",
+                "hand_to_hand": "Corpo a Corpo",
+                "explosives": "Esplosivi",
+                "tactics": "Tattica"
             },
-            "martial": {
-                "title": "Marziali",
-                "fitness": "Allenamento",
-                "melee": "Arti Marziali [Mischia]",
-                "ranged": "Arti Marziali [Distanza]",
-                "unarmed": "Arti Marziali [Senza Armi]",
-                "meditation": "Meditazione",
-                "tactics": "Tattica",
-                "air": "Fintare",
-                "earth": "Contrastare",
-                "fire": "Sopraffare",
-                "water": "Deviare",
-                "void": "Sacrificare"
+            "fieldcraft": {
+                "title": "Abilità di Campo",
+                "athletics": "Atletica",
+                "centering": "Centramento",
+                "insight": "Intuizione",
+                "stealth": "Furtività",
+                "survival": "Sopravvivenza"
             },
-            "scholar": {
-                "title": "Intellettuali",
-                "culture": "Cultura",
-                "government": "Governo",
+            "technical": {
+                "title": "Abilità Tecniche",
+                "computers": "Computer",
+                "engineering": "Ingegneria",
                 "medicine": "Medicina",
-                "sentiment": "Sensibilità",
-                "theology": "Teologia",
-                "air": "Analizzare",
-                "earth": "Ricordare",
-                "fire": "Teorizzare",
-                "water": "Esaminare",
-                "void": "Presentire"
+                "piloting": "Pilotaggio",
+                "science": "Scienza",
+                "subterfuge": "Sotterfugio"
             },
             "social": {
-                "title": "Sociali",
+                "title": "Abilità Sociali e Culturali",
+                "arts": "Arti",
                 "command": "Comando",
-                "courtesy": "Cortesia",
-                "games": "Giochi",
-                "performance": "Esibizione",
-                "air": "Ingannare",
-                "earth": "Ragionare",
-                "fire": "Incitare",
-                "water": "Affascinare",
-                "void": "Illuminare"
-            },
-            "trade": {
-                "title": "Mestieriali",
-                "commerce": "Commercio",
-                "labor": "Lavori Pesanti",
-                "seafaring": "Navigazione",
-                "skulduggery": "Criminalità",
-                "survival": "Sopravvivenza",
-                "air": "Raggirare",
-                "earth": "Produrre",
-                "fire": "Innovare",
-                "water": "Scambiare",
-                "void": "Sussistere"
+                "culture": "Cultura",
+                "deception": "Inganno",
+                "negotiation": "Negoziazione",
+                "performance": "Esibizione"
             }
         },
         "attributes": {
             "title": "Attributi",
             "endurance": "Tenacia",
-            "endurancetip": "(Terra + Fuoco) x2",
+            "endurancetip": "(Resilienza + Potenza) x2",
             "composure": "Compostezza",
-            "composuretip": "(Terra + Acqua) x2",
+            "composuretip": "(Resilienza + Velocità) x2",
             "focus": "Conc.",
-            "focustip": "Aria + Fuoco",
+            "focustip": "Precisione + Potenza",
             "vigilance": "Vigil.",
-            "vigilancetip": "(Aria + Acqua) /2",
+            "vigilancetip": "(Precisione + Velocità) /2",
             "voidpoints": "Punti Vuoto",
             "fatigue": "Stanchezza",
             "strife": "Turbamento"

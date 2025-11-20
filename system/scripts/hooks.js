@@ -299,9 +299,9 @@ export default class HooksL5r5e {
                     entry.data("source", document.system.source_reference);
                 }
 
-                if (document.system?.ring) {
-                    autoDisplayFilter('ring');
-                    entry.data("ring", document.system.ring);
+                if (document.system?.approach) {
+                    autoDisplayFilter('approach');
+                    entry.data("approach", document.system.approach);
                 }
 
                 if (document.system?.rarity) {
@@ -309,10 +309,10 @@ export default class HooksL5r5e {
                     entry.data("rarity", document.system.rarity);
                 }
 
-                // Add ring/rank/rarity information on the item in the compendium view
-                if (document.system?.ring || document.system?.rarity || document.system?.rank) {
-                    const ringRarityRank = await foundry.applications.handlebars.renderTemplate(`${CONFIG.l5r5e.paths.templates}compendium/ring-rarity-rank.html`, document.system);
-                    entry.append(ringRarityRank);
+                // Add approach/rank/rarity information on the item in the compendium view
+                if (document.system?.approach || document.system?.rarity || document.system?.rank) {
+                    const approachRarityRank = await foundry.applications.handlebars.renderTemplate(`${CONFIG.l5r5e.paths.templates}compendium/approach-rarity-rank.html`, document.system);
+                    entry.append(approachRarityRank);
                 }
             }
 
@@ -333,7 +333,7 @@ export default class HooksL5r5e {
             const applyCompendiumFilter = () => {
                 const userFilter = header.find("l5r5e-multi-select").val();
                 const rankFilter = header.find(".rank-filter .selected").data("rank");
-                const ringFilter = header.find(".ring-filter .selected").data("ring");
+                const approachFilter = header.find(".approach-filter .selected").data("approach");
                 const rarityFilter = header.find(".rarity-filter .selected").data("rarity");
 
                 entries.each(function () {
@@ -377,8 +377,8 @@ export default class HooksL5r5e {
                     if (userFilter?.length) {
                         shouldShow &= userFilter.includes(lineSource);
                     }
-                    if (ringFilter) {
-                        shouldShow &= $(this).data("ring") == ringFilter;
+                    if (approachFilter) {
+                        shouldShow &= $(this).data("approach") == approachFilter;
                     }
                     if (rarityFilter >= 0) {
                         shouldShow &= $(this).data("rarity") == rarityFilter;
@@ -414,7 +414,7 @@ export default class HooksL5r5e {
             await Promise.all([
                 addFilter('rank'  , 'rank-filter', { type: "rank", number: [1, 2, 3, 4, 5] }),
                 addFilter('rarity', 'rank-filter', { type: "rarity", number: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] }),
-                addFilter('ring'  , 'ring-filter', {}),
+                addFilter('approach'  , 'approach-filter', {}),
             ]);
 
             if (filtersToShow.source) {

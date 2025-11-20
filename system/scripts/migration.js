@@ -278,11 +278,11 @@ export class MigrationL5r5e {
             // NPC are now without autostats, we need to save the value
             if (actor.type === "npc") {
                 if (system.endurance < 1) {
-                    updateData["system.endurance"] = (Number(system.rings.earth) + Number(system.rings.fire)) * 2;
-                    updateData["system.composure"] = (Number(system.rings.earth) + Number(system.rings.water)) * 2;
-                    updateData["system.focus"] = Number(system.rings.air) + Number(system.rings.fire);
+                    updateData["system.endurance"] = (Number(system.approaches.resilience) + Number(system.approaches.power)) * 2;
+                    updateData["system.composure"] = (Number(system.approaches.resilience) + Number(system.approaches.swiftness)) * 2;
+                    updateData["system.focus"] = Number(system.approaches.precision) + Number(system.approaches.power);
                     updateData["system.vigilance"] = Math.ceil(
-                        (Number(system.rings.air) + Number(system.rings.water)) / 2
+                        (Number(system.approaches.precision) + Number(system.approaches.swiftness)) / 2
                     );
                 }
             }
@@ -297,14 +297,14 @@ export class MigrationL5r5e {
             }
 
             // NPC have now more than a Strength and a Weakness
-            if (actor.type === "npc" && system.rings_affinities?.strength) {
-                const aff = system.rings_affinities;
-                updateData["system.rings_affinities." + aff.strength.ring] = aff.strength.value;
-                updateData["system.rings_affinities." + aff.weakness.ring] = aff.weakness.value;
+            if (actor.type === "npc" && system.approaches_affinities?.strength) {
+                const aff = system.approaches_affinities;
+                updateData["system.approaches_affinities." + aff.strength.approach] = aff.strength.value;
+                updateData["system.approaches_affinities." + aff.weakness.approach] = aff.weakness.value;
 
                 // Delete old keys
-                updateData["system.rings_affinities.-=strength"] = null;
-                updateData["system.rings_affinities.-=weakness"] = null;
+                updateData["system.approaches_affinities.-=strength"] = null;
+                updateData["system.approaches_affinities.-=weakness"] = null;
             }
         }
         // ***** End of 1.3.0 *****

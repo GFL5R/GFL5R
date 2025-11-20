@@ -146,7 +146,7 @@ export class TwentyQuestionsDialog extends FormApplication {
         const skillsListStep17 = this._getSkillZero(skillsList, skillsPoints, "step17.skill");
         return {
             ...(await super.getData(options)),
-            ringsList: game.l5r5e.HelpersL5r5e.getRingsList(),
+            approachesList: game.l5r5e.HelpersL5r5e.getApproachesList(),
             skillsList,
             skillsListStep7,
             skillsListStep17,

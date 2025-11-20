@@ -5,15 +5,15 @@ import { L5r5ePopupManager } from './misc/l5r5e-popup-manager.js';
  */
 export class HelpersL5r5e {
     /**
-     * Get Rings/Element for List / Select
+     * Get Approaches/Element for List / Select
      * @param {Actor|null} actor
      * @return {{id: string, label: *, value}[]}
      */
-    static getRingsList(actor = null) {
+    static getApproachesList(actor = null) {
         return CONFIG.l5r5e.stances.map((e) => ({
             id: e,
-            label: game.i18n.localize(`l5r5e.rings.${e}`),
-            value: actor?.system?.rings?.[e] || 1,
+            label: game.i18n.localize(`l5r5e.approaches.${e}`),
+            value: actor?.system?.approaches?.[e] || 1,
         }));
     }
 

@@ -93,7 +93,7 @@ export class CombatL5r5e extends Combat {
                 // Roll formula
                 const createFormula = [];
                 if (!formula) {
-                    createFormula.push(`${actorSystem.rings[actorSystem.stance]}dr`);
+                    createFormula.push(`${actorSystem.approaches[actorSystem.stance]}dr`);
                     const skillValue = isPc ? actorSystem.skills[skillCat][skillId] : actorSystem.skills[skillCat];
                     if (skillValue > 0) {
                         createFormula.push(`${skillValue}ds`);

@@ -19,7 +19,7 @@ export class ItemSheetL5r5e extends BaseItemSheetL5r5e {
     async getData(options = {}) {
         const sheetData = await super.getData(options);
 
-        sheetData.data.ringsList = game.l5r5e.HelpersL5r5e.getRingsList();
+        sheetData.data.approachesList = game.l5r5e.HelpersL5r5e.getApproachesList();
 
         // Prepare Properties (id/name => object)
         await this._prepareProperties(sheetData);

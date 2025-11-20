@@ -5,7 +5,7 @@ export const L5R5E = {
         templates: "systems/l5r5e/templates/",
     },
     money: [50, 10],
-    stances: ["earth", "air", "water", "fire", "void"],
+    stances: ["resilience", "precision", "swiftness", "power", "fortune"],
     roles: ["artisan", "bushi", "courtier", "monk", "sage", "shinobi", "shugenja"],
     xp: {
         costPerRank: [0, 20, 24, 32, 44, 60],
@@ -14,56 +14,56 @@ export const L5R5E = {
         skillCostMultiplier: 2,
         techniqueCost: 3,
     },
-    // For rings wound to be aligned, add them first
+    // For approaches wound to be aligned, add them first
     conditions: [{
-        id: "lightly_wounded_fire",
-        name: "l5r5e.conditions.lightly_wounded_fire",
-        img: "systems/l5r5e/assets/icons/conditions/lightly_wounded_fire.webp",
+        id: "lightly_wounded_power",
+        name: "l5r5e.conditions.lightly_wounded_power",
+        img: "systems/l5r5e/assets/icons/conditions/lightly_wounded_power.webp",
         system: { id: "L5RCoreCon000016" }
     },{
-        id: "lightly_wounded_water",
-        name: "l5r5e.conditions.lightly_wounded_water",
-        img: "systems/l5r5e/assets/icons/conditions/lightly_wounded_water.webp",
+        id: "lightly_wounded_swiftness",
+        name: "l5r5e.conditions.lightly_wounded_swiftness",
+        img: "systems/l5r5e/assets/icons/conditions/lightly_wounded_swiftness.webp",
         system: { id: "L5RCoreCon000016" }
     },{
-        id: "lightly_wounded_air",
-        name: "l5r5e.conditions.lightly_wounded_air",
-        img: "systems/l5r5e/assets/icons/conditions/lightly_wounded_air.webp",
+        id: "lightly_wounded_precision",
+        name: "l5r5e.conditions.lightly_wounded_precision",
+        img: "systems/l5r5e/assets/icons/conditions/lightly_wounded_precision.webp",
         system: { id: "L5RCoreCon000016" }
     },{
-        id: "lightly_wounded_earth",
-        name: "l5r5e.conditions.lightly_wounded_earth",
-        img: "systems/l5r5e/assets/icons/conditions/lightly_wounded_earth.webp",
+        id: "lightly_wounded_resilience",
+        name: "l5r5e.conditions.lightly_wounded_resilience",
+        img: "systems/l5r5e/assets/icons/conditions/lightly_wounded_resilience.webp",
         system: { id: "L5RCoreCon000016" }
     },{
-        id: "lightly_wounded_void",
-        name: "l5r5e.conditions.lightly_wounded_void",
-        img: "systems/l5r5e/assets/icons/conditions/lightly_wounded_void.webp",
+        id: "lightly_wounded_fortune",
+        name: "l5r5e.conditions.lightly_wounded_fortune",
+        img: "systems/l5r5e/assets/icons/conditions/lightly_wounded_fortune.webp",
         system: { id: "L5RCoreCon000016" }
     },{
-        id: "severely_wounded_fire",
-        name: "l5r5e.conditions.severely_wounded_fire",
-        img: "systems/l5r5e/assets/icons/conditions/heavily_wounded_fire.webp",
+        id: "severely_wounded_power",
+        name: "l5r5e.conditions.severely_wounded_power",
+        img: "systems/l5r5e/assets/icons/conditions/heavily_wounded_power.webp",
         system: { id: "L5RCoreCon000016" }
     },{
-        id: "severely_wounded_water",
-        name: "l5r5e.conditions.severely_wounded_water",
-        img: "systems/l5r5e/assets/icons/conditions/heavily_wounded_water.webp",
+        id: "severely_wounded_swiftness",
+        name: "l5r5e.conditions.severely_wounded_swiftness",
+        img: "systems/l5r5e/assets/icons/conditions/heavily_wounded_swiftness.webp",
         system: { id: "L5RCoreCon000016" }
     },{
-        id: "severely_wounded_air",
-        name: "l5r5e.conditions.severely_wounded_air",
-        img: "systems/l5r5e/assets/icons/conditions/heavily_wounded_air.webp",
+        id: "severely_wounded_precision",
+        name: "l5r5e.conditions.severely_wounded_precision",
+        img: "systems/l5r5e/assets/icons/conditions/heavily_wounded_precision.webp",
         system: { id: "L5RCoreCon000016" }
     },{
-        id: "severely_wounded_earth",
-        name: "l5r5e.conditions.severely_wounded_earth",
-        img: "systems/l5r5e/assets/icons/conditions/heavily_wounded_earth.webp",
+        id: "severely_wounded_resilience",
+        name: "l5r5e.conditions.severely_wounded_resilience",
+        img: "systems/l5r5e/assets/icons/conditions/heavily_wounded_resilience.webp",
         system: { id: "L5RCoreCon000016" }
     },{
-        id: "severely_wounded_void",
-        name: "l5r5e.conditions.severely_wounded_void",
-        img: "systems/l5r5e/assets/icons/conditions/heavily_wounded_void.webp",
+        id: "severely_wounded_fortune",
+        name: "l5r5e.conditions.severely_wounded_fortune",
+        img: "systems/l5r5e/assets/icons/conditions/heavily_wounded_fortune.webp",
         system: { id: "L5RCoreCon000016" }
     },{
         id: "afflicted",
@@ -185,12 +185,12 @@ export const L5R5E = {
         techniqueDifficulty: /^@([TS]):([^|]+?)(?:\|(min|max)(?:\(([^)]+?)\))?)?$/,
     },
     initiativeSkills: {
-        intrigue: "sentiment",
-        duel: "meditation",
+        intrigue: "insight",
+        duel: "centering",
         skirmish: "tactics",
         mass_battle: "command",
     },
-    noHonorSkillsList: ["commerce", "skulduggery", "medicine", "seafaring", "survival", "labor"],
+    noHonorSkillsList: ["explosives", "stealth", "subterfuge", "deception", "medicine", "piloting", "survival"],
     sourceReference: {
         "core_rulebook": {
             value: "core_rulebook",
@@ -347,34 +347,36 @@ L5R5E.techniques.set("specificity", { type: "custom", displayInTypes: false });
 
 // *** SkillId - CategoryId ***
 L5R5E.skills = new Map();
-L5R5E.skills.set("aesthetics", "artisan");
-L5R5E.skills.set("composition", "artisan");
-L5R5E.skills.set("design", "artisan");
-L5R5E.skills.set("smithing", "artisan");
 
-L5R5E.skills.set("fitness", "martial");
-L5R5E.skills.set("melee", "martial");
-L5R5E.skills.set("ranged", "martial");
-L5R5E.skills.set("unarmed", "martial");
-L5R5E.skills.set("meditation", "martial");
-L5R5E.skills.set("tactics", "martial");
+// Combat Skills
+L5R5E.skills.set("blades", "combat");
+L5R5E.skills.set("firearms", "combat");
+L5R5E.skills.set("hand_to_hand", "combat");
+L5R5E.skills.set("explosives", "combat");
+L5R5E.skills.set("tactics", "combat");
 
-L5R5E.skills.set("culture", "scholar");
-L5R5E.skills.set("government", "scholar");
-L5R5E.skills.set("medicine", "scholar");
-L5R5E.skills.set("sentiment", "scholar");
-L5R5E.skills.set("theology", "scholar");
+// Fieldcraft Skills
+L5R5E.skills.set("athletics", "fieldcraft");
+L5R5E.skills.set("centering", "fieldcraft");
+L5R5E.skills.set("insight", "fieldcraft");
+L5R5E.skills.set("stealth", "fieldcraft");
+L5R5E.skills.set("survival", "fieldcraft");
 
+// Technical Skills
+L5R5E.skills.set("computers", "technical");
+L5R5E.skills.set("engineering", "technical");
+L5R5E.skills.set("medicine", "technical");
+L5R5E.skills.set("piloting", "technical");
+L5R5E.skills.set("science", "technical");
+L5R5E.skills.set("subterfuge", "technical");
+
+// Social & Cultural Skills
+L5R5E.skills.set("arts", "social");
 L5R5E.skills.set("command", "social");
-L5R5E.skills.set("courtesy", "social");
-L5R5E.skills.set("games", "social");
+L5R5E.skills.set("culture", "social");
+L5R5E.skills.set("deception", "social");
+L5R5E.skills.set("negotiation", "social");
 L5R5E.skills.set("performance", "social");
-
-L5R5E.skills.set("commerce", "trade");
-L5R5E.skills.set("labor", "trade");
-L5R5E.skills.set("seafaring", "trade");
-L5R5E.skills.set("skulduggery", "trade");
-L5R5E.skills.set("survival", "trade");
 
 // *** Symbols ***
 L5R5E.symbols = new Map();
@@ -382,14 +384,14 @@ L5R5E.symbols.set("(op)", { class: "i_opportunity", label: "l5r5e.dice.chat.oppo
 L5R5E.symbols.set("(su)", { class: "i_success", label: "l5r5e.dice.chat.successes" });
 L5R5E.symbols.set("(ex)", { class: "i_explosive", label: "l5r5e.dice.chat.explosives" });
 L5R5E.symbols.set("(st)", { class: "i_strife", label: "l5r5e.dice.chat.strife" });
-L5R5E.symbols.set("(ring)", { class: "i_ring", label: "l5r5e.rings.title" });
+L5R5E.symbols.set("(approach)", { class: "i_ring", label: "l5r5e.approaches.title" });
 L5R5E.symbols.set("(skill)", { class: "i_skill", label: "l5r5e.skills.title" });
 
-L5R5E.symbols.set("(earth)", { class: "i_earth", label: "l5r5e.rings.earth" });
-L5R5E.symbols.set("(water)", { class: "i_water", label: "l5r5e.rings.water" });
-L5R5E.symbols.set("(fire)", { class: "i_fire", label: "l5r5e.rings.fire" });
-L5R5E.symbols.set("(air)", { class: "i_air", label: "l5r5e.rings.air" });
-L5R5E.symbols.set("(void)", { class: "i_void", label: "l5r5e.rings.void" });
+L5R5E.symbols.set("(resilience)", { class: "i_resilience", label: "l5r5e.approaches.resilience" });
+L5R5E.symbols.set("(swiftness)", { class: "i_swiftness", label: "l5r5e.approaches.swiftness" });
+L5R5E.symbols.set("(power)", { class: "i_power", label: "l5r5e.approaches.power" });
+L5R5E.symbols.set("(precision)", { class: "i_precision", label: "l5r5e.approaches.precision" });
+L5R5E.symbols.set("(fortune)", { class: "i_fortune", label: "l5r5e.approaches.fortune" });
 
 L5R5E.symbols.set("(kiho)", { class: "i_kiho", label: "l5r5e.techniques.kiho" });
 L5R5E.symbols.set("(maho)", { class: "i_maho", label: "l5r5e.techniques.maho" });
@@ -452,76 +454,76 @@ L5R5E.families.set("ujik", []);
 
 // *** demeanor ***
 L5R5E.demeanors = [
-    { id: "adaptable", mod: { fire: 2, earth: -2 } },
-    { id: "adaptable", mod: { water: 2, earth: -2 } },
-    { id: "aggressive", mod: { fire: 2, air: -2 } },
-    { id: "aggressive", mod: { fire: 2, water: -2 } },
-    { id: "ambitious", mod: { fire: 2, water: -2 } },
-    { id: "amiable", mod: { air: 2, earth: -2 } },
-    { id: "analytical", mod: { fire: 2, air: -2 } },
-    { id: "angry", mod: { fire: 2, air: -2 } },
-    { id: "arrogant", mod: { fire: 2, water: -2 } },
-    { id: "assertive", mod: { earth: 2, air: -2 } },
-    { id: "assertive", mod: { earth: 2, air: 2 } },
-    { id: "beguiling", mod: { air: 2, earth: -2 } },
-    { id: "beguiling", mod: { fire: 2, earth: -2 } },
-    { id: "bitter", mod: { fire: 2, air: -2 } },
-    { id: "bold", mod: { fire: 1, earth: -1 } },
-    { id: "calculating", mod: { air: 2, fire: -2 } },
-    { id: "calm", mod: { fire: 2, air: -2 } },
-    { id: "capricious", mod: { air: 2, earth: -2 } },
-    { id: "cautious", mod: { air: 2, earth: -2 } },
-    { id: "clever", mod: { air: 2, earth: -2 } },
-    { id: "compassionate", mod: { fire: 2, air: -1, water: -1}},
-    { id: "confused", mod: { fire: 1, void: 1, air: -2 } },
-    { id: "courageous", mod: { air: 2, earth: -2 } },
-    { id: "cowardly", mod: { earth: 2, fire: -2 } },
-    { id: "curious", mod: { earth: 1, void: -2 } },
-    { id: "curious", mod: { fire: 1, void: 1, air: -2 } },
-    { id: "dependable", mod: { fire: 1, water: 1, earth: -2 } },
-    { id: "detached", mod: { earth: 1, fire: 1, void: -2 } },
-    { id: "disheartened", mod: { fire: 1, earth: -1 } },
-    { id: "enraged", mod: { air: 1, fire: -2 } },
-    { id: "feral", mod: { air: 2, fire: -2 } },
-    { id: "fickle", mod: { fire: 2, air: -2 } },
-    { id: "fierce", mod: { fire: 2, earth: -2 } },
-    { id: "flighty", mod: { air: 2, fire: -2 } },
-    { id: "flighty", mod: { water: 2, fire: -2 } },
-    { id: "flippant", mod: { fire: 2, air: -2 } },
-    { id: "friendly", mod: { fire: 1, earth: -2, water: -2 } },
-    { id: "gruff", mod: { water: 2, earth: -2 } },
-    { id: "hungry", mod: { fire: 2, air: -2 } },
-    { id: "intense", mod: { air: 2, water: -2 } },
-    { id: "intense", mod: { fire: 2, water: -2 } },
-    { id: "intimidating", mod: { fire: 2, air: -2 } },
-    { id: "irritable", mod: { fire: 2, air: -1, water: -1 } },
-    { id: "loyal", mod: { air: 1, earth: -2, fire: -2 } },
-    { id: "loyal", mod: { water: 2, fire: -2 } },
-    { id: "mischievous", mod: { fire: 2, air: -2 } },
-    { id: "mischievous", mod: { air: 2, earth: -2 } },
-    { id: "mischievous", mod: { earth: 2, fire: -2 } },
-    { id: "morose", mod: { water: 2, fire: -2 } },
-    { id: "nurturing", mod: { earth: 2, fire: -2 } },
-    { id: "obstinate", mod: { earth: 2, air: -2 } },
-    { id: "obstinate", mod: { water: 2, air: -2 } },
-    { id: "opportunistic", mod: { water: 2, fire: -2 } },
-    { id: "passionate", mod: { earth: 2, air: -2 } },
-    { id: "playful", mod: { earth: 2, water: -2 } },
-    { id: "playful", mod: { fire: 1, air: 1, void: -2 } },
-    { id: "power_hungry", mod: { fire: 2, earth: -2 } },
-    { id: "proud", mod: { fire: 2, earth: -2 } },
-    { id: "restrained", mod: { earth: 2, air: -2 } },
-    { id: "scheming", mod: { air: 2, void: -2 } },
-    { id: "serene", mod: { fire: 2, void: -2 } },
-    { id: "serene", mod: { void: 2, fire: -2 } },
-    { id: "serious", mod: { fire: 2, earth: -2 } },
-    { id: "shrewd", mod: { air: 2, fire: -2 } },
-    { id: "stubborn", mod: { earth: 2, water: -2 } },
-    { id: "suspicious", mod: { air: 2, earth: -2 } },
-    { id: "teasing", mod: { air: 2, earth: -2 } },
-    { id: "territorial", mod: { fire: 2, air: -2 } },
-    { id: "uncertain", mod: { air: 2, fire: -2 } },
-    { id: "unenthused", mod: { earth: 2, fire: -2 } },
-    { id: "vain", mod: { earth: 2, air: -2 } },
-    { id: "wary", mod: { earth: 2, fire: -2 } },
+    { id: "adaptable", mod: { power: 2, resilience: -2 } },
+    { id: "adaptable", mod: { swiftness: 2, resilience: -2 } },
+    { id: "aggressive", mod: { power: 2, precision: -2 } },
+    { id: "aggressive", mod: { power: 2, swiftness: -2 } },
+    { id: "ambitious", mod: { power: 2, swiftness: -2 } },
+    { id: "amiable", mod: { precision: 2, resilience: -2 } },
+    { id: "analytical", mod: { power: 2, precision: -2 } },
+    { id: "angry", mod: { power: 2, precision: -2 } },
+    { id: "arrogant", mod: { power: 2, swiftness: -2 } },
+    { id: "assertive", mod: { resilience: 2, precision: -2 } },
+    { id: "assertive", mod: { resilience: 2, precision: 2 } },
+    { id: "beguiling", mod: { precision: 2, resilience: -2 } },
+    { id: "beguiling", mod: { power: 2, resilience: -2 } },
+    { id: "bitter", mod: { power: 2, precision: -2 } },
+    { id: "bold", mod: { power: 1, resilience: -1 } },
+    { id: "calculating", mod: { precision: 2, power: -2 } },
+    { id: "calm", mod: { power: 2, precision: -2 } },
+    { id: "capricious", mod: { precision: 2, resilience: -2 } },
+    { id: "cautious", mod: { precision: 2, resilience: -2 } },
+    { id: "clever", mod: { precision: 2, resilience: -2 } },
+    { id: "compassionate", mod: { power: 2, precision: -1, swiftness: -1}},
+    { id: "confused", mod: { power: 1, fortune: 1, precision: -2 } },
+    { id: "courageous", mod: { precision: 2, resilience: -2 } },
+    { id: "cowardly", mod: { resilience: 2, power: -2 } },
+    { id: "curious", mod: { resilience: 1, fortune: -2 } },
+    { id: "curious", mod: { power: 1, fortune: 1, precision: -2 } },
+    { id: "dependable", mod: { power: 1, swiftness: 1, resilience: -2 } },
+    { id: "detached", mod: { resilience: 1, power: 1, fortune: -2 } },
+    { id: "disheartened", mod: { power: 1, resilience: -1 } },
+    { id: "enraged", mod: { precision: 1, power: -2 } },
+    { id: "feral", mod: { precision: 2, power: -2 } },
+    { id: "fickle", mod: { power: 2, precision: -2 } },
+    { id: "fierce", mod: { power: 2, resilience: -2 } },
+    { id: "flighty", mod: { precision: 2, power: -2 } },
+    { id: "flighty", mod: { swiftness: 2, power: -2 } },
+    { id: "flippant", mod: { power: 2, precision: -2 } },
+    { id: "friendly", mod: { power: 1, resilience: -2, swiftness: -2 } },
+    { id: "gruff", mod: { swiftness: 2, resilience: -2 } },
+    { id: "hungry", mod: { power: 2, precision: -2 } },
+    { id: "intense", mod: { precision: 2, swiftness: -2 } },
+    { id: "intense", mod: { power: 2, swiftness: -2 } },
+    { id: "intimidating", mod: { power: 2, precision: -2 } },
+    { id: "irritable", mod: { power: 2, precision: -1, swiftness: -1 } },
+    { id: "loyal", mod: { precision: 1, resilience: -2, power: -2 } },
+    { id: "loyal", mod: { swiftness: 2, power: -2 } },
+    { id: "mischievous", mod: { power: 2, precision: -2 } },
+    { id: "mischievous", mod: { precision: 2, resilience: -2 } },
+    { id: "mischievous", mod: { resilience: 2, power: -2 } },
+    { id: "morose", mod: { swiftness: 2, power: -2 } },
+    { id: "nurturing", mod: { resilience: 2, power: -2 } },
+    { id: "obstinate", mod: { resilience: 2, precision: -2 } },
+    { id: "obstinate", mod: { swiftness: 2, precision: -2 } },
+    { id: "opportunistic", mod: { swiftness: 2, power: -2 } },
+    { id: "passionate", mod: { resilience: 2, precision: -2 } },
+    { id: "playful", mod: { resilience: 2, swiftness: -2 } },
+    { id: "playful", mod: { power: 1, precision: 1, fortune: -2 } },
+    { id: "power_hungry", mod: { power: 2, resilience: -2 } },
+    { id: "proud", mod: { power: 2, resilience: -2 } },
+    { id: "restrained", mod: { resilience: 2, precision: -2 } },
+    { id: "scheming", mod: { precision: 2, fortune: -2 } },
+    { id: "serene", mod: { power: 2, fortune: -2 } },
+    { id: "serene", mod: { fortune: 2, power: -2 } },
+    { id: "serious", mod: { power: 2, resilience: -2 } },
+    { id: "shrewd", mod: { precision: 2, power: -2 } },
+    { id: "stubborn", mod: { resilience: 2, swiftness: -2 } },
+    { id: "suspicious", mod: { precision: 2, resilience: -2 } },
+    { id: "teasing", mod: { precision: 2, resilience: -2 } },
+    { id: "territorial", mod: { power: 2, precision: -2 } },
+    { id: "uncertain", mod: { precision: 2, power: -2 } },
+    { id: "unenthused", mod: { resilience: 2, power: -2 } },
+    { id: "vain", mod: { resilience: 2, precision: -2 } },
+    { id: "wary", mod: { resilience: 2, power: -2 } },
 ];

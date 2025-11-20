@@ -11,7 +11,7 @@ export class CharacterGenerator {
      * Payload Object
      */
     data = {
-        avgRingsValue: 3, // 1-5
+        avgApproachesValue: 3, // 1-5
         clan: "random",
         family: "",
         gender: "male",
@@ -21,11 +21,11 @@ export class CharacterGenerator {
 
     /**
      * Initialize the generator
-     * @param {number} avgRingsValue number between 1 and 5
+     * @param {number} avgApproachesValue number between 1 and 5
      * @param {string} clanName      random|crab|crane...
      * @param {string} gender        random|male|female
      */
-    constructor({ avgRingsValue = 3, clanName = "random", gender = "random" }) {
+    constructor({ avgApproachesValue = 3, clanName = "random", gender = "random" }) {
         if (!CONFIG.l5r5e.families.has(clanName)) {
             clanName = "random";
         }
@@ -36,7 +36,7 @@ export class CharacterGenerator {
             gender = Math.random() > 0.5 ? "male" : "female";
         }
 
-        this.data.avgRingsValue = CharacterGenerator.sanitizeMinMax(avgRingsValue);
+        this.data.avgApproachesValue = CharacterGenerator.sanitizeMinMax(avgApproachesValue);
         this.data.clan = clanName;
         this.data.family = CharacterGenerator._getRandomFamily(clanName);
         this.data.gender = gender;
@@ -150,13 +150,13 @@ export class CharacterGenerator {
 
     /**
      * Generate the actor age
-     * @param  {number} avgRingsValue
+     * @param  {number} avgApproachesValue
      * @return {number}
      */
-    static genAge(avgRingsValue) {
+    static genAge(avgApproachesValue) {
         return CharacterGenerator._randomInt(
             CharacterGenerator.baseAge,
-            avgRingsValue * 10 + CharacterGenerator.baseAge
+            avgApproachesValue * 10 + CharacterGenerator.baseAge
         );
     }
 
@@ -179,16 +179,16 @@ export class CharacterGenerator {
     /**
      * Generate the marital partner
      * @param  {string}  maritalStatus unmarried|betrothed|married|widowed
-     * @param  {number}  avgRingsValue
+     * @param  {number}  avgApproachesValue
      * @param  {string}  clan
      * @param  {string}  family
      * @param  {boolean} isFemale
      * @return {Promise<{age: number, name: string, clan: string, family: string, female: boolean}>}
      */
-    static async genMaritalPartner(maritalStatus, avgRingsValue, clan, family, isFemale) {
+    static async genMaritalPartner(maritalStatus, avgApproachesValue, clan, family, isFemale) {
         const alreadyMerged = maritalStatus !== "betrothed";
         const partner = {
-            age: CharacterGenerator.genAge(avgRingsValue),
+            age: CharacterGenerator.genAge(avgApproachesValue),
             clan: "",
             family: "",
             female: Math.random() > 0.9 ? isFemale : !isFemale,
@@ -295,7 +295,7 @@ export class CharacterGenerator {
         const isNpc = actor.type === "npc";
 
         // Need to set some required values
-        this.data.age = actorDatas.identity.age || CharacterGenerator.genAge(this.data.avgRingsValue);
+        this.data.age = actorDatas.identity.age || CharacterGenerator.genAge(this.data.avgApproachesValue);
         this.data.maritalStatus =
             actorDatas.identity.marital_status || CharacterGenerator.genMaritalStatus(this.data.age);
 
@@ -314,7 +314,7 @@ export class CharacterGenerator {
 
         // Identity
         if (generate.identity) {
-            actorDatas.identity.age = CharacterGenerator.genAge(this.data.avgRingsValue);
+            actorDatas.identity.age = CharacterGenerator.genAge(this.data.avgApproachesValue);
             actorDatas.identity.marital_status = CharacterGenerator.genMaritalStatus(this.data.age);
             await this._generateNotes(actorDatas);
         }
@@ -394,14 +394,14 @@ export class CharacterGenerator {
     _generateAttributes(isNpc, actorDatas) {
         const stats = { min: 5, max: 1 };
 
-        // Rings
-        CONFIG.l5r5e.stances.forEach((ringName) => {
-            // avgRingsValue + (-1|0|1)
-            actorDatas.rings[ringName] = CharacterGenerator.sanitizeMinMax(
-                this.data.avgRingsValue - 1 + Math.floor(Math.random() * 3)
+        // Approaches
+        CONFIG.l5r5e.stances.forEach((approachName) => {
+            // avgApproachesValue + (-1|0|1)
+            actorDatas.approaches[approachName] = CharacterGenerator.sanitizeMinMax(
+                this.data.avgApproachesValue - 1 + Math.floor(Math.random() * 3)
             );
-            stats.min = Math.min(stats.min, actorDatas.rings[ringName]);
-            stats.max = Math.max(stats.max, actorDatas.rings[ringName]);
+            stats.min = Math.min(stats.min, actorDatas.approaches[approachName]);
+            stats.max = Math.max(stats.max, actorDatas.approaches[approachName]);
         });
 
         // Attributes
@@ -418,8 +418,8 @@ export class CharacterGenerator {
 
         // Confrontation ranks (npc only)
         if (isNpc) {
-            actorDatas.conflict_rank.martial = this.data.avgRingsValue + actorDatas.skills.martial;
-            actorDatas.conflict_rank.social = this.data.avgRingsValue + actorDatas.skills.social;
+            actorDatas.conflict_rank.martial = this.data.avgApproachesValue + actorDatas.skills.martial;
+            actorDatas.conflict_rank.social = this.data.avgApproachesValue + actorDatas.skills.social;
         }
     }
 
@@ -526,7 +526,7 @@ export class CharacterGenerator {
             await actor.deleteEmbeddedDocuments("Item", deleteIds);
         }
 
-        const avgrv = this.data.avgRingsValue;
+        const avgrv = this.data.avgApproachesValue;
 
         /**
          * Techs config
@@ -609,7 +609,7 @@ export class CharacterGenerator {
             }
 
             for (let qty = 0; qty < qtyMax; qty++) {
-                // Rank is limited by avgRingsValue
+                // Rank is limited by avgApproachesValue
                 let item;
                 do {
                     item = await CharacterGenerator._getItemFromPack(`l5r5e.core-techniques-${pack}`);
@@ -645,7 +645,7 @@ export class CharacterGenerator {
         if (this.data.maritalStatus !== "unmarried") {
             const partner = await CharacterGenerator.genMaritalPartner(
                 this.data.maritalStatus,
-                this.data.avgRingsValue,
+                this.data.avgApproachesValue,
                 this.data.clan,
                 this.data.family,
                 this.isFemale

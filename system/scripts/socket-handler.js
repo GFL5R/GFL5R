@@ -110,7 +110,7 @@ export class SocketHandlerL5r5e {
      * Usage : game.l5r5e.sockets.openDicePicker({
      *   users: game.users.players.filter(u => u.active && u.hasPlayerOwner),
      *   dpOptions: {
-     *     ringId: 'water',
+     *     approachId: 'swiftness',
      *     skillId: 'unarmed',
      *     skillList: 'melee,range,unarmed',
      *     difficulty: 3,

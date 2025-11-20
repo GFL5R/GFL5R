@@ -26,7 +26,7 @@
              </td>
              <td>
                  <a data-actor-uuid="{{actor.uuid}}" class="actor-modify-control" data-action="change_stance">
-                     <i data-type="text" data-text="<h2>{{localize 'l5r5e.conflict.stance'}} ({{localizeRing actor.system.stance}} - {{lookup actor.system.rings actor.system.stance}})</h2>{{localizeStanceTip actor.system.stance}}" class="i_{{actor.system.stance}} actor-infos-control"></i>
+                     <i data-type="text" data-text="<h2>{{localize 'l5r5e.conflict.stance'}} ({{localizeApproach actor.system.stance}} - {{lookup actor.system.approaches actor.system.stance}})</h2>{{localizeStanceTip actor.system.stance}}" class="i_{{actor.system.stance}} actor-infos-control"></i>
                  </a>
              </td>
              <td>
@@ -45,10 +45,10 @@
                      {{/if}}
                  </p>
                  <p>
-                     {{#if actor.system.rings_affinities}}
-                     {{#each actor.system.rings_affinities as |ringValue ringId|}}
-                         {{#if ringValue}}
-                             <i class="i_{{ringId}}" title="{{localizeRing ringId}}"></i> {{ringValue}}
+                     {{#if actor.system.approaches_affinities}}
+                     {{#each actor.system.approaches_affinities as |approachValue approachId|}}
+                         {{#if approachValue}}
+                             <i class="i_{{approachId}}" title="{{localizeApproach approachId}}"></i> {{approachValue}}
                          {{/if}}
                      {{/each}}
                      {{/if}}

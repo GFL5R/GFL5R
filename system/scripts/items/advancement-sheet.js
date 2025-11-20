@@ -8,7 +8,7 @@ export class AdvancementSheetL5r5e extends ItemSheetL5r5e {
      * Sub Types of advancements
      */
     static types = [
-        { id: "ring", label: "l5r5e.rings.label" },
+        { id: "approach", label: "l5r5e.approaches.label" },
         { id: "skill", label: "l5r5e.skills.label" },
         // others have theirs own xp count
     ];
@@ -43,7 +43,7 @@ export class AdvancementSheetL5r5e extends ItemSheetL5r5e {
         }
 
         // const currentType = this.object.system.advancement_type;
-        const currentRing = this.object.system.ring;
+        const currentApproach = this.object.system.approach;
         const currentSkill = this.object.system.skill;
 
         html.find("#advancement_type").on("change", (event) => {
@@ -88,9 +88,9 @@ export class AdvancementSheetL5r5e extends ItemSheetL5r5e {
         let img = this.object.img;
 
         // Modify image to reflect choice
-        if (newChoice.ring) {
-            name = game.i18n.localize(`l5r5e.rings.${newChoice.ring}`) + "+1";
-            img = `systems/l5r5e/assets/icons/rings/${newChoice.ring}.svg`;
+        if (newChoice.approach) {
+            name = game.i18n.localize(`l5r5e.approaches.${newChoice.approach}`) + "+1";
+            img = `systems/l5r5e/assets/icons/approaches/${newChoice.approach}.svg`;
         } else if (newChoice.skill) {
             name =
                 game.i18n.localize(`l5r5e.skills.${CONFIG.l5r5e.skills.get(newChoice.skill)}.${newChoice.skill}`) +
@@ -105,8 +105,8 @@ export class AdvancementSheetL5r5e extends ItemSheetL5r5e {
             let skillCatId = null;
 
             // Old choices
-            if (oldChoice.ring) {
-                actorData.rings[oldChoice.ring] = Math.max(1, actorData.rings[oldChoice.ring] - 1);
+            if (oldChoice.approach) {
+                actorData.approaches[oldChoice.approach] = Math.max(1, actorData.approaches[oldChoice.approach] - 1);
             }
             if (oldChoice.skill) {
                 skillCatId = CONFIG.l5r5e.skills.get(oldChoice.skill);
@@ -117,12 +117,12 @@ export class AdvancementSheetL5r5e extends ItemSheetL5r5e {
             }
 
             // new choices
-            if (newChoice.ring) {
-                actorData.rings[newChoice.ring] = actorData.rings[newChoice.ring] + 1;
-                xp_used = actorData.rings[newChoice.ring] * CONFIG.l5r5e.xp.ringCostMultiplier;
+            if (newChoice.approach) {
+                actorData.approaches[newChoice.approach] = actorData.approaches[newChoice.approach] + 1;
+                xp_used = actorData.approaches[newChoice.approach] * CONFIG.l5r5e.xp.ringCostMultiplier;
                 name =
-                    game.i18n.localize(`l5r5e.rings.${newChoice.ring}`) +
-                    ` +1 (${actorData.rings[newChoice.ring] - 1} -> ${actorData.rings[newChoice.ring]})`;
+                    game.i18n.localize(`l5r5e.approaches.${newChoice.approach}`) +
+                    ` +1 (${actorData.approaches[newChoice.approach] - 1} -> ${actorData.approaches[newChoice.approach]})`;
             }
             if (newChoice.skill) {
                 skillCatId = CONFIG.l5r5e.skills.get(newChoice.skill);

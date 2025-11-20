@@ -108,16 +108,16 @@
             "prone": "Prone",
             "silenced": "Silenced",
             "unconscious": "Unconscious",
-            "lightly_wounded_fire": "Lightly Wounded (Fire)",
-            "lightly_wounded_water": "Lightly Wounded (Water)",
-            "lightly_wounded_air": "Lightly Wounded (Air)",
-            "lightly_wounded_earth": "Lightly Wounded (Earth)",
-            "lightly_wounded_void": "Lightly Wounded (Void)",
-            "severely_wounded_fire": "Severely Wounded (Fire)",
-            "severely_wounded_water": "Severely Wounded (Water)",
-            "severely_wounded_air": "Severely Wounded (Air)",
-            "severely_wounded_earth": "Severely Wounded (Earth)",
-            "severely_wounded_void": "Severely Wounded (Void)"
+            "lightly_wounded_power": "Lightly Wounded (Power)",
+            "lightly_wounded_swiftness": "Lightly Wounded (Swiftness)",
+            "lightly_wounded_precision": "Lightly Wounded (Precision)",
+            "lightly_wounded_resilience": "Lightly Wounded (Resilience)",
+            "lightly_wounded_fortune": "Lightly Wounded (Fortune)",
+            "severely_wounded_power": "Severely Wounded (Power)",
+            "severely_wounded_swiftness": "Severely Wounded (Swiftness)",
+            "severely_wounded_precision": "Severely Wounded (Precision)",
+            "severely_wounded_resilience": "Severely Wounded (Resilience)",
+            "severely_wounded_fortune": "Severely Wounded (Fortune)"
         },
         "global": {
             "edge_translation_disclaimer": "",
@@ -180,14 +180,14 @@
                 "link": "https://gitlab.com/teaml5r/l5r5e/-/wikis/home"
             }
         },
-        "rings": {
-            "title": "Rings",
-            "label": "Ring",
-            "earth": "Earth",
-            "air": "Air",
-            "water": "Water",
-            "fire": "Fire",
-            "void": "Void"
+        "approaches": {
+            "title": "Approaches",
+            "label": "Approach",
+            "resilience": "Resilience",
+            "precision": "Precision",
+            "swiftness": "Swiftness",
+            "power": "Power",
+            "fortune": "Fortune"
         },
         "sheets": {
             "narrative": "Narrative",
@@ -376,81 +376,51 @@
         "skills": {
             "title": "Skills",
             "label": "Skill",
-            "artisan": {
-                "title": "Artisan",
-                "aesthetics": "Aesthetics",
-                "composition": "Composition",
-                "design": "Design",
-                "smithing": "Smithing",
-                "air": "Refine",
-                "earth": "Restore",
-                "fire": "Invent",
-                "water": "Adapt",
-                "void": "Attune"
+            "combat": {
+                "title": "Combat Skills",
+                "blades": "Blades",
+                "firearms": "Firearms",
+                "hand_to_hand": "Hand-To-Hand",
+                "explosives": "Explosives",
+                "tactics": "Tactics"
             },
-            "martial": {
-                "title": "Martial",
-                "fitness": "Fitness",
-                "melee": "Martial Arts [Melee]",
-                "ranged": "Martial Arts [Ranged]",
-                "unarmed": "Martial Arts [Unarmed]",
-                "meditation": "Meditation",
-                "tactics": "Tactics",
-                "air": "Feint",
-                "earth": "Withstand",
-                "fire": "Overwhelm",
-                "water": "Shift",
-                "void": "Sacrifice"
+            "fieldcraft": {
+                "title": "Fieldcraft Skills",
+                "athletics": "Athletics",
+                "centering": "Centering",
+                "insight": "Insight",
+                "stealth": "Stealth",
+                "survival": "Survival"
             },
-            "scholar": {
-                "title": "Scholar",
-                "culture": "Culture",
-                "government": "Government",
+            "technical": {
+                "title": "Technical Skills",
+                "computers": "Computers",
+                "engineering": "Engineering",
                 "medicine": "Medicine",
-                "sentiment": "Sentiment",
-                "theology": "Theology",
-                "air": "Analyze",
-                "earth": "Recall",
-                "fire": "Theorize",
-                "water": "Survey",
-                "void": "Sense"
+                "piloting": "Piloting",
+                "science": "Science",
+                "subterfuge": "Subterfuge"
             },
             "social": {
-                "title": "Social",
+                "title": "Social & Cultural Skills",
+                "arts": "Arts",
                 "command": "Command",
-                "courtesy": "Courtesy",
-                "games": "Games",
-                "performance": "Performance",
-                "air": "Trick",
-                "earth": "Reason",
-                "fire": "Incite",
-                "water": "Charm",
-                "void": "Enlighten"
-            },
-            "trade": {
-                "title": "Trade",
-                "commerce": "Commerce",
-                "labor": "Labor",
-                "seafaring": "Seafaring",
-                "skulduggery": "Skulduggery",
-                "survival": "Survival",
-                "air": "Con",
-                "earth": "Produce",
-                "fire": "Innovate",
-                "water": "Exchange",
-                "void": "Subsist"
+                "culture": "Culture",
+                "deception": "Deception",
+                "negotiation": "Negotiation",
+                "performance": "Performance"
             }
         },
         "attributes": {
             "title": "Attributes",
             "endurance": "Endurance",
-            "endurancetip": "(Earth + Fire) x2",
+            "endurancetip": "(Resilience + Power) x2",
             "composure": "Composure",
-            "composuretip": "(Earth + Water) x2",
+            "composuretip": "(Resilience + Swiftness) x2",
             "focus": "Focus",
-            "focustip": "Air + Fire",
+            "focustip": "Precision + Power",
             "vigilance": "Vigilance",
-            "vigilancetip": "(Air + Water) /2",
+            "vigilancetip": "(Precision + Swiftness) /2",
             "voidpoints": "Void Points",
             "fatigue": "Fatigue",
             "strife": "Strife"
@@ -657,8 +627,8 @@
             "generate": "Generate",
             "average_value": "Average value",
             "identity": "Clan, gender, age, marital status",
-            "attributes": "Social standing, Rings, Attributes and Skills",
-            "demeanor": "Demeanor & rings affinities",
+            "attributes": "Social standing, Approaches, Attributes and Skills",
+            "demeanor": "Demeanor & approaches affinities",
             "peculiarities": "Advantages and Disadvantages",
             "items": "Armors, Weapons, and Items",
             "narrative": "Narrative (Description)"

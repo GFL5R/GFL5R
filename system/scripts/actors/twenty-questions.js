@@ -3,9 +3,9 @@
  */
 export class TwentyQuestions {
     /**
-     * Shortcut for all rings Id in data
+     * Shortcut for all approaches Id in data
      */
-    static ringList = ["step1.ring", "step2.ring", "step3.ring1", "step3.ring2", "step4.ring"];
+    static approachList = ["step1.approach", "step2.approach", "step3.approach1", "step3.approach2", "step4.approach"];
 
     /**
      * Shortcut for all skills Id in data
@@ -282,12 +282,12 @@ export class TwentyQuestions {
             mantra: !!formData.step3.allowed_techniques.mantra,
         };
 
-        // Rings - Reset to 1, and apply modifiers
-        CONFIG.l5r5e.stances.forEach((ring) => (actorDatas.rings[ring] = 1));
-        TwentyQuestions.ringList.forEach((formName) => {
-            const ring = foundry.utils.getProperty(this.data, formName);
-            if (ring !== "none") {
-                actorDatas.rings[ring] = actorDatas.rings[ring] + 1;
+        // Approaches - Reset to 1, and apply modifiers
+        CONFIG.l5r5e.stances.forEach((approach) => (actorDatas.approaches[approach] = 1));
+        TwentyQuestions.approachList.forEach((formName) => {
+            const approach = foundry.utils.getProperty(this.data, formName);
+            if (approach !== "none") {
+                actorDatas.approaches[approach] = actorDatas.approaches[approach] + 1;
             }
         });
 
@@ -341,7 +341,7 @@ export class TwentyQuestions {
         const out = {
             errors: [],
             summary: {
-                rings: [],
+                approaches: [],
                 skills: [],
                 status: 0,
                 glory: 0,
@@ -349,19 +349,19 @@ export class TwentyQuestions {
             },
         };
 
-        // Rings & Skills, 3pt max for each
-        const rings = this.summariesRingsOrSkills("ringList");
-        for (const key in rings) {
-            // ring start at 1
-            rings[key] = rings[key] + 1;
-            const label = `${game.i18n.localize("l5r5e.rings." + key)} (${rings[key]})`;
-            if (rings[key] > 3) {
+        // Approaches & Skills, 3pt max for each
+        const approaches = this.summariesApproachesOrSkills("approachList");
+        for (const key in approaches) {
+            // approach start at 1
+            approaches[key] = approaches[key] + 1;
+            const label = `${game.i18n.localize("l5r5e.approaches." + key)} (${approaches[key]})`;
+            if (approaches[key] > 3) {
                 out.errors.push(label);
             }
-            out.summary.rings.push(label);
+            out.summary.approaches.push(label);
         }
 
-        const skills = this.summariesRingsOrSkills("skillList");
+        const skills = this.summariesApproachesOrSkills("skillList");
         for (const key in skills) {
             // skill start at 0
             const label = `${game.i18n.localize("l5r5e.skills." + CONFIG.l5r5e.skills.get(key) + "." + key)} (${
@@ -373,7 +373,7 @@ export class TwentyQuestions {
             out.summary.skills.push(label);
         }
 
-        out.summary.rings.sort((a, b) => {
+        out.summary.approaches.sort((a, b) => {
             return a.localeCompare(b);
         });
         out.summary.skills.sort((a, b) => {
@@ -396,9 +396,9 @@ export class TwentyQuestions {
     }
 
     /**
-     * Return a list of ring/skill
+     * Return a list of approach/skill
      */
-    summariesRingsOrSkills(listName) {
+    summariesApproachesOrSkills(listName) {
         const store = {};
         TwentyQuestions[listName].forEach((formName) => {
             const id = foundry.utils.getProperty(this.data, formName);

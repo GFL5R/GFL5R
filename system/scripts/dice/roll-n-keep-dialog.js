@@ -181,7 +181,7 @@ export class RollnKeepDialog extends FormApplication {
      */
     _initializeDiceFaces() {
         // All faces are unique for rings
-        this.object.swapDiceFaces.rings = Object.keys(game.l5r5e.RingDie.FACES);
+        this.object.swapDiceFaces.approaches = Object.keys(game.l5r5e.RingDie.FACES);
 
         // Only unique for Skills
         this.object.swapDiceFaces.skills = [1, 3, 6, 8, 10, 11, 12];

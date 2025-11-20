@@ -18,13 +18,13 @@
                     "school_curriculum_journal": {}
                 }
             },
-            "rings": {
-                "rings": {
-                    "earth": 1,
-                    "air": 1,
-                    "water": 1,
-                    "fire": 1,
-                    "void": 1
+            "approaches": {
+                "approaches": {
+                    "resilience": 1,
+                    "precision": 1,
+                    "swiftness": 1,
+                    "power": 1,
+                    "fortune": 1
                 }
             },
             "social": {
@@ -97,7 +97,7 @@
                     "max": 1,
                     "value": 0
                 },
-                "stance": "void",
+                "stance": "fortune",
                 "prepared": true
             },
             "advancement": {
@@ -121,25 +121,25 @@
             }
         },
         "character": {
-            "templates": ["softlock", "identity", "rings", "social", "skills", "techniques", "conflict", "advancement"],
+            "templates": ["softlock", "identity", "approaches", "social", "skills", "techniques", "conflict", "advancement"],
             "template": "core",
             "twenty_questions": {},
             "zeni": 0
         },
         "npc": {
-            "templates": ["softlock", "identity", "rings", "social", "techniques", "conflict"],
+            "templates": ["softlock", "identity", "approaches", "social", "techniques", "conflict"],
             "type": "adversary",
             "attitude": "",
             "conflict_rank": {
                 "martial": 0,
                 "social": 0
             },
-            "rings_affinities": {
-                "earth": 0,
-                "air": 0,
-                "water": 0,
-                "fire": 0,
-                "void": 0
+            "approaches_affinities": {
+                "resilience": 0,
+                "precision": 0,
+                "swiftness": 0,
+                "power": 0,
+                "fortune": 0
             },
             "skills": {
                 "artisan": 0,
@@ -212,7 +212,7 @@
                 "xp_cost": 3,
                 "rank": 1,
                 "bought_at_rank": 1,
-                "ring": "void"
+                "approach": "fortune"
             },
             "item": {
                 "equipped": false,
